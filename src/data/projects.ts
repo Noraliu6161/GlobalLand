@@ -1,0 +1,310 @@
+export type ProjectType = 'condo' | 'sfh' | 'townhouse' | 'office' | 'mixed'
+export type ProjectStatus = 'completed' | 'in-progress' | 'acquired' | 'sold'
+
+export interface Project {
+  id: string
+  slug: string
+  name: string
+  city: string
+  type: ProjectType
+  status: ProjectStatus
+  units: number | null
+  buildings: number | null
+  saleValueM: number | null
+  acquisitionPriceM: number | null
+  year: number
+  lat: number
+  lng: number
+  summary: string
+  highlights: string[]
+  image: string
+  relatedEntity?: string
+  featured?: boolean
+}
+
+export const typeLabels: Record<ProjectType, string> = {
+  condo: 'Condo',
+  sfh: 'Single-Family',
+  townhouse: 'Townhouse',
+  office: 'Office',
+  mixed: 'Mixed Residential',
+}
+
+export const statusLabels: Record<ProjectStatus, string> = {
+  completed: 'Completed',
+  'in-progress': 'In Progress',
+  acquired: 'Acquired',
+  sold: 'Sold',
+}
+
+export const projects: Project[] = [
+  {
+    id: 'mira-flats',
+    slug: 'mira-flats',
+    name: 'Mira Flats',
+    city: 'Bellevue',
+    type: 'condo',
+    status: 'completed',
+    units: 312,
+    buildings: null,
+    saleValueM: null,
+    acquisitionPriceM: null,
+    year: 2016,
+    lat: 47.6158,
+    lng: -122.1965,
+    summary:
+      'A luxury condominium complex in downtown Bellevue offering 312 units that redefine urban living with sophisticated design and a prime location.',
+    highlights: ['312 units', 'Downtown Bellevue', 'Luxury condominium'],
+    image: '/images/hero/team-grid.png',
+    relatedEntity: 'Create World',
+    featured: true,
+  },
+  {
+    id: 'emerald-condo',
+    slug: 'emerald-condo',
+    name: 'The Emerald Condo',
+    city: 'Seattle',
+    type: 'condo',
+    status: 'completed',
+    units: 262,
+    buildings: null,
+    saleValueM: null,
+    acquisitionPriceM: null,
+    year: 2018,
+    lat: 47.6059,
+    lng: -122.3395,
+    summary:
+      'A towering luxury residence in Seattle with 262 iconic residences. Its distinctive glass façade and luxurious amenities set a new standard for urban living.',
+    highlights: ['262 residences', 'Glass façade', 'Seattle waterfront'],
+    image: '/images/projects/emerald-building.png',
+    relatedEntity: 'Create World',
+    featured: true,
+  },
+  {
+    id: 'florera-condo',
+    slug: 'florera-condo',
+    name: 'Florera Condo',
+    city: 'Seattle',
+    type: 'condo',
+    status: 'completed',
+    units: 59,
+    buildings: null,
+    saleValueM: null,
+    acquisitionPriceM: null,
+    year: 2017,
+    lat: 47.6238,
+    lng: -122.3128,
+    summary:
+      "Located in Seattle's Central Park area, Florera offers 59 high-quality apartments. Acquired in 2017 with successful value enhancement.",
+    highlights: ['59 apartments', 'Value enhancement', 'Central Park Seattle'],
+    image: '/images/projects/florera.png',
+    relatedEntity: 'Create World',
+  },
+  {
+    id: 'ormonde-gate',
+    slug: 'ormonde-gate',
+    name: 'Ormonde Gate',
+    city: 'Everett',
+    type: 'townhouse',
+    status: 'sold',
+    units: null,
+    buildings: null,
+    saleValueM: null,
+    acquisitionPriceM: null,
+    year: 2019,
+    lat: 47.9798,
+    lng: -122.2105,
+    summary:
+      'Townhouse community in Everett acquired in 2019 and sold in 2022 before the interest rate hike—strategic foresight in a transforming suburban market.',
+    highlights: ['Acquired 2019', 'Sold 2022', 'Townhouse community'],
+    image: '/images/projects/ormonde-gate.png',
+    featured: true,
+  },
+  {
+    id: 'eastside-sfh',
+    slug: 'eastside-sfh',
+    name: 'Eastside SFH Communities',
+    city: 'Bellevue',
+    type: 'sfh',
+    status: 'completed',
+    units: null,
+    buildings: 46,
+    saleValueM: 70,
+    acquisitionPriceM: null,
+    year: 2021,
+    lat: 47.5962,
+    lng: -122.1528,
+    summary:
+      'From 2020 to 2022, four single-family residential communities across Bellevue, Sammamish, and Renton totaling 46 buildings, with sales projected to exceed $70 million.',
+    highlights: ['46 buildings', '$70M+ projected sales', 'Bellevue · Sammamish · Renton'],
+    image: '/images/projects/sammamish.png',
+    featured: true,
+  },
+  {
+    id: 'riverside-garden',
+    slug: 'riverside-garden',
+    name: 'Riverside Garden',
+    city: 'Centralia',
+    type: 'mixed',
+    status: 'in-progress',
+    units: 88,
+    buildings: null,
+    saleValueM: 52,
+    acquisitionPriceM: null,
+    year: 2024,
+    lat: 46.7185,
+    lng: -122.9578,
+    summary:
+      'Newest venture featuring 88 single-family homes and townhouses in Centralia, with sales expected to surpass $52 million.',
+    highlights: ['88 homes', '$52M+ expected sales', 'SFH + townhouses'],
+    image: '/images/projects/riverside-garden.png',
+    featured: true,
+  },
+  {
+    id: 'spring-district-office',
+    slug: 'spring-district-office',
+    name: 'Spring District Office',
+    city: 'Bellevue',
+    type: 'office',
+    status: 'acquired',
+    units: null,
+    buildings: 1,
+    saleValueM: null,
+    acquisitionPriceM: 16.28,
+    year: 2024,
+    lat: 47.6445,
+    lng: -122.1762,
+    summary:
+      'Class A office building in the heart of Bellevue’s Spring District, acquired February 2024 for $16.28 million—directly across from Meta’s campus and steps from light rail.',
+    highlights: ['$16.28M', 'Class A office', 'Near Meta & light rail'],
+    image: '/images/projects/spring-district.png',
+    featured: true,
+  },
+  {
+    id: 'redmond-office',
+    slug: 'redmond-office',
+    name: 'Downtown Redmond Office',
+    city: 'Redmond',
+    type: 'office',
+    status: 'acquired',
+    units: null,
+    buildings: 1,
+    saleValueM: null,
+    acquisitionPriceM: 23,
+    year: 2026,
+    lat: 47.6739,
+    lng: -122.1219,
+    summary:
+      'Office building in downtown Redmond acquired March 2026 for $23 million—adjacent to the Microsoft campus and next to light rail.',
+    highlights: ['$23M', 'Near Microsoft', 'Light rail adjacent'],
+    image: '/images/projects/redmond-office.png',
+    featured: true,
+  },
+  {
+    id: 'forum-south',
+    slug: 'forum-south',
+    name: 'Forum South Office',
+    city: 'Bellevue',
+    type: 'office',
+    status: 'acquired',
+    units: null,
+    buildings: 1,
+    saleValueM: null,
+    acquisitionPriceM: null,
+    year: 2023,
+    lat: 47.5788,
+    lng: -122.1695,
+    summary: 'Commercial office asset invested in and managed within the Greater Seattle Eastside portfolio.',
+    highlights: ['Office investment', 'Eastside'],
+    image: '/images/projects/forum-south.png',
+  },
+  {
+    id: 'belleview-office',
+    slug: 'belleview-office',
+    name: 'Belleview Office',
+    city: 'Bellevue',
+    type: 'office',
+    status: 'acquired',
+    units: null,
+    buildings: 1,
+    saleValueM: null,
+    acquisitionPriceM: null,
+    year: 2023,
+    lat: 47.6105,
+    lng: -122.2008,
+    summary: 'Office asset in Bellevue held within the Global Land commercial portfolio.',
+    highlights: ['Bellevue office', 'Commercial'],
+    image: '/images/projects/belleview-office.png',
+  },
+  {
+    id: 'sammamish-sfh',
+    slug: 'sammamish-sfh',
+    name: 'Sammamish SFH Neighborhood',
+    city: 'Sammamish',
+    type: 'sfh',
+    status: 'completed',
+    units: null,
+    buildings: null,
+    saleValueM: null,
+    acquisitionPriceM: null,
+    year: 2022,
+    lat: 47.6088,
+    lng: -122.0422,
+    summary: 'Residential neighborhood development invested in and managed by Lili Lu in Sammamish.',
+    highlights: ['Single-family', 'Sammamish'],
+    image: '/images/projects/sammamish.png',
+  },
+  {
+    id: 'renton-portfolio',
+    slug: 'renton-portfolio',
+    name: 'Renton Residential Portfolio',
+    city: 'Renton',
+    type: 'sfh',
+    status: 'completed',
+    units: null,
+    buildings: null,
+    saleValueM: null,
+    acquisitionPriceM: null,
+    year: 2021,
+    lat: 47.4995,
+    lng: -122.1885,
+    summary: 'Residential properties in Renton including 12617, 2103, and 13205 addresses within the low-density investment strategy.',
+    highlights: ['Renton 12617', 'Renton 2103', 'Renton 13205'],
+    image: '/images/projects/renton-12617.png',
+  },
+  {
+    id: 'lakeview',
+    slug: 'lakeview',
+    name: 'Bellevue Lakeview',
+    city: 'Bellevue',
+    type: 'sfh',
+    status: 'completed',
+    units: null,
+    buildings: null,
+    saleValueM: null,
+    acquisitionPriceM: null,
+    year: 2022,
+    lat: 47.5685,
+    lng: -122.1388,
+    summary: 'Residential investment at Bellevue 98006 Lakeview, part of the Eastside low-density portfolio.',
+    highlights: ['Bellevue 98006', 'Lakeview'],
+    image: '/images/projects/lakeview.png',
+  },
+]
+
+export const company = {
+  name: 'Global Land LLC',
+  shortName: 'Global Land',
+  founded: 2018,
+  founder: 'Ms. Lili Lu',
+  focus:
+    'Development of low-density residential properties and investment in high-quality commercial real estate.',
+  vision:
+    'To uphold a long-term approach to the industry, earning recognition through professionalism and integrity; to create market-leading projects; and to make a positive contribution to the communities we serve.',
+  aboutTeam:
+    'Our team, including some who previously worked with Create World Real Estate Inc., a real estate development firm specializing in condo development since 2014, has a strong track record. Under Ms. Lu’s leadership as the former CEO of Create World Real Estate Inc., the team successfully completed several high-profile projects.',
+  community:
+    'Beyond business successes, Ms. Lu is deeply committed to community service. She currently presides over the Chinese Chamber of Commerce in Washington State (CCCWA), a non-profit dedicated to fostering trade and investment between Washington and China. CCCWA members span industries from finance to healthcare.',
+  officeReturns:
+    'Both Class A office properties are secured by long-term leases with premier tenants, generating strong cash-on-cash returns during the holding period, with significant potential for appreciation and attractive exit premiums upon disposition.',
+}
