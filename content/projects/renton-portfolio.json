@@ -1,0 +1,35 @@
+{
+  "id": "renton-portfolio",
+  "slug": "renton-portfolio",
+  "nameEn": "Renton Residential Portfolio",
+  "nameZh": "伦顿住宅组合",
+  "cityEn": "Renton",
+  "cityZh": "伦顿",
+  "type": "sfh",
+  "status": "completed",
+  "units": null,
+  "buildings": null,
+  "saleValueM": null,
+  "acquisitionPriceM": null,
+  "year": 2021,
+  "lat": 47.4995,
+  "lng": -122.1885,
+  "summaryEn": "Residential properties in Renton including 12617, 2103, and 13205 addresses within the low-density investment strategy.",
+  "summaryZh": "伦顿低密度住宅投资组合，含 12617、2103、13205 等地址。",
+  "bodyEn": "Residential properties in Renton including 12617, 2103, and 13205 addresses within the low-density investment strategy.",
+  "bodyZh": "伦顿低密度住宅投资组合，含 12617、2103、13205 等地址。",
+  "bodyFont": "body",
+  "highlightsEn": [
+    "Renton 12617",
+    "Renton 2103",
+    "Renton 13205"
+  ],
+  "highlightsZh": [
+    "Renton 12617",
+    "Renton 2103",
+    "Renton 13205"
+  ],
+  "image": "/images/projects/renton-12617.png",
+  "featured": false,
+  "published": true
+}

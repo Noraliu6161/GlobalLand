@@ -1,0 +1,35 @@
+{
+  "id": "eastside-sfh",
+  "slug": "eastside-sfh",
+  "nameEn": "Eastside SFH Communities",
+  "nameZh": "东区独栋住宅社区",
+  "cityEn": "Bellevue",
+  "cityZh": "贝尔维尤",
+  "type": "sfh",
+  "status": "completed",
+  "units": null,
+  "buildings": 46,
+  "saleValueM": 70,
+  "acquisitionPriceM": null,
+  "year": 2021,
+  "lat": 47.5962,
+  "lng": -122.1528,
+  "summaryEn": "From 2020 to 2022, four single-family residential communities across Bellevue, Sammamish, and Renton totaling 46 buildings, with sales projected to exceed $70 million.",
+  "summaryZh": "2020–2022 年在贝尔维尤、萨马米什与伦顿推进四个独栋住宅社区，共 46 栋，预计销售额逾 7000 万美元。",
+  "bodyEn": "From 2020 to 2022, four single-family residential communities across Bellevue, Sammamish, and Renton totaling **46 buildings**, with sales projected to exceed **$70 million**.",
+  "bodyZh": "2020–2022 年在贝尔维尤、萨马米什与伦顿推进四个独栋住宅社区，共 **46 栋**，预计销售额逾 **7000 万美元**。",
+  "bodyFont": "body",
+  "highlightsEn": [
+    "46 buildings",
+    "$70M+ projected sales",
+    "Bellevue · Sammamish · Renton"
+  ],
+  "highlightsZh": [
+    "46 栋",
+    "预计销售逾 $70M",
+    "贝尔维尤 · 萨马米什 · 伦顿"
+  ],
+  "image": "/images/projects/sammamish.png",
+  "featured": true,
+  "published": true
+}

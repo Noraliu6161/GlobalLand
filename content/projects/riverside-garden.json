@@ -1,0 +1,35 @@
+{
+  "id": "riverside-garden",
+  "slug": "riverside-garden",
+  "nameEn": "Riverside Garden",
+  "nameZh": "Riverside Garden",
+  "cityEn": "Centralia",
+  "cityZh": "森特勒利亚",
+  "type": "mixed",
+  "status": "in-progress",
+  "units": 88,
+  "buildings": null,
+  "saleValueM": 52,
+  "acquisitionPriceM": null,
+  "year": 2024,
+  "lat": 46.7185,
+  "lng": -122.9578,
+  "summaryEn": "Newest venture featuring 88 single-family homes and townhouses in Centralia, with sales expected to surpass $52 million.",
+  "summaryZh": "最新项目位于森特勒利亚，规划 88 套独栋与联排住宅，预计销售额逾 5200 万美元。",
+  "bodyEn": "Newest venture featuring **88 single-family homes and townhouses** in Centralia, with sales expected to surpass **$52 million**.",
+  "bodyZh": "最新项目位于森特勒利亚，规划 **88 套独栋与联排住宅**，预计销售额逾 **5200 万美元**。",
+  "bodyFont": "body",
+  "highlightsEn": [
+    "88 homes",
+    "$52M+ expected sales",
+    "SFH + townhouses"
+  ],
+  "highlightsZh": [
+    "88 套住宅",
+    "预计销售逾 $52M",
+    "独栋 + 联排"
+  ],
+  "image": "/images/projects/riverside-garden.png",
+  "featured": true,
+  "published": true
+}

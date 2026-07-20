@@ -22,3 +22,7 @@ tmp
 
 # Local tooling
 .local
+
+# Env / secrets
+.env
+.env.local

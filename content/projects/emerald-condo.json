@@ -1,0 +1,36 @@
+{
+  "id": "emerald-condo",
+  "slug": "emerald-condo",
+  "nameEn": "The Emerald Condo",
+  "nameZh": "The Emerald 公寓",
+  "cityEn": "Seattle",
+  "cityZh": "西雅图",
+  "type": "condo",
+  "status": "completed",
+  "units": 262,
+  "buildings": null,
+  "saleValueM": null,
+  "acquisitionPriceM": null,
+  "year": 2018,
+  "lat": 47.6059,
+  "lng": -122.3395,
+  "summaryEn": "A towering luxury residence in Seattle with 262 iconic residences. Its distinctive glass façade and luxurious amenities set a new standard for urban living.",
+  "summaryZh": "西雅图地标式豪华住宅，共 262 套单位。独特玻璃立面与完善配套树立都市生活新标准。",
+  "bodyEn": "A towering luxury residence in Seattle with **262 iconic residences**. Its distinctive glass façade and luxurious amenities set a new standard for urban living.",
+  "bodyZh": "西雅图地标式豪华住宅，共 **262 套单位**。独特玻璃立面与完善配套树立都市生活新标准。",
+  "bodyFont": "body",
+  "highlightsEn": [
+    "262 residences",
+    "Glass façade",
+    "Seattle waterfront"
+  ],
+  "highlightsZh": [
+    "262 套住宅",
+    "玻璃立面",
+    "西雅图水岸"
+  ],
+  "image": "/images/projects/emerald-building.png",
+  "relatedEntity": "Create World",
+  "featured": true,
+  "published": true
+}

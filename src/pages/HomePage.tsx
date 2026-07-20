@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom'
-import { company, projects } from '../data/projects'
+import { company } from '../data/projects'
 import { homeHeroSlides, useHeroCarousel } from '../components/heroSlides'
+import { pickText } from '../lib/localized'
 import { useI18n } from '../i18n'
+import { useProjects } from '../projects/ProjectsProvider'
 
 export function HomePage() {
+  const { projects } = useProjects()
   const featured = projects.filter((p) => p.featured).slice(0, 3)
   const { index, goTo } = useHeroCarousel(homeHeroSlides.length)
-  const { t } = useI18n()
+  const { t, lang } = useI18n()
 
   return (
     <>
@@ -117,17 +120,20 @@ export function HomePage() {
             </Link>
           </div>
           <div className="project-strip">
-            {featured.map((p) => (
-              <Link key={p.id} to={`/projects?selected=${p.id}`} className="project-tile">
-                <img src={p.image} alt={p.name} />
+            {featured.map((p) => {
+              const name = pickText(p.name, lang)
+              return (
+              <Link key={p.id} to={`/projects/${p.slug}`} className="project-tile">
+                <img src={p.image} alt={name} />
                 <div className="meta">
                   <span>
-                    {p.city} · {t(`type.${p.type}`)}
+                    {pickText(p.city, lang)} · {t(`type.${p.type}`)}
                   </span>
-                  <strong>{p.name}</strong>
+                  <strong>{name}</strong>
                 </div>
               </Link>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>

@@ -132,6 +132,11 @@ export function Footer() {
             <li>
               <Link to="/contact">{t('footer.contact')}</Link>
             </li>
+            <li>
+              <a href="/admin/index.html" target="_blank" rel="noreferrer">
+                {t('footer.cms')}
+              </a>
+            </li>
           </ul>
         </div>
       </div>

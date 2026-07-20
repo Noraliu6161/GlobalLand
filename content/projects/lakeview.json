@@ -1,0 +1,33 @@
+{
+  "id": "lakeview",
+  "slug": "lakeview",
+  "nameEn": "Bellevue Lakeview",
+  "nameZh": "贝尔维尤 Lakeview",
+  "cityEn": "Bellevue",
+  "cityZh": "贝尔维尤",
+  "type": "sfh",
+  "status": "completed",
+  "units": null,
+  "buildings": null,
+  "saleValueM": null,
+  "acquisitionPriceM": null,
+  "year": 2022,
+  "lat": 47.5685,
+  "lng": -122.1388,
+  "summaryEn": "Residential investment at Bellevue 98006 Lakeview, part of the Eastside low-density portfolio.",
+  "summaryZh": "贝尔维尤 98006 Lakeview 住宅投资，属东区低密度组合。",
+  "bodyEn": "Residential investment at Bellevue 98006 Lakeview, part of the Eastside low-density portfolio.",
+  "bodyZh": "贝尔维尤 98006 Lakeview 住宅投资，属东区低密度组合。",
+  "bodyFont": "body",
+  "highlightsEn": [
+    "Bellevue 98006",
+    "Lakeview"
+  ],
+  "highlightsZh": [
+    "Bellevue 98006",
+    "Lakeview"
+  ],
+  "image": "/images/projects/lakeview.png",
+  "featured": false,
+  "published": true
+}

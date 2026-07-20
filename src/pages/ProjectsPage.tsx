@@ -1,17 +1,19 @@
 import { lazy, Suspense, useMemo, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
-import { projects, type ProjectType } from '../data/projects'
+import { Link, useSearchParams } from 'react-router-dom'
+import type { ProjectType } from '../data/projects'
+import { cityKey, pickText } from '../lib/localized'
 import { useI18n } from '../i18n'
+import { useProjects } from '../projects/ProjectsProvider'
 
 const ProjectMap = lazy(() =>
   import('../components/ProjectMap').then((m) => ({ default: m.ProjectMap })),
 )
 
-const cities = Array.from(new Set(projects.map((p) => p.city))).sort()
 const types = ['condo', 'sfh', 'townhouse', 'office', 'mixed'] as ProjectType[]
 
 export function ProjectsPage() {
-  const { t } = useI18n()
+  const { t, lang } = useI18n()
+  const { projects, loading, source } = useProjects()
   const [params, setParams] = useSearchParams()
   const city = params.get('city') || 'all'
   const type = params.get('type') || 'all'
@@ -19,13 +21,24 @@ export function ProjectsPage() {
 
   const [localSelected, setLocalSelected] = useState<string | null>(selectedId)
 
+  const cities = useMemo(() => {
+    const map = new Map<string, string>()
+    for (const p of projects) {
+      const key = cityKey(p.city)
+      if (!map.has(key)) map.set(key, pickText(p.city, lang))
+    }
+    return Array.from(map.entries())
+      .sort((a, b) => a[1].localeCompare(b[1], lang === 'zh' ? 'zh-CN' : 'en'))
+      .map(([key, label]) => ({ key, label }))
+  }, [projects, lang])
+
   const filtered = useMemo(() => {
     return projects.filter((p) => {
-      if (city !== 'all' && p.city !== city) return false
+      if (city !== 'all' && cityKey(p.city) !== city) return false
       if (type !== 'all' && p.type !== type) return false
       return true
     })
-  }, [city, type])
+  }, [projects, city, type])
 
   const activeId =
     localSelected && filtered.some((p) => p.id === localSelected)
@@ -52,6 +65,13 @@ export function ProjectsPage() {
         <p className="eyebrow">{t('projects.eyebrow')}</p>
         <h1>{t('projects.title')}</h1>
         <p className="section-lead">{t('projects.lead')}</p>
+        <p className="text-secondary" style={{ marginTop: '0.5rem' }}>
+          {loading
+            ? t('projects.loading')
+            : source === 'cms'
+              ? t('projects.sourceCms')
+              : t('projects.sourceEmpty')}
+        </p>
       </div>
 
       <div className="filters" role="group" aria-label="Filter projects">
@@ -64,12 +84,12 @@ export function ProjectsPage() {
         </button>
         {cities.map((c) => (
           <button
-            key={c}
+            key={c.key}
             type="button"
-            className={`chip ${city === c ? 'active' : ''}`}
-            onClick={() => setFilter('city', c)}
+            className={`chip ${city === c.key ? 'active' : ''}`}
+            onClick={() => setFilter('city', c.key)}
           >
-            {c}
+            {c.label}
           </button>
         ))}
       </div>
@@ -105,25 +125,40 @@ export function ProjectsPage() {
             </div>
           ) : (
             <div className="project-list">
-              {filtered.map((p) => (
-                <button
-                  key={p.id}
-                  type="button"
-                  className={`project-card ${activeId === p.id ? 'selected' : ''}`}
-                  onClick={() => select(p.id)}
-                >
-                  <img src={p.image} alt="" />
-                  <div>
-                    <h3>{p.name}</h3>
-                    <p>{p.summary.slice(0, 110)}…</p>
-                    <div className="tag-row">
-                      <span className="tag">{p.city}</span>
-                      <span className="tag">{t(`type.${p.type}`)}</span>
-                      <span className="tag">{t(`status.${p.status}`)}</span>
+              {filtered.map((p) => {
+                const name = pickText(p.name, lang)
+                const summary = pickText(p.summary, lang)
+                const cityLabel = pickText(p.city, lang)
+                return (
+                  <article
+                    key={p.id}
+                    className={`project-card ${activeId === p.id ? 'selected' : ''}`}
+                  >
+                    <button
+                      type="button"
+                      className="project-card-select"
+                      onClick={() => select(p.id)}
+                      aria-pressed={activeId === p.id}
+                    >
+                      <img src={p.image} alt="" />
+                      <div>
+                        <h3>{name}</h3>
+                        <p>{summary.length > 110 ? `${summary.slice(0, 110)}…` : summary}</p>
+                        <div className="tag-row">
+                          <span className="tag">{cityLabel}</span>
+                          <span className="tag">{t(`type.${p.type}`)}</span>
+                          <span className="tag">{t(`status.${p.status}`)}</span>
+                        </div>
+                      </div>
+                    </button>
+                    <div className="project-card-actions">
+                      <Link className="btn btn-outline btn-compact" to={`/projects/${p.slug}`}>
+                        {t('projects.viewDetails')}
+                      </Link>
                     </div>
-                  </div>
-                </button>
-              ))}
+                  </article>
+                )
+              })}
             </div>
           )}
         </div>

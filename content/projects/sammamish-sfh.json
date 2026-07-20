@@ -1,0 +1,33 @@
+{
+  "id": "sammamish-sfh",
+  "slug": "sammamish-sfh",
+  "nameEn": "Sammamish SFH Neighborhood",
+  "nameZh": "萨马米什独栋社区",
+  "cityEn": "Sammamish",
+  "cityZh": "萨马米什",
+  "type": "sfh",
+  "status": "completed",
+  "units": null,
+  "buildings": null,
+  "saleValueM": null,
+  "acquisitionPriceM": null,
+  "year": 2022,
+  "lat": 47.6088,
+  "lng": -122.0422,
+  "summaryEn": "Residential neighborhood development invested in and managed by Lili Lu in Sammamish.",
+  "summaryZh": "由 Lili Lu 投资并管理的萨马米什住宅社区开发项目。",
+  "bodyEn": "Residential neighborhood development invested in and managed by Lili Lu in Sammamish.",
+  "bodyZh": "由 Lili Lu 投资并管理的萨马米什住宅社区开发项目。",
+  "bodyFont": "body",
+  "highlightsEn": [
+    "Single-family",
+    "Sammamish"
+  ],
+  "highlightsZh": [
+    "独栋住宅",
+    "萨马米什"
+  ],
+  "image": "/images/projects/sammamish.png",
+  "featured": false,
+  "published": true
+}

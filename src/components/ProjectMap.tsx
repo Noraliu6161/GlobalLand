@@ -2,6 +2,7 @@ import { useEffect, useMemo } from 'react'
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import type { Project, ProjectType } from '../data/projects'
+import { pickText } from '../lib/localized'
 import { useI18n } from '../i18n'
 import 'leaflet/dist/leaflet.css'
 
@@ -59,7 +60,7 @@ export function ProjectMap({
   selectedId: string | null
   onSelect: (id: string) => void
 }) {
-  const { t } = useI18n()
+  const { t, lang } = useI18n()
   const center = useMemo<[number, number]>(() => [47.6, -122.2], [])
   const selected = projects.find((p) => p.id === selectedId) ?? null
 
@@ -81,7 +82,8 @@ export function ProjectMap({
         {projects.map((p) => {
           const color = typeColors[p.type]
           const selectedNow = selectedId === p.id
-          const short = p.name.split(' ')[0].slice(0, 8)
+          const name = pickText(p.name, lang)
+          const short = name.split(/\s+/)[0].slice(0, 8)
           return (
             <Marker
               key={p.id}
@@ -93,9 +95,9 @@ export function ProjectMap({
               <Popup>
                 <div className="map-popup">
                   <div className="map-popup-swatch" style={{ background: color }} />
-                  <h4>{p.name}</h4>
+                  <h4>{name}</h4>
                   <p>
-                    {p.city} · {t(`type.${p.type}`)}
+                    {pickText(p.city, lang)} · {t(`type.${p.type}`)}
                   </p>
                 </div>
               </Popup>

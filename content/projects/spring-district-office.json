@@ -1,0 +1,35 @@
+{
+  "id": "spring-district-office",
+  "slug": "spring-district-office",
+  "nameEn": "Spring District Office",
+  "nameZh": "Spring District 办公楼",
+  "cityEn": "Bellevue",
+  "cityZh": "贝尔维尤",
+  "type": "office",
+  "status": "acquired",
+  "units": null,
+  "buildings": 1,
+  "saleValueM": null,
+  "acquisitionPriceM": 16.28,
+  "year": 2024,
+  "lat": 47.6445,
+  "lng": -122.1762,
+  "summaryEn": "Class A office building in the heart of Bellevue’s Spring District, acquired February 2024 for $16.28 million—directly across from Meta’s campus and steps from light rail.",
+  "summaryZh": "贝尔维尤 Spring District 甲级办公楼，2024 年 2 月以 1628 万美元收购，正对 Meta 园区，临近轻轨。",
+  "bodyEn": "Class A office building in the heart of Bellevue’s Spring District, acquired February 2024 for **$16.28 million**—directly across from Meta’s campus and steps from light rail.",
+  "bodyZh": "贝尔维尤 Spring District 甲级办公楼，2024 年 2 月以 **1628 万美元**收购，正对 Meta 园区，临近轻轨。",
+  "bodyFont": "body",
+  "highlightsEn": [
+    "$16.28M",
+    "Class A office",
+    "Near Meta & light rail"
+  ],
+  "highlightsZh": [
+    "$16.28M",
+    "甲级办公",
+    "邻近 Meta 与轻轨"
+  ],
+  "image": "/images/projects/spring-district.png",
+  "featured": true,
+  "published": true
+}

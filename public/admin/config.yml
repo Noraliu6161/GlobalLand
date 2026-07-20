@@ -1,0 +1,116 @@
+# Decap CMS — bilingual via separate EN / 中文 fields (avoids nested Map save bugs)
+
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+collections:
+  - name: projects
+    label: Projects / 项目
+    label_singular: Project / 项目
+    folder: content/projects
+    create: true
+    delete: true
+    slug: '{{slug}}'
+    extension: json
+    format: json
+    identifier_field: slug
+    summary: '{{nameEn}} · {{cityEn}}'
+    fields:
+      - label: Slug
+        name: slug
+        widget: string
+        hint: 'URL id, e.g. mira-flats'
+      - label: ID
+        name: id
+        widget: string
+        hint: 'Usually same as slug'
+      - label: Name (English)
+        name: nameEn
+        widget: string
+      - label: 名称（中文）
+        name: nameZh
+        widget: string
+        required: false
+      - label: City (English)
+        name: cityEn
+        widget: string
+      - label: 城市（中文）
+        name: cityZh
+        widget: string
+        required: false
+      - label: Type / 类型
+        name: type
+        widget: select
+        options:
+          - { label: Condo / 公寓, value: condo }
+          - { label: Single-Family / 独栋, value: sfh }
+          - { label: Townhouse / 联排, value: townhouse }
+          - { label: Office / 办公, value: office }
+          - { label: Mixed Residential / 混合住宅, value: mixed }
+      - label: Status / 状态
+        name: status
+        widget: select
+        options:
+          - { label: Completed / 已完成, value: completed }
+          - { label: In Progress / 进行中, value: in-progress }
+          - { label: Acquired / 已收购, value: acquired }
+          - { label: Sold / 已出售, value: sold }
+      - label: Cover image / 封面图
+        name: image
+        widget: image
+        choose_url: true
+      - label: Short summary (English)
+        name: summaryEn
+        widget: text
+      - label: 短摘要（中文）
+        name: summaryZh
+        widget: text
+        required: false
+      - label: Full description (English)
+        name: bodyEn
+        widget: markdown
+        required: false
+      - label: 完整描述（中文）
+        name: bodyZh
+        widget: markdown
+        required: false
+      - label: Description font / 正文字体
+        name: bodyFont
+        widget: select
+        default: body
+        options:
+          - { label: Body · Figtree, value: body }
+          - { label: Display · Syne, value: display }
+          - { label: Serif · Cormorant, value: serif }
+          - { label: 中文黑体 · Noto Sans SC, value: sans-sc }
+          - { label: 中文宋体 · Noto Serif SC, value: serif-sc }
+      - label: Highlights (English)
+        name: highlightsEn
+        widget: list
+        allow_add: true
+        required: false
+      - label: 亮点（中文）
+        name: highlightsZh
+        widget: list
+        allow_add: true
+        required: false
+      - { label: Year / 年份, name: year, widget: number, value_type: int }
+      - { label: Units / 单元数, name: units, widget: number, value_type: int, required: false }
+      - { label: Buildings / 栋数, name: buildings, widget: number, value_type: int, required: false }
+      - { label: Sale value ($M) / 售价（百万美元）, name: saleValueM, widget: number, value_type: float, required: false }
+      - { label: Acquisition ($M) / 收购价（百万美元）, name: acquisitionPriceM, widget: number, value_type: float, required: false }
+      - { label: Latitude / 纬度, name: lat, widget: number, value_type: float }
+      - { label: Longitude / 经度, name: lng, widget: number, value_type: float }
+      - { label: Related entity / 关联主体, name: relatedEntity, widget: string, required: false }
+      - { label: Featured on homepage / 首页推荐, name: featured, widget: boolean, default: false }
+      - { label: Published / 已发布, name: published, widget: boolean, default: true }

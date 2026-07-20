@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Figtree:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600;700&family=Syne:wght@600;700;800&display=swap');
 
 :root {
   --ink: #141816;
@@ -12,9 +12,10 @@
   --sky: #4a7c8c;
   --white: #ffffff;
   --shadow: 0 20px 50px rgba(20, 24, 22, 0.12);
-  --font-display: 'Syne', system-ui, sans-serif;
-  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  --font-body: 'Figtree', system-ui, sans-serif;
+  /* Latin + Simplified Chinese stacks */
+  --font-display: 'Syne', 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+  --font-serif: 'Cormorant Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+  --font-body: 'Figtree', 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', system-ui, sans-serif;
   /* Type scale */
   --text-page: clamp(32px, 3.2vw, 40px); /* 页面标题 Bold */
   --text-price: clamp(26px, 2.6vw, 32px); /* 房价 Bold */

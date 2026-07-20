@@ -1,0 +1,36 @@
+{
+  "id": "mira-flats",
+  "slug": "mira-flats",
+  "nameEn": "Mira Flats",
+  "nameZh": "Mira Flats 公寓",
+  "cityEn": "Bellevue",
+  "cityZh": "贝尔维尤",
+  "type": "condo",
+  "status": "completed",
+  "units": 312,
+  "buildings": null,
+  "saleValueM": null,
+  "acquisitionPriceM": null,
+  "year": 2016,
+  "lat": 47.6158,
+  "lng": -122.1965,
+  "summaryEn": "A luxury condominium complex in downtown Bellevue offering 312 units that redefine urban living with sophisticated design and a prime location.",
+  "summaryZh": "位于贝尔维尤市中心的豪华公寓综合体，共 312 套单位，以精致设计与优越地段重新定义都市生活。",
+  "bodyEn": "A luxury condominium complex in downtown Bellevue offering **312 units** that redefine urban living with sophisticated design and a prime location.",
+  "bodyZh": "位于贝尔维尤市中心的豪华公寓综合体，共 **312 套单位**，以精致设计与优越地段重新定义都市生活。",
+  "bodyFont": "body",
+  "highlightsEn": [
+    "312 units",
+    "Downtown Bellevue",
+    "Luxury condominium"
+  ],
+  "highlightsZh": [
+    "312 套单位",
+    "贝尔维尤市中心",
+    "豪华公寓"
+  ],
+  "image": "/images/hero/team-grid.png",
+  "relatedEntity": "Create World",
+  "featured": true,
+  "published": true
+}

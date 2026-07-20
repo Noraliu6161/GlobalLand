@@ -1,0 +1,35 @@
+{
+  "id": "ormonde-gate",
+  "slug": "ormonde-gate",
+  "nameEn": "Ormonde Gate",
+  "nameZh": "Ormonde Gate 联排",
+  "cityEn": "Everett",
+  "cityZh": "埃弗里特",
+  "type": "townhouse",
+  "status": "sold",
+  "units": null,
+  "buildings": null,
+  "saleValueM": null,
+  "acquisitionPriceM": null,
+  "year": 2019,
+  "lat": 47.9798,
+  "lng": -122.2105,
+  "summaryEn": "Townhouse community in Everett acquired in 2019 and sold in 2022 before the interest rate hike—strategic foresight in a transforming suburban market.",
+  "summaryZh": "埃弗里特联排社区，2019 年收购、2022 年利率上行前出售——体现对城郊市场的前瞻判断。",
+  "bodyEn": "Townhouse community in Everett acquired in 2019 and sold in 2022 before the interest rate hike—strategic foresight in a transforming suburban market.",
+  "bodyZh": "埃弗里特联排社区，2019 年收购、2022 年利率上行前出售——体现对城郊市场的前瞻判断。",
+  "bodyFont": "body",
+  "highlightsEn": [
+    "Acquired 2019",
+    "Sold 2022",
+    "Townhouse community"
+  ],
+  "highlightsZh": [
+    "2019 年收购",
+    "2022 年出售",
+    "联排社区"
+  ],
+  "image": "/images/projects/ormonde-gate.png",
+  "featured": true,
+  "published": true
+}

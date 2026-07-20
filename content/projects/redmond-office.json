@@ -1,0 +1,35 @@
+{
+  "id": "redmond-office",
+  "slug": "redmond-office",
+  "nameEn": "Downtown Redmond Office",
+  "nameZh": "雷德蒙德市中心办公楼",
+  "cityEn": "Redmond",
+  "cityZh": "雷德蒙德",
+  "type": "office",
+  "status": "acquired",
+  "units": null,
+  "buildings": 1,
+  "saleValueM": null,
+  "acquisitionPriceM": 23,
+  "year": 2026,
+  "lat": 47.6739,
+  "lng": -122.1219,
+  "summaryEn": "Office building in downtown Redmond acquired March 2026 for $23 million—adjacent to the Microsoft campus and next to light rail.",
+  "summaryZh": "雷德蒙德市中心办公楼，2026 年 3 月以 2300 万美元收购，毗邻微软园区与轻轨。",
+  "bodyEn": "Office building in downtown Redmond acquired March 2026 for **$23 million**—adjacent to the Microsoft campus and next to light rail.",
+  "bodyZh": "雷德蒙德市中心办公楼，2026 年 3 月以 **2300 万美元**收购，毗邻微软园区与轻轨。",
+  "bodyFont": "body",
+  "highlightsEn": [
+    "$23M",
+    "Near Microsoft",
+    "Light rail adjacent"
+  ],
+  "highlightsZh": [
+    "$23M",
+    "邻近微软",
+    "轻轨旁"
+  ],
+  "image": "/images/projects/redmond-office.png",
+  "featured": true,
+  "published": true
+}

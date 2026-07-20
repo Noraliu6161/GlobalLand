@@ -1,0 +1,36 @@
+{
+  "id": "florera-condo",
+  "slug": "florera-condo",
+  "nameEn": "Florera Condo",
+  "nameZh": "Florera 公寓",
+  "cityEn": "Seattle",
+  "cityZh": "西雅图",
+  "type": "condo",
+  "status": "completed",
+  "units": 59,
+  "buildings": null,
+  "saleValueM": null,
+  "acquisitionPriceM": null,
+  "year": 2017,
+  "lat": 47.6238,
+  "lng": -122.3128,
+  "summaryEn": "Located in Seattle's Central Park area, Florera offers 59 high-quality apartments. Acquired in 2017 with successful value enhancement.",
+  "summaryZh": "位于西雅图 Central Park 区域，提供 59 套高品质公寓。2017 年收购后成功实现价值提升。",
+  "bodyEn": "Located in Seattle's Central Park area, Florera offers **59 high-quality apartments**. Acquired in 2017 with successful value enhancement.",
+  "bodyZh": "位于西雅图 Central Park 区域，提供 **59 套高品质公寓**。2017 年收购后成功实现价值提升。",
+  "bodyFont": "body",
+  "highlightsEn": [
+    "59 apartments",
+    "Value enhancement",
+    "Central Park Seattle"
+  ],
+  "highlightsZh": [
+    "59 套公寓",
+    "价值提升",
+    "西雅图 Central Park"
+  ],
+  "image": "/images/projects/florera.png",
+  "relatedEntity": "Create World",
+  "featured": false,
+  "published": true
+}
