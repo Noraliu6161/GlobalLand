@@ -1,0 +1,67 @@
+/* Global Land CMS toolbar */
+.gl-cms-bar {
+  position: fixed;
+  z-index: 100000;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #141816;
+  color: #f7f5f1;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  font-family: system-ui, sans-serif;
+  font-size: 13px;
+}
+
+.gl-cms-bar strong {
+  font-weight: 650;
+}
+
+.gl-cms-bar p {
+  margin: 0;
+  opacity: 0.85;
+  max-width: 52ch;
+  line-height: 1.35;
+}
+
+.gl-cms-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.gl-cms-btn {
+  appearance: none;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.gl-cms-btn:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+
+.gl-cms-btn-primary {
+  background: #2f8f86;
+  color: #fff;
+}
+
+.gl-cms-btn-secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.gl-cms-status {
+  margin-left: 4px;
+  opacity: 0.9;
+}

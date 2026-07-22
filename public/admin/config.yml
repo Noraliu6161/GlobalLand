@@ -1,12 +1,20 @@
-# Decap CMS — bilingual via separate EN / 中文 fields (avoids nested Map save bugs)
+# Decap CMS — bilingual EN / 中文 fields
+#
+# Save flow (Save / Publish in editor):
+#   → commits only to branch `cms` (draft staging)
+#   → does NOT update production (`main`)
+#
+# Publish All (toolbar button):
+#   → merges `cms` → `main` once via Netlify Function
+#   → triggers ONE production deploy (~15 credits)
+#
+# Local test: set local_backend: true and run `npm run cms`
 
-# Local test: set to true and run `npm run cms`
-# Production (Netlify): must be false
 local_backend: false
 
 backend:
   name: git-gateway
-  branch: main
+  branch: cms
 
 media_folder: public/images/uploads
 public_folder: /images/uploads
