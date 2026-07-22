@@ -1,0 +1,21 @@
+{
+  "saleValueM": 3,
+  "lng": 0,
+  "slug": "TEST",
+  "featured": false,
+  "published": true,
+  "summaryEn": "Test",
+  "units": 3,
+  "bodyFont": "display",
+  "acquisitionPriceM": -3,
+  "status": "acquired",
+  "nameEn": "TEST",
+  "cityEn": "Seattle",
+  "cityZh": "",
+  "type": "sfh",
+  "id": "TEST",
+  "image": "/images/uploads/img_3775.jpeg",
+  "year": 2026,
+  "buildings": 0,
+  "lat": 3
+}
