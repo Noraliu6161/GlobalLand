@@ -1,6 +1,8 @@
 # Decap CMS — bilingual via separate EN / 中文 fields (avoids nested Map save bugs)
 
-local_backend: true
+# Local test: set to true and run `npm run cms`
+# Production (Netlify): must be false
+local_backend: false
 
 backend:
   name: git-gateway

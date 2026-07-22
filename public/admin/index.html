@@ -9,15 +9,31 @@
   <body>
     <script src="https://unpkg.com/decap-cms@^3.3.3/dist/decap-cms.js"></script>
     <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on('init', (user) => {
+      ;(function () {
+        if (!window.netlifyIdentity) return
+
+        function openFromHash() {
+          var hash = window.location.hash || ''
+          if (hash.indexOf('invite_token=') !== -1) {
+            window.netlifyIdentity.open('signup')
+            return
+          }
+          if (hash.indexOf('recovery_token=') !== -1) {
+            window.netlifyIdentity.open('recovery')
+          }
+        }
+
+        window.netlifyIdentity.on('init', function (user) {
+          openFromHash()
           if (!user) {
-            window.netlifyIdentity.on('login', () => {
+            window.netlifyIdentity.on('login', function () {
               document.location.href = '/admin/'
             })
           }
         })
-      }
+
+        window.addEventListener('hashchange', openFromHash)
+      })()
     </script>
   </body>
 </html>
