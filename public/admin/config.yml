@@ -9,8 +9,9 @@
 #   → triggers ONE production deploy (~15 credits)
 #
 # Local test: set local_backend: true and run `npm run cms`
+# Production (Netlify): must be false
 
-local_backend: false
+local_backend: true
 
 backend:
   name: git-gateway

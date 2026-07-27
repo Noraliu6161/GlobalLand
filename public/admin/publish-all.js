@@ -32,10 +32,10 @@
     }
   }
 
+  /** Collection list only — never on login / editor */
   function shouldShowSidebarPublish() {
     if (isLoginScreen()) return false
     if (isEditingEntry()) return false
-    if (!isLoggedIn()) return false
     return true
   }
 
@@ -76,9 +76,7 @@
 
   async function callFunction(name) {
     if (isLocalHost()) {
-      throw new Error(
-        '本地模式只测单篇 Save Draft。Preview All / Publish All 请在 Netlify 线上使用。',
-      )
+      throw new Error('LOCAL_ONLY')
     }
     const jwt = await identityToken()
     const res = await fetch(`/.netlify/functions/${name}`, {
@@ -106,6 +104,67 @@
     return label.parentElement
   }
 
+  async function onPreviewAll() {
+    setStatus(isLocalHost() ? '打开本地网站预览…' : '正在创建 / 打开 Preview PR…')
+    try {
+      if (isLocalHost()) {
+        // Local: open the Vite site so you can see content/ changes
+        const url = location.origin + '/projects'
+        const opened = window.open(url, '_blank', 'noopener')
+        if (!opened) {
+          setStatus('弹窗被拦截。请允许弹窗，或手动打开 ' + url, true)
+          return
+        }
+        setStatus('已打开本地 /projects（内容来自本地 content/）')
+        return
+      }
+      if (!isLoggedIn()) {
+        window.netlifyIdentity?.open('login')
+        setStatus('请先登录 Netlify Identity', true)
+        return
+      }
+      const data = await callFunction('preview-cms')
+      setStatus(data.message || 'Preview ready.')
+      if (data.pr_url) {
+        const opened = window.open(data.pr_url, '_blank', 'noopener')
+        if (!opened) {
+          setStatus('已创建 PR，但弹窗被拦截：' + data.pr_url, true)
+        }
+      } else {
+        setStatus('未返回 PR 链接，请检查 CMS_GITHUB_TOKEN。', true)
+      }
+    } catch (err) {
+      setStatus(err.message || String(err), true)
+    }
+  }
+
+  async function onPublishAll() {
+    if (isLocalHost()) {
+      setStatus('本地不能 Publish All。请在 Netlify 线上使用。', true)
+      return
+    }
+    if (!isLoggedIn()) {
+      window.netlifyIdentity?.open('login')
+      setStatus('请先登录 Netlify Identity', true)
+      return
+    }
+    if (
+      !window.confirm(
+        '将 cms 上所有草稿一次性发布到正式站 main？\n\n只会触发 1 次 production deploy（约 15 credits）。',
+      )
+    ) {
+      setStatus('已取消')
+      return
+    }
+    setStatus('Publishing all drafts (cms → main)…')
+    try {
+      const data = await callFunction('publish-cms')
+      setStatus(data.message || 'Published.')
+    } catch (err) {
+      setStatus(err.message || String(err), true)
+    }
+  }
+
   function ensureSidebarPublish() {
     const existing = document.getElementById(ROOT_ID)
     if (!shouldShowSidebarPublish()) {
@@ -123,22 +182,28 @@
     wrap.id = ROOT_ID
     wrap.className = 'gl-cms-publish-wrap'
     wrap.innerHTML = `
-      <button type="button" class="gl-cms-publish-toggle" id="gl-cms-publish-toggle" aria-expanded="false">
-        <span>Publish</span>
-        <span class="gl-caret" aria-hidden="true">▾</span>
-      </button>
-      <div class="gl-cms-publish-panel">
-        <button type="button" class="gl-cms-subbtn gl-cms-subbtn-preview" id="gl-cms-preview">Preview All</button>
-        <button type="button" class="gl-cms-subbtn gl-cms-subbtn-publish" id="gl-cms-publish">Publish All</button>
-        <div id="${STATUS_ID}" class="gl-cms-publish-status"></div>
-      </div>
+      <button type="button" class="gl-cms-subbtn gl-cms-subbtn-preview" id="gl-cms-preview">Preview All</button>
+      <button type="button" class="gl-cms-subbtn gl-cms-subbtn-publish" id="gl-cms-publish">Publish All</button>
+      <div id="${STATUS_ID}" class="gl-cms-publish-status"></div>
+      <p class="gl-cms-hint">${
+        isLocalHost()
+          ? '本地：Preview All 打开本站 /projects。Publish All 仅线上可用。'
+          : '线上：Preview All 打开 GitHub PR（内含 Deploy Preview）。'
+      }</p>
     `
     sidebar.appendChild(wrap)
 
-    document.getElementById('gl-cms-publish-toggle').addEventListener('click', () => {
-      const open = wrap.classList.toggle('is-open')
-      document.getElementById('gl-cms-publish-toggle').setAttribute('aria-expanded', open ? 'true' : 'false')
-      if (!open) setStatus('')
+    document.getElementById('gl-cms-preview').addEventListener('click', async () => {
+      const btn = document.getElementById('gl-cms-preview')
+      const publishBtn = document.getElementById('gl-cms-publish')
+      btn.disabled = true
+      publishBtn.disabled = true
+      try {
+        await onPreviewAll()
+      } finally {
+        btn.disabled = false
+        publishBtn.disabled = false
+      }
     })
 
     document.getElementById('gl-cms-publish').addEventListener('click', async () => {
@@ -146,41 +211,28 @@
       const previewBtn = document.getElementById('gl-cms-preview')
       btn.disabled = true
       previewBtn.disabled = true
-      setStatus('Publishing all drafts (cms → main)…')
       try {
-        if (
-          !window.confirm(
-            '将 cms 上所有草稿一次性发布到正式站 main？\n\n只会触发 1 次 production deploy（约 15 credits）。',
-          )
-        ) {
-          setStatus('已取消')
-          return
-        }
-        const data = await callFunction('publish-cms')
-        setStatus(data.message || 'Published.')
-      } catch (err) {
-        setStatus(err.message || String(err), true)
+        await onPublishAll()
       } finally {
         btn.disabled = false
         previewBtn.disabled = false
       }
     })
+  }
 
-    document.getElementById('gl-cms-preview').addEventListener('click', async () => {
-      const btn = document.getElementById('gl-cms-preview')
-      const publishBtn = document.getElementById('gl-cms-publish')
-      btn.disabled = true
-      publishBtn.disabled = true
-      setStatus('Creating preview PR…')
-      try {
-        const data = await callFunction('preview-cms')
-        setStatus(data.message || 'Preview ready.')
-        if (data.pr_url) window.open(data.pr_url, '_blank', 'noopener')
-      } catch (err) {
-        setStatus(err.message || String(err), true)
-      } finally {
-        btn.disabled = false
-        publishBtn.disabled = false
+  /** Remove legacy floating bottom bar from older admin builds */
+  function removeLegacyBottomBar() {
+    document.getElementById('gl-cms-bar')?.remove()
+    document.querySelectorAll('.gl-cms-bar').forEach((el) => el.remove())
+    // Text match for stale injected bars
+    document.querySelectorAll('div').forEach((el) => {
+      const t = (el.textContent || '').trim()
+      if (
+        el.children.length <= 6 &&
+        /Save Draft\s*→\s*Publish All|Save Draft -> Publish All/.test(t) &&
+        /Preview All/.test(t)
+      ) {
+        el.remove()
       }
     })
   }
@@ -192,7 +244,6 @@
   function inTopChrome(el) {
     if (!el || !el.getBoundingClientRect) return false
     const rect = el.getBoundingClientRect()
-    // display:none → 0 size; still allow if we already marked it
     if (rect.width === 0 && rect.height === 0) return false
     return rect.top >= 0 && rect.top < 140 && rect.left > 40
   }
@@ -213,18 +264,28 @@
     el.dataset.glHiddenNative = '1'
   }
 
-  /** Hide Publish / Published / Draft dropdowns everywhere in editor chrome. */
+  function armOffscreen(el) {
+    if (!el) return
+    el.style.setProperty('position', 'fixed', 'important')
+    el.style.setProperty('left', '-10000px', 'important')
+    el.style.setProperty('top', '0', 'important')
+    el.style.setProperty('width', '1px', 'important')
+    el.style.setProperty('height', '1px', 'important')
+    el.style.setProperty('opacity', '0', 'important')
+    el.style.setProperty('pointer-events', 'auto', 'important')
+    el.style.setProperty('display', 'block', 'important')
+    el.removeAttribute('aria-hidden')
+  }
+
   function hideNativePublishControls() {
     if (!isEditingEntry()) return
+    document.body.classList.remove('gl-saving-draft')
 
     document.querySelectorAll('button, [role="button"], [role="menuitem"]').forEach((el) => {
       if (el.id === SAVE_BTN_ID || el.id === DELETE_BTN_ID) return
-
       const label = labelOf(el)
       if (!isPublishLabel(label)) return
 
-      // Status dropdowns (Publish / Published / Draft…) are the persist trigger.
-      // Save Draft opens them, then clicks "Publish now" — works for 1st and Nth save.
       if (
         /^(Publish|Published|Unpublished|Draft|发布)\b/i.test(label) &&
         !/^Publish and /i.test(label) &&
@@ -235,7 +296,6 @@
       if (/^Publish now$/i.test(label)) {
         el.dataset.glNativeSaveNow = '1'
       }
-
       hideControl(el)
     })
   }
@@ -274,24 +334,11 @@
         /^(Publish|Published|Unpublished|Draft|发布)\b/i.test(label)) &&
       !/^Publish now$/i.test(label)
 
-    const reveal = (el) => {
-      el.style.removeProperty('display')
-      el.removeAttribute('aria-hidden')
-      let p = el.parentElement
-      while (p && p !== document.body) {
-        if (p.dataset.glHiddenNative === '1') {
-          p.style.removeProperty('display')
-          p.removeAttribute('aria-hidden')
-        }
-        p = p.parentElement
-      }
-    }
-
-    reveal(control)
+    document.body.classList.add('gl-saving-draft')
+    armOffscreen(control)
     control.click()
 
     if (isTrigger) {
-      // Menu items render async — try a few times for repeated edits
       let tries = 0
       const tryPublishNow = () => {
         tries += 1
@@ -300,26 +347,22 @@
             (el) => /^Publish now$/i.test(labelOf(el)),
           ) || null
         if (now) {
+          armOffscreen(now)
           now.click()
-          window.setTimeout(hideNativePublishControls, 80)
+          window.setTimeout(hideNativePublishControls, 100)
           return
         }
-        if (tries < 8) {
-          window.setTimeout(tryPublishNow, 50)
-        } else {
-          hideNativePublishControls()
-        }
+        if (tries < 10) window.setTimeout(tryPublishNow, 40)
+        else hideNativePublishControls()
       }
-      window.setTimeout(tryPublishNow, 40)
+      window.setTimeout(tryPublishNow, 30)
     } else {
-      hideNativePublishControls()
+      window.setTimeout(hideNativePublishControls, 80)
     }
     return true
   }
 
   function triggerSaveDraft() {
-    // Always attempt native persist when there are edits (UNSAVED CHANGES)
-    // or when Decap still exposes a Publish/Published control.
     if (clickNativePersist()) {
       showToast(
         isLocalHost()
@@ -368,7 +411,6 @@
     return btn
   }
 
-  /** Native Delete when editing; discard button on new entry (Decap has no Delete there). */
   function ensureDeleteButton() {
     const native = findNativeDeleteButton()
     if (native) {
@@ -378,7 +420,6 @@
     return document.getElementById(DELETE_BTN_ID) || makeDiscardButton()
   }
 
-  /** Include already-hidden Publish (display:none has 0 rect). */
   function findHeaderPublishButton() {
     const all = Array.from(document.querySelectorAll('button, [role="button"]'))
     return (
@@ -394,7 +435,6 @@
     )
   }
 
-  /** Find Decap editor top bar via "Writing in …" label. */
   function findEditorToolbar() {
     const candidates = Array.from(document.querySelectorAll('div, span, p, header, section'))
     const writing = candidates.find((el) => {
@@ -449,13 +489,11 @@
 
   function placeSaveAndDelete(row, saveBtn, deleteBtn) {
     styleActionRow(row)
-    // Order: Save Draft (left) → Delete entry (right)
     if (saveBtn.parentElement !== row) row.appendChild(saveBtn)
     if (deleteBtn.parentElement !== row) row.appendChild(deleteBtn)
     if (saveBtn.nextElementSibling !== deleteBtn) {
       row.insertBefore(saveBtn, deleteBtn)
     }
-    // Hide any Publish still sitting in this row
     Array.from(row.querySelectorAll('button, [role="button"]')).forEach((el) => {
       if (el === saveBtn || el === deleteBtn) return
       if (el.id === SAVE_BTN_ID || el.id === DELETE_BTN_ID) return
@@ -463,10 +501,6 @@
     })
   }
 
-  /**
-   * Mount Save Draft + Delete entry into editor chrome.
-   * Never leave native Publish visible.
-   */
   function ensureEditorSaveDraft() {
     const orphan = document.getElementById(ACTIONS_ID)
     if (orphan && orphan.parentElement === document.body) orphan.remove()
@@ -515,6 +549,7 @@
   }
 
   function tick() {
+    removeLegacyBottomBar()
     ensureSidebarPublish()
     ensureEditorSaveDraft()
   }
@@ -528,7 +563,6 @@
 
     tick()
     window.addEventListener('hashchange', () => {
-      // Give Decap a beat to render the new route chrome
       window.setTimeout(tick, 80)
       window.setTimeout(tick, 300)
     })

@@ -4,14 +4,46 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Global Land CMS</title>
-    <link rel="stylesheet" href="./admin.css?v=10" />
+    <link rel="stylesheet" href="./admin.css?v=12" />
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@^3.3.3/dist/decap-cms.js"></script>
-    <script src="./publish-all.js?v=10"></script>
+    <script src="./publish-all.js?v=12"></script>
     <script>
       ;(function () {
+        // Custom preview so the right pane is not a blank white panel
+        if (window.CMS && window.createClass && window.h) {
+          var ProjectPreview = createClass({
+            render: function () {
+              var entry = this.props.entry
+              var get = function (key) {
+                var v = entry.getIn(['data', key])
+                return v == null ? '' : String(v)
+              }
+              var name = get('nameEn') || get('slug') || '(untitled)'
+              var city = get('cityEn')
+              var summary = get('summaryEn')
+              var image = get('image')
+              var kids = [
+                h('h1', {}, name),
+                h('p', { className: 'meta' }, [city, get('type'), get('status')].filter(Boolean).join(' · ')),
+              ]
+              if (image) {
+                kids.push(h('img', { src: image, alt: name }))
+              }
+              if (summary) {
+                kids.push(h('p', {}, summary))
+              } else {
+                kids.push(h('p', { className: 'meta' }, '填写左侧字段后，这里会显示预览。'))
+              }
+              return h('div', { className: 'gl-cms-preview' }, kids)
+            },
+          })
+          CMS.registerPreviewTemplate('projects', ProjectPreview)
+          CMS.registerPreviewStyle('./admin.css?v=12')
+        }
+
         if (!window.netlifyIdentity) return
 
         function openFromHash() {
