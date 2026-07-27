@@ -1,0 +1,95 @@
+{
+  "heroEyebrowEn": "Est. {year} · Seattle",
+  "heroEyebrowZh": "创立于 {year} · 西雅图",
+  "foundedYear": 2018,
+  "brandLeftEn": "Global",
+  "brandLeftZh": "Global",
+  "brandRightEn": "Land",
+  "brandRightZh": "Land",
+  "heroLeadEn": "Long-term residential development and commercial investment across Seattle.",
+  "heroLeadZh": "深耕低密度住宅开发与优质商业地产投资，立足西雅图长期布局。",
+  "heroCtaProjectsEn": "View projects",
+  "heroCtaProjectsZh": "查看项目",
+  "heroCtaProjectsHref": "/projects",
+  "heroCtaAboutEn": "Our story",
+  "heroCtaAboutZh": "了解我们",
+  "heroCtaAboutHref": "/about",
+  "heroSlides": [
+    {
+      "src": "/images/hero/seattle-night.png",
+      "altEn": "The Emerald Condo and Seattle waterfront at dusk",
+      "altZh": "The Emerald 公寓与西雅图滨水夜景"
+    },
+    {
+      "src": "/images/projects/emerald-building.png",
+      "altEn": "The Emerald Condo exterior in Seattle",
+      "altZh": "西雅图 The Emerald 公寓外观"
+    },
+    {
+      "src": "/images/projects/spring-district.png",
+      "altEn": "Spring District Class A office in Bellevue",
+      "altZh": "贝尔维尤 Spring District 甲级写字楼"
+    },
+    {
+      "src": "/images/projects/riverside-garden.png",
+      "altEn": "Riverside Garden community amenities",
+      "altZh": "Riverside Garden 社区配套"
+    },
+    {
+      "src": "/images/projects/ormonde-gate.png",
+      "altEn": "Ormonde Gate aerial view in Everett",
+      "altZh": "埃弗里特 Ormonde Gate 航拍"
+    },
+    {
+      "src": "/images/projects/redmond-office.png",
+      "altEn": "Downtown Redmond office building",
+      "altZh": "雷德蒙德市中心办公楼"
+    },
+    {
+      "src": "/images/projects/florera.png",
+      "altEn": "Florera Condo in Seattle",
+      "altZh": "西雅图 Florera 公寓"
+    },
+    {
+      "src": "/images/projects/sammamish.png",
+      "altEn": "Sammamish single-family neighborhood",
+      "altZh": "萨马米什独栋社区"
+    }
+  ],
+  "whoEyebrowEn": "Who we are",
+  "whoEyebrowZh": "关于我们",
+  "whoTitleEn": "A patient approach to place",
+  "whoTitleZh": "以耐心，营造一方所在",
+  "whoLeadEn": "Development of low-density residential properties and investment in high-quality commercial real estate.",
+  "whoLeadZh": "专注低密度住宅开发，并稳健布局高品质商业地产。",
+  "visionEn": "To uphold a long-term approach to the industry, earning recognition through professionalism and integrity; to create market-leading projects; and to make a positive contribution to the communities we serve.",
+  "visionZh": "坚持长期主义，以专业与诚信赢得认可；打造具有市场影响力的项目，并为所服务的社区持续创造价值。",
+  "statListingsValue": "",
+  "statListingsLabelEn": "Portfolio listings",
+  "statListingsLabelZh": "项目数量",
+  "statSalesValue": "$70M+",
+  "statSalesLabelEn": "Eastside SFH sales*",
+  "statSalesLabelZh": "东区住宅销售额*",
+  "statCitiesValue": "8",
+  "statCitiesLabelEn": "Cities served",
+  "statCitiesLabelZh": "覆盖城市",
+  "statNoteEn": "*Projected sales across four communities, 2020–2022.",
+  "statNoteZh": "*四个社区预计销售额（2020–2022）。",
+  "spotlightImage": "/images/projects/spring-district.png",
+  "spotlightAltEn": "Spring District Class A office in Bellevue",
+  "spotlightAltZh": "贝尔维尤 Spring District 甲级写字楼",
+  "spotlightEyebrowEn": "Recent acquisition",
+  "spotlightEyebrowZh": "最新收购",
+  "spotlightTitleEn": "Spring District, Bellevue",
+  "spotlightTitleZh": "Spring District · 贝尔维尤",
+  "spotlightBodyEn": "Class A office acquired February 2024 for $16.28 million—across from Meta’s campus and steps from light rail. Anchored by long-term leases with premier tenants.",
+  "spotlightBodyZh": "2024 年 2 月以 1,628 万美元收购甲级写字楼，正对 Meta 园区、步行可达轻轨，并由优质租户长期租约支撑。",
+  "spotlightCtaEn": "Explore office assets",
+  "spotlightCtaZh": "查看办公项目",
+  "spotlightCtaHref": "/projects?type=office",
+  "selectedTitleEn": "Projects shaping the region",
+  "selectedTitleZh": "塑造区域的代表性项目",
+  "allProjectsEn": "All projects",
+  "allProjectsZh": "全部项目",
+  "featuredCount": 3
+}

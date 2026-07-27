@@ -11,7 +11,7 @@
 # Local test: set local_backend: true and run `npm run cms`
 # Production (Netlify): must be false
 
-local_backend: true
+local_backend: false
 
 backend:
   name: git-gateway
@@ -125,3 +125,70 @@ collections:
       - { label: Related entity / 关联主体, name: relatedEntity, widget: string, required: false }
       - { label: Featured on homepage / 首页推荐, name: featured, widget: boolean, default: false }
       - { label: Published / 已发布, name: published, widget: boolean, default: true }
+
+  - name: pages
+    label: Pages / 页面
+    files:
+      - name: home
+        label: Homepage / 首页
+        file: content/home.json
+        fields:
+          - { label: Hero eyebrow (EN), name: heroEyebrowEn, widget: string, hint: 'Use {year} for founded year' }
+          - { label: 英雄眉标（中文）, name: heroEyebrowZh, widget: string, required: false }
+          - { label: Founded year / 创立年份, name: foundedYear, widget: number, value_type: int }
+          - { label: Brand left (EN), name: brandLeftEn, widget: string }
+          - { label: Brand left（中文）, name: brandLeftZh, widget: string, required: false }
+          - { label: Brand right (EN), name: brandRightEn, widget: string }
+          - { label: Brand right（中文）, name: brandRightZh, widget: string, required: false }
+          - { label: Hero lead (EN), name: heroLeadEn, widget: text }
+          - { label: 英雄导语（中文）, name: heroLeadZh, widget: text, required: false }
+          - { label: CTA primary (EN), name: heroCtaProjectsEn, widget: string }
+          - { label: CTA primary（中文）, name: heroCtaProjectsZh, widget: string, required: false }
+          - { label: CTA primary URL, name: heroCtaProjectsHref, widget: string }
+          - { label: CTA secondary (EN), name: heroCtaAboutEn, widget: string }
+          - { label: CTA secondary（中文）, name: heroCtaAboutZh, widget: string, required: false }
+          - { label: CTA secondary URL, name: heroCtaAboutHref, widget: string }
+          - label: Hero slides / 首页轮播
+            name: heroSlides
+            widget: list
+            summary: '{{altEn}}'
+            fields:
+              - { label: Image, name: src, widget: image, choose_url: true }
+              - { label: Alt (EN), name: altEn, widget: string }
+              - { label: Alt（中文）, name: altZh, widget: string, required: false }
+          - { label: Who eyebrow (EN), name: whoEyebrowEn, widget: string }
+          - { label: Who eyebrow（中文）, name: whoEyebrowZh, widget: string, required: false }
+          - { label: Who title (EN), name: whoTitleEn, widget: string }
+          - { label: Who title（中文）, name: whoTitleZh, widget: string, required: false }
+          - { label: Who lead (EN), name: whoLeadEn, widget: text }
+          - { label: Who lead（中文）, name: whoLeadZh, widget: text, required: false }
+          - { label: Vision (EN), name: visionEn, widget: text }
+          - { label: Vision（中文）, name: visionZh, widget: text, required: false }
+          - { label: Stat listings value, name: statListingsValue, widget: string, required: false, hint: 'Leave blank to use live project count +' }
+          - { label: Stat listings label (EN), name: statListingsLabelEn, widget: string }
+          - { label: Stat listings label（中文）, name: statListingsLabelZh, widget: string, required: false }
+          - { label: Stat sales value, name: statSalesValue, widget: string }
+          - { label: Stat sales label (EN), name: statSalesLabelEn, widget: string }
+          - { label: Stat sales label（中文）, name: statSalesLabelZh, widget: string, required: false }
+          - { label: Stat cities value, name: statCitiesValue, widget: string }
+          - { label: Stat cities label (EN), name: statCitiesLabelEn, widget: string }
+          - { label: Stat cities label（中文）, name: statCitiesLabelZh, widget: string, required: false }
+          - { label: Stat note (EN), name: statNoteEn, widget: text }
+          - { label: Stat note（中文）, name: statNoteZh, widget: text, required: false }
+          - { label: Spotlight image, name: spotlightImage, widget: image, choose_url: true }
+          - { label: Spotlight alt (EN), name: spotlightAltEn, widget: string }
+          - { label: Spotlight alt（中文）, name: spotlightAltZh, widget: string, required: false }
+          - { label: Spotlight eyebrow (EN), name: spotlightEyebrowEn, widget: string }
+          - { label: Spotlight eyebrow（中文）, name: spotlightEyebrowZh, widget: string, required: false }
+          - { label: Spotlight title (EN), name: spotlightTitleEn, widget: string }
+          - { label: Spotlight title（中文）, name: spotlightTitleZh, widget: string, required: false }
+          - { label: Spotlight body (EN), name: spotlightBodyEn, widget: text }
+          - { label: Spotlight body（中文）, name: spotlightBodyZh, widget: text, required: false }
+          - { label: Spotlight CTA (EN), name: spotlightCtaEn, widget: string }
+          - { label: Spotlight CTA（中文）, name: spotlightCtaZh, widget: string, required: false }
+          - { label: Spotlight CTA URL, name: spotlightCtaHref, widget: string }
+          - { label: Selected title (EN), name: selectedTitleEn, widget: string }
+          - { label: Selected title（中文）, name: selectedTitleZh, widget: string, required: false }
+          - { label: All projects link (EN), name: allProjectsEn, widget: string }
+          - { label: All projects link（中文）, name: allProjectsZh, widget: string, required: false }
+          - { label: Featured count / 首页推荐数量, name: featuredCount, widget: number, value_type: int, default: 3 }

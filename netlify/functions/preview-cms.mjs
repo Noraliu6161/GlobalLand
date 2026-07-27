@@ -1,6 +1,7 @@
 /**
  * Preview All: ensure a PR exists for cms → main (triggers Deploy Preview).
- * This costs an extra preview build — not part of the 15-credit production budget.
+ * Returns both the GitHub PR URL and the stable Deploy Preview site URL
+ * (deploy-preview-{N}--{site}.netlify.app stays the same while that PR is open).
  */
 
 const cors = {
@@ -12,6 +13,21 @@ const cors = {
 
 function json(statusCode, body) {
   return { statusCode, headers: cors, body: JSON.stringify(body) }
+}
+
+function deployPreviewUrl(prNumber) {
+  const site = process.env.CMS_NETLIFY_SITE || 'gilded-conkies-8778c0'
+  return `https://deploy-preview-${prNumber}--${site}.netlify.app`
+}
+
+function packPreview(pr) {
+  const number = pr.number
+  return {
+    ok: true,
+    pr_number: number,
+    pr_url: pr.html_url,
+    preview_url: deployPreviewUrl(number),
+  }
 }
 
 async function gh(path, token, options = {}) {
@@ -68,11 +84,10 @@ export async function handler(event, context) {
   const existing = Array.isArray(list.data) ? list.data[0] : null
   if (existing) {
     return json(200, {
-      ok: true,
+      ...packPreview(existing),
       created: false,
-      pr_url: existing.html_url,
       message:
-        'Preview PR already open. Netlify Deploy Preview link is on the PR page (extra credits for preview build).',
+        '已连接现有 Preview PR。正在打开独立预览站（地址在 PR 未合并前保持不变）。',
     })
   }
 
@@ -95,11 +110,9 @@ export async function handler(event, context) {
 
   if (create.res.status === 201) {
     return json(200, {
-      ok: true,
+      ...packPreview(create.data),
       created: true,
-      pr_url: create.data.html_url,
-      message:
-        'Preview PR created. Open it for the Deploy Preview URL (preview build uses extra credits).',
+      message: '已创建 Preview PR，并打开独立预览站。',
     })
   }
 

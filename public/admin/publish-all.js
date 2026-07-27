@@ -104,18 +104,62 @@
     return label.parentElement
   }
 
+  const PREVIEW_STORE_KEY = 'gl-cms-preview-links'
+  /** Fallback while PR #1 stays open (same deploy-preview host). */
+  const DEFAULT_PREVIEW = {
+    pr_number: 1,
+    pr_url: 'https://github.com/Noraliu6161/GlobalLand/pull/1',
+    preview_url: 'https://deploy-preview-1--gilded-conkies-8778c0.netlify.app',
+  }
+
+  function readStoredPreview() {
+    try {
+      const raw = localStorage.getItem(PREVIEW_STORE_KEY)
+      if (!raw) return { ...DEFAULT_PREVIEW }
+      return { ...DEFAULT_PREVIEW, ...JSON.parse(raw) }
+    } catch {
+      return { ...DEFAULT_PREVIEW }
+    }
+  }
+
+  function writeStoredPreview(data) {
+    const next = {
+      pr_number: data.pr_number || DEFAULT_PREVIEW.pr_number,
+      pr_url: data.pr_url || DEFAULT_PREVIEW.pr_url,
+      preview_url: data.preview_url || DEFAULT_PREVIEW.preview_url,
+    }
+    try {
+      localStorage.setItem(PREVIEW_STORE_KEY, JSON.stringify(next))
+    } catch {
+      /* ignore */
+    }
+    return next
+  }
+
+  function updatePreviewLinksUi(links) {
+    const previewA = document.getElementById('gl-cms-link-preview')
+    const prA = document.getElementById('gl-cms-link-pr')
+    if (previewA && links.preview_url) {
+      previewA.href = links.preview_url
+      previewA.hidden = false
+    }
+    if (prA && links.pr_url) {
+      prA.href = links.pr_url
+      prA.hidden = false
+    }
+  }
+
   async function onPreviewAll() {
-    setStatus(isLocalHost() ? '打开本地网站预览…' : '正在创建 / 打开 Preview PR…')
+    setStatus(isLocalHost() ? '打开本地网站预览…' : '正在连接 Deploy Preview…')
     try {
       if (isLocalHost()) {
-        // Local: open the Vite site so you can see content/ changes
-        const url = location.origin + '/projects'
+        const url = location.origin + '/'
         const opened = window.open(url, '_blank', 'noopener')
         if (!opened) {
           setStatus('弹窗被拦截。请允许弹窗，或手动打开 ' + url, true)
           return
         }
-        setStatus('已打开本地 /projects（内容来自本地 content/）')
+        setStatus('已打开本地首页（内容来自本地 content/）')
         return
       }
       if (!isLoggedIn()) {
@@ -124,17 +168,25 @@
         return
       }
       const data = await callFunction('preview-cms')
+      const links = writeStoredPreview(data)
+      updatePreviewLinksUi(links)
       setStatus(data.message || 'Preview ready.')
-      if (data.pr_url) {
-        const opened = window.open(data.pr_url, '_blank', 'noopener')
+
+      // Open the stable Deploy Preview site (not just the GitHub PR)
+      const target = links.preview_url || links.pr_url
+      if (target) {
+        const opened = window.open(target, '_blank', 'noopener')
         if (!opened) {
-          setStatus('已创建 PR，但弹窗被拦截：' + data.pr_url, true)
+          setStatus('弹窗被拦截。请点下方「打开预览站」：' + target, true)
         }
       } else {
-        setStatus('未返回 PR 链接，请检查 CMS_GITHUB_TOKEN。', true)
+        setStatus('未返回预览链接，请检查 CMS_GITHUB_TOKEN。', true)
       }
     } catch (err) {
-      setStatus(err.message || String(err), true)
+      // Still offer the known PR #1 preview if API fails
+      const links = readStoredPreview()
+      updatePreviewLinksUi(links)
+      setStatus((err.message || String(err)) + ' — 可先点下方固定预览链接。', true)
     }
   }
 
@@ -178,20 +230,26 @@
       return
     }
 
+    const links = readStoredPreview()
     const wrap = document.createElement('div')
     wrap.id = ROOT_ID
     wrap.className = 'gl-cms-publish-wrap'
     wrap.innerHTML = `
       <button type="button" class="gl-cms-subbtn gl-cms-subbtn-preview" id="gl-cms-preview">Preview All</button>
       <button type="button" class="gl-cms-subbtn gl-cms-subbtn-publish" id="gl-cms-publish">Publish All</button>
+      <div class="gl-cms-link-row">
+        <a id="gl-cms-link-preview" class="gl-cms-link" href="${links.preview_url}" target="_blank" rel="noopener">打开预览站</a>
+        <a id="gl-cms-link-pr" class="gl-cms-link" href="${links.pr_url}" target="_blank" rel="noopener">打开 PR #${links.pr_number}</a>
+      </div>
       <div id="${STATUS_ID}" class="gl-cms-publish-status"></div>
       <p class="gl-cms-hint">${
         isLocalHost()
-          ? '本地：Preview All 打开本站 /projects。Publish All 仅线上可用。'
-          : '线上：Preview All 打开 GitHub PR（内含 Deploy Preview）。'
+          ? '本地：Preview All 打开本站。线上预览站在 Netlify Deploy Preview。'
+          : 'Preview All 打开独立预览站（PR 未合并前地址不变）。Publish All 才会上正式站。'
       }</p>
     `
     sidebar.appendChild(wrap)
+    updatePreviewLinksUi(links)
 
     document.getElementById('gl-cms-preview').addEventListener('click', async () => {
       const btn = document.getElementById('gl-cms-preview')

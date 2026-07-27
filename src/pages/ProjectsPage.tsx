@@ -13,7 +13,7 @@ const types = ['condo', 'sfh', 'townhouse', 'office', 'mixed'] as ProjectType[]
 
 export function ProjectsPage() {
   const { t, lang } = useI18n()
-  const { projects, loading, source } = useProjects()
+  const { projects } = useProjects()
   const [params, setParams] = useSearchParams()
   const city = params.get('city') || 'all'
   const type = params.get('type') || 'all'
@@ -65,13 +65,6 @@ export function ProjectsPage() {
         <p className="eyebrow">{t('projects.eyebrow')}</p>
         <h1>{t('projects.title')}</h1>
         <p className="section-lead">{t('projects.lead')}</p>
-        <p className="text-secondary" style={{ marginTop: '0.5rem' }}>
-          {loading
-            ? t('projects.loading')
-            : source === 'cms'
-              ? t('projects.sourceCms')
-              : t('projects.sourceEmpty')}
-        </p>
       </div>
 
       <div className="filters" role="group" aria-label="Filter projects">

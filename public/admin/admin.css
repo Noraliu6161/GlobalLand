@@ -58,6 +58,24 @@
   color: #6b736e;
 }
 
+.gl-cms-link-row {
+  display: grid;
+  gap: 4px;
+}
+
+.gl-cms-link {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2f8f86;
+  text-decoration: none;
+  padding: 2px 2px;
+}
+
+.gl-cms-link:hover {
+  text-decoration: underline;
+}
+
 /* Editor chrome actions — in-toolbar, not a floating overlay */
 .gl-editor-actions {
   display: flex !important;

@@ -15,8 +15,8 @@ Edit many Projects in /admin
         │
         ▼
   (optional) Preview All
-  → opens PR cms→main
-  → Netlify Deploy Preview
+  → opens/reuses PR cms→main
+  → opens Deploy Preview site (same URL while that PR stays open)
   → uses EXTRA preview credits
         │
         ▼
