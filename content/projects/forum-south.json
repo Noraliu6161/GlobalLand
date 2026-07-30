@@ -2,7 +2,7 @@
   "id": "forum-south",
   "slug": "forum-south",
   "nameEn": "Forum South Office",
-  "nameZh": "Forum South 办公楼",
+  "nameZh": "论坛南办公楼",
   "cityEn": "Bellevue",
   "cityZh": "贝尔维尤",
   "type": "office",
@@ -28,6 +28,6 @@
     "东区"
   ],
   "image": "/images/projects/forum-south.png",
-  "featured": false,
+  "featured": true,
   "published": true
 }

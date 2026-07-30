@@ -6,12 +6,12 @@
     "Commercial"
   ],
   "bodyEn": "Office asset in Bellevue held within the Global Land commercial portfolio.",
-  "slug": "belleview-officeTEST",
+  "slug": "belleview-office",
   "highlightsZh": [
     "贝尔维尤办公",
     "商业"
   ],
-  "featured": false,
+  "featured": true,
   "published": true,
   "summaryEn": "Office asset in Bellevue held within the Global Land commercial portfolio.",
   "units": null,
@@ -19,11 +19,11 @@
   "bodyFont": "body",
   "acquisitionPriceM": null,
   "status": "acquired",
-  "nameEn": "Belleview OfficeTEST",
+  "nameEn": "Belleview Office",
   "summaryZh": "Global Land 商业组合中的贝尔维尤办公资产。",
   "cityEn": "Bellevue",
   "cityZh": "贝尔维尤",
-  "nameZh": "Belleview 办公楼",
+  "nameZh": "贝尔维尤办公楼",
   "type": "office",
   "id": "belleview-office",
   "image": "/images/projects/belleview-office.png",

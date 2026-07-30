@@ -30,6 +30,6 @@
     "贝尔维尤 · 萨马米什 · 伦顿"
   ],
   "image": "/images/projects/sammamish.png",
-  "featured": true,
-  "published": true
+  "featured": false,
+  "published": false
 }

@@ -22,30 +22,48 @@
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
-  font-family: var(--font-display);
+  gap: 0.4rem;
+  text-decoration: none;
+  font-family: 'Syne', var(--font-display), sans-serif;
   font-weight: 700;
-  font-size: 1.15rem;
   letter-spacing: -0.03em;
-}
-
-.logo-img {
-  height: 30px;
-  width: auto;
-  display: block;
+  background: transparent;
 }
 
 .logo--wordmark {
-  color: #fff;
-  gap: 0.55rem;
+  gap: 0.35rem;
 }
 
-.logo-word {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.1rem;
-  letter-spacing: -0.03em;
+.logo--dark {
+  color: var(--ink);
+}
+
+.logo--light {
   color: #fff;
+}
+
+.logo-text {
+  font-family: 'Syne', var(--font-display), sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  background: transparent;
+}
+
+.logo-mark-img {
+  height: 1.2em;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+  background: transparent !important;
+  mix-blend-mode: normal;
+  /* kill any residual light plate behind the mark */
+  -webkit-mask-image: none;
+}
+
+.site-footer .logo-text {
+  color: inherit;
 }
 
 .header-right {
@@ -87,32 +105,6 @@
 .lang-switch button.is-active {
   background: var(--ink);
   color: #fff;
-}
-
-.logo-mark {
-  display: flex;
-  align-items: flex-end;
-  gap: 3px;
-  height: 22px;
-}
-
-.logo-mark span {
-  width: 5px;
-  border-radius: 1px;
-  display: block;
-}
-
-.logo-mark span:nth-child(1) {
-  height: 10px;
-  background: var(--orange);
-}
-.logo-mark span:nth-child(2) {
-  height: 15px;
-  background: var(--gold);
-}
-.logo-mark span:nth-child(3) {
-  height: 22px;
-  background: var(--teal);
 }
 
 .nav-links {

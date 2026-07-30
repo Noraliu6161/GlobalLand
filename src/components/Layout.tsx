@@ -4,37 +4,27 @@ import { company } from '../data/projects'
 import { useI18n } from '../i18n'
 
 export function Logo({
-  large = false,
   variant = 'default',
 }: {
   large?: boolean
   variant?: 'default' | 'light'
 }) {
-  if (variant === 'light') {
-    return (
-      <Link to="/" className="logo logo--wordmark" aria-label="Global Land home">
-        <span className="logo-mark" aria-hidden="true">
-          <span />
-          <span />
-          <span />
-        </span>
-        <span className="logo-word" style={large ? { fontSize: '1.35rem' } : undefined}>
-          {company.shortName}
-        </span>
-      </Link>
-    )
-  }
-
   return (
-    <Link to="/" className="logo" aria-label="Global Land home">
+    <Link
+      to="/"
+      className={`logo logo--wordmark ${variant === 'light' ? 'logo--light' : 'logo--dark'}`}
+      aria-label="Global Land home"
+    >
+      <span className="logo-text">Global</span>
       <img
-        className="logo-img"
-        src="/images/brand/logo-globalland.png"
+        className="logo-mark-img"
+        src="/images/brand/logo-mark.svg"
         alt=""
-        width={large ? 168 : 138}
-        height={large ? 36 : 30}
+        width={28}
+        height={32}
+        aria-hidden="true"
       />
-      <span className="sr-only">{company.shortName}</span>
+      <span className="logo-text">Land</span>
     </Link>
   )
 }
@@ -46,7 +36,8 @@ export function Header() {
   const links = [
     { to: '/', label: t('nav.home'), end: true },
     { to: '/projects', label: t('nav.projects') },
-    { to: '/insights', label: t('nav.insights') },
+    { to: '/company', label: t('nav.company') },
+    { to: '/news', label: t('nav.news') },
     { to: '/about', label: t('nav.about') },
     { to: '/contact', label: t('nav.contact') },
   ]
@@ -117,7 +108,10 @@ export function Footer() {
               <Link to="/projects">{t('footer.portfolio')}</Link>
             </li>
             <li>
-              <Link to="/insights">{t('footer.insights')}</Link>
+              <Link to="/company">{t('footer.companyIntro')}</Link>
+            </li>
+            <li>
+              <Link to="/news">{t('footer.news')}</Link>
             </li>
             <li>
               <Link to="/about">{t('footer.story')}</Link>
@@ -131,11 +125,6 @@ export function Footer() {
             <li>{t('footer.founder', { name: company.founder })}</li>
             <li>
               <Link to="/contact">{t('footer.contact')}</Link>
-            </li>
-            <li>
-              <a href="/admin/index.html" target="_blank" rel="noreferrer">
-                {t('footer.cms')}
-              </a>
             </li>
           </ul>
         </div>

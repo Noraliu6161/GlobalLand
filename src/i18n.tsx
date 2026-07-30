@@ -15,10 +15,12 @@ type Dict = Record<string, string>
 const en: Dict = {
   'nav.home': 'Home',
   'nav.projects': 'Projects',
-  'nav.insights': 'Insights',
+  'nav.company': 'Company',
+  'nav.news': 'News',
   'nav.about': 'About',
   'nav.contact': 'Contact',
   'nav.menu': 'Menu',
+  'nav.insights': 'Company',
   'lang.en': 'EN',
   'lang.zh': '中文',
 
@@ -47,6 +49,15 @@ const en: Dict = {
 
   'home.selectedTitle': 'Projects shaping the region',
   'home.allProjects': 'All projects',
+  'home.discoverMore': 'Discover more',
+  'home.newsTitle': 'News',
+  'home.newsAll': 'All news',
+  'home.newsRead': 'Read more',
+
+  'news.eyebrow': 'Updates',
+  'news.title': 'News',
+  'news.lead': 'Company updates and project milestones across the Pacific Northwest.',
+  'news.placeholder': 'More articles will appear here as they are published.',
 
   'projects.eyebrow': 'Portfolio',
   'projects.title': 'Projects across the Pacific Northwest',
@@ -74,10 +85,19 @@ const en: Dict = {
   'nav.cms': 'CMS',
   'footer.cms': 'Open CMS',
 
-  'insights.eyebrow': 'Data',
-  'insights.title': 'Project insights',
+  'insights.eyebrow': 'Company',
+  'insights.title': 'Company Introduction',
   'insights.lead':
-    'Years of portfolio activity, visualized—scale, regional footprint, and development mix. Charts are computed from the same project dataset as the map and filters.',
+    'Long-term residential development and high-quality commercial investment—built on professionalism, integrity, and community impact.',
+  'insights.p1':
+    'GlobalLand LLC was founded in 2018 by Ms. Lili Lu. The company focuses on low-density residential development and high-end commercial real estate investment. Guided by a long-term approach, professionalism, and integrity, we aim to create landmark projects and empower the communities we serve.',
+  'insights.p2':
+    'New home Management LLC works in resource synergy with GlobalLand LLC. Formally established in 2016, its core founding team brings more than 20 years of large-scale real estate development experience and manages over 5 million square feet of leasable and developable land reserves in Washington State.',
+  'insights.p3':
+    'The core team has deep experience in real estate development and operations. Members come from CreateWorld, a firm focused on apartment development for more than a decade. Ms. Lili Lu served as CEO of CreateWorld and led the team in delivering high-profile projects including Mira Flats, The Emerald, Forum South Park, Florera, Evergreen Townhomes, and Belleview Park.',
+  'insights.trackEyebrow': 'Track record',
+  'insights.trackTitle': 'CreateWorld deliveries',
+  'insights.trackCta': 'Invest Now',
 
   'about.eyebrow': 'About',
   'about.title': 'Built for the long term',
@@ -94,17 +114,27 @@ const en: Dict = {
   'about.returns':
     'Both Class A office properties are secured by long-term leases with premier tenants, generating strong cash-on-cash returns during the holding period, with significant potential for appreciation and attractive exit premiums upon disposition.',
 
-  'contact.eyebrow': 'Contact',
+  'contact.eyebrow': 'Get in touch',
   'contact.title': 'Start a conversation',
+  'contact.infoTitle': 'Contact Information',
   'contact.lead':
     'Inquiries about projects, partnerships, or investment opportunities. This form is design-only for now—connect Netlify Forms when you are ready to collect submissions.',
+  'contact.formTitle': 'Send Us a Message',
+  'contact.formLead': "We'll respond within 1-2 business days.",
+  'contact.address': 'Address',
+  'contact.phone': 'Phone',
+  'contact.hours': 'Office Hours',
+  'contact.hoursValue': 'Monday – Friday: 9:00 AM – 5:00 PM',
   'contact.name': 'Name',
   'contact.email': 'Email',
+  'contact.subject': 'Subject',
+  'contact.subjectPh': 'What is this about?',
   'contact.message': 'Message',
+  'contact.messageHint': '* Please include your name in your message below.',
   'contact.namePh': 'Your name',
-  'contact.emailPh': 'you@example.com',
-  'contact.messagePh': 'How can we help?',
-  'contact.send': 'Send message',
+  'contact.emailPh': 'your@email.com',
+  'contact.messagePh': 'Your message...',
+  'contact.send': 'Send Message',
   'contact.thanks': 'Thank you. Your message UI is ready—wire it to Netlify Forms or your inbox next.',
 
   'footer.blurb':
@@ -112,7 +142,9 @@ const en: Dict = {
   'footer.explore': 'Explore',
   'footer.company': 'Company',
   'footer.portfolio': 'Project portfolio',
-  'footer.insights': 'Data insights',
+  'footer.companyIntro': 'Company overview',
+  'footer.news': 'News',
+  'footer.insights': 'Company overview',
   'footer.story': 'Our story',
   'footer.founded': 'Founded {year}',
   'footer.founder': 'Founder {name}',
@@ -134,10 +166,12 @@ const en: Dict = {
 const zh: Dict = {
   'nav.home': '首页',
   'nav.projects': '项目',
-  'nav.insights': '数据洞察',
+  'nav.company': '公司介绍',
+  'nav.news': '新闻资讯',
   'nav.about': '关于我们',
-  'nav.contact': '联系',
+  'nav.contact': '联系方式',
   'nav.menu': '菜单',
+  'nav.insights': '公司介绍',
   'lang.en': 'EN',
   'lang.zh': '中文',
 
@@ -164,6 +198,15 @@ const zh: Dict = {
 
   'home.selectedTitle': '塑造区域的代表性项目',
   'home.allProjects': '全部项目',
+  'home.discoverMore': '了解更多',
+  'home.newsTitle': '新闻资讯',
+  'home.newsAll': '全部资讯',
+  'home.newsRead': '阅读更多',
+
+  'news.eyebrow': '动态',
+  'news.title': '新闻资讯',
+  'news.lead': '公司动态与太平洋西北项目进展。',
+  'news.placeholder': '更多文章将在此陆续发布。',
 
   'projects.eyebrow': '项目',
   'projects.title': '遍布太平洋西北的项目版图',
@@ -190,10 +233,19 @@ const zh: Dict = {
   'nav.cms': '后台',
   'footer.cms': '打开后台',
 
-  'insights.eyebrow': '数据',
-  'insights.title': '项目数据洞察',
+  'insights.eyebrow': '公司',
+  'insights.title': '公司介绍',
   'insights.lead':
-    '用图表呈现项目规模、区域分布与开发类型。所有图表均由与地图、筛选相同的项目数据自动汇总生成。',
+    '深耕低密度住宅开发与优质商业地产投资，以专业与诚信为内核，致力打造标杆项目并赋能属地社区。',
+  'insights.p1':
+    'GlobalLand LLC 由吕莉莉女士于 2018 年创立，深耕低密度住宅开发与高端商业地产投资。公司秉持长期主义理念，以专业与诚信为内核，致力于打造标杆地产项目，并持续赋能属地社区发展。',
+  'insights.p2':
+    'New home Management LLC 与 GlobalLand LLC 形成资源协同。该公司于 2016 年正式成立，核心创始团队拥有超 20 年大型地产开发经验，在华盛顿州管理逾 500 万平方英尺可租赁与可开发优质土地储备。',
+  'insights.p3':
+    '核心团队具备丰富的地产开发运营经验，成员来自专注公寓开发超十年的 CreateWorld 地产公司。吕莉莉女士曾担任 CreateWorld CEO，带领团队完成多项高关注度项目，包括 Mira Flats、The Emerald、Forum South Park、Florera、Evergreen Townhomes、Belleview Park 等。',
+  'insights.trackEyebrow': '过往业绩',
+  'insights.trackTitle': 'CreateWorld 标杆项目',
+  'insights.trackCta': '了解合作',
 
   'about.eyebrow': '关于',
   'about.title': '为长远而建',
@@ -210,16 +262,26 @@ const zh: Dict = {
   'about.returns':
     '两处甲级写字楼均由优质租户长期租约支持，持有期可形成稳健现金回报，并具备资产增值与退出溢价潜力。',
 
-  'contact.eyebrow': '联系',
+  'contact.eyebrow': '联系我们',
   'contact.title': '开始对话',
+  'contact.infoTitle': '联系方式',
   'contact.lead':
     '欢迎就项目、合作或投资机会与我们联系。当前为设计演示表单，后续可接入 Netlify Forms 或企业邮箱。',
+  'contact.formTitle': '给我们留言',
+  'contact.formLead': '我们将在 1–2 个工作日内回复。',
+  'contact.address': '地址',
+  'contact.phone': '电话',
+  'contact.hours': '办公时间',
+  'contact.hoursValue': '周一至周五：上午 9:00 – 下午 5:00',
   'contact.name': '姓名',
   'contact.email': '邮箱',
+  'contact.subject': '主题',
+  'contact.subjectPh': '关于什么？',
   'contact.message': '留言',
+  'contact.messageHint': '* 请在下方留言中注明您的姓名。',
   'contact.namePh': '您的姓名',
-  'contact.emailPh': 'you@example.com',
-  'contact.messagePh': '请告诉我们您的需求',
+  'contact.emailPh': 'your@email.com',
+  'contact.messagePh': '请输入留言…',
   'contact.send': '发送留言',
   'contact.thanks': '感谢提交。表单界面已就绪，下一步可接入 Netlify Forms 或收件邮箱。',
 
@@ -228,7 +290,9 @@ const zh: Dict = {
   'footer.explore': '探索',
   'footer.company': '公司',
   'footer.portfolio': '项目组合',
-  'footer.insights': '数据洞察',
+  'footer.companyIntro': '公司介绍',
+  'footer.news': '新闻资讯',
+  'footer.insights': '公司介绍',
   'footer.story': '我们的故事',
   'footer.founded': '创立于 {year}',
   'footer.founder': '创始人 {name}',

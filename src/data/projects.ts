@@ -56,4 +56,13 @@ export const company = {
     'Beyond business successes, Ms. Lu is deeply committed to community service. She currently presides over the Chinese Chamber of Commerce in Washington State (CCCWA), a non-profit dedicated to fostering trade and investment between Washington and China. CCCWA members span industries from finance to healthcare.',
   officeReturns:
     'Both Class A office properties are secured by long-term leases with premier tenants, generating strong cash-on-cash returns during the holding period, with significant potential for appreciation and attractive exit premiums upon disposition.',
+  addressLine1: '325 118th Ave SE, Suite 101',
+  addressLine2: 'Bellevue, WA 98005',
+  phone: '(425) 829-5658',
+  phoneTel: '+14258295658',
+  email: 'info@ccc-wa.org',
+  officeHours: 'Monday – Friday: 9:00 AM – 5:00 PM',
+  /** Approximate office coordinates for map pin */
+  lat: 47.6019,
+  lng: -122.1832,
 }

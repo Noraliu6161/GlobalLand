@@ -31,6 +31,6 @@
   ],
   "image": "/images/hero/team-grid.png",
   "relatedEntity": "Create World",
-  "featured": true,
-  "published": true
+  "featured": false,
+  "published": false
 }

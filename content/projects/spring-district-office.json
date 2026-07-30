@@ -1,10 +1,10 @@
 {
   "id": "spring-district-office",
   "slug": "spring-district-office",
-  "nameEn": "Spring District Office",
-  "nameZh": "Spring District 办公楼",
+  "nameEn": "Class A Office Building in Spring District",
+  "nameZh": "春区甲级写字楼",
   "cityEn": "Bellevue",
-  "cityZh": "贝尔维尤",
+  "cityZh": "贝尔维尤春区",
   "type": "office",
   "status": "acquired",
   "units": null,
