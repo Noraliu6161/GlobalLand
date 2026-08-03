@@ -1,5 +1,5 @@
 {
-  "eyebrowEn": "About",
+  "eyebrowEn": "About1",
   "eyebrowZh": "关于",
   "titleEn": "Built for the long term",
   "titleZh": "为长远而建",
@@ -19,16 +19,52 @@
   "returnsZh": "两处甲级写字楼均由优质租户长期租约支撑，持有期现金回报稳健，并具备增值与退出溢价空间。",
   "cccwaLogo": "/images/brand/logo-cccwa.png",
   "teamPhotos": [
-    { "src": "/images/about/team-01.jpg", "altEn": "The Emerald groundbreaking ceremony", "altZh": "The Emerald 奠基仪式" },
-    { "src": "/images/about/team-02.jpg", "altEn": "Project signing ceremony", "altZh": "项目签约仪式" },
-    { "src": "/images/about/team-03.jpg", "altEn": "Construction site team gathering", "altZh": "工地团队合影" },
-    { "src": "/images/about/team-04.jpg", "altEn": "On-site inspection with hard hats", "altZh": "工地巡查" },
-    { "src": "/images/about/team-05.jpg", "altEn": "Team members at a project site", "altZh": "项目现场团队" }
+    {
+      "src": "/images/about/team-01.jpg",
+      "altEn": "The Emerald groundbreaking ceremony",
+      "altZh": "The Emerald 奠基仪式"
+    },
+    {
+      "src": "/images/about/team-02.jpg",
+      "altEn": "Project signing ceremony",
+      "altZh": "项目签约仪式"
+    },
+    {
+      "src": "/images/about/team-03.jpg",
+      "altEn": "Construction site team gathering",
+      "altZh": "工地团队合影"
+    },
+    {
+      "src": "/images/about/team-04.jpg",
+      "altEn": "On-site inspection with hard hats",
+      "altZh": "工地巡查"
+    },
+    {
+      "src": "/images/about/team-05.jpg",
+      "altEn": "Team members at a project site",
+      "altZh": "项目现场团队"
+    }
   ],
   "communityPhotos": [
-    { "src": "/images/about/comm-02.jpg", "altEn": "Community event under tent", "altZh": "帐篷下的社区活动" },
-    { "src": "/images/about/comm-award.jpg", "altEn": "Ms. Lu receiving an award", "altZh": "陆女士领奖" },
-    { "src": "/images/about/comm-podium.jpg", "altEn": "Speaking at a community event", "altZh": "社区活动演讲" },
-    { "src": "/images/about/comm-seattle.jpg", "altEn": "Speaking at Seattle Tech summit", "altZh": "西雅图科技峰会演讲" }
+    {
+      "src": "/images/about/comm-02.jpg",
+      "altEn": "Community event under tent",
+      "altZh": "帐篷下的社区活动"
+    },
+    {
+      "src": "/images/about/comm-award.jpg",
+      "altEn": "Ms. Lu receiving an award",
+      "altZh": "陆女士领奖"
+    },
+    {
+      "src": "/images/about/comm-podium.jpg",
+      "altEn": "Speaking at a community event",
+      "altZh": "社区活动演讲"
+    },
+    {
+      "src": "/images/about/comm-seattle.jpg",
+      "altEn": "Speaking at Seattle Tech summit",
+      "altZh": "西雅图科技峰会演讲"
+    }
   ]
 }
