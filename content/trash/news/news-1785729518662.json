@@ -1,0 +1,54 @@
+{
+  "kind": "news",
+  "id": "news-1785729518662",
+  "trashedAt": "2026-08-03T04:08:22.209Z",
+  "titleEn": "test1",
+  "titleZh": "测1",
+  "originalPath": "content/news.json",
+  "payload": {
+    "id": "news-1785729518662",
+    "slug": "news-1785729518662",
+    "kind": "news",
+    "date": "2026-08-03",
+    "dateLabelEn": "August 3, 2026",
+    "dateLabelZh": "2026年8月3日",
+    "archiveYear": 2026,
+    "archiveMonth": 8,
+    "titleEn": "test1",
+    "titleZh": "测1",
+    "summaryEn": "nice",
+    "summaryZh": "项目",
+    "blocks": [
+      {
+        "id": "b-mscp9msu-xwoaa",
+        "type": "text",
+        "textEn": "<p><strong><u>1</u></strong></p>",
+        "textZh": "<p><strong>1</strong></p>"
+      },
+      {
+        "id": "b-mscp9umd-fzpmy",
+        "type": "image",
+        "src": "/images/uploads/1785729565694-b.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-mscpa08m-0rpka",
+        "type": "text",
+        "textEn": "<p><strong>2</strong></p>",
+        "textZh": "<p><strong>2</strong></p>"
+      },
+      {
+        "id": "b-mscpa3jj-e0f2x",
+        "type": "image",
+        "src": "/images/uploads/1785729578524-images.jpg",
+        "altEn": "",
+        "altZh": ""
+      }
+    ],
+    "image": "/images/uploads/1785729538868-images.jpg",
+    "eventDetailsEn": "",
+    "eventDetailsZh": "",
+    "registerUrl": ""
+  }
+}
