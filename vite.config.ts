@@ -92,6 +92,23 @@ function cmsLocalApi(): Plugin {
         return
       }
 
+      if (url === '/api/cms/read' && req.method === 'GET') {
+        const full = req.url || ''
+        const q = full.includes('?') ? new URL(full, 'http://local').searchParams.get('path') || '' : ''
+        if (!q.startsWith('content/') || q.includes('..')) {
+          sendJson(res, 400, { error: 'Invalid path' })
+          return
+        }
+        const abs = path.join(rootDir, q)
+        if (!fs.existsSync(abs)) {
+          sendJson(res, 404, { error: 'Not found' })
+          return
+        }
+        const data = JSON.parse(fs.readFileSync(abs, 'utf8'))
+        sendJson(res, 200, { ok: true, data })
+        return
+      }
+
       if (url === '/api/cms/media' && req.method === 'GET') {
         const roots = ['public/images/projects', 'public/images/hero', 'public/images/about', 'public/images/uploads', 'public/images/brand']
         const files: string[] = []

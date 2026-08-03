@@ -1,18 +1,10 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { PageHeader } from '../AdminApp'
 import { getCopy, type AdminLang } from '../lib/i18n'
 import type { NewsArticle } from '../../data/news'
-import { purgeTrashItem, restoreTrashItem, saveContentFile } from '../lib/contentApi'
-import { loadTrashItems, type TrashItem } from '../lib/trash'
-
-function loadNewsArticles(): NewsArticle[] {
-  const mod = import.meta.glob('../../../content/news.json', { eager: true }) as Record<
-    string,
-    { default: NewsArticle[] }
-  >
-  const first = Object.values(mod)[0]
-  return structuredClone(first?.default || [])
-}
+import { loadTrashItems, loadTrashItemsForAdmin, type TrashItem } from '../lib/trash'
+import bundledNews from '../../../content/news.json'
+import { purgeTrashItem, restoreTrashItem, updateContentJson } from '../lib/contentApi'
 
 export function TrashPage({ lang }: { lang: AdminLang }) {
   const t = getCopy(lang)
@@ -22,6 +14,16 @@ export function TrashPage({ lang }: { lang: AdminLang }) {
   const [statusOk, setStatusOk] = useState(true)
 
   const zh = lang === 'zh'
+
+  useEffect(() => {
+    let cancelled = false
+    void loadTrashItemsForAdmin().then((list) => {
+      if (!cancelled) setItems(list)
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [])
 
   const grouped = useMemo(() => {
     return {
@@ -35,9 +37,14 @@ export function TrashPage({ lang }: { lang: AdminLang }) {
     setStatus('')
     if (item.kind === 'news') {
       const article = item.payload as NewsArticle
-      const next = loadNewsArticles()
-      if (!next.some((a) => a.id === article.id)) next.unshift(article)
-      const saved = await saveContentFile('content/news.json', next)
+      const saved = await updateContentJson<NewsArticle[]>(
+        'content/news.json',
+        (current) => {
+          if (current.some((a) => a.id === article.id)) return current
+          return [article, ...current]
+        },
+        (bundledNews as NewsArticle[]) || [],
+      )
       if (!saved.ok) {
         setBusyId('')
         setStatusOk(false)

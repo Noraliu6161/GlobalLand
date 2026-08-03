@@ -3,7 +3,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 import { PageHeader } from '../AdminApp'
 import { getCopy, type AdminLang } from '../lib/i18n'
 import type { NewsArticle } from '../../data/news'
-import { moveToTrash, saveContentFile } from '../lib/contentApi'
+import { loadContentJson, moveToTrash, updateContentJson } from '../lib/contentApi'
 import { Field, ImageField, SelectField } from '../components/Fields'
 import { AdminMediaImage } from '../components/AdminMediaImage'
 import { ContentBlocksEditor } from '../components/ContentBlocksEditor'
@@ -11,6 +11,7 @@ import { RichTextField } from '../components/RichTextField'
 import { makeNewsTrashItem } from '../lib/trash'
 import { labelsFromDate, toHtml } from '../../lib/newsHtml'
 import { ensureArticleBlocks } from '../../lib/newsBlocks'
+import bundledNews from '../../../content/news.json'
 
 function normalizeArticle(raw: NewsArticle): NewsArticle {
   const dateFields = labelsFromDate(raw.date || new Date().toISOString().slice(0, 10))
@@ -30,12 +31,13 @@ function normalizeArticle(raw: NewsArticle): NewsArticle {
   }
 }
 
-function loadNewsArticles(): NewsArticle[] {
-  const mod = import.meta.glob('../../../content/news.json', { eager: true }) as Record<
-    string,
-    { default: NewsArticle[] }
-  >
-  return (Object.values(mod)[0]?.default || []).map((a) => normalizeArticle(structuredClone(a)))
+function bundledArticles(): NewsArticle[] {
+  return (bundledNews as NewsArticle[]).map((a) => normalizeArticle(structuredClone(a)))
+}
+
+async function fetchNewsArticles(): Promise<NewsArticle[]> {
+  const remote = await loadContentJson<NewsArticle[]>('content/news.json', bundledArticles())
+  return (Array.isArray(remote) ? remote : []).map((a) => normalizeArticle(structuredClone(a)))
 }
 
 function blankArticle(): NewsArticle {
@@ -66,8 +68,18 @@ function kindLabel(kind: string, lang: AdminLang) {
 export function NewsPage({ lang }: { lang: AdminLang }) {
   const t = getCopy(lang)
   const zh = lang === 'zh'
-  const [items, setItems] = useState(() => loadNewsArticles())
+  const [items, setItems] = useState<NewsArticle[]>(() => bundledArticles())
   const [busyId, setBusyId] = useState('')
+
+  useEffect(() => {
+    let cancelled = false
+    void fetchNewsArticles().then((list) => {
+      if (!cancelled) setItems(list)
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [])
 
   const remove = async (article: NewsArticle) => {
     if (
@@ -84,14 +96,17 @@ export function NewsPage({ lang }: { lang: AdminLang }) {
       window.alert(trashed.error)
       return
     }
-    const next = items.filter((a) => a.id !== article.id)
-    const saved = await saveContentFile('content/news.json', next)
+    const saved = await updateContentJson<NewsArticle[]>(
+      'content/news.json',
+      (current) => current.filter((a) => a.id !== article.id && a.slug !== article.slug),
+      [],
+    )
     setBusyId('')
     if (!saved.ok) {
       window.alert(saved.error)
       return
     }
-    setItems(next)
+    setItems((saved.data || []).map((a) => normalizeArticle(a)))
   }
 
   return (
@@ -168,35 +183,28 @@ export function NewsEditorPage({ lang }: { lang: AdminLang }) {
   const navigate = useNavigate()
   const isNew = id === 'new'
 
-  const [all, setAll] = useState(() => loadNewsArticles())
-  const [data, setData] = useState<NewsArticle>(() => {
-    if (isNew) return blankArticle()
-    return loadNewsArticles().find((a) => a.id === id) || blankArticle()
-  })
+  const [data, setData] = useState<NewsArticle>(() => (isNew ? blankArticle() : blankArticle()))
   const [status, setStatus] = useState('')
   const [busy, setBusy] = useState(false)
 
   useEffect(() => {
-    const list = loadNewsArticles()
-    setAll((prev) => {
-      // Keep just-saved articles that Vite's eager glob has not picked up yet
-      const byId = new Map(list.map((a) => [a.id, a]))
-      for (const a of prev) {
-        if (!byId.has(a.id)) byId.set(a.id, a)
+    let cancelled = false
+    void fetchNewsArticles().then((list) => {
+      if (cancelled) return
+      if (isNew) {
+        setData(blankArticle())
+        return
       }
-      return Array.from(byId.values()).sort((a, b) => b.date.localeCompare(a.date))
+      const found = list.find((a) => a.id === id || a.slug === id)
+      setData((current) => {
+        if (found) return found
+        if (current.id === id) return current
+        return blankArticle()
+      })
     })
-    if (isNew) {
-      setData(blankArticle())
-      return
+    return () => {
+      cancelled = true
     }
-    setData((current) => {
-      const found = list.find((a) => a.id === id)
-      if (found) return found
-      // After first save, route changes to /news/:id but glob may still be stale
-      if (current.id === id) return current
-      return blankArticle()
-    })
   }, [id, isNew])
 
   const set = <K extends keyof NewsArticle>(key: K, value: NewsArticle[K]) => {
@@ -227,17 +235,23 @@ export function NewsEditorPage({ lang }: { lang: AdminLang }) {
       eventDetailsZh: data.kind === 'event' ? toHtml(data.eventDetailsZh) : undefined,
       registerUrl: data.kind === 'event' ? data.registerUrl || '' : undefined,
     }
-    const withoutCurrent = all.filter((a) => a.id !== id && a.id !== payload.id && a.id !== data.id)
-    const cleaned = [...withoutCurrent, payload].sort((a, b) => b.date.localeCompare(a.date))
 
     setBusy(true)
     setStatus('')
-    const res = await saveContentFile('content/news.json', cleaned)
+    const res = await updateContentJson<NewsArticle[]>(
+      'content/news.json',
+      (current) => {
+        const without = current.filter(
+          (a) => a.id !== id && a.id !== payload.id && a.id !== data.id && a.slug !== payload.slug,
+        )
+        return [...without, payload].sort((a, b) => b.date.localeCompare(a.date))
+      },
+      [],
+    )
     setBusy(false)
     setStatus(res.ok ? t.saved : res.error)
     if (res.ok) {
       const kept = normalizeArticle(payload)
-      setAll(cleaned.map((a) => (a.id === kept.id ? kept : normalizeArticle(a))))
       setData(kept)
       if (isNew || id !== payload.id) navigate(`/news/${payload.id}`, { replace: true })
     }
@@ -252,8 +266,11 @@ export function NewsEditorPage({ lang }: { lang: AdminLang }) {
       setStatus(trashed.error)
       return
     }
-    const next = all.filter((a) => a.id !== data.id && a.id !== id)
-    const saved = await saveContentFile('content/news.json', next)
+    const saved = await updateContentJson<NewsArticle[]>(
+      'content/news.json',
+      (current) => current.filter((a) => a.id !== data.id && a.id !== id && a.slug !== data.slug),
+      [],
+    )
     setBusy(false)
     if (!saved.ok) {
       setStatus(saved.error)

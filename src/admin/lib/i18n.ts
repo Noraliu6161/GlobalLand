@@ -19,7 +19,7 @@ const copy = {
     loginLead: 'Sign in with Netlify Identity to manage Global Land content.',
     save: 'Save changes',
     saving: 'Saving…',
-    saved: 'Saved. Open Publish when you want these live-site changes on production.',
+    saved: 'Saved to draft. Open Publish to push these changes to the live website.',
     lang: 'Language',
     unpublished:
       'Menus outside Trash should match the website. Delete unwanted items into Trash first, then Publish.',
@@ -42,7 +42,7 @@ const copy = {
     loginLead: '使用 Netlify Identity 登录后管理 Global Land 网站内容。',
     save: '保存更改',
     saving: '保存中…',
-    saved: '已保存。确认菜单内容即网站内容后，再到「发布」更新正式站。',
+    saved: '已保存到草稿。请到「发布」才能把改动同步到正式网站。',
     lang: '语言',
     unpublished: '废纸篓以外的内容应与网站一致。不想上线的条目请先删进废纸篓，再点发布。',
   },

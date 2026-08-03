@@ -1,8 +1,8 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { PageHeader } from '../AdminApp'
 import { getCopy, type AdminLang } from '../lib/i18n'
-import { saveContentFile } from '../lib/contentApi'
+import { loadContentJson, saveContentFile } from '../lib/contentApi'
 import { Field, ImageField } from '../components/Fields'
 import { AdminMediaImage } from '../components/AdminMediaImage'
 import { newsArticles } from '../../data/news'
@@ -53,6 +53,16 @@ export function HomePageEditor({ lang }: { lang: AdminLang }) {
   const projects = useMemo(() => loadProjectsFromModules(), [])
   const railProjects = projects.filter((p) => p.published !== false)
   const previewNews = newsArticles.slice(0, Math.max(1, Number(data.newsCount) || 1))
+
+  useEffect(() => {
+    let cancelled = false
+    void loadContentJson('content/home.json', homeRaw).then((remote) => {
+      if (!cancelled) setData(withHomeDefaults(remote))
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [])
 
   const set = <K extends keyof HomeData>(key: K, value: HomeData[K]) => {
     setData((d) => ({ ...d, [key]: value }))

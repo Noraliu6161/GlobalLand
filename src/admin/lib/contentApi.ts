@@ -7,14 +7,80 @@ export type SaveResult =
   | { ok: true; message?: string; path?: string; previewUrl?: string }
   | { ok: false; error: string }
 
+const CMS_BRANCH = 'cms'
+
 function b64EncodeUnicode(str: string) {
   return btoa(unescape(encodeURIComponent(str)))
+}
+
+function b64DecodeUnicode(b64: string) {
+  return decodeURIComponent(escape(atob(b64.replace(/\n/g, ''))))
+}
+
+function formatGitError(raw: string, fallback: string): string {
+  const text = (raw || '').trim()
+  if (!text) return fallback
+  try {
+    const json = JSON.parse(text) as { message?: string; status?: number }
+    if (json.message) {
+      if (String(json.status) === '409' || /does not match/i.test(json.message)) {
+        return 'Content was updated elsewhere. Please reload the page and try again.'
+      }
+      return json.message
+    }
+  } catch {
+    /* plain text */
+  }
+  return text.slice(0, 400)
 }
 
 async function identityToken(): Promise<string | null> {
   const user = window.netlifyIdentity?.currentUser?.()
   if (!user) return null
   return user.jwt()
+}
+
+function authHeaders(token: string): HeadersInit {
+  return {
+    Authorization: `Bearer ${token}`,
+    Accept: 'application/vnd.github.v3+json',
+  }
+}
+
+type GitFile = { sha: string; content?: string; encoding?: string }
+
+async function getGitFile(path: string, token: string): Promise<GitFile | null> {
+  const api = `/.netlify/git/github/contents/${path}?ref=${CMS_BRANCH}&ts=${Date.now()}`
+  const getRes = await fetch(api, {
+    headers: authHeaders(token),
+    cache: 'no-store',
+  })
+  if (getRes.status === 404) return null
+  if (!getRes.ok) {
+    throw new Error(formatGitError(await getRes.text(), `Could not read ${path}`))
+  }
+  const existing = (await getRes.json()) as GitFile | GitFile[]
+  if (Array.isArray(existing)) {
+    throw new Error(`${path} is a directory, expected a file`)
+  }
+  return existing
+}
+
+async function putGitFile(path: string, data: unknown, token: string, sha?: string): Promise<Response> {
+  const body = JSON.stringify(data, null, 2) + '\n'
+  return fetch(`/.netlify/git/github/contents/${path}`, {
+    method: 'PUT',
+    headers: {
+      ...authHeaders(token),
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      message: `cms: update ${path}`,
+      content: b64EncodeUnicode(body),
+      branch: CMS_BRANCH,
+      ...(sha ? { sha } : {}),
+    }),
+  })
 }
 
 async function saveLocal(path: string, data: unknown): Promise<SaveResult> {
@@ -40,57 +106,163 @@ async function deleteLocal(path: string): Promise<SaveResult> {
 }
 
 async function saveGitGateway(path: string, data: unknown, token: string): Promise<SaveResult> {
-  const branch = 'cms'
-  const api = `/.netlify/git/github/contents/${path}?ref=${branch}`
-  const getRes = await fetch(api, { headers: { Authorization: `Bearer ${token}` } })
-  let sha: string | undefined
-  if (getRes.ok) {
-    const existing = await getRes.json()
-    sha = existing.sha
-  } else if (getRes.status !== 404) {
-    return { ok: false, error: `Could not read ${path}` }
-  }
+  let lastError = 'Save failed'
+  for (let attempt = 0; attempt < 3; attempt++) {
+    let sha: string | undefined
+    try {
+      const existing = await getGitFile(path, token)
+      sha = existing?.sha
+    } catch (e) {
+      return { ok: false, error: e instanceof Error ? e.message : String(e) }
+    }
 
-  const body = JSON.stringify(data, null, 2) + '\n'
-  const putRes = await fetch(`/.netlify/git/github/contents/${path}`, {
-    method: 'PUT',
-    headers: {
-      Authorization: `Bearer ${token}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      message: `cms: update ${path}`,
-      content: b64EncodeUnicode(body),
-      branch,
-      ...(sha ? { sha } : {}),
-    }),
-  })
-  if (!putRes.ok) return { ok: false, error: (await putRes.text()) || putRes.statusText }
-  return { ok: true, message: 'Saved to cms branch' }
+    const putRes = await putGitFile(path, data, token, sha)
+    if (putRes.ok) return { ok: true, message: 'Saved to cms branch' }
+
+    const raw = await putRes.text()
+    lastError = formatGitError(raw, putRes.statusText)
+    // Retry only on SHA conflicts (stale read / concurrent edit)
+    if (putRes.status !== 409) return { ok: false, error: lastError }
+  }
+  return { ok: false, error: lastError }
 }
 
 async function deleteGitGateway(path: string, token: string): Promise<SaveResult> {
-  const branch = 'cms'
-  const getRes = await fetch(`/.netlify/git/github/contents/${path}?ref=${branch}`, {
-    headers: { Authorization: `Bearer ${token}` },
-  })
-  if (getRes.status === 404) return { ok: true, message: 'Already gone' }
-  if (!getRes.ok) return { ok: false, error: 'Could not read file to delete' }
-  const existing = await getRes.json()
-  const delRes = await fetch(`/.netlify/git/github/contents/${path}`, {
-    method: 'DELETE',
-    headers: {
-      Authorization: `Bearer ${token}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      message: `cms: delete ${path}`,
-      sha: existing.sha,
-      branch,
+  let lastError = 'Delete failed'
+  for (let attempt = 0; attempt < 3; attempt++) {
+    let existing: GitFile | null
+    try {
+      existing = await getGitFile(path, token)
+    } catch (e) {
+      return { ok: false, error: e instanceof Error ? e.message : String(e) }
+    }
+    if (!existing) return { ok: true, message: 'Already gone' }
+
+    const delRes = await fetch(`/.netlify/git/github/contents/${path}`, {
+      method: 'DELETE',
+      headers: {
+        ...authHeaders(token),
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        message: `cms: delete ${path}`,
+        sha: existing.sha,
+        branch: CMS_BRANCH,
+      }),
+    })
+    if (delRes.ok) return { ok: true, message: 'Deleted on cms branch' }
+    const raw = await delRes.text()
+    lastError = formatGitError(raw, delRes.statusText)
+    if (delRes.status !== 409) return { ok: false, error: lastError }
+  }
+  return { ok: false, error: lastError }
+}
+
+/** Read a JSON content file from the cms branch (production) or return fallback (local / offline). */
+export async function loadContentJson<T>(path: string, fallback: T): Promise<T> {
+  if (import.meta.env.DEV) return structuredClone(fallback)
+
+  const token = await identityToken()
+  if (!token) return structuredClone(fallback)
+
+  try {
+    const file = await getGitFile(path, token)
+    if (!file?.content || file.encoding !== 'base64') return structuredClone(fallback)
+    return JSON.parse(b64DecodeUnicode(file.content)) as T
+  } catch {
+    return structuredClone(fallback)
+  }
+}
+
+type DirEntry = { name: string; path: string; type: string; download_url?: string; sha: string }
+
+/** List JSON files in a content directory on the cms branch. */
+export async function listContentJsonFiles(dir: string): Promise<DirEntry[]> {
+  if (import.meta.env.DEV) return []
+
+  const token = await identityToken()
+  if (!token) return []
+
+  const api = `/.netlify/git/github/contents/${dir}?ref=${CMS_BRANCH}&ts=${Date.now()}`
+  const res = await fetch(api, { headers: authHeaders(token), cache: 'no-store' })
+  if (!res.ok) return []
+  const items = (await res.json()) as DirEntry[] | DirEntry
+  if (!Array.isArray(items)) return []
+  return items.filter((i) => i.type === 'file' && i.name.endsWith('.json'))
+}
+
+/** Load every JSON file under a directory from the cms branch. */
+export async function loadContentJsonDir<T>(dir: string): Promise<{ path: string; data: T }[]> {
+  if (import.meta.env.DEV) return []
+
+  const token = await identityToken()
+  if (!token) return []
+
+  const files = await listContentJsonFiles(dir)
+  const out: { path: string; data: T }[] = []
+  await Promise.all(
+    files.map(async (f) => {
+      try {
+        const file = await getGitFile(f.path, token)
+        if (!file?.content || file.encoding !== 'base64') return
+        out.push({ path: f.path, data: JSON.parse(b64DecodeUnicode(file.content)) as T })
+      } catch {
+        /* skip bad file */
+      }
     }),
-  })
-  if (!delRes.ok) return { ok: false, error: (await delRes.text()) || delRes.statusText }
-  return { ok: true, message: 'Deleted on cms branch' }
+  )
+  return out
+}
+
+/**
+ * Read–modify–write a JSON file with fresh SHA each attempt.
+ * Use for shared files like content/news.json to avoid lost updates / 409s.
+ */
+export async function updateContentJson<T>(
+  path: string,
+  mutator: (current: T) => T,
+  empty: T,
+): Promise<SaveResult & { data?: T }> {
+  if (import.meta.env.DEV) {
+    let base = structuredClone(empty)
+    const getRes = await fetch(`/api/cms/read?path=${encodeURIComponent(path)}`).catch(() => null)
+    if (getRes?.ok) {
+      const json = (await getRes.json().catch(() => null)) as { data?: T } | null
+      if (json?.data !== undefined) base = json.data
+    }
+    const next = mutator(base)
+    const saved = await saveLocal(path, next)
+    return saved.ok ? { ...saved, data: next } : saved
+  }
+
+  const token = await identityToken()
+  if (!token) {
+    return { ok: false, error: 'Sign in with Netlify Identity to save (or run npm run dev).' }
+  }
+
+  let lastError = 'Save failed'
+  for (let attempt = 0; attempt < 3; attempt++) {
+    let current = structuredClone(empty)
+    let sha: string | undefined
+    try {
+      const file = await getGitFile(path, token)
+      if (file?.content && file.encoding === 'base64') {
+        current = JSON.parse(b64DecodeUnicode(file.content)) as T
+        sha = file.sha
+      }
+    } catch (e) {
+      return { ok: false, error: e instanceof Error ? e.message : String(e) }
+    }
+
+    const next = mutator(current)
+    const putRes = await putGitFile(path, next, token, sha)
+    if (putRes.ok) return { ok: true, message: 'Saved to cms branch', data: next }
+
+    const raw = await putRes.text()
+    lastError = formatGitError(raw, putRes.statusText)
+    if (putRes.status !== 409) return { ok: false, error: lastError }
+  }
+  return { ok: false, error: lastError }
 }
 
 export async function saveContentFile(path: string, data: unknown): Promise<SaveResult> {
@@ -178,7 +350,7 @@ export async function uploadImage(file: File): Promise<SaveResult> {
   const putRes = await fetch(`/.netlify/git/github/contents/${gitPath}`, {
     method: 'PUT',
     headers: {
-      Authorization: `Bearer ${token}`,
+      ...authHeaders(token),
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
@@ -187,7 +359,7 @@ export async function uploadImage(file: File): Promise<SaveResult> {
       branch: 'cms',
     }),
   })
-  if (!putRes.ok) return { ok: false, error: (await putRes.text()) || putRes.statusText }
+  if (!putRes.ok) return { ok: false, error: formatGitError(await putRes.text(), putRes.statusText) }
   const putJson = (await putRes.json().catch(() => ({}))) as {
     content?: { download_url?: string }
   }

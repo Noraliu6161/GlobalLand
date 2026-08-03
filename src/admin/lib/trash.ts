@@ -67,3 +67,34 @@ export function loadTrashItems(): TrashItem[] {
     })
     .sort((a, b) => (b.trashedAt || '').localeCompare(a.trashedAt || ''))
 }
+
+function normalizeTrash(raw: Partial<TrashItem>, fallbackId: string): TrashItem {
+  const kind = (raw.kind === 'news' ? 'news' : 'project') as TrashKind
+  const id = raw.id || fallbackId
+  return {
+    kind,
+    id,
+    trashedAt: raw.trashedAt || '',
+    titleEn: raw.titleEn || id,
+    titleZh: raw.titleZh || raw.titleEn || id,
+    originalPath: raw.originalPath || '',
+    payload: raw.payload ?? raw,
+  }
+}
+
+/** Prefer cms-branch trash on production admin. */
+export async function loadTrashItemsForAdmin(): Promise<TrashItem[]> {
+  const bundled = loadTrashItems()
+  if (import.meta.env.DEV) return bundled
+
+  const { loadContentJsonDir } = await import('./contentApi')
+  const [projects, news] = await Promise.all([
+    loadContentJsonDir<Partial<TrashItem>>('content/trash/project'),
+    loadContentJsonDir<Partial<TrashItem>>('content/trash/news'),
+  ])
+  const remote = [...projects, ...news].map(({ path, data }) =>
+    normalizeTrash(data, path.split('/').pop()?.replace(/\.json$/, '') || 'item'),
+  )
+  if (!remote.length) return bundled
+  return remote.sort((a, b) => (b.trashedAt || '').localeCompare(a.trashedAt || ''))
+}

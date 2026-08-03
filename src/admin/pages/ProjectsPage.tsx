@@ -5,7 +5,7 @@ import { getCopy, type AdminLang } from '../lib/i18n'
 import { moveToTrash, saveContentFile } from '../lib/contentApi'
 import { Field, ImageField, LinesField, SelectField } from '../components/Fields'
 import { AdminMediaImage } from '../components/AdminMediaImage'
-import { emptyProject, loadProjectsFromModules, normalizeProjectImages, type ProjectRecord } from '../lib/projectTypes'
+import { emptyProject, loadProjectsForAdmin, loadProjectsFromModules, normalizeProjectImages, type ProjectRecord } from '../lib/projectTypes'
 import { labelStatus, labelType, statusOptions, statusTone, typeOptions } from '../lib/projectLabels'
 import { makeProjectTrashItem } from '../lib/trash'
 
@@ -25,21 +25,20 @@ export function ProjectsPage({ lang }: { lang: AdminLang }) {
   const [busySlug, setBusySlug] = useState('')
   const [migrateNote, setMigrateNote] = useState('')
 
-  // Move old "Draft" projects into trash so Projects = live site only.
+  // Load cms-branch projects (production) and migrate old unpublished drafts into trash.
   useEffect(() => {
     let cancelled = false
     const run = async () => {
-      const drafts = loadProjectsFromModules().filter((p) => p.published === false)
-      if (!drafts.length) return
+      const all = await loadProjectsForAdmin()
+      if (cancelled) return
+      const drafts = all.filter((p) => p.published === false)
       const movedSlugs = new Set<string>()
       for (const p of drafts) {
         const res = await moveToTrash(makeProjectTrashItem(p))
         if (res.ok) movedSlugs.add(p.slug)
       }
       if (cancelled) return
-      setProjects(
-        loadProjectsFromModules().filter((p) => p.published !== false && !movedSlugs.has(p.slug)),
-      )
+      setProjects(all.filter((p) => p.published !== false && !movedSlugs.has(p.slug)))
       if (movedSlugs.size > 0) {
         setMigrateNote(
           lang === 'zh'
@@ -146,12 +145,20 @@ export function ProjectEditorPage({ lang }: { lang: AdminLang }) {
   const [busy, setBusy] = useState(false)
 
   useEffect(() => {
-    if (isNew) {
-      setData(emptyProject())
-      return
+    let cancelled = false
+    void (async () => {
+      if (isNew) {
+        setData(emptyProject())
+        return
+      }
+      const all = await loadProjectsForAdmin()
+      if (cancelled) return
+      const found = all.find((p) => p.slug === slug)
+      setData(found ? structuredClone(found) : emptyProject())
+    })()
+    return () => {
+      cancelled = true
     }
-    const found = loadProjectsFromModules().find((p) => p.slug === slug)
-    setData(found ? structuredClone(found) : emptyProject())
   }, [slug, isNew])
 
   const set = <K extends keyof ProjectRecord>(key: K, value: ProjectRecord[K]) => {

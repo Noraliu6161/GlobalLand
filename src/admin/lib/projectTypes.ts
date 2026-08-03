@@ -95,3 +95,21 @@ export function loadProjectsFromModules(): ProjectRecord[] {
     })
     .sort((a, b) => a.nameEn.localeCompare(b.nameEn))
 }
+
+/** Prefer cms-branch projects on production admin; fall back to build bundle. */
+export async function loadProjectsForAdmin(): Promise<ProjectRecord[]> {
+  const bundled = loadProjectsFromModules()
+  if (import.meta.env.DEV) return bundled
+
+  const { loadContentJsonDir } = await import('./contentApi')
+  const remote = await loadContentJsonDir<Partial<ProjectRecord>>('content/projects')
+  if (!remote.length) return bundled
+
+  return remote
+    .map(({ data }) => {
+      const merged = { ...emptyProject(), ...data }
+      const { image, images } = normalizeProjectImages(merged)
+      return { ...merged, image, images }
+    })
+    .sort((a, b) => a.nameEn.localeCompare(b.nameEn))
+}

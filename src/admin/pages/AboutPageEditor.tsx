@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { PageHeader } from '../AdminApp'
 import { getCopy, type AdminLang } from '../lib/i18n'
-import { saveContentFile } from '../lib/contentApi'
+import { loadContentJson, saveContentFile } from '../lib/contentApi'
 import { Field, ImageField } from '../components/Fields'
 import aboutRaw from '../../../content/about.json'
 import type { AboutContent, AboutPhoto } from '../../lib/loadAbout'
@@ -13,6 +13,16 @@ export function AboutPageEditor({ lang }: { lang: AdminLang }) {
   const [data, setData] = useState<AboutContent>(() => structuredClone(aboutRaw as AboutContent))
   const [status, setStatus] = useState('')
   const [busy, setBusy] = useState(false)
+
+  useEffect(() => {
+    let cancelled = false
+    void loadContentJson('content/about.json', aboutRaw as AboutContent).then((remote) => {
+      if (!cancelled) setData(structuredClone(remote))
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [])
 
   const set = <K extends keyof AboutContent>(key: K, value: AboutContent[K]) => {
     setData((d) => ({ ...d, [key]: value }))
