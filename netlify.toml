@@ -21,6 +21,23 @@
   status = 301
 
 [[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/cms"
+  to = "/cms/"
+  status = 301
+
+# Prefer real static files under /images; do not SPA-fallback missing assets to index.html
+[[redirects]]
+  from = "/images/*"
+  to = "/images/:splat"
+  status = 200
+  force = false
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200

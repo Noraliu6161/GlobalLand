@@ -31,7 +31,9 @@ type ContentProject = {
   lat: number
   lng: number
   bodyFont?: Project['bodyFont']
-  image: string
+  image?: string
+  images?: string[] | { src?: string; image?: string }[]
+  link?: string
   relatedEntity?: string
   featured?: boolean
   published?: boolean
@@ -73,8 +75,30 @@ function listFromFlatOrLegacy(
   }
 }
 
+function coerceImageEntry(x: unknown): string {
+  if (typeof x === 'string') return x.trim()
+  if (x && typeof x === 'object') {
+    const o = x as Record<string, unknown>
+    for (const key of ['src', 'image', 'url'] as const) {
+      if (typeof o[key] === 'string') return String(o[key]).trim()
+    }
+  }
+  return ''
+}
+
+function normalizeImages(doc: ContentProject): { image: string; images: string[] } {
+  const listed = Array.isArray(doc.images) ? doc.images.map(coerceImageEntry).filter(Boolean) : []
+  const cover = (doc.image || listed[0] || '').trim()
+  let images = listed.length ? listed : cover ? [cover] : []
+  if (cover) {
+    images = [cover, ...images.filter((src) => src !== cover)]
+  }
+  return { image: images[0] || '', images }
+}
+
 function normalize(doc: ContentProject): Project {
   const slug = doc.slug || doc.id || 'project'
+  const { image, images } = normalizeImages(doc)
   return {
     id: doc.id || slug,
     slug,
@@ -93,7 +117,9 @@ function normalize(doc: ContentProject): Project {
     body: fromFlatOrLegacy(doc.bodyEn, doc.bodyZh, doc.body),
     bodyFont: doc.bodyFont || 'body',
     highlights: listFromFlatOrLegacy(doc.highlightsEn, doc.highlightsZh, doc.highlights),
-    image: doc.image,
+    image,
+    images,
+    link: doc.link || '',
     relatedEntity: doc.relatedEntity,
     featured: Boolean(doc.featured),
   }

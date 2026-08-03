@@ -29,5 +29,8 @@
   ],
   "image": "/images/projects/sammamish.png",
   "featured": true,
-  "published": true
+  "published": true,
+  "images": [
+    "/images/projects/sammamish.png"
+  ]
 }

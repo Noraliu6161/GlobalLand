@@ -1,6 +1,6 @@
 {
-  "heroEyebrowEn": "Est. {year} · Seattle",
-  "heroEyebrowZh": "创立于 {year} · 西雅图",
+  "heroEyebrowEn": "Est. 2018 · Seattle",
+  "heroEyebrowZh": "创立于 2018 · 西雅图",
   "foundedYear": 2018,
   "brandLeftEn": "Global",
   "brandLeftZh": "Global",
@@ -91,5 +91,16 @@
   "selectedTitleZh": "塑造区域的代表性项目",
   "allProjectsEn": "All projects",
   "allProjectsZh": "全部项目",
-  "featuredCount": 7
+  "allProjectsHref": "/projects",
+  "discoverMoreEn": "Discover more",
+  "discoverMoreZh": "了解更多",
+  "featuredCount": 7,
+  "newsTitleEn": "News",
+  "newsTitleZh": "新闻资讯",
+  "newsAllEn": "All news",
+  "newsAllZh": "全部资讯",
+  "newsAllHref": "/news",
+  "newsReadEn": "Read more",
+  "newsReadZh": "阅读更多",
+  "newsCount": 3
 }

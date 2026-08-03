@@ -2,28 +2,26 @@
 
 Corporate website for **Global Land LLC**.
 
-## CMS: Save Draft → Publish All (one production deploy)
+## CMS: custom admin + draft publish
+
+Open **`/admin/`** for the Global Land admin (sidebar UI).
+
+- Edit homepage, news, overview, publish, help
+- Full project field editing still available at **`/cms/`** (legacy Decap)
+- Save draft → `cms` branch (or local disk in `npm run dev`)
+- Publish All → merges `cms` → `main` (one production deploy)
 
 ```text
-Edit many Projects in /admin
+Edit in /admin (or /cms for projects)
         │
         ▼
-  Save Draft  (Decap Save)
-  → writes to Git branch `cms` only
-  → production site unchanged
-  → no production credits
+  Save Draft
+  → cms branch only
         │
         ▼
-  (optional) Preview All
-  → opens/reuses PR cms→main
-  → opens Deploy Preview site (same URL while that PR stays open)
-  → uses EXTRA preview credits
-        │
-        ▼
-  Publish All  (once)
-  → merges cms → main
+  Publish (admin → Publish)
+  → merge cms → main
   → ONE production deploy
-  → ≈ 15 credits
 ```
 
 ### Netlify setup (required)

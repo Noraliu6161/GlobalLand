@@ -29,5 +29,8 @@
   ],
   "image": "/images/projects/forum-south.png",
   "featured": true,
-  "published": true
+  "published": true,
+  "images": [
+    "/images/projects/forum-south.png"
+  ]
 }

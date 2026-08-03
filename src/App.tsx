@@ -9,6 +9,9 @@ import { InsightsPage } from './pages/InsightsPage'
 import { AboutPage } from './pages/AboutPage'
 import { ContactPage } from './pages/ContactPage'
 import { NewsPage } from './pages/NewsPage'
+import { NewsDetailPage } from './pages/NewsDetailPage'
+import { AboutConceptsIndex } from './pages/about-concepts/AboutConceptsIndex'
+import { AboutConceptPage } from './pages/about-concepts/AboutConceptPage'
 
 export default function App() {
   return (
@@ -25,7 +28,10 @@ export default function App() {
                 <Route path="/company" element={<InsightsPage />} />
                 <Route path="/insights" element={<Navigate to="/company" replace />} />
                 <Route path="/news" element={<NewsPage />} />
+                <Route path="/news/:slug" element={<NewsDetailPage />} />
                 <Route path="/about" element={<AboutPage />} />
+                <Route path="/about-concepts" element={<AboutConceptsIndex />} />
+                <Route path="/about-concepts/:id" element={<AboutConceptPage />} />
                 <Route path="/contact" element={<ContactPage />} />
               </Routes>
             </main>

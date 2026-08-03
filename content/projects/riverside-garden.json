@@ -31,5 +31,8 @@
   ],
   "image": "/images/projects/riverside-garden.png",
   "featured": true,
-  "published": true
+  "published": true,
+  "images": [
+    "/images/projects/riverside-garden.png"
+  ]
 }

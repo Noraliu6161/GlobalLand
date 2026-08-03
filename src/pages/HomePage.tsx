@@ -3,56 +3,28 @@ import { Link } from 'react-router-dom'
 import { useHeroCarousel } from '../components/heroSlides'
 import { pickText } from '../lib/localized'
 import {
-  fillYear,
   homeContent,
   homeHeroSlidesForLang,
   homeText,
 } from '../lib/loadHome'
 import { useI18n } from '../i18n'
 import { useProjects } from '../projects/ProjectsProvider'
+import { newsArticles, newsDateLabel, newsSummary, newsTitle } from '../data/news'
+import { ProjectImageCarousel } from '../components/ProjectImageCarousel'
 import type { Project } from '../data/projects'
-
-const HOME_NEWS = [
-  {
-    id: 'n1',
-    date: '2026-03',
-    titleEn: 'Downtown Redmond office acquisition closes',
-    titleZh: '雷德蒙德市中心办公收购完成',
-    summaryEn: 'Global Land expands the Eastside commercial portfolio with a newly acquired office asset.',
-    summaryZh: 'Global Land 新增东区办公资产，持续扩展商业地产组合。',
-  },
-  {
-    id: 'n2',
-    date: '2025-11',
-    titleEn: 'Spring District leasing update',
-    titleZh: 'Spring District 租赁进展',
-    summaryEn: 'Long-term tenants continue to anchor Class A office in Bellevue’s Spring District.',
-    summaryZh: '贝尔维尤 Spring District 甲级写字楼由长期租户持续支撑。',
-  },
-  {
-    id: 'n3',
-    date: '2025-06',
-    titleEn: 'Community-focused residential progress',
-    titleZh: '社区导向住宅项目进展',
-    summaryEn: 'Low-density communities across the Pacific Northwest continue to take shape.',
-    summaryZh: '太平洋西北低密度社区项目持续推进。',
-  },
-]
 
 export function HomePage() {
   const { projects } = useProjects()
   const { lang, t } = useI18n()
   const home = homeContent
   const slides = homeHeroSlidesForLang(lang)
-  const featuredBase = projects.filter((p) => p.featured).slice(0, Math.max(home.featuredCount, 7))
+  const homeNews = newsArticles.slice(0, home.newsCount)
   const { index, goTo } = useHeroCarousel(slides.length)
-  const [featured, setFeatured] = useState<Project[]>(featuredBase)
+  const [featured, setFeatured] = useState<Project[]>(projects)
 
   useEffect(() => {
-    setFeatured(
-      projects.filter((p) => p.featured).slice(0, Math.max(home.featuredCount, 7)),
-    )
-  }, [projects, home.featuredCount])
+    setFeatured(projects)
+  }, [projects])
 
   const listingsStat = home.statListingsValue || `${projects.length}+`
 
@@ -87,7 +59,7 @@ export function HomePage() {
 
         <div className="hero-content hero-content--center reveal">
           <p className="eyebrow eyebrow--center hero-eyebrow">
-            {fillYear(homeText(home.heroEyebrow, lang), home.foundedYear)}
+            {homeText(home.heroEyebrow, lang)}
           </p>
           <h1 className="hero-brand hero-brand--line">
             Global
@@ -175,7 +147,7 @@ export function HomePage() {
             <h2 className="section-title section-title--line">
               {homeText(home.selectedTitle, lang)}
             </h2>
-            <Link className="btn-text" to="/projects">
+            <Link className="btn-text" to={home.allProjectsHref}>
               {homeText(home.allProjects, lang)}
               <span aria-hidden="true"> →</span>
             </Link>
@@ -196,7 +168,12 @@ export function HomePage() {
               const summary = pickText(p.summary, lang)
               return (
                 <Link key={p.id} to={`/projects/${p.slug}`} className="featured-panel">
-                  <img src={p.image} alt="" />
+                  <ProjectImageCarousel
+                    images={p.images?.length ? p.images : [p.image]}
+                    alt={name}
+                    variant="rail"
+                    intervalMs={5000}
+                  />
                   <div className="featured-panel-veil" />
                   <div className="featured-panel-top">
                     <strong>{name}</strong>
@@ -206,7 +183,7 @@ export function HomePage() {
                   </div>
                   <div className="featured-panel-hover">
                     <p>{summary}</p>
-                    <span className="featured-discover">{t('home.discoverMore')}</span>
+                    <span className="featured-discover">{homeText(home.discoverMore, lang)}</span>
                   </div>
                 </Link>
               )
@@ -226,20 +203,20 @@ export function HomePage() {
       <section className="section section--news">
         <div className="container">
           <div className="section-head section-head--center">
-            <h2 className="section-title section-title--line">{t('home.newsTitle')}</h2>
-            <Link className="btn-text" to="/news">
-              {t('home.newsAll')}
+            <h2 className="section-title section-title--line">{homeText(home.newsTitle, lang)}</h2>
+            <Link className="btn-text" to={home.newsAllHref}>
+              {homeText(home.newsAll, lang)}
               <span aria-hidden="true"> →</span>
             </Link>
           </div>
           <div className="news-grid">
-            {HOME_NEWS.map((n) => (
+            {homeNews.map((n) => (
               <article key={n.id} className="news-card">
-                <time className="news-date">{n.date}</time>
-                <h3>{lang === 'zh' ? n.titleZh : n.titleEn}</h3>
-                <p>{lang === 'zh' ? n.summaryZh : n.summaryEn}</p>
-                <Link to="/news" className="btn-text">
-                  {t('home.newsRead')}
+                <time className="news-date">{newsDateLabel(n, lang)}</time>
+                <h3>{newsTitle(n, lang)}</h3>
+                <p>{newsSummary(n, lang)}</p>
+                <Link to={`/news/${n.slug}`} className="btn-text">
+                  {homeText(home.newsRead, lang)}
                 </Link>
               </article>
             ))}

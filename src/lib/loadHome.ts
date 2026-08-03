@@ -33,7 +33,14 @@ export type HomeContent = {
   spotlightCtaHref: string
   selectedTitle: LocalizedString
   allProjects: LocalizedString
+  allProjectsHref: string
+  discoverMore: LocalizedString
   featuredCount: number
+  newsTitle: LocalizedString
+  newsAll: LocalizedString
+  newsAllHref: string
+  newsRead: LocalizedString
+  newsCount: number
 }
 
 type RawHome = {
@@ -88,7 +95,18 @@ type RawHome = {
   selectedTitleZh?: string
   allProjectsEn?: string
   allProjectsZh?: string
+  allProjectsHref?: string
+  discoverMoreEn?: string
+  discoverMoreZh?: string
   featuredCount?: number
+  newsTitleEn?: string
+  newsTitleZh?: string
+  newsAllEn?: string
+  newsAllZh?: string
+  newsAllHref?: string
+  newsReadEn?: string
+  newsReadZh?: string
+  newsCount?: number
 }
 
 function L(en?: string, zh?: string, fallback = ''): LocalizedString {
@@ -106,7 +124,7 @@ function normalize(raw: RawHome): HomeContent {
     }))
 
   return {
-    heroEyebrow: L(raw.heroEyebrowEn, raw.heroEyebrowZh, 'Est. {year} · Seattle'),
+    heroEyebrow: L(raw.heroEyebrowEn, raw.heroEyebrowZh, 'Est. 2018 · Seattle'),
     foundedYear: Number(raw.foundedYear) || 2018,
     brandLeft: L(raw.brandLeftEn, raw.brandLeftZh, 'Global'),
     brandRight: L(raw.brandRightEn, raw.brandRightZh, 'Land'),
@@ -136,7 +154,14 @@ function normalize(raw: RawHome): HomeContent {
     spotlightCtaHref: raw.spotlightCtaHref || '/projects?type=office',
     selectedTitle: L(raw.selectedTitleEn, raw.selectedTitleZh),
     allProjects: L(raw.allProjectsEn, raw.allProjectsZh),
+    allProjectsHref: raw.allProjectsHref || '/projects',
+    discoverMore: L(raw.discoverMoreEn, raw.discoverMoreZh, 'Discover more'),
     featuredCount: Math.max(1, Number(raw.featuredCount) || 3),
+    newsTitle: L(raw.newsTitleEn, raw.newsTitleZh, 'News'),
+    newsAll: L(raw.newsAllEn, raw.newsAllZh, 'All news'),
+    newsAllHref: raw.newsAllHref || '/news',
+    newsRead: L(raw.newsReadEn, raw.newsReadZh, 'Read more'),
+    newsCount: Math.max(1, Number(raw.newsCount) || 3),
   }
 }
 

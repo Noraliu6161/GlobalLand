@@ -31,5 +31,8 @@
   ],
   "image": "/images/projects/redmond-office.png",
   "featured": true,
-  "published": true
+  "published": true,
+  "images": [
+    "/images/projects/redmond-office.png"
+  ]
 }

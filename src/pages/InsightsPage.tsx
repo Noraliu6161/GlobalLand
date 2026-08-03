@@ -1,84 +1,26 @@
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
+import { ProjectImageCarousel } from '../components/ProjectImageCarousel'
+import { pickText } from '../lib/localized'
 import { useI18n } from '../i18n'
+import { useProjects } from '../projects/ProjectsProvider'
 
-type TrackProject = {
-  id: string
-  nameEn: string
-  nameZh: string
-  cityEn: string
-  cityZh: string
-  metaEn: string
-  metaZh: string
-  image: string
+function trackMeta(
+  p: { units: number | null; type: string; summary: { en: string; zh: string } },
+  lang: 'en' | 'zh',
+  typeLabel: string,
+) {
+  if (p.units != null) {
+    return lang === 'zh' ? `${p.units} 套` : `${p.units} residences`
+  }
+  const summary = pickText(p.summary, lang).trim()
+  if (summary) return summary.length > 42 ? `${summary.slice(0, 42)}…` : summary
+  return typeLabel
 }
-
-/** CreateWorld track-record projects shown on Company page (not the live portfolio list). */
-const TRACK_PROJECTS: TrackProject[] = [
-  {
-    id: 'mira-flats',
-    nameEn: 'Mira Flats',
-    nameZh: 'Mira Flats',
-    cityEn: 'Bellevue, WA',
-    cityZh: '贝尔维尤, WA',
-    metaEn: '312 residences',
-    metaZh: '312 套公寓',
-    image: '/images/projects/mira-flats.png',
-  },
-  {
-    id: 'the-emerald',
-    nameEn: 'The Emerald',
-    nameZh: 'The Emerald',
-    cityEn: 'Seattle, WA',
-    cityZh: '西雅图, WA',
-    metaEn: '262 residences',
-    metaZh: '262 套公寓',
-    image: '/images/projects/emerald-building.png',
-  },
-  {
-    id: 'forum-south-park',
-    nameEn: 'Forum South Park',
-    nameZh: 'Forum South Park',
-    cityEn: 'Bellevue, WA',
-    cityZh: '贝尔维尤, WA',
-    metaEn: 'CreateWorld delivery',
-    metaZh: 'CreateWorld 交付项目',
-    image: '/images/projects/forum-south.png',
-  },
-  {
-    id: 'florera',
-    nameEn: 'Florera',
-    nameZh: 'Florera',
-    cityEn: 'Seattle, WA',
-    cityZh: '西雅图, WA',
-    metaEn: '59 apartments',
-    metaZh: '59 套公寓',
-    image: '/images/projects/florera.png',
-  },
-  {
-    id: 'evergreen-townhomes',
-    nameEn: 'Evergreen Townhomes',
-    nameZh: 'Evergreen Townhomes',
-    cityEn: 'Washington',
-    cityZh: '华盛顿州',
-    metaEn: 'Townhome community',
-    metaZh: '联排别墅社区',
-    image: '/images/projects/evergreen-townhomes.png',
-  },
-  {
-    id: 'belleview-park',
-    nameEn: 'Belleview Park',
-    nameZh: 'Belleview Park',
-    cityEn: 'Bellevue, WA',
-    cityZh: '贝尔维尤, WA',
-    metaEn: 'CreateWorld delivery',
-    metaZh: 'CreateWorld 交付项目',
-    image: '/images/projects/belleview-park.png',
-  },
-]
 
 export function InsightsPage() {
   const { t, lang } = useI18n()
+  const { projects } = useProjects()
   const railRef = useRef<HTMLDivElement>(null)
 
   const scroll = (dir: -1 | 1) => {
@@ -119,14 +61,15 @@ export function InsightsPage() {
         </div>
 
         <div className="company-track-rail" ref={railRef}>
-          {TRACK_PROJECTS.map((p) => {
-            const name = lang === 'zh' ? p.nameZh : p.nameEn
-            const city = lang === 'zh' ? p.cityZh : p.cityEn
-            const meta = lang === 'zh' ? p.metaZh : p.metaEn
+          {projects.map((p) => {
+            const name = pickText(p.name, lang)
+            const city = pickText(p.city, lang)
+            const meta = trackMeta(p, lang, t(`type.${p.type}`))
+            const images = p.images?.length ? p.images : p.image ? [p.image] : []
             return (
               <article key={p.id} className="company-track-card">
                 <div className="company-track-media">
-                  <img src={p.image} alt={name} />
+                  <ProjectImageCarousel images={images} alt={name} variant="rail" intervalMs={5000} />
                 </div>
                 <div className="company-track-body">
                   <h3>{name}</h3>
@@ -140,7 +83,7 @@ export function InsightsPage() {
                   <div className="company-track-meta">
                     <strong>{meta}</strong>
                   </div>
-                  <Link className="company-track-cta" to="/contact">
+                  <Link className="company-track-cta" to={`/projects/${p.slug}`}>
                     {t('insights.trackCta')}
                   </Link>
                 </div>

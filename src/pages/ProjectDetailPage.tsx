@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import { ProjectBody } from '../components/ProjectBody'
+import { ProjectImageCarousel } from '../components/ProjectImageCarousel'
 import { pickList, pickText } from '../lib/localized'
 import { useI18n } from '../i18n'
 import { useProjects } from '../projects/ProjectsProvider'
@@ -56,18 +57,36 @@ export function ProjectDetailPage() {
         </Link>
 
         <div className="project-detail-hero">
-          <img src={project.image} alt={name} />
+          <ProjectImageCarousel images={project.images?.length ? project.images : [project.image]} alt={name} variant="hero" />
         </div>
 
         <div className="project-detail-main">
           <p className="eyebrow">{city}</p>
-          <h1>{name}</h1>
+          <h1 className="project-detail-title">
+            <span>{name}</span>
+            {project.link ? (
+              <a
+                className="project-name-link"
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={lang === 'zh' ? '打开项目链接' : 'Open project link'}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
+                  <path
+                    d="M14 5h5v5M19 5 10 14M11 5H6a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5"
+                    stroke="currentColor"
+                    strokeWidth="1.75"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </a>
+            ) : null}
+          </h1>
           <div className="tag-row">
             <span className="tag">{t(`type.${project.type}`)}</span>
             <span className="tag">{t(`status.${project.status}`)}</span>
-            {project.relatedEntity ? (
-              <span className="tag">{project.relatedEntity}</span>
-            ) : null}
           </div>
 
           {metrics.length > 0 ? (

@@ -4,6 +4,7 @@ import type { ProjectType } from '../data/projects'
 import { cityKey, pickText } from '../lib/localized'
 import { useI18n } from '../i18n'
 import { useProjects } from '../projects/ProjectsProvider'
+import { ProjectImageCarousel } from '../components/ProjectImageCarousel'
 
 const ProjectMap = lazy(() =>
   import('../components/ProjectMap').then((m) => ({ default: m.ProjectMap })),
@@ -20,6 +21,7 @@ export function ProjectsPage() {
   const selectedId = params.get('selected')
 
   const [localSelected, setLocalSelected] = useState<string | null>(selectedId)
+  const [filtersOpen, setFiltersOpen] = useState(false)
 
   const cities = useMemo(() => {
     const map = new Map<string, string>()
@@ -45,10 +47,23 @@ export function ProjectsPage() {
       ? localSelected
       : (filtered[0]?.id ?? null)
 
+  const hasActiveFilters = city !== 'all' || type !== 'all'
+
+  const cityLabel =
+    city === 'all' ? t('projects.allCities') : (cities.find((c) => c.key === city)?.label ?? city)
+  const typeLabel = type === 'all' ? t('projects.allTypes') : t(`type.${type}`)
+
   const setFilter = (key: 'city' | 'type', value: string) => {
     const next = new URLSearchParams(params)
     if (value === 'all') next.delete(key)
     else next.set(key, value)
+    setParams(next)
+  }
+
+  const clearFilters = () => {
+    const next = new URLSearchParams(params)
+    next.delete('city')
+    next.delete('type')
     setParams(next)
   }
 
@@ -64,47 +79,80 @@ export function ProjectsPage() {
       <div className="page-hero reveal">
         <p className="eyebrow">{t('projects.eyebrow')}</p>
         <h1>{t('projects.title')}</h1>
-        <p className="section-lead">{t('projects.lead')}</p>
+        <p className="page-hint">{t('projects.lead')}</p>
       </div>
 
-      <div className="filters" role="group" aria-label="Filter projects">
-        <button
-          type="button"
-          className={`chip ${city === 'all' ? 'active' : ''}`}
-          onClick={() => setFilter('city', 'all')}
-        >
-          {t('projects.allCities')}
-        </button>
-        {cities.map((c) => (
+      <div className={`filter-bar ${filtersOpen ? 'is-open' : ''} ${hasActiveFilters ? 'has-active' : ''}`}>
+        <div className="filter-bar-summary">
           <button
-            key={c.key}
             type="button"
-            className={`chip ${city === c.key ? 'active' : ''}`}
-            onClick={() => setFilter('city', c.key)}
+            className="filter-bar-toggle"
+            aria-expanded={filtersOpen}
+            onClick={() => setFiltersOpen((v) => !v)}
           >
-            {c.label}
+            <span className="filter-bar-label">{t('projects.filter')}</span>
+            <span className="filter-bar-sep" aria-hidden="true">
+              ·
+            </span>
+            <span className="filter-bar-value">{cityLabel}</span>
+            <span className="filter-bar-sep" aria-hidden="true">
+              ·
+            </span>
+            <span className="filter-bar-value">{typeLabel}</span>
+            <span className={`filter-bar-caret ${filtersOpen ? 'is-open' : ''}`} aria-hidden="true">
+              ▾
+            </span>
           </button>
-        ))}
-      </div>
+          {hasActiveFilters && (
+            <button type="button" className="filter-bar-clear" onClick={clearFilters}>
+              {t('projects.clear')}
+            </button>
+          )}
+        </div>
 
-      <div className="filters" role="group" aria-label="Filter by type">
-        <button
-          type="button"
-          className={`chip ${type === 'all' ? 'active' : ''}`}
-          onClick={() => setFilter('type', 'all')}
-        >
-          {t('projects.allTypes')}
-        </button>
-        {types.map((item) => (
-          <button
-            key={item}
-            type="button"
-            className={`chip ${type === item ? 'active' : ''}`}
-            onClick={() => setFilter('type', item)}
-          >
-            {t(`type.${item}`)}
-          </button>
-        ))}
+        {filtersOpen && (
+          <div className="filter-bar-panel">
+            <div className="filters" role="group" aria-label={t('projects.allCities')}>
+              <button
+                type="button"
+                className={`chip ${city === 'all' ? 'active' : ''}`}
+                onClick={() => setFilter('city', 'all')}
+              >
+                {t('projects.allCities')}
+              </button>
+              {cities.map((c) => (
+                <button
+                  key={c.key}
+                  type="button"
+                  className={`chip ${city === c.key ? 'active' : ''}`}
+                  onClick={() => setFilter('city', c.key)}
+                >
+                  {c.label}
+                </button>
+              ))}
+            </div>
+
+            <div className="filters filters--nested" role="group" aria-label={t('projects.allTypes')}>
+              <button
+                type="button"
+                className={`chip ${type === 'all' ? 'active' : ''}`}
+                onClick={() => setFilter('type', 'all')}
+              >
+                {t('projects.allTypes')}
+              </button>
+              {types.map((item) => (
+                <button
+                  key={item}
+                  type="button"
+                  className={`chip ${type === item ? 'active' : ''}`}
+                  onClick={() => setFilter('type', item)}
+                >
+                  {t(`type.${item}`)}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       <div className="projects-layout">
@@ -112,7 +160,7 @@ export function ProjectsPage() {
           {filtered.length === 0 ? (
             <div className="empty-state">
               <p>{t('projects.empty')}</p>
-              <button type="button" className="btn btn-outline" onClick={() => setParams({})}>
+              <button type="button" className="btn btn-outline" onClick={clearFilters}>
                 {t('projects.clear')}
               </button>
             </div>
@@ -121,7 +169,7 @@ export function ProjectsPage() {
               {filtered.map((p) => {
                 const name = pickText(p.name, lang)
                 const summary = pickText(p.summary, lang)
-                const cityLabel = pickText(p.city, lang)
+                const cityLabelItem = pickText(p.city, lang)
                 return (
                   <article
                     key={p.id}
@@ -133,12 +181,17 @@ export function ProjectsPage() {
                       onClick={() => select(p.id)}
                       aria-pressed={activeId === p.id}
                     >
-                      <img src={p.image} alt="" />
+                      <ProjectImageCarousel
+                        images={p.images?.length ? p.images : [p.image]}
+                        alt={name}
+                        variant="card"
+                        intervalMs={4500}
+                      />
                       <div>
                         <h3>{name}</h3>
                         <p>{summary.length > 110 ? `${summary.slice(0, 110)}…` : summary}</p>
                         <div className="tag-row">
-                          <span className="tag">{cityLabel}</span>
+                          <span className="tag">{cityLabelItem}</span>
                           <span className="tag">{t(`type.${p.type}`)}</span>
                           <span className="tag">{t(`status.${p.status}`)}</span>
                         </div>

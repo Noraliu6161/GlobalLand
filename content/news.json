@@ -1,0 +1,164 @@
+[
+  {
+    "id": "news-1785724513979",
+    "slug": "news-1785724513979",
+    "kind": "news",
+    "date": "2026-08-03",
+    "dateLabelEn": "August 3, 2026",
+    "dateLabelZh": "2026年8月3日",
+    "archiveYear": 2026,
+    "archiveMonth": 8,
+    "titleEn": "",
+    "titleZh": "测试",
+    "summaryEn": "",
+    "summaryZh": "我们现在在测试 我们现在在测试",
+    "blocks": [
+      {
+        "id": "b-mscmbkd9-yr1aj",
+        "type": "text",
+        "textEn": "",
+        "textZh": "<ul><li><p>这个问题 是事实</p></li></ul><p></p>"
+      },
+      {
+        "id": "b-mscmcht2-rnydy",
+        "type": "image",
+        "src": "/images/uploads/1785724661806-LTKO1A-4.jpeg",
+        "altEn": "",
+        "altZh": "韩语"
+      }
+    ],
+    "image": "/images/uploads/1785724583328-IMG_0699.jpeg"
+  },
+  {
+    "id": "fincen-rre-2026",
+    "slug": "fincen-rre-reporting-rules-2026",
+    "kind": "event",
+    "date": "2026-03-20",
+    "dateLabelEn": "March 20, 2026",
+    "dateLabelZh": "2026年3月20日",
+    "titleEn": "Event Preview | Deep Dive: FinCEN RRE Reporting Rules & Family Asset Protection",
+    "titleZh": "活动预告 | 深度解析 FinCEN RRE 申报规则与华人家庭资产保护",
+    "summaryEn": "A practical briefing on the 2026 U.S. real estate transparency rules—how to stay compliant while protecting family privacy and succession planning.",
+    "summaryZh": "聚焦 2026 美国房产透明化新规：如何合规申报，并守护家庭资产隐私与传承。",
+    "eventDetailsEn": "<p>Time: Thursday, March 26, 2:40 PM – 4:40 PM (Pacific Time)</p><p>Venue: Lake Hills Library, 15590 Lake Hills Blvd, Bellevue, WA 98007</p><p>Organizer: Chinese Chamber of Commerce in Washington State (CCCWA)</p><p>Co-Organizer: Seattle Real Estate Investment Club</p>",
+    "eventDetailsZh": "<p>时间：3月26日（周四）下午 2:40 – 4:40（太平洋时间）</p><p>地点：Lake Hills Library，15590 Lake Hills Blvd, Bellevue, WA 98007</p><p>主办：华盛顿州华人商会（CCCWA）</p><p>协办：西雅图房地产投资俱乐部</p>",
+    "bannerTitleZh": "深度解析 FINCEN RRE 申报规则与华人家庭资产保护",
+    "bannerSubZh": "2026 美国房产透明化新规：如何合规并守护资产隐私与传承？",
+    "archiveYear": 2026,
+    "archiveMonth": 3,
+    "image": "",
+    "blocks": [
+      {
+        "id": "b-msb9vnuy-vspvc",
+        "type": "text",
+        "textEn": "The Chinese Chamber of Commerce in Washington State (CCCWA), together with the Seattle Real Estate Investment Club, will host a focused briefing on FinCEN’s Residential Real Estate (RRE) reporting framework.\nThe session covers Mere Change in Form scenarios, practical compliance steps for Chinese families holding U.S. property, and how to balance disclosure requirements with privacy and long-term succession goals.",
+        "textZh": "华盛顿州华人商会（CCCWA）联合西雅图房地产投资俱乐部，将举办 FinCEN 住宅房地产（RRE）申报规则专题解读。\n活动将围绕 Mere Change in Form（形式变更）、华人家庭持有美国房产的合规实务，以及如何在披露要求与隐私、资产传承之间取得平衡展开讨论。"
+      },
+      {
+        "id": "b-msb9vnuy-1pteo",
+        "type": "image",
+        "src": "/images/uploads/1785642584732-IMG_7983.jpeg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msb9wp2w-m5vvp",
+        "type": "text",
+        "textEn": "TEST",
+        "textZh": ""
+      },
+      {
+        "id": "b-msb9x7go-7kdxw",
+        "type": "image",
+        "src": "/images/uploads/1785643318419-IMG_3774.jpeg",
+        "altEn": "",
+        "altZh": ""
+      }
+    ],
+    "registerUrl": ""
+  },
+  {
+    "id": "redmond-office-2026",
+    "slug": "downtown-redmond-office-acquisition",
+    "kind": "news",
+    "date": "2026-03-01",
+    "dateLabelEn": "March 1, 2026",
+    "dateLabelZh": "2026年3月1日",
+    "titleEn": "Downtown Redmond office acquisition closes",
+    "titleZh": "雷德蒙德市中心办公收购完成",
+    "summaryEn": "Global Land expands the Eastside commercial portfolio with a newly acquired office asset adjacent to the Microsoft campus.",
+    "summaryZh": "Global Land 新增东区办公资产，毗邻微软园区，持续扩展商业地产组合。",
+    "bodyEn": "<p>In March 2026, Global Land acquired an office building in downtown Redmond for $23 million. The property sits next to light rail and near the Microsoft campus.</p><p>Long-term leases with premier tenants support cash-on-cash returns during the hold period, with potential for appreciation at exit.</p>",
+    "bodyZh": "<p>2026 年 3 月，Global Land 以 2300 万美元收购雷德蒙德市中心办公楼。项目毗邻轻轨与微软园区。</p><p>优质租户长期租约支撑持有期现金回报，并具备退出增值空间。</p>",
+    "archiveYear": 2026,
+    "archiveMonth": 3,
+    "eventDetailsEn": "",
+    "eventDetailsZh": "",
+    "image": "",
+    "blocks": [
+      {
+        "id": "b-msb9vnuy-m56jy",
+        "type": "text",
+        "textEn": "In March 2026, Global Land acquired an office building in downtown Redmond for $23 million. The property sits next to light rail and near the Microsoft campus.\nLong-term leases with premier tenants support cash-on-cash returns during the hold period, with potential for appreciation at exit.",
+        "textZh": "2026 年 3 月，Global Land 以 2300 万美元收购雷德蒙德市中心办公楼。项目毗邻轻轨与微软园区。\n优质租户长期租约支撑持有期现金回报，并具备退出增值空间。"
+      }
+    ],
+    "registerUrl": ""
+  },
+  {
+    "id": "spring-district-2025",
+    "slug": "spring-district-leasing-update",
+    "kind": "news",
+    "date": "2025-11-12",
+    "dateLabelEn": "November 12, 2025",
+    "dateLabelZh": "2025年11月12日",
+    "titleEn": "Spring District leasing update",
+    "titleZh": "Spring District 租赁进展",
+    "summaryEn": "Long-term tenants continue to anchor Class A office in Bellevue’s Spring District.",
+    "summaryZh": "贝尔维尤 Spring District 甲级写字楼由长期租户持续支撑。",
+    "bodyEn": "<p>The Spring District Class A office, acquired in February 2024 for $16.28 million, remains leased to premier tenants across from Meta’s campus.</p>",
+    "bodyZh": "<p>2024 年 2 月以 1628 万美元收购的 Spring District 甲级写字楼，正对 Meta 园区，持续由优质租户承租。</p>",
+    "archiveYear": 2025,
+    "archiveMonth": 11,
+    "eventDetailsEn": "",
+    "eventDetailsZh": "",
+    "image": "",
+    "blocks": [
+      {
+        "id": "b-msb9vnuy-n0a2c",
+        "type": "text",
+        "textEn": "The Spring District Class A office, acquired in February 2024 for $16.28 million, remains leased to premier tenants across from Meta’s campus.",
+        "textZh": "2024 年 2 月以 1628 万美元收购的 Spring District 甲级写字楼，正对 Meta 园区，持续由优质租户承租。"
+      }
+    ],
+    "registerUrl": ""
+  },
+  {
+    "id": "residential-2025",
+    "slug": "community-focused-residential-progress",
+    "kind": "news",
+    "date": "2025-06-18",
+    "dateLabelEn": "June 18, 2025",
+    "dateLabelZh": "2025年6月18日",
+    "titleEn": "Community-focused residential progress",
+    "titleZh": "社区导向住宅项目进展",
+    "summaryEn": "Low-density communities across the Pacific Northwest continue to take shape.",
+    "summaryZh": "太平洋西北低密度社区项目持续推进。",
+    "bodyEn": "<p>Riverside Garden in Centralia and Sammamish SFH neighborhoods remain key residential initiatives under Global Land’s long-term development approach.</p>",
+    "bodyZh": "<p>森特勒利亚 Riverside Garden 与萨马米什独栋社区，持续体现 Global Land 的长期住宅开发路径。</p>",
+    "archiveYear": 2025,
+    "archiveMonth": 6,
+    "eventDetailsEn": "",
+    "eventDetailsZh": "",
+    "image": "",
+    "blocks": [
+      {
+        "id": "b-msb9vnuy-5l8nk",
+        "type": "text",
+        "textEn": "Riverside Garden in Centralia and Sammamish SFH neighborhoods remain key residential initiatives under Global Land’s long-term development approach.",
+        "textZh": "森特勒利亚 Riverside Garden 与萨马米什独栋社区，持续体现 Global Land 的长期住宅开发路径。"
+      }
+    ],
+    "registerUrl": ""
+  }
+]

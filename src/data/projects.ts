@@ -21,7 +21,12 @@ export interface Project {
   body?: LocalizedString
   bodyFont?: 'body' | 'display' | 'serif' | 'sans-sc' | 'serif-sc'
   highlights: LocalizedList
+  /** Cover image — always images[0] */
   image: string
+  /** All project photos; index 0 is the cover used across the site */
+  images: string[]
+  /** Optional URL opened from the link control next to the project name */
+  link?: string
   relatedEntity?: string
   featured?: boolean
 }
