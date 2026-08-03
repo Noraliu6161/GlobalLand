@@ -1,15 +1,12 @@
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { ProjectImageCarousel } from '../components/ProjectImageCarousel'
+import type { Project } from '../data/projects'
 import { pickText } from '../lib/localized'
 import { useI18n } from '../i18n'
 import { useProjects } from '../projects/ProjectsProvider'
 
-function trackMeta(
-  p: { units: number | null; type: string; summary: { en: string; zh: string } },
-  lang: 'en' | 'zh',
-  typeLabel: string,
-) {
+function trackMeta(p: Project, lang: 'en' | 'zh', typeLabel: string) {
   if (p.units != null) {
     return lang === 'zh' ? `${p.units} 套` : `${p.units} residences`
   }
