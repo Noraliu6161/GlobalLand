@@ -1,0 +1,32 @@
+{
+  "id": "1",
+  "slug": "1",
+  "nameEn": "house",
+  "nameZh": "房子",
+  "cityEn": "house",
+  "cityZh": "房子",
+  "type": "office",
+  "status": "acquired",
+  "units": 5,
+  "buildings": null,
+  "saleValueM": null,
+  "acquisitionPriceM": null,
+  "year": 2026,
+  "lat": 47.6062,
+  "lng": -122.3321,
+  "summaryEn": "aaa",
+  "summaryZh": "aaaa",
+  "bodyEn": "aaa",
+  "bodyZh": "aa",
+  "bodyFont": "body",
+  "highlightsEn": [],
+  "highlightsZh": [],
+  "image": "/images/uploads/1785729661616-images.jpg",
+  "images": [
+    "/images/uploads/1785729661616-images.jpg"
+  ],
+  "link": "",
+  "relatedEntity": "",
+  "featured": false,
+  "published": true
+}
