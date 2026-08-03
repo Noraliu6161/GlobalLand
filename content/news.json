@@ -1,5 +1,81 @@
 [
   {
+    "id": "news-1785724513979",
+    "slug": "news-1785724513979",
+    "kind": "news",
+    "date": "2026-08-03",
+    "dateLabelEn": "August 3, 2026",
+    "dateLabelZh": "2026年8月3日",
+    "archiveYear": 2026,
+    "archiveMonth": 8,
+    "titleEn": "",
+    "titleZh": "测试",
+    "summaryEn": "",
+    "summaryZh": "我们现在在测试 我们现在在测试",
+    "blocks": [
+      {
+        "id": "b-mscmbkd9-yr1aj",
+        "type": "text",
+        "textEn": "",
+        "textZh": "<ul><li><p>这个问题 是事实</p></li></ul><p></p>"
+      },
+      {
+        "id": "b-mscmcht2-rnydy",
+        "type": "image",
+        "src": "/images/uploads/1785724661806-LTKO1A-4.jpeg",
+        "altEn": "",
+        "altZh": "韩语"
+      }
+    ],
+    "image": "/images/uploads/1785724583328-IMG_0699.jpeg",
+    "eventDetailsEn": "",
+    "eventDetailsZh": "",
+    "registerUrl": ""
+  },
+  {
+    "id": "news-1785728373388",
+    "slug": "news-1785728373388",
+    "kind": "news",
+    "date": "2026-08-03",
+    "dateLabelEn": "August 3, 2026",
+    "dateLabelZh": "2026年8月3日",
+    "archiveYear": 2026,
+    "archiveMonth": 8,
+    "titleEn": "first test",
+    "titleZh": "第一次测试",
+    "summaryEn": "first project ",
+    "summaryZh": "第一个项目",
+    "blocks": [
+      {
+        "id": "b-mscolhlv-0r7qt",
+        "type": "text",
+        "textEn": "<p><strong>good project</strong></p>",
+        "textZh": "<p><strong>这是一个很好的项目</strong></p>"
+      },
+      {
+        "id": "b-mscom3qt-xe1zh",
+        "type": "image",
+        "src": "/images/uploads/1785728458926-b.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-mscombxc-x5x65",
+        "type": "text",
+        "textEn": "<p><strong>test2</strong></p>",
+        "textZh": "<p><strong>test2</strong></p>"
+      },
+      {
+        "id": "b-mscomikm-t25ai",
+        "type": "image",
+        "src": "/images/uploads/1785728478706-kk.jpg",
+        "altEn": "",
+        "altZh": ""
+      }
+    ],
+    "image": "/images/uploads/1785728398980-images.jpg"
+  },
+  {
     "id": "fincen-rre-2026",
     "slug": "fincen-rre-reporting-rules-2026",
     "kind": "event",
