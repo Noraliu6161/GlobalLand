@@ -47,6 +47,15 @@ export function HelpPage({ lang }: { lang: AdminLang }) {
             title: '检查正式站',
             body: ['打开正式域名，核对文案、图片与新闻/项目详情页是否与后台一致。'],
           },
+          {
+            n: '6',
+            title: '收件箱（Contact 留言）',
+            body: [
+              '左侧「收件箱」读取正式站 Netlify Forms 的 contact 提交。',
+              '首次使用：Netlify → Forms → Enable form detection，然后重新部署；到 User settings → Applications 创建 Personal Access Token，在站点 Environment variables 里添加 NETLIFY_API_TOKEN。',
+              '访客在 /contact 提交后，刷新收件箱即可查看；也可在 Netlify → Forms → contact 查看。',
+            ],
+          },
         ]
       : [
           {
@@ -87,6 +96,15 @@ export function HelpPage({ lang }: { lang: AdminLang }) {
             n: '5',
             title: 'Verify live',
             body: ['Open the production site and confirm copy, images, and news/project detail pages match the admin.'],
+          },
+          {
+            n: '6',
+            title: 'Inbox (Contact messages)',
+            body: [
+              'The Inbox menu reads Contact submissions from Netlify Forms on the live site.',
+              'First-time setup: Netlify → Forms → Enable form detection, then redeploy. Create a Personal Access Token under User settings → Applications, and add NETLIFY_API_TOKEN in Site → Environment variables.',
+              'After visitors submit on /contact, refresh Inbox to see messages (or open Netlify → Forms → contact).',
+            ],
           },
         ]
 

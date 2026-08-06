@@ -9,6 +9,7 @@ import { AboutPageEditor } from './pages/AboutPageEditor'
 import { PublishPage } from './pages/PublishPage'
 import { TrashPage } from './pages/TrashPage'
 import { HelpPage } from './pages/HelpPage'
+import { InboxPage } from './pages/InboxPage'
 
 type User = { email?: string }
 
@@ -26,6 +27,7 @@ const icons = {
   projects: 'M4 7h16M4 12h16M4 17h10',
   news: 'M5 5h14v14H5V5Zm3 4h8M8 13h8M8 17h5',
   about: 'M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7 8a7 7 0 0 1 14 0',
+  inbox: 'M4 6h16v12H4V6Zm0 0 8 6 8-6',
   publish: 'M12 16V5m0 0 4 4m-4-4-4 4M5 19h14',
   trash: 'M4 7h16M9 7V5h6v2m-8 3v8m4-8v8m4-8v8M6 7l1 12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1l1-12',
   help: 'M12 17h.01M9.5 9.5a2.5 2.5 0 1 1 3.7 2.2c-.7.4-1.2.9-1.2 1.8V14',
@@ -82,6 +84,7 @@ export function AdminApp() {
     { to: '/projects', label: t.projects, icon: icons.projects },
     { to: '/news', label: t.news, icon: icons.news },
     { to: '/about', label: t.about, icon: icons.about },
+    { to: '/inbox', label: t.inbox, icon: icons.inbox },
     { to: '/trash', label: t.trash, icon: icons.trash },
     { to: '/publish', label: t.publish, icon: icons.publish },
     { to: '/help', label: t.help, icon: icons.help },
@@ -144,6 +147,7 @@ export function AdminApp() {
             <Route path="/news" element={<NewsPage lang={lang} />} />
             <Route path="/news/:id" element={<NewsEditorPage lang={lang} />} />
             <Route path="/about" element={<AboutPageEditor lang={lang} />} />
+            <Route path="/inbox" element={<InboxPage lang={lang} />} />
             <Route path="/trash" element={<TrashPage lang={lang} />} />
             <Route path="/publish" element={<PublishPage lang={lang} />} />
             <Route path="/help" element={<HelpPage lang={lang} />} />

@@ -15,7 +15,7 @@
   <body>
     <div id="root"></div>
     <!-- Netlify Forms: static detection for SPA (must match ContactPage field names) -->
-    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <form name="contact" method="POST" netlify data-netlify="true" data-netlify-honeypot="bot-field" hidden>
       <input type="hidden" name="form-name" value="contact" />
       <input name="bot-field" />
       <input name="email" type="email" />

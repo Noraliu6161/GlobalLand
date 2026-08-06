@@ -401,6 +401,48 @@ export async function callCmsFunction(
   return { ok: res.ok, data }
 }
 
+export type ContactSubmission = {
+  id: string
+  createdAt: string
+  email: string
+  subject: string
+  message: string
+  messageHtml?: string
+}
+
+export async function fetchContactSubmissions(): Promise<
+  | { ok: true; submissions: ContactSubmission[]; message?: string }
+  | { ok: false; error: string }
+> {
+  if (import.meta.env.DEV) {
+    return {
+      ok: false,
+      error:
+        'Inbox reads Netlify Forms on the live site. Deploy and open /admin/#/inbox after setting NETLIFY_API_TOKEN.',
+    }
+  }
+
+  const identity = window.netlifyIdentity
+  const user = identity?.currentUser?.()
+  if (!user) return { ok: false, error: 'Login required' }
+  const token = await user.jwt()
+
+  const res = await fetch('/.netlify/functions/list-contact-submissions?per_page=50', {
+    headers: { Authorization: `Bearer ${token}` },
+  })
+  const data = (await res.json().catch(() => ({}))) as {
+    error?: string
+    message?: string
+    submissions?: ContactSubmission[]
+  }
+  if (!res.ok) return { ok: false, error: data.error || res.statusText }
+  return {
+    ok: true,
+    submissions: Array.isArray(data.submissions) ? data.submissions : [],
+    message: data.message,
+  }
+}
+
 declare global {
   interface Window {
     netlifyIdentity?: {
