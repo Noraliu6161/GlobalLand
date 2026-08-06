@@ -7,12 +7,16 @@ import { callCmsFunction } from '../lib/contentApi'
 export function PublishPage({ lang }: { lang: AdminLang }) {
   const t = getCopy(lang)
   const [status, setStatus] = useState('')
+  const [statusKind, setStatusKind] = useState<'ok' | 'err'>('ok')
+  const [prUrl, setPrUrl] = useState('')
   const [busy, setBusy] = useState<'preview' | 'publish' | null>(null)
   const zh = lang === 'zh'
 
   const run = async (kind: 'preview' | 'publish') => {
     setBusy(kind)
     setStatus('')
+    setPrUrl('')
+    setStatusKind('ok')
     const name = kind === 'preview' ? 'preview-cms' : 'publish-cms'
     if (kind === 'publish') {
       const ok = window.confirm(
@@ -28,14 +32,21 @@ export function PublishPage({ lang }: { lang: AdminLang }) {
     const res = await callCmsFunction(name)
     setBusy(null)
     if (!res.ok) {
-      setStatus(String(res.data.error || 'Request failed'))
+      const detail =
+        res.data.details && typeof res.data.details === 'object' && 'message' in res.data.details
+          ? String((res.data.details as { message?: string }).message || '')
+          : ''
+      const err = String(res.data.error || 'Request failed')
+      setStatusKind('err')
+      setStatus(detail && detail !== err ? `${err} — ${detail}` : err)
       return
     }
     const msg =
       kind === 'preview'
-        ? String(res.data.preview_url || res.data.message || 'Preview ready')
+        ? String(res.data.message || res.data.preview_url || 'Preview ready')
         : String(res.data.message || 'Published')
     setStatus(msg)
+    if (typeof res.data.pr_url === 'string') setPrUrl(res.data.pr_url)
     if (typeof res.data.preview_url === 'string') {
       window.open(res.data.preview_url, '_blank', 'noopener')
     }
@@ -63,15 +74,27 @@ export function PublishPage({ lang }: { lang: AdminLang }) {
             {busy === 'publish' ? '…' : zh ? '发布到网站' : 'Publish to Website'}
           </button>
         </div>
-        {status && <p className="admin-status is-ok">{status}</p>}
+        {status && (
+          <p className={`admin-status ${statusKind === 'err' ? 'is-err' : 'is-ok'}`}>{status}</p>
+        )}
+        {prUrl ? (
+          <p className="admin-hint">
+            {zh ? 'GitHub PR：' : 'GitHub PR: '}
+            <a href={prUrl} target="_blank" rel="noreferrer">
+              {prUrl}
+            </a>
+          </p>
+        ) : null}
         <p className="admin-hint">
           {zh ? (
             <>
-              发布前请检查 <Link to="/trash">废纸篓</Link>。废纸篓内的内容不会出现在网站上。
+              预览会创建 cms→main 的 Deploy Preview（需有未发布的草稿，且 Netlify 积分足够构建）。发布前请检查{' '}
+              <Link to="/trash">废纸篓</Link>。
             </>
           ) : (
             <>
-              Check <Link to="/trash">Trash</Link> before publishing. Trashed items do not appear on the website.
+              Preview opens a cms→main Deploy Preview (needs unpublished draft saves and Netlify credits). Check{' '}
+              <Link to="/trash">Trash</Link> before publishing.
             </>
           )}
         </p>
