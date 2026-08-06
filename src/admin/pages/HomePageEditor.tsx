@@ -21,6 +21,7 @@ type HomeData = typeof homeRaw & {
   newsReadEn?: string
   newsReadZh?: string
   newsCount?: number
+  copyrightYear?: number
 }
 type Slide = HomeData['heroSlides'][number]
 
@@ -42,6 +43,7 @@ function withHomeDefaults(raw: typeof homeRaw): HomeData {
     newsReadEn: (raw as HomeData).newsReadEn || 'Read more',
     newsReadZh: (raw as HomeData).newsReadZh || '阅读更多',
     newsCount: Number((raw as HomeData).newsCount) || 3,
+    copyrightYear: Number((raw as HomeData).copyrightYear) || new Date().getFullYear(),
   }
 }
 
@@ -430,6 +432,24 @@ export function HomePageEditor({ lang }: { lang: AdminLang }) {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="admin-card">
+        <h2>{lb('Footer', '页脚')}</h2>
+        <p className="admin-hint" style={{ marginTop: 0 }}>
+          {zh
+            ? '控制全站页脚版权年份，例如 © 2026 Global Land LLC。'
+            : 'Controls the site-wide footer copyright year, e.g. © 2026 Global Land LLC.'}
+        </p>
+        <div className="admin-grid-2">
+          <Field
+            label={lb('Copyright year', '版权年份')}
+            value={String(data.copyrightYear || new Date().getFullYear())}
+            onChange={(v) => set('copyrightYear', Number(v) || new Date().getFullYear())}
+            type="number"
+            hint={zh ? '显示为 © 年份 公司名' : 'Shown as © YEAR company name'}
+          />
         </div>
       </section>
     </>

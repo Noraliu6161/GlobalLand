@@ -47,7 +47,6 @@ export function AboutTrioCollage({
       <span className="about-trio__dots" aria-hidden />
       {slots.map(({ slot, photo }) => (
         <figure key={`${slot}-${photo.src}-${offset}`} className={`about-trio__slot about-trio__slot--${slot + 1}`}>
-          {slot === 0 ? <span className="about-trio__accent" aria-hidden /> : null}
           <img
             src={photo.src}
             alt={lang === 'zh' ? photo.altZh || photo.altEn : photo.altEn}

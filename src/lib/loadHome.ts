@@ -5,6 +5,7 @@ import type { HeroSlide } from '../components/heroSlides'
 export type HomeContent = {
   heroEyebrow: LocalizedString
   foundedYear: number
+  copyrightYear: number
   brandLeft: LocalizedString
   brandRight: LocalizedString
   heroLead: LocalizedString
@@ -47,6 +48,7 @@ type RawHome = {
   heroEyebrowEn?: string
   heroEyebrowZh?: string
   foundedYear?: number
+  copyrightYear?: number
   brandLeftEn?: string
   brandLeftZh?: string
   brandRightEn?: string
@@ -126,6 +128,7 @@ function normalize(raw: RawHome): HomeContent {
   return {
     heroEyebrow: L(raw.heroEyebrowEn, raw.heroEyebrowZh, 'Est. 2018 · Seattle'),
     foundedYear: Number(raw.foundedYear) || 2018,
+    copyrightYear: Number(raw.copyrightYear) || new Date().getFullYear(),
     brandLeft: L(raw.brandLeftEn, raw.brandLeftZh, 'Global'),
     brandRight: L(raw.brandRightEn, raw.brandRightZh, 'Land'),
     heroLead: L(raw.heroLeadEn, raw.heroLeadZh),

@@ -1,5 +1,6 @@
 import type { Project, ProjectType, ProjectStatus } from '../data/projects'
 import { coerceLocalized, type LocalizedList, type LocalizedString } from './localized'
+import { sortProjectsByOrder } from './projectOrder'
 
 type ContentProject = {
   id?: string
@@ -43,6 +44,16 @@ const modules = import.meta.glob('../../content/projects/*.json', {
   eager: true,
   import: 'default',
 }) as Record<string, ContentProject>
+
+const orderModules = import.meta.glob('../../content/project-order.json', {
+  eager: true,
+  import: 'default',
+}) as Record<string, string[]>
+
+function loadBundledOrder(): string[] {
+  const first = Object.values(orderModules)[0]
+  return Array.isArray(first) ? first.filter((s) => typeof s === 'string') : []
+}
 
 function fromFlatOrLegacy(
   en: string | undefined,
@@ -131,10 +142,12 @@ export function loadProjects(): {
   projects: Project[]
   source: ProjectsSource
 } {
-  const projects = Object.values(modules)
-    .filter((doc) => doc && doc.published !== false)
-    .map(normalize)
-    .sort((a, b) => b.year - a.year || a.name.en.localeCompare(b.name.en))
+  const projects = sortProjectsByOrder(
+    Object.values(modules)
+      .filter((doc) => doc && doc.published !== false)
+      .map(normalize),
+    loadBundledOrder(),
+  )
 
   return {
     projects,

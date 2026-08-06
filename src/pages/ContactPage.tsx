@@ -169,15 +169,45 @@ function MessageEditor({
 export function ContactPage() {
   const { t } = useI18n()
   const [sent, setSent] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState('')
   const [messageText, setMessageText] = useState('')
   const [messageHtml, setMessageHtml] = useState('')
 
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    if (!messageText.trim()) return
-    // Design-only submit — keep html ready for future form wiring
-    void messageHtml
-    setSent(true)
+    if (!messageText.trim() || sending) return
+
+    const form = e.currentTarget
+    const email = (form.elements.namedItem('email') as HTMLInputElement).value.trim()
+    const subject = (form.elements.namedItem('subject') as HTMLInputElement).value.trim()
+    const bot = (form.elements.namedItem('bot-field') as HTMLInputElement | null)?.value || ''
+
+    setSending(true)
+    setError('')
+
+    const body = new URLSearchParams({
+      'form-name': 'contact',
+      'bot-field': bot,
+      email,
+      subject,
+      message: messageText,
+      'message-html': messageHtml,
+    })
+
+    try {
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body.toString(),
+      })
+      if (!res.ok) throw new Error(`Submit failed (${res.status})`)
+      setSent(true)
+    } catch {
+      setError(t('contact.error'))
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -217,7 +247,21 @@ export function ContactPage() {
               </div>
             </div>
           ) : (
-            <form className="contact-message-card" onSubmit={onSubmit}>
+            <form
+              className="contact-message-card"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              onSubmit={(ev) => void onSubmit(ev)}
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <p className="contact-honeypot" aria-hidden="true">
+                <label>
+                  Don’t fill this out: <input name="bot-field" tabIndex={-1} autoComplete="off" />
+                </label>
+              </p>
+
               <div className="contact-message-head">
                 <h2>{t('contact.formTitle')}</h2>
                 <p>{t('contact.formLead')}</p>
@@ -249,8 +293,10 @@ export function ContactPage() {
                 />
               </div>
 
-              <button className="contact-send-btn" type="submit" disabled={!messageText.trim()}>
-                {t('contact.send')}
+              {error ? <p className="contact-form-error">{error}</p> : null}
+
+              <button className="contact-send-btn" type="submit" disabled={!messageText.trim() || sending}>
+                {sending ? t('contact.sending') : t('contact.send')}
               </button>
             </form>
           )}

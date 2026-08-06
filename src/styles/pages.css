@@ -1633,18 +1633,6 @@
   z-index: 3;
 }
 
-.about-trio__accent {
-  position: absolute;
-  left: 0;
-  top: 12%;
-  bottom: 12%;
-  width: 5px;
-  z-index: 2;
-  border-radius: 999px;
-  background: linear-gradient(180deg, #3cb89a, #2f8f86 55%, #1f6f68);
-  pointer-events: none;
-}
-
 .about-trio__controls {
   position: absolute;
   left: 0;
@@ -1970,6 +1958,22 @@
 .contact-field {
   display: grid;
   gap: 0.4rem;
+}
+
+.contact-honeypot {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.contact-form-error {
+  margin: 0;
+  color: #b42318;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .contact-field > span,

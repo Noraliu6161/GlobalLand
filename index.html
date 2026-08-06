@@ -14,6 +14,15 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- Netlify Forms: static detection for SPA (must match ContactPage field names) -->
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="bot-field" />
+      <input name="email" type="email" />
+      <input name="subject" type="text" />
+      <textarea name="message"></textarea>
+      <textarea name="message-html"></textarea>
+    </form>
     <script type="module" src="/src/main.tsx"></script>
     <!-- Required for Netlify Identity invite / password recovery popups -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>

@@ -6,18 +6,32 @@ import { Field, ImageField } from '../components/Fields'
 import aboutRaw from '../../../content/about.json'
 import type { AboutContent, AboutPhoto } from '../../lib/loadAbout'
 
+const COMMUNITY_PHOTO_COUNT = 4
+
+function blankPhoto(): AboutPhoto {
+  return { src: '', altEn: '', altZh: '' }
+}
+
+function withCommunitySlots(raw: AboutContent): AboutContent {
+  const clone = structuredClone(raw)
+  const list = [...(clone.communityPhotos || [])]
+  while (list.length < COMMUNITY_PHOTO_COUNT) list.push(blankPhoto())
+  clone.communityPhotos = list.slice(0, COMMUNITY_PHOTO_COUNT)
+  return clone
+}
+
 export function AboutPageEditor({ lang }: { lang: AdminLang }) {
   const t = getCopy(lang)
   const zh = lang === 'zh'
   const lb = (en: string, cn: string) => (zh ? cn : en)
-  const [data, setData] = useState<AboutContent>(() => structuredClone(aboutRaw as AboutContent))
+  const [data, setData] = useState<AboutContent>(() => withCommunitySlots(aboutRaw as AboutContent))
   const [status, setStatus] = useState('')
   const [busy, setBusy] = useState(false)
 
   useEffect(() => {
     let cancelled = false
     void loadContentJson('content/about.json', aboutRaw as AboutContent).then((remote) => {
-      if (!cancelled) setData(structuredClone(remote))
+      if (!cancelled) setData(withCommunitySlots(remote))
     })
     return () => {
       cancelled = true
@@ -36,9 +50,20 @@ export function AboutPageEditor({ lang }: { lang: AdminLang }) {
   }
 
   const save = async () => {
+    const filled = data.communityPhotos.filter((p) => (p.src || '').trim()).length
+    if (filled < COMMUNITY_PHOTO_COUNT) {
+      setStatus(
+        zh
+          ? `社区图片必须上传 ${COMMUNITY_PHOTO_COUNT} 张（当前 ${filled} 张），请补全后再保存。`
+          : `Community photos require ${COMMUNITY_PHOTO_COUNT} images (currently ${filled}). Add all before saving.`,
+      )
+      return
+    }
+
     setBusy(true)
     setStatus('')
-    const res = await saveContentFile('content/about.json', data)
+    const payload = withCommunitySlots(data)
+    const res = await saveContentFile('content/about.json', payload)
     setBusy(false)
     setStatus(res.ok ? t.saved : res.error)
   }
@@ -182,17 +207,24 @@ export function AboutPageEditor({ lang }: { lang: AdminLang }) {
 
       <section className="admin-card">
         <div className="admin-card-head">
-          <h2>{lb('Community photos', '社区图片')}</h2>
+          <h2>
+            {lb('Community photos (4 required)', '社区图片（必须 4 张）')} <span className="req">*</span>
+          </h2>
         </div>
+        <p className="admin-hint" style={{ marginTop: 0 }}>
+          {zh
+            ? '四张社区图片均为必填，缺一张都无法保存。'
+            : 'All four community photos are required. Saving is blocked until each slot has an image.'}
+        </p>
         {data.communityPhotos.map((p, i) => (
           <div key={i} className="admin-subcard">
             <div className="admin-card-head">
               <h3>
-                {zh ? '社区图片' : 'Community photo'} {i + 1}
+                {zh ? '社区图片' : 'Community photo'} {i + 1} <span className="req">*</span>
               </h3>
             </div>
             <ImageField
-              label={lb('Image', '图片')}
+              label={lb('Image (required)', '图片（必填）')}
               value={p.src}
               onChange={(v) => setPhoto('communityPhotos', i, { src: v })}
               lang={lang}

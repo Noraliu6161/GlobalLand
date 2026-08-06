@@ -374,6 +374,38 @@ a {
   font-weight: 650;
 }
 
+.admin-th-drag,
+.admin-td-drag {
+  width: 2rem;
+  padding-right: 0 !important;
+}
+
+.admin-drag-handle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  color: #9aa19c;
+  letter-spacing: -0.12em;
+  cursor: grab;
+  user-select: none;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.admin-table--dnd tbody tr {
+  cursor: grab;
+}
+
+.admin-table--dnd tbody tr.is-dragging {
+  opacity: 0.55;
+  background: #f3f7f5;
+}
+
+.admin-table--dnd tbody tr:active {
+  cursor: grabbing;
+}
+
 .admin-bi {
   font-weight: 600;
   color: var(--gl-ink);
@@ -471,6 +503,11 @@ a {
   color: var(--gl-ink-soft);
   font-size: 0.82rem;
   line-height: 1.45;
+}
+
+.req {
+  color: #c0392b;
+  font-weight: 700;
 }
 
 .admin-btn {

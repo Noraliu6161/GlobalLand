@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState, type DragEvent } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { PageHeader } from '../AdminApp'
 import { getCopy, type AdminLang } from '../lib/i18n'
@@ -19,11 +19,21 @@ function liveProjects() {
   return loadProjectsFromModules().filter((p) => p.published !== false)
 }
 
+async function persistProjectOrder(slugs: string[]): Promise<string | null> {
+  const res = await saveContentFile('content/project-order.json', slugs)
+  return res.ok ? null : res.error
+}
+
 export function ProjectsPage({ lang }: { lang: AdminLang }) {
   const t = getCopy(lang)
   const [projects, setProjects] = useState(() => liveProjects())
   const [busySlug, setBusySlug] = useState('')
   const [migrateNote, setMigrateNote] = useState('')
+  const [orderStatus, setOrderStatus] = useState('')
+  const [draggingSlug, setDraggingSlug] = useState('')
+  const dragSlugRef = useRef('')
+  const projectsRef = useRef(projects)
+  projectsRef.current = projects
 
   // Load cms-branch projects (production) and migrate old unpublished drafts into trash.
   useEffect(() => {
@@ -38,7 +48,8 @@ export function ProjectsPage({ lang }: { lang: AdminLang }) {
         if (res.ok) movedSlugs.add(p.slug)
       }
       if (cancelled) return
-      setProjects(all.filter((p) => p.published !== false && !movedSlugs.has(p.slug)))
+      const live = all.filter((p) => p.published !== false && !movedSlugs.has(p.slug))
+      setProjects(live)
       if (movedSlugs.size > 0) {
         setMigrateNote(
           lang === 'zh'
@@ -66,9 +77,53 @@ export function ProjectsPage({ lang }: { lang: AdminLang }) {
     setBusySlug(p.slug)
     const res = await moveToTrash(makeProjectTrashItem(p))
     setBusySlug('')
-    if (res.ok) setProjects((list) => list.filter((x) => x.slug !== p.slug))
-    else window.alert(res.error)
+    if (!res.ok) {
+      window.alert(res.error)
+      return
+    }
+    const next = projects.filter((x) => x.slug !== p.slug)
+    setProjects(next)
+    const err = await persistProjectOrder(next.map((x) => x.slug))
+    if (err) window.alert(err)
   }
+
+  const onDragStart = (slug: string) => {
+    dragSlugRef.current = slug
+    setDraggingSlug(slug)
+  }
+
+  const onDragOver = (e: DragEvent, overSlug: string) => {
+    e.preventDefault()
+    const from = dragSlugRef.current
+    if (!from || from === overSlug) return
+    setProjects((list) => {
+      const fromIdx = list.findIndex((p) => p.slug === from)
+      const toIdx = list.findIndex((p) => p.slug === overSlug)
+      if (fromIdx < 0 || toIdx < 0 || fromIdx === toIdx) return list
+      const next = [...list]
+      const [item] = next.splice(fromIdx, 1)
+      next.splice(toIdx, 0, item)
+      return next
+    })
+  }
+
+  const onDragEnd = async () => {
+    const slug = dragSlugRef.current
+    dragSlugRef.current = ''
+    setDraggingSlug('')
+    if (!slug) return
+    setOrderStatus(lang === 'zh' ? '正在保存排序…' : 'Saving order…')
+    const err = await persistProjectOrder(projectsRef.current.map((p) => p.slug))
+    setOrderStatus(
+      err
+        ? err
+        : lang === 'zh'
+          ? '排序已保存（网站列表将按此顺序显示）。'
+          : 'Order saved. Site lists will follow this order.',
+    )
+  }
+
+  const zh = lang === 'zh'
 
   return (
     <>
@@ -76,34 +131,59 @@ export function ProjectsPage({ lang }: { lang: AdminLang }) {
         title={t.projects}
         action={
           <Link className="admin-btn admin-btn-primary" to="/projects/new">
-            {lang === 'zh' ? '+ 新建项目' : '+ New project'}
+            {zh ? '+ 新建项目' : '+ New project'}
           </Link>
         }
       />
       {migrateNote && <p className="admin-status is-ok">{migrateNote}</p>}
+      <p className="admin-hint">
+        {zh
+          ? '默认按创立年份从新到旧。拖拽左侧 ⋮⋮ 可自定义顺序。'
+          : 'Default order is newest creation year first. Drag ⋮⋮ to customize.'}
+      </p>
+      {orderStatus && (
+        <p className={`admin-status ${orderStatus.includes('…') || orderStatus.includes('Saving') ? '' : orderStatus.includes('失败') || /error|fail|Could/i.test(orderStatus) ? 'is-err' : 'is-ok'}`}>
+          {orderStatus}
+        </p>
+      )}
       <div className="admin-card">
-        <table className="admin-table">
+        <table className="admin-table admin-table--dnd">
           <thead>
             <tr>
-              <th>{lang === 'zh' ? '项目' : 'Project'}</th>
-              <th>{lang === 'zh' ? '城市' : 'City'}</th>
-              <th>{lang === 'zh' ? '状态' : 'Status'}</th>
+              <th className="admin-th-drag" aria-label={zh ? '排序' : 'Reorder'} />
+              <th>{zh ? '项目' : 'Project'}</th>
+              <th>{zh ? '年份' : 'Year'}</th>
+              <th>{zh ? '城市' : 'City'}</th>
+              <th>{zh ? '状态' : 'Status'}</th>
               <th />
             </tr>
           </thead>
           <tbody>
             {projects.map((p) => (
-              <tr key={p.slug}>
+              <tr
+                key={p.slug}
+                className={draggingSlug === p.slug ? 'is-dragging' : ''}
+                draggable
+                onDragStart={() => onDragStart(p.slug)}
+                onDragOver={(e) => onDragOver(e, p.slug)}
+                onDragEnd={() => void onDragEnd()}
+              >
+                <td className="admin-td-drag">
+                  <span className="admin-drag-handle" title={zh ? '拖拽排序' : 'Drag to reorder'} aria-hidden="true">
+                    ⋮⋮
+                  </span>
+                </td>
                 <td>
                   <div className="admin-project-cell">
                     {p.image ? <AdminMediaImage src={p.image} className="admin-thumb" /> : null}
                     <div>
-                      <div className="admin-bi">{lang === 'zh' ? p.nameZh || p.nameEn : p.nameEn}</div>
+                      <div className="admin-bi">{zh ? p.nameZh || p.nameEn : p.nameEn}</div>
                       <div className="admin-bi-zh">{p.slug}</div>
                     </div>
                   </div>
                 </td>
-                <td>{lang === 'zh' ? p.cityZh || p.cityEn : p.cityEn}</td>
+                <td>{p.year}</td>
+                <td>{zh ? p.cityZh || p.cityEn : p.cityEn}</td>
                 <td>
                   <span className={`admin-tag ${statusTone(p.status)}`}>{labelStatus(p.status, lang)}</span>
                   <span className="admin-tag admin-tag--type">{labelType(p.type, lang)}</span>
@@ -111,7 +191,7 @@ export function ProjectsPage({ lang }: { lang: AdminLang }) {
                 <td>
                   <div className="admin-row-actions">
                     <Link className="admin-btn" to={`/projects/${p.slug}`}>
-                      {lang === 'zh' ? '编辑' : 'Edit'}
+                      {zh ? '编辑' : 'Edit'}
                     </Link>
                     <button
                       type="button"
@@ -119,7 +199,7 @@ export function ProjectsPage({ lang }: { lang: AdminLang }) {
                       disabled={busySlug === p.slug}
                       onClick={() => void remove(p)}
                     >
-                      {lang === 'zh' ? '删除' : 'Delete'}
+                      {zh ? '删除' : 'Delete'}
                     </button>
                   </div>
                 </td>
@@ -172,16 +252,32 @@ export function ProjectEditorPage({ lang }: { lang: AdminLang }) {
       return
     }
     const { image, images } = normalizeProjectImages(data)
+    if (!image.trim()) {
+      setStatus(lang === 'zh' ? '封面图 #1 必须上传图片后才能保存。' : 'Cover #1 image is required before saving.')
+      return
+    }
     const payload = { ...data, slug: s, id: data.id.trim() || s, published: true, image, images }
     setBusy(true)
     setStatus('')
     const res = await saveContentFile(`content/projects/${s}.json`, payload)
-    setBusy(false)
-    setStatus(res.ok ? t.saved : res.error)
-    if (res.ok) {
-      setData(payload)
-      if (isNew) navigate(`/projects/${s}`, { replace: true })
+    if (!res.ok) {
+      setBusy(false)
+      setStatus(res.error)
+      return
     }
+
+    // Keep manual order in sync: new projects go to the top (newest first).
+    if (isNew) {
+      const existing = loadProjectsFromModules()
+        .map((p) => p.slug)
+        .filter((slug) => slug !== s)
+      await persistProjectOrder([s, ...existing])
+    }
+
+    setBusy(false)
+    setStatus(t.saved)
+    setData(payload)
+    if (isNew) navigate(`/projects/${s}`, { replace: true })
   }
 
   const remove = async () => {
@@ -267,15 +363,23 @@ export function ProjectEditorPage({ lang }: { lang: AdminLang }) {
         <h2>{zh ? '项目图片（多图轮播）' : 'Project images (carousel)'}</h2>
         <p className="admin-hint" style={{ marginTop: 0 }}>
           {zh
-            ? '第 1 张为封面图（列表 / 首页默认图）；其余按顺序加入轮播。可上下调整顺序。'
-            : 'Image 1 is the cover (lists & home). Extra images rotate in the carousel. Reorder with ↑ ↓.'}
+            ? '封面图 #1 必填（列表 / 首页默认图）；其余按顺序加入轮播。可上下调整顺序。'
+            : 'Cover #1 is required (lists & home). Extra images rotate in the carousel. Reorder with ↑ ↓.'}
         </p>
         <div className="admin-gallery-editor">
           {(data.images.length ? data.images : ['']).map((src, i, arr) => (
             <div key={`img-${i}`} className="admin-subcard">
               <div className="admin-card-head">
                 <h3>
-                  {i === 0 ? (zh ? '封面图 #1' : 'Cover #1') : zh ? `轮播图 #${i + 1}` : `Gallery #${i + 1}`}
+                  {i === 0 ? (
+                    <>
+                      {zh ? '封面图 #1' : 'Cover #1'} <span className="req">*</span>
+                    </>
+                  ) : zh ? (
+                    `轮播图 #${i + 1}`
+                  ) : (
+                    `Gallery #${i + 1}`
+                  )}
                 </h3>
                 <div className="admin-row-actions">
                   <button
@@ -305,6 +409,7 @@ export function ProjectEditorPage({ lang }: { lang: AdminLang }) {
                   <button
                     type="button"
                     className="admin-btn admin-btn-danger"
+                    disabled={i === 0 && arr.length === 1}
                     onClick={() => {
                       const list = arr.filter((_, x) => x !== i)
                       const next = list.length ? list : ['']
@@ -316,7 +421,7 @@ export function ProjectEditorPage({ lang }: { lang: AdminLang }) {
                 </div>
               </div>
               <ImageField
-                label={zh ? '图片' : 'Image'}
+                label={i === 0 ? (zh ? '图片（必填）' : 'Image (required)') : zh ? '图片' : 'Image'}
                 value={src}
                 onChange={(v) => {
                   const list = [...arr]

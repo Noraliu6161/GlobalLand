@@ -1,3 +1,6 @@
+import { sortProjectsByOrder } from '../../lib/projectOrder'
+import projectOrderBundled from '../../../content/project-order.json'
+
 export type ProjectRecord = {
   id: string
   slug: string
@@ -30,6 +33,10 @@ export type ProjectRecord = {
   relatedEntity?: string
   featured: boolean
   published: boolean
+}
+
+function bundledOrder(): string[] {
+  return Array.isArray(projectOrderBundled) ? (projectOrderBundled as string[]) : []
 }
 
 export function normalizeProjectImages(record: Partial<ProjectRecord>): { image: string; images: string[] } {
@@ -87,13 +94,12 @@ export function loadProjectsFromModules(): ProjectRecord[] {
     string,
     { default: Partial<ProjectRecord> }
   >
-  return Object.values(modules)
-    .map((m) => {
-      const merged = { ...emptyProject(), ...m.default }
-      const { image, images } = normalizeProjectImages(merged)
-      return { ...merged, image, images }
-    })
-    .sort((a, b) => a.nameEn.localeCompare(b.nameEn))
+  const list = Object.values(modules).map((m) => {
+    const merged = { ...emptyProject(), ...m.default }
+    const { image, images } = normalizeProjectImages(merged)
+    return { ...merged, image, images }
+  })
+  return sortProjectsByOrder(list, bundledOrder())
 }
 
 /** Prefer cms-branch projects on production admin; fall back to build bundle. */
@@ -101,15 +107,17 @@ export async function loadProjectsForAdmin(): Promise<ProjectRecord[]> {
   const bundled = loadProjectsFromModules()
   if (import.meta.env.DEV) return bundled
 
-  const { loadContentJsonDir } = await import('./contentApi')
-  const remote = await loadContentJsonDir<Partial<ProjectRecord>>('content/projects')
-  if (!remote.length) return bundled
+  const { loadContentJson, loadContentJsonDir } = await import('./contentApi')
+  const [remote, order] = await Promise.all([
+    loadContentJsonDir<Partial<ProjectRecord>>('content/projects'),
+    loadContentJson<string[]>('content/project-order.json', bundledOrder()),
+  ])
+  if (!remote.length) return sortProjectsByOrder(bundled, order)
 
-  return remote
-    .map(({ data }) => {
-      const merged = { ...emptyProject(), ...data }
-      const { image, images } = normalizeProjectImages(merged)
-      return { ...merged, image, images }
-    })
-    .sort((a, b) => a.nameEn.localeCompare(b.nameEn))
+  const list = remote.map(({ data }) => {
+    const merged = { ...emptyProject(), ...data }
+    const { image, images } = normalizeProjectImages(merged)
+    return { ...merged, image, images }
+  })
+  return sortProjectsByOrder(list, order)
 }

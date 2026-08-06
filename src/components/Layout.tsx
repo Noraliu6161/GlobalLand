@@ -2,6 +2,7 @@ import { NavLink, Link } from 'react-router-dom'
 import { useState } from 'react'
 import { company } from '../data/projects'
 import { useI18n } from '../i18n'
+import { homeContent } from '../lib/loadHome'
 
 export function Logo({
   variant = 'default',
@@ -131,7 +132,7 @@ export function Footer() {
       </div>
       <div className="footer-bottom">
         <span>
-          © {new Date().getFullYear()} {company.name}
+          © {homeContent.copyrightYear} {company.name}
         </span>
         <span>{t('footer.location')}</span>
       </div>

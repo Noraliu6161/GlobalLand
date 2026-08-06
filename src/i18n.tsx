@@ -132,7 +132,7 @@ const en: Dict = {
   'contact.title': 'Start a conversation',
   'contact.infoTitle': 'Contact Information',
   'contact.lead':
-    'Inquiries about projects, partnerships, or investment opportunities. This form is design-only for now—connect Netlify Forms when you are ready to collect submissions.',
+    'Inquiries about projects, partnerships, or investment opportunities.',
   'contact.formTitle': 'Send Us a Message',
   'contact.formLead': "We'll respond within 1-2 business days.",
   'contact.address': 'Address',
@@ -149,7 +149,9 @@ const en: Dict = {
   'contact.emailPh': 'your@email.com',
   'contact.messagePh': 'Your message...',
   'contact.send': 'Send Message',
-  'contact.thanks': 'Thank you. Your message UI is ready—wire it to Netlify Forms or your inbox next.',
+  'contact.sending': 'Sending…',
+  'contact.thanks': 'Thank you. Your message has been sent — we will get back to you soon.',
+  'contact.error': 'Something went wrong. Please try again or email us directly.',
 
   'footer.blurb':
     'Low-density residential development and high-quality commercial real estate investment across Seattle and the Pacific Northwest.',
@@ -293,8 +295,7 @@ const zh: Dict = {
   'contact.eyebrow': '联系我们',
   'contact.title': '开始对话',
   'contact.infoTitle': '联系方式',
-  'contact.lead':
-    '欢迎就项目、合作或投资机会与我们联系。当前为设计演示表单，后续可接入 Netlify Forms 或企业邮箱。',
+  'contact.lead': '欢迎就项目、合作或投资机会与我们联系。',
   'contact.formTitle': '给我们留言',
   'contact.formLead': '我们将在 1–2 个工作日内回复。',
   'contact.address': '地址',
@@ -311,7 +312,9 @@ const zh: Dict = {
   'contact.emailPh': 'your@email.com',
   'contact.messagePh': '请输入留言…',
   'contact.send': '发送留言',
-  'contact.thanks': '感谢提交。表单界面已就绪，下一步可接入 Netlify Forms 或收件邮箱。',
+  'contact.sending': '发送中…',
+  'contact.thanks': '感谢提交。我们已收到您的留言，会尽快回复。',
+  'contact.error': '发送失败，请稍后再试，或直接发邮件联系我们。',
 
   'footer.blurb':
     '在西雅图与太平洋西北地区，专注低密度住宅开发与高品质商业地产投资。',
