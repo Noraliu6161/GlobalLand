@@ -1,0 +1,32 @@
+{
+  "id": "1",
+  "slug": "1",
+  "nameEn": "a",
+  "nameZh": "a",
+  "cityEn": "a",
+  "cityZh": "a",
+  "type": "office",
+  "status": "acquired",
+  "units": 1,
+  "buildings": 1,
+  "saleValueM": 1,
+  "acquisitionPriceM": 1,
+  "year": 2026,
+  "lat": 47.6062,
+  "lng": -122.3321,
+  "summaryEn": "a",
+  "summaryZh": "",
+  "bodyEn": "a",
+  "bodyZh": "",
+  "bodyFont": "body",
+  "highlightsEn": [],
+  "highlightsZh": [
+    "a"
+  ],
+  "image": "",
+  "images": [],
+  "link": "",
+  "relatedEntity": "",
+  "featured": false,
+  "published": true
+}
