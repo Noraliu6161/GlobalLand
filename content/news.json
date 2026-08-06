@@ -1,5 +1,41 @@
 [
   {
+    "id": "news-1785999412731",
+    "slug": "news-1785999412731",
+    "kind": "news",
+    "date": "2026-08-06",
+    "dateLabelEn": "August 6, 2026",
+    "dateLabelZh": "2026年8月6日",
+    "archiveYear": 2026,
+    "archiveMonth": 8,
+    "titleEn": "The data center demand is driving Microsoft's appetite for real estate.",
+    "titleZh": "数据中心需求推动微软对房地产的渴望",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msh5zpn8-5euj8",
+        "type": "text",
+        "textEn": "<p>When AI becomes the new oil, data centers are the refineries, and land has become the new mineral deposit that tech giants are racing to claim.</p><p>From a defunct Foxconn factory site in Wisconsin, to a quiet town on Finland's west coast, to the headquarters campus in Seattle, Microsoft is on a global \"land grab\" at breakneck speed—snapping up real estate properties worldwide. The tech giant is pivoting capital en masse from software code to steel and concrete—data center construction is rewriting the landscape of the global real estate market.</p><p>Microsoft's capital expenditure for the second quarter of fiscal year 2026 reached $37.5 billion, with roughly two-thirds allocated to short-term assets such as GPUs and CPUs. In the first half of the fiscal year alone, total capital expenditure hit $72.4 billion, and the full-year figure is on track to surpass the $100 billion mark. Behind this staggering number lies an unprecedented wave of global infrastructure buildout on a massive scale.</p><p></p>",
+        "textZh": "<p>当AI成为新石油，数据中心就是炼油厂，而土地则成了科技巨头争抢的新矿藏。</p><p>从威斯康星州废弃的富士康工厂旧址，到芬兰西海岸的宁静小镇，再到西雅图的总部园区，微软正以惊人的速度在全球“扫货”房地产。这家科技巨头正将资本从软件代码大规模转向钢筋水泥——数据中心建设正在改写全球房地产市场的版图。</p><p>微软在2026财年第二季度的资本支出达到<strong>375亿美元</strong>，其中约三分之二投向GPU和CPU等短期资产。仅上半年，其资本支出总额已达724亿美元，全年有望<strong>突破千亿美元大关</strong>。这一数字背后，是一场规模空前的全球基础设施建设浪潮。</p>"
+      },
+      {
+        "id": "b-msh604zk-pbzq8",
+        "type": "image",
+        "src": "/images/uploads/1785999529612-microsoft-ai.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msh60er3-7px18",
+        "type": "text",
+        "textEn": "<p>In Mount Pleasant, Wisconsin, Microsoft has taken over the \"stranded investment site\" left behind by Foxconn and is planning to build 15 large-scale data centers, with a total investment value exceeding $13 billion. This industrial site, once highly anticipated but left idle for years, has finally come to development. The project is expected to span approximately a decade, creating lasting job opportunities for the local community.</p><p>In Cheyenne, Wyoming, Microsoft is applying to expand two data center zones, covering 385 acres and approximately 35 acres respectively. Previously, the company had already announced plans to purchase about 3,200 acres of land in Cheyenne to develop a new data center campus.</p><p>Most strikingly, in Pecos County, West Texas, Microsoft is planning to build a data center campus spanning 7,000 acres, with an estimated capacity of 2,500 to 2,595 megawatts. This land—equivalent to nearly 4,000 standard football fields—will become one of the largest data center projects in tech history.</p><p>At its Seattle headquarters, Microsoft has completed the redevelopment of its East Campus, bringing the total number of buildings to 131. The campus has also relaxed building height restrictions, raising the limit from 6 stories to 10. Meanwhile, the Allen Institute for AI (Ai2)—founded by Microsoft co-founder Paul Allen—has brought in core research talent including former CEO Ali Farhadi, placing them within its frontier \"superintelligence\" division. This move not only strengthens Microsoft's in-house R&amp;D capabilities but also cements Seattle's position as a premier AI talent hub.</p><p>Microsoft's Azure cloud business grew 39% in the quarter, with customer demand continuing to outpace available supply. Capacity constraints are expected to persist at least through the end of fiscal year 2026. CEO Satya Nadella stated bluntly during the earnings call: \"We continue to lead the AI infrastructure wave and have gained market share in every quarter this year.\"</p><p>Microsoft currently operates over 400 data centers across 70 regions—more than any other cloud provider. In the past 12 months alone, the company has added over 20 gigawatts of capacity and continues to expand at a faster rate than any competitor.</p><p>Even more striking is Microsoft's construction of \"AI superfactories\"—using dedicated high-speed networks to connect data centers across different states into a distributed system that works in concert. A next-generation AI data center in Atlanta has already entered operation, linked via 120,000 miles of dedicated fiber-optic cable to the Wisconsin facility, integrating hundreds of thousands of the most advanced GPUs.</p><p>Data center demand is reshaping the fundamental logic of real estate investment. According to CBRE's 2025 Data Center Investor Survey, 95% of major investors said they would increase their data center investments, with 41% planning to commit over $500 million in equity.</p><p>Goldman Sachs projects that global data center electricity demand will grow 50% by 2027 and could surge 165% by 2030. Boston Consulting Group estimates that total data center investment demand from 2024 to 2030 will reach $1.8 trillion.</p><p>In the AI era, data centers are the new \"land.\" Whoever controls the computing infrastructure holds the lifeline of the digital economy. This AI-driven real estate revolution is only just beginning—and how it will reshape the global economic landscape is well worth our continued attention.</p>",
+        "textZh": "<p>在美国威斯康星州蒙特普莱森，微软接手了富士康留下的“失落投资用地”，计划兴建<strong>15座大型数据中心</strong>，总投资价值超过<strong>130亿美元</strong>。这片曾被寄予厚望却闲置多年的工业用地，终于迎来实质发展。预计相关工程将持续约十年，为当地创造持久的就业机会。</p><p>在怀俄明州夏延，微软正申请扩建两个数据中心区域，分别占地385英亩和约35英亩。此前，该公司已宣布计划在夏延购买约<strong>3200英亩土地</strong>开发新的数据中心园区。</p><p>最令人瞩目的是得克萨斯州西部佩科斯县的计划——微软拟建设一座占地<strong>7000英亩</strong>的数据中心园区，预计容量达2500至2595兆瓦。这片相当于近4000个标准足球场的土地，将成为科技史上规模最大的数据中心项目之一。</p><p>在西雅图总部，微软完成对东园区（East Campus）的重建，总建筑达到<strong>131栋</strong>。园区还放宽了建筑限高，从6层提高至10层。同时，由微软联合创始人保罗·艾伦创立的<strong>艾伦人工智能研究院（Ai2）</strong>&nbsp;引进了包括前CEO阿里·法哈迪在内的核心研究团队，并将他们纳入其前沿的“超级智能”部门。此举不仅强化了微软的自研实力，也巩固了西雅图作为AI人才高地的地位。</p><p>微软Azure云业务当季增长<strong>39%</strong>，客户需求持续超过可用供应，容量限制预计至少持续到2026财年末。CEO萨提亚·纳德拉在财报会上直言：“<strong>我们继续引领人工智能基础设施浪潮，并在今年每个季度都扩大了市场份额。</strong>”</p><p>微软目前在<strong>70个地区拥有400多个数据中心</strong>，数量超过其他任何云服务提供商。仅在过去12个月，该公司就新增了<strong>超过20千兆瓦的容量</strong>，并以快于任何竞争对手的速度继续扩容-7。</p><p>更令人震撼的是，微软正在构建“AI超级工厂”——通过专用高速网络，将跨越不同州的数据中心连接成一个协同工作的分布式系统。位于亚特兰大的新一代AI数据中心已投入运营，通过<strong>12万英里的专用光纤电缆</strong>与威斯康星州的设施相连，整合了数十万个最先进的GPU。</p><p>数据中心需求正在重塑房地产投资的底层逻辑。根据CBRE的2025年数据中心投资者调查，<strong>95%的主要投资者表示将加码数据中心投资</strong>，其中41%计划投入逾5亿美元股本。</p><p>高盛预测，全球数据中心电力需求至2027年预计增长<strong>50%</strong>，2030年更可能暴增<strong>165%</strong>。波士顿咨询集团估算，2024至2030年数据中心总投资需求将达<strong>1.8万亿美元</strong>。<strong><br></strong></p><p><strong>在AI时代，数据中心就是新的“土地”，谁掌握了算力基础设施，谁就掌握了数字经济的命脉</strong>。这场由AI驱动的房地产革命才刚刚开始，它将如何重塑全球经济版图，值得我们持续关注。</p>"
+      }
+    ],
+    "image": "/images/uploads/1785999495132-ScreenShot_2026-08-06_145805_835.jpg"
+  },
+  {
     "id": "fincen-rre-2026",
     "slug": "fincen-rre-reporting-rules-2026",
     "kind": "event",
