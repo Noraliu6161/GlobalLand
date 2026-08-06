@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
-import { getNewsBySlug, newsDateLabel, newsTitle } from '../data/news'
+import { getNewsBySlug, newsArticles, newsDateLabel, newsTitle } from '../data/news'
 import { useI18n } from '../i18n'
 import { ensureArticleBlocks } from '../lib/newsBlocks'
 import { toHtml } from '../lib/newsHtml'
@@ -57,6 +57,10 @@ function NewsBlocks({ blocks, lang }: { blocks: ContentBlock[]; lang: 'en' | 'zh
   )
 }
 
+function sortedNews() {
+  return [...newsArticles].sort((a, b) => b.date.localeCompare(a.date))
+}
+
 export function NewsDetailPage() {
   const { slug = '' } = useParams()
   const { t, lang } = useI18n()
@@ -85,6 +89,11 @@ export function NewsDetailPage() {
       : article.eventDetailsEn || article.eventDetailsZh
   const detailsHtml = toHtml(details)
   const registerHref = (article.registerUrl || '').trim() || '/contact'
+
+  const ordered = sortedNews()
+  const index = ordered.findIndex((a) => a.slug === article.slug || a.id === article.id)
+  const prev = index > 0 ? ordered[index - 1] : null
+  const next = index >= 0 && index < ordered.length - 1 ? ordered[index + 1] : null
 
   return (
     <div className="container news-article" style={{ paddingBottom: '3.5rem' }}>
@@ -129,6 +138,27 @@ export function NewsDetailPage() {
             {lang === 'zh' ? '报名参加' : 'Register'}
           </a>
         </div>
+      )}
+
+      {(prev || next) && (
+        <nav className="news-pager" aria-label={lang === 'zh' ? '上下篇' : 'Adjacent articles'}>
+          <div className="news-pager-slot news-pager-slot--prev">
+            {prev ? (
+              <Link to={`/news/${prev.slug}`} className="news-pager-link">
+                <span className="news-pager-label">{t('news.prev')}</span>
+                <span className="news-pager-title">{newsTitle(prev, lang)}</span>
+              </Link>
+            ) : null}
+          </div>
+          <div className="news-pager-slot news-pager-slot--next">
+            {next ? (
+              <Link to={`/news/${next.slug}`} className="news-pager-link">
+                <span className="news-pager-label">{t('news.next')}</span>
+                <span className="news-pager-title">{newsTitle(next, lang)}</span>
+              </Link>
+            ) : null}
+          </div>
+        </nav>
       )}
     </div>
   )

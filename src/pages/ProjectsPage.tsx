@@ -21,7 +21,6 @@ export function ProjectsPage() {
   const selectedId = params.get('selected')
 
   const [localSelected, setLocalSelected] = useState<string | null>(selectedId)
-  const [filtersOpen, setFiltersOpen] = useState(false)
 
   const cities = useMemo(() => {
     const map = new Map<string, string>()
@@ -48,10 +47,6 @@ export function ProjectsPage() {
       : (filtered[0]?.id ?? null)
 
   const hasActiveFilters = city !== 'all' || type !== 'all'
-
-  const cityLabel =
-    city === 'all' ? t('projects.allCities') : (cities.find((c) => c.key === city)?.label ?? city)
-  const typeLabel = type === 'all' ? t('projects.allTypes') : t(`type.${type}`)
 
   const setFilter = (key: 'city' | 'type', value: string) => {
     const next = new URLSearchParams(params)
@@ -82,77 +77,48 @@ export function ProjectsPage() {
         <p className="page-hint">{t('projects.lead')}</p>
       </div>
 
-      <div className={`filter-bar ${filtersOpen ? 'is-open' : ''} ${hasActiveFilters ? 'has-active' : ''}`}>
-        <div className="filter-bar-summary">
-          <button
-            type="button"
-            className="filter-bar-toggle"
-            aria-expanded={filtersOpen}
-            onClick={() => setFiltersOpen((v) => !v)}
-          >
-            <span className="filter-bar-label">{t('projects.filter')}</span>
-            <span className="filter-bar-sep" aria-hidden="true">
-              ·
-            </span>
-            <span className="filter-bar-value">{cityLabel}</span>
-            <span className="filter-bar-sep" aria-hidden="true">
-              ·
-            </span>
-            <span className="filter-bar-value">{typeLabel}</span>
-            <span className={`filter-bar-caret ${filtersOpen ? 'is-open' : ''}`} aria-hidden="true">
-              ▾
-            </span>
-          </button>
-          {hasActiveFilters && (
-            <button type="button" className="filter-bar-clear" onClick={clearFilters}>
-              {t('projects.clear')}
+      <div className={`filter-bar ${hasActiveFilters ? 'has-active' : ''}`}>
+        <div className="filter-bar-panel">
+          <div className="filters" role="group" aria-label={t('projects.allCities')}>
+            <button
+              type="button"
+              className={`chip ${city === 'all' ? 'active' : ''}`}
+              onClick={() => setFilter('city', 'all')}
+            >
+              {t('projects.allCities')}
             </button>
-          )}
-        </div>
-
-        {filtersOpen && (
-          <div className="filter-bar-panel">
-            <div className="filters" role="group" aria-label={t('projects.allCities')}>
+            {cities.map((c) => (
               <button
+                key={c.key}
                 type="button"
-                className={`chip ${city === 'all' ? 'active' : ''}`}
-                onClick={() => setFilter('city', 'all')}
+                className={`chip ${city === c.key ? 'active' : ''}`}
+                onClick={() => setFilter('city', c.key)}
               >
-                {t('projects.allCities')}
+                {c.label}
               </button>
-              {cities.map((c) => (
-                <button
-                  key={c.key}
-                  type="button"
-                  className={`chip ${city === c.key ? 'active' : ''}`}
-                  onClick={() => setFilter('city', c.key)}
-                >
-                  {c.label}
-                </button>
-              ))}
-            </div>
-
-            <div className="filters filters--nested" role="group" aria-label={t('projects.allTypes')}>
-              <button
-                type="button"
-                className={`chip ${type === 'all' ? 'active' : ''}`}
-                onClick={() => setFilter('type', 'all')}
-              >
-                {t('projects.allTypes')}
-              </button>
-              {types.map((item) => (
-                <button
-                  key={item}
-                  type="button"
-                  className={`chip ${type === item ? 'active' : ''}`}
-                  onClick={() => setFilter('type', item)}
-                >
-                  {t(`type.${item}`)}
-                </button>
-              ))}
-            </div>
+            ))}
           </div>
-        )}
+
+          <div className="filters filters--nested" role="group" aria-label={t('projects.allTypes')}>
+            <button
+              type="button"
+              className={`chip ${type === 'all' ? 'active' : ''}`}
+              onClick={() => setFilter('type', 'all')}
+            >
+              {t('projects.allTypes')}
+            </button>
+            {types.map((item) => (
+              <button
+                key={item}
+                type="button"
+                className={`chip ${type === item ? 'active' : ''}`}
+                onClick={() => setFilter('type', item)}
+              >
+                {t(`type.${item}`)}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div className="projects-layout">
