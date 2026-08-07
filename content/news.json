@@ -657,5 +657,148 @@
       }
     ],
     "image": "/images/uploads/1786070936159-640__10_.jpg"
+  },
+  {
+    "id": "news-1786071050218",
+    "slug": "news-1786071050218",
+    "kind": "news",
+    "date": "2025-03-01",
+    "dateLabelEn": "March 1, 2025",
+    "dateLabelZh": "2025年3月1日",
+    "archiveYear": 2025,
+    "archiveMonth": 3,
+    "titleEn": "Global Land Acquires Spring District BrewPub Complex",
+    "titleZh": "Global Land 收购春天社区Brewpub 综合楼",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msicm49d-ik206",
+        "type": "text",
+        "textEn": "<p>Global Land Investment Management acquired the Spring District BrewPub Complex in Bellevue, Washington, for $16.28 million on February 28, 2025.</p><p>The Spring District is a 36-acre transit-oriented urban community and one of Bellevue's most significant mixed-use developments. It encompasses 4 million square feet of mixed-use space, featuring architecturally distinctive creative office buildings, retail, urban-style apartments, a school, and a diverse range of other offerings. The campus is owned by institutional heavyweight developers and owners, including Shorenstein Properties, Wright Runstad, Brookfield, and Meta.</p>",
+        "textZh": "<p><strong>Global Land 投资管理公司于2025年2月28日1628万美元收购美国华盛顿州贝尔维尤市春天社区（ Spring District ）Brewpub 综合楼</strong>。</p><p>春天社区（ Spring District ）占地36英亩，是贝尔维尤最重要的交通导向型城市社区，包括400万平方英尺的混合用途开发，已建成具有建筑意义的创意办公楼、零售 &nbsp;&nbsp;城市风格的公寓、学校等多样化产品。<strong>该园区由机构重量级开发商和所有者拥有，包括Shorenstein Properties、Wright Runstad、Brookfield和Meta</strong>。</p>"
+      },
+      {
+        "id": "b-msicmeg9-d30ou",
+        "type": "image",
+        "src": "/images/uploads/1786071118968-640__1_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msicmqxd-ak6qw",
+        "type": "text",
+        "textEn": "<p>Meta (formerly Facebook, Inc.) has over 7,000 employees and approximately 3.3 million square feet of office space across five office buildings in the Spring District. Meta's Bellevue campus serves as a major engineering hub for the company in the Seattle area and is one of its largest engineering centers outside of its Silicon Valley headquarters.</p>",
+        "textZh": "<p>Meta公司（原名Facebook, Inc.）在 Spring District 拥有超过 7,000 名员工和五座办公楼约 330 万平方英尺的办公空间。<strong>Meta 在 Bellevue 的办公地点是该公司在西雅图地区的一个重要工程中心，也是其在硅谷总部以外的最大工程中心之一 </strong>。</p>"
+      },
+      {
+        "id": "b-msicn4rs-6boc9",
+        "type": "image",
+        "src": "/images/uploads/1786071146398-640__2_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msicncbw-qwmx4",
+        "type": "image",
+        "src": "/images/uploads/1786071156058-640__3_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msicni6p-88j5s",
+        "type": "image",
+        "src": "/images/uploads/1786071162826-640__4_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msicnz0z-w3kw0",
+        "type": "text",
+        "textEn": "<p><strong>The Global Innovation Exchange — a partnership between the University of Washington, China's Tsinghua University, and Microsoft — is also located in the Spring District.</strong></p>",
+        "textZh": "<p><strong>全球创新交流中心（Global Innovation Exchange）——华盛顿大学、中国清华大学和微软的合作项目也位于春天社区中</strong>。</p>"
+      },
+      {
+        "id": "b-msico0kk-vfeya",
+        "type": "image",
+        "src": "/images/uploads/1786071192964-640__5_.jpg",
+        "altEn": "Spring District BrewPub Complex",
+        "altZh": "春天社区（ Spring District ）Brew Pub综合楼"
+      },
+      {
+        "id": "b-msicogpb-uz8e7",
+        "type": "text",
+        "textEn": "<p>The BrewPub Complex is located in the heart of the Spring District, offering direct access to light rail and regional transportation options. It also features a sun-drenched outdoor garden with western exposure and an elegant, vibrant environment full of lively neighborhood character.</p>",
+        "textZh": "<p>Brewpub综合楼位于春天社区（ Spring District ）的心脏地带，拥有直接通往轻轨和区域交通选择的便利条件。同时提供了一个面向西面的阳光充足的户外花园景观以及非常有生活气息的优雅环境。</p>"
+      },
+      {
+        "id": "b-msicor34-t212w",
+        "type": "image",
+        "src": "/images/uploads/1786071221200-640__6_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msicoxxv-58ml8",
+        "type": "image",
+        "src": "/images/uploads/1786071229189-640__7_.jpg",
+        "altEn": "Spring District Light Rail Station",
+        "altZh": "春天社区（ Spring District ）轻轨站"
+      },
+      {
+        "id": "b-msicp647-9eyn7",
+        "type": "image",
+        "src": "/images/uploads/1786071245523-640__8_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msicpgd8-52ebv",
+        "type": "text",
+        "textEn": "<p>The BrewPub Complex is a three-story building totaling nearly 30,000 square feet. The office space has been fully leased by two premier office tenants — Deloitte, the accounting firm, and Catalyst Workplace, a high-end furniture company. The ground-floor retail space and outdoor areas have been fully leased by Bellevue Brewing Company. All interior and exterior spaces have been finished to high standards, creating a modern, smart, and lifestyle-oriented premium office and retail environment.</p>",
+        "textZh": "<p>Brewpub综合楼共三层、接近3万平方英尺，其中办公物业已被两家顶级办公租户德勤（ Deloitte ）会计师事务所和高端家具公司Catalyst Workplace 完全租赁，一楼零售空间和户外区域则被贝尔维尤啤酒公司完全租赁。所有的室内外面积都经过高标准的装修，创造了现代、智能化、生活化的高端办公和零售空间。</p>"
+      },
+      {
+        "id": "b-msicplns-mlmmu",
+        "type": "image",
+        "src": "/images/uploads/1786071260969-640__9_.jpg",
+        "altEn": "Bellevue Brewing Company",
+        "altZh": "贝尔维尤啤酒公司"
+      },
+      {
+        "id": "b-msicpuax-yef6f",
+        "type": "text",
+        "textEn": "<p>The property is 100% leased with nearly 10 years remaining on the lease term, providing investors with stable, high-quality cash returns. Compared to the construction cost of up to $1,000 per square foot in the area, the project's acquisition price is also highly competitive.</p>",
+        "textZh": "<p><strong>该物业已100%出租，租约期限剩余近10年，为投资者提供了稳定的、高质量的现金回报。</strong>与该地区每平方英尺高达1000美元的建造成本相比，项目的收购价格也非常有竞争力。</p>"
+      },
+      {
+        "id": "b-msicpy1g-yjkpz",
+        "type": "image",
+        "src": "/images/uploads/1786071293010-640__10_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msicqg38-di9mi",
+        "type": "image",
+        "src": "/images/uploads/1786071300235-640__11_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msicqn8k-78ezl",
+        "type": "image",
+        "src": "/images/uploads/1786071311834-640__12_.jpg",
+        "altEn": "Interior of the Spring District BrewPub Complex",
+        "altZh": "春天社区（ Spring District ）Brew Pub综合楼内部"
+      },
+      {
+        "id": "b-msicy8t3-pd1gl",
+        "type": "text",
+        "textEn": "<p>Ms. Lili Lyu, President of Global Land Investment Management, believes that although the office market is still in a downturn due to high interest rates and remote work, the Eastside office market continues to thrive with growing demand from new and expanding tenants, demonstrating the strength and appeal of the location. \"We saw that in 2024, leasing activity in the Greater Seattle area was primarily concentrated in Bellevue, which is the preferred location for tech companies. The rapid development of the Spring District also reflects Bellevue's importance as a technology hub,\" she said. \"At the same time, we are seeing a bifurcation in the office market. Older office buildings are experiencing rent reductions and widespread vacancies, while new office spaces that integrate smart technologies and modern lifestyle elements are achieving record-high rents. We are very pleased to have the opportunity to acquire this boutique building and are confident that this project will deliver satisfactory returns for our investors in the future.\"</p><p>Global Land Investment Management has invested in multiple real estate projects across Washington State, five of which are villa community projects co-managed in partnership with Xinju Real Estate Development Management.</p>",
+        "textZh": "<p>Global Land 投资管理公司总裁吕莉莉女士认为，虽然由于高利率和远程办公等原因导致目前办公楼市场仍处于低谷期，但东部办公市场在持续蓬勃发展，新租户和扩张租户的需求不断增长，证明了该地理位置的实力和吸引力。我们看到2024年大西雅图地区的租赁量主要集中在贝尔维尤，这是技术公司的首选地点。Spring District 的快速发展也反映了Bellevue作为技术中心的重要性。同时，我们看到办公楼市场已开始出现分化，老旧的办公楼出现租金降价和大规模的空置，但智能化的、与现代生活元素结合的新办公场所租金价格却再创新高。我们非常高兴有机会收购这样一栋精品建筑，相信该项目未来会为投资人创造满意的回报。</p><p>Global Land 投资管理公司在华盛顿州投资多个房地产项目，其中有五个别墅社区项目是与新居地产开发管理公司合作管理的。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786071089012-640.jpg"
   }
 ]
