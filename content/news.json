@@ -1,5 +1,41 @@
 [
   {
+    "id": "news-1786065424997",
+    "slug": "news-1786065424997",
+    "kind": "news",
+    "date": "2026-08-07",
+    "dateLabelEn": "August 7, 2026",
+    "dateLabelZh": "2026年8月7日",
+    "archiveYear": 2026,
+    "archiveMonth": 8,
+    "titleEn": "Databricks Signs Lease at Bellevue's Four106 Building, Expanding Its Seattle-Area Footprint",
+    "titleZh": "Databricks 签约贝尔维尤Four106大楼，加码西雅图布局",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msi98x98-t38qx",
+        "type": "text",
+        "textEn": "<p>According to two people familiar with the matter, San Francisco-based data company Databricks has signed a 160,000-square-foot lease at a newly built tower in downtown Bellevue.</p><p>Databricks has leased space at Four106, located at 380 106th Ave. NE — the company's largest lease transaction in Washington State to date, reflecting its ongoing office expansion in the Seattle and Bellevue area.</p><p>This marks the latest in a series of leasing moves by Bay Area tech companies in the Seattle region, following previous signings by Anthropic, DocuSign, and Uber. Uber leased 170,000 square feet at Four106 in April of this year.</p><p>Since February, Databricks had been in discussions to lease up to 250,000 square feet at Four106.</p><p>Currently, Databricks' total office footprint in the Puget Sound region exceeds 270,000 square feet — a scale that puts it on par with its primary competitor Snowflake, which leases the 330,000-square-foot Block 6 building in the Spring District neighborhood, located just across the interstate from Databricks' new office. Beyond Four106, Databricks has also signed multiple lease agreements at City Center Bellevue and Seattle's West 8th building since 2024.</p>",
+        "textZh": "<p>据两位知情人士透露，总部位于旧金山的数据公司 Databricks 已在贝尔维尤（Bellevue）市中心的一栋新建摩天大楼内签署了一份面积达 16 万平方英尺的租赁协议。</p><p>Databricks 此次租下的是位于东北 106 大道 380 号（380 106th Ave. NE）的 Four106 大楼；这是该公司在华盛顿州迄今为止最大的一笔租赁交易，反映了其在西雅图和贝尔维尤地区不断扩张办公空间的步伐。</p><p><strong>这是湾区科技公司在西雅图地区一系列租赁动作中的最新一例，此前 Anthropic、DocuSign 和 Uber 也已纷纷签约入驻</strong>。Uber 于今年 4 月租下了 Four106 大楼内 17 万平方英尺的办公空间。</p><p>自 2 月以来，Databricks 一直在商谈租用 Four106 大楼内多达 25 万平方英尺的空间。</p><p>目前，<strong>Databricks 在普吉特湾（Puget Sound）地区的办公总面积已超过 27 万平方英尺</strong>，这一规模足以与其主要竞争对手 Snowflake 相媲美。<strong>Snowflake 租用了位于 Spring District 街区的 Block 6 大楼（面积 33 万平方英尺）</strong>，该大楼与 Databricks 的新办公室仅隔着一条州际公路。除 Four106 外，Databricks 自 2024 年以来还在贝尔维尤市中心（City Center Bellevue）和西雅图的 West 8th 大楼签署了多份租赁协议。</p>"
+      },
+      {
+        "id": "b-msi993di-pl7li",
+        "type": "image",
+        "src": "/images/uploads/1786065458341-640__16_.jpg",
+        "altEn": "Block 6 in the Spring District",
+        "altZh": "Spring District 街区的 Block 6"
+      },
+      {
+        "id": "b-msi99n1e-0cvvn",
+        "type": "text",
+        "textEn": "<p>Four106 is located just three blocks from the Bellevue Downtown light rail station, making it a highly sought-after office property in the area. Dune Real Estate Properties and Patrinely Group launched the speculative development of the project (i.e., breaking ground without pre-secured tenants) in 2022, at a time when the local market was still reeling from the pandemic and the subsequent wave of remote work.</p><p>This has made Four106 one of the few prime new office towers in Bellevue in recent years. Most of Bellevue's other newly built office buildings have already been pre-leased by Amazon.</p><p>With the majority of Four106's space now leased, Dune is currently seeking nearly $500 million in refinancing for the building, according to Green Street.</p>",
+        "textZh": "<p>Four106 大楼距离贝尔维尤市中心轻轨站仅三个街区，是当地备受追捧的办公场所。Dune Real Estate Properties 和 Patrinely Group 于 2022 年启动了该项目的投机性开发（即在未预先锁定租户的情况下开工建设），当时当地市场正深受疫情及随之而来的远程办公潮冲击。</p><p>这使得 Four106 成为贝尔维尤近年来为数不多的优质新建写字楼之一。<strong>贝尔维尤的其他新建写字楼大多已被亚马逊（Amazon）预租</strong>。</p><p>据 Green Street 报道，随着 Four106 大楼的大部分空间已租出，Dune 公司目前正寻求为该大楼进行近 5 亿美元的再融资。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786065490185-640__15_.jpg"
+  },
+  {
     "id": "news-1785999412731",
     "slug": "news-1785999412731",
     "kind": "news",
