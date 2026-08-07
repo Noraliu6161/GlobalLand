@@ -282,6 +282,29 @@
     "image": "/images/uploads/1786065490185-640__15_.jpg"
   },
   {
+    "id": "news-1786065645444",
+    "slug": "news-1786065645444",
+    "kind": "news",
+    "date": "2026-06-26",
+    "dateLabelEn": "June 26, 2026",
+    "dateLabelZh": "2026年6月26日",
+    "archiveYear": 2026,
+    "archiveMonth": 6,
+    "titleEn": "Washington State's 57 Public Companies Surpass $1.5 Trillion in Combined Revenue — Powering the West Coast's Economic Core Engine",
+    "titleZh": "华盛顿州 57 家上市公司总营收超 1.5 万亿美金！撑起西海岸经济核心引擎",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msi9dhyp-ch7oc",
+        "type": "text",
+        "textEn": "<p>The Puget Sound Business Journal recently released its annual ranking of locally headquartered public companies, and a set of striking economic data vividly demonstrates the robust industrial strength of Washington State: the top 57 public companies in the state generated a combined total revenue of over $1.5 trillion in fiscal year 2025, with aggregate net profits reaching an impressive $208 billion — a remarkable performance that cements the state's position as a core pillar of the West Coast economy.</p><p>These 57 leading companies span a diverse and balanced range of industries, including technology, aerospace, retail, and biopharmaceuticals, with their headquarters heavily concentrated in Seattle and the greater Puget Sound region — underscoring Washington State's central role in the West Coast economic landscape.</p><p>Beyond tech and consumer giants such as Microsoft, Amazon, and Starbucks, the list also features heavyweights in advanced manufacturing, aerospace, and biopharmaceuticals:</p><ul><li><p>In the aerospace sector, Boeing takes center stage, complemented by avionics supplier Esterline, regional airline leader Alaska Airlines, and heavy equipment manufacturing powerhouse PACCAR — forming a complete high-end aerospace manufacturing value chain.</p></li><li><p>The biopharmaceutical cluster is deeply rooted in Seattle and Bothell, with locally headquartered public companies including Adaptive Biotechnologies, a leader in immune diagnostics, and gene therapy firm Sana Biotechnology. Seagen, a longtime mainstay on the list and a global benchmark in targeted oncology drug R&amp;D, continues to drive cutting-edge medical innovation, supported by research resources from the University of Washington and the Fred Hutchinson Cancer Center.</p></li></ul><p>Together, these three core sectors — aerospace, heavy precision equipment, and biopharmaceuticals — constitute Washington State's second growth trajectory beyond the tech and consumer economy.</p>",
+        "textZh": "<p>近日，《普吉特湾商业杂志》发布本地头部上市公司年度榜单，一组重磅经济数据直观展现出美国华盛顿州雄厚的产业实力：全州排名前 57 家上市企业，2025 财年合计总营收突破 1.5 万亿美元，整体净利润更是高达 2080 亿美元，亮眼成绩单坐稳西海岸经济核心席位。</p><p>本次上榜的 57 家龙头企业，产业布局多元均衡，涵盖科技、航空、零售、生物医药等领域，核心总部高度聚集在西雅图及普吉特湾核心片区，充分体现了华盛顿州在美国西海岸经济版图中的核心地位。</p><p>除微软、亚马逊、星巴克等科技消费巨头外。</p><p>榜单内硬核高端制造、航空航天与生物医药企业同样实力雄厚：航空领域以波音为核心，搭配航电配套厂商 Esterline、区域航空龙头阿拉斯加航空、重型装备制造巨头帕卡（PACCAR），形成完整航空高端制造产业链。</p><p>生物医药集群扎根西雅图与 Bothell，本土上市企业包含免疫诊疗龙头 Adaptive Biotechnologies、基因治疗企业 Sana Biotechnology，曾长期位列榜单的肿瘤药企 Seagen 更是全球靶向抗癌药研发标杆，依托华盛顿大学、福瑞德哈金森癌症中心科研资源，持续输出前沿医疗创新成果。</p><p>航空工业、重型精密装备、生物制药三大硬核赛道共同构成华盛顿州产业第二增长曲线。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786065659338-640__17_.jpg"
+  },
+  {
     "id": "fincen-rre-2026",
     "slug": "fincen-rre-reporting-rules-2026",
     "kind": "event",
