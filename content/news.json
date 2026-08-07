@@ -528,6 +528,68 @@
     "registerUrl": ""
   },
   {
+    "id": "news-1786070020265",
+    "slug": "news-1786070020265",
+    "kind": "news",
+    "date": "2026-02-20",
+    "dateLabelEn": "February 20, 2026",
+    "dateLabelZh": "2026年2月20日",
+    "archiveYear": 2026,
+    "archiveMonth": 2,
+    "titleEn": "Meta Advances Its 210,000-Square-Foot Office Project in Bellevue",
+    "titleZh": "Meta 推进未完工的贝尔维尤21万平方英尺办公楼项目",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msic5763-2xlmh",
+        "type": "text",
+        "textEn": "<p>Meta Platforms Inc. (Nasdaq: META) is resuming construction on an office building in Bellevue's Spring District that had sat vacant for two years.</p>",
+        "textZh": "<p>Meta Platforms Inc.（纳斯达克代码：META）正在恢复位于贝尔维尤春天社区（Spring District&nbsp;）的一栋办公楼的施工，该建筑此前已空置两年。</p>"
+      },
+      {
+        "id": "b-msic5ekg-ox5n5",
+        "type": "image",
+        "src": "/images/uploads/1786070319083-640__6_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msic5ooa-txxnb",
+        "type": "text",
+        "textEn": "<p>According to permit documents filed with the city in mid-January, the Menlo Park-based tech giant plans to complete all nine stories of the 212,000-square-foot Block 13 building at 1385 123rd Ave. NE, in order to accelerate its artificial intelligence technology development.</p><p>Meta signed a 15-year lease with the building's owner, Wright Runstad &amp; Co., in October 2021, with three renewal options — including one 7-year term and two 5-year terms, according to county records. The company holds a total of 1.8 million square feet of space across the 36-acre mixed-use development. However, Meta's space requirements have diminished due to large-scale layoffs in recent years. As one of the region's largest tech employers, Meta had approximately 8,000 local employees in 2024. The company had aggressively expanded hiring during the pandemic, while the rise of generative AI has since prompted a reassessment of its capital allocation priorities.</p>",
+        "textZh": "<p>根据&nbsp;Meta&nbsp;在&nbsp;1&nbsp;月中旬向市政府提交的许可文件，<strong>这家总部位于门洛帕克的科技巨头计划完成位于&nbsp;1385 123rd Ave. NE、面积&nbsp;212,000&nbsp;平方英尺的&nbsp;Block 13&nbsp;大楼的全部九层建设</strong>，以加速其人工智能技术的开发。</p><p>根据县级记录，<strong>Meta&nbsp;于&nbsp;2021&nbsp;年&nbsp;10&nbsp;月与该建筑的所有者&nbsp;Wright Runstad &amp; Co.&nbsp;签订了一份&nbsp;15&nbsp;年租约，并拥有三次续租选择权，包括一次&nbsp;7&nbsp;年期和两次&nbsp;5&nbsp;年期</strong>。该公司在这片&nbsp;36&nbsp;英亩的综合开发区内总共拥有&nbsp;180&nbsp;万平方英尺的空间。但由于近年来的大规模裁员，Meta&nbsp;的空间需求已经减少。作为该地区最大的科技雇主之一，Meta&nbsp;在&nbsp;2024&nbsp;年拥有约&nbsp;8,000&nbsp;名本地员工。公司在疫情期间曾大量扩张招聘，而生成式&nbsp;AI&nbsp;的兴起又促使其重新审视资本投入方向。</p>"
+      },
+      {
+        "id": "b-msic5uyo-as2wm",
+        "type": "image",
+        "src": "/images/uploads/1786070354546-640__1_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msic6eae-24acl",
+        "type": "text",
+        "textEn": "<p>In 2023, Meta listed its Block 6 office space in the Spring District for sublease, signaling that its footprint in the area had exceeded its actual needs. Last October, Meta also relinquished its rights to five development parcels in the Spring District, effectively ending any possibility of further expansion within the campus. When Wright Runstad sold Block 13 to Drawbridge Realty last year at an undisclosed price, the building remained vacant — and some in the real estate industry expected it would stay that way.</p>",
+        "textZh": "<p>2023&nbsp;年，Meta&nbsp;将&nbsp;春天社区（Spring District） 的&nbsp;Block 6&nbsp;办公空间挂牌转租，表明其在该区域的空间已超过实际需求。去年&nbsp;10&nbsp;月，Meta&nbsp;还放弃了在&nbsp;春天社区五个开发地块上的权益，使其在该园区进一步扩张的可能性基本终结。当&nbsp;Wright Runstad&nbsp;去年将&nbsp;Block 13&nbsp;以未公开的价格出售给&nbsp;Drawbridge Realty&nbsp;时，这栋大楼仍处于空置状态——一些房地产行业人士当时预计它会继续保持空置。</p>"
+      },
+      {
+        "id": "b-msic6k8a-o00p8",
+        "type": "image",
+        "src": "/images/uploads/1786070379200-640__7_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msic6vw0-sjrqf",
+        "type": "text",
+        "textEn": "<p>However, by moving forward with Block 13, Meta appears to be re-committing to the Spring District, even as the company laid off more than 430 local employees in January and December. On Tuesday, Meta posted over 170 open positions in Bellevue, many of them related to AI.</p><p>Recent job postings and public filings indicate that the company's current local focus is heavily concentrated in AI. However, according to a person familiar with the matter, historically, Meta employees working out of its Spring District offices have primarily been involved in its family of applications — including Facebook, Instagram, and WhatsApp.</p><p>Meta's push to complete Block 13 comes as other AI companies are also expanding in Bellevue, seeking office space and talent with convenient access to public transit and commuter-friendly locations. OpenAI, the developer of ChatGPT, currently occupies nearly 300,000 square feet of office space in downtown Bellevue, while Elon Musk's xAI leased 24,000 square feet at Lincoln Square South late last year.</p>",
+        "textZh": "<p><strong>然而，通过推进&nbsp;Block 13&nbsp;的建设，Meta&nbsp;似乎重新投入了对&nbsp;春天社区（Spring District）的布局，</strong>即使公司在&nbsp;1&nbsp;月和&nbsp;12&nbsp;月已在当地裁员超过&nbsp;430&nbsp;人。周二，Meta&nbsp;在贝尔维尤发布了&nbsp;170&nbsp;多个开放职位，其中许多与人工智能相关。</p><p>近期的招聘信息和公开文件显示，公司目前在当地的重点岗位主要集中在&nbsp;AI&nbsp;领域。不过，据一位知情人士透露，历史上&nbsp;Meta&nbsp;在&nbsp;Spring District&nbsp;办公室的员工主要从事其应用家族的相关工作，包括&nbsp;Facebook、Instagram&nbsp;和&nbsp;WhatsApp。</p><p><strong>Meta&nbsp;推进&nbsp;Block 13&nbsp;的建设之际，其他AI&nbsp;公司也正在贝尔维尤扩张，寻找靠近公共交通、便于通勤的人才和办公空间。ChatGPT&nbsp;的开发者&nbsp;OpenAI&nbsp;目前在贝尔维尤市中心占据近&nbsp;30&nbsp;万平方英尺的办公面积，而埃隆·马斯克旗下的&nbsp;XAI&nbsp;去年年底在&nbsp;Lincoln Square South&nbsp;租下了&nbsp;24,000&nbsp;平方英尺的空间。</strong></p>"
+      }
+    ],
+    "image": "/images/uploads/1786070298772-640__5_.jpg"
+  },
+  {
     "id": "spring-district-2025",
     "slug": "spring-district-leasing-update",
     "kind": "news",
