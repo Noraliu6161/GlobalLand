@@ -846,5 +846,41 @@
       }
     ],
     "image": "/images/uploads/1786072468870-640__14_.jpg"
+  },
+  {
+    "id": "news-1786072609668",
+    "slug": "news-1786072609668",
+    "kind": "news",
+    "date": "2023-07-03",
+    "dateLabelEn": "July 3, 2023",
+    "dateLabelZh": "2023年7月3日",
+    "archiveYear": 2023,
+    "archiveMonth": 7,
+    "titleEn": "U.S. New Single-Family Home Sales Post Highest Gain in Recent Years in May",
+    "titleZh": "全美独立屋新屋5月迎来近年最高涨幅",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msidjio9-vsg4n",
+        "type": "text",
+        "textEn": "",
+        "textZh": "<p>美国当地时间6月27日，美国住房与城市发展部及美国人口普查局联合发布的最新报告显示，<strong>5月份全美独立屋新屋销量环比增长12.2%，同比增长20%，为2022年2月以来的最高涨幅。</strong></p>"
+      },
+      {
+        "id": "b-msidjoom-y4k90",
+        "type": "image",
+        "src": "/images/uploads/1786072667014-640__1_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msidkqbo-k0rtz",
+        "type": "text",
+        "textEn": "<p><strong>On a seasonally adjusted basis, new single-family home sales reached an annualized rate of 763,000 units in May, up from a revised 680,000 units in April and above the 636,000 units recorded in the same period last year. Among all U.S. regions, the Northeast, South, and West posted the largest month-over-month gains in new home sales for May.</strong></p><p><strong>New home sales were primarily boosted by favorable factors including low inventory, builder incentives, and resilient demand. However, according to economists' analysis, after September, the U.S. home sales market will enter its traditional off-season, and the pace of new home sales may not be sustainable.</strong></p><hr><p><strong>01 New Homes Provide a Pressure Relief Valve for Buyers</strong></p><p><strong>With limited housing inventory and mortgage rates remaining elevated, buyer demand has been suppressed since last year, with the market in a prolonged wait-and-see mode. However, since the U.S. housing market entered its peak season this year, policy impacts such as the pause in rate hikes have encouraged buyers to gradually re-enter the market. Lower-priced homes and properties in prime locations have become hotly contested.</strong></p><hr><p><strong>02 Median New Home Price Declines in May</strong></p><p><strong>In May, preliminary estimates show that homes priced below $300,000 accounted for 17% of all sales — the highest share since December 2021 (18%). Some market buyers are gravitating toward more affordable homes, which is one of the factors contributing to a 7.6% year-over-year decline in the median sales price. The median new home price fell to $416,300.</strong></p><hr><p><strong>03 Sales Rebound Erodes Supply</strong></p><p><strong>Amid the surge in sales, the new home supply index dropped to 6.7 months — the lowest level of supply since February 2022, indicating that demand is keeping pace with supply. The composition of inventory also reflects buyer demand. The share of not-yet-started homes in current inventory (24% in May) remains above pre-2020 levels (typically 15%–20%). Meanwhile, the share of completed homes for sale (16% in May) is below the 2013–2020 average (20%–30%). Completed homes sold in just 2.7 months on average after completion — below the typical 2.7-to-4.0-month range from 2013 to 2020. This suggests that while new homes may be a good option for buyers frustrated by limited existing-home choices, purchasing in the new home market may also require patience.</strong></p><hr><p><strong>04 New Home Sales Continue to Grow</strong></p><p><strong>May's month-over-month growth provides further evidence that the new construction market is being bolstered by unusually low existing-home inventory. Homeowners with ultra-low mortgage rates remain reluctant to sell and buy another home at higher rates. Over the past few months, existing-home sales have been declining while new home sales have been on the rise.</strong></p><hr><p><strong>05 Not-Yet-Started Homes Account for a Larger Share</strong></p><p><strong>Compared to pre-2020 levels, the share of not-yet-started single-family homes in current inventory remained elevated at 24% in May. Meanwhile, the share of completed single-family home inventory stood at 16% in May, below the 2013–2020 average. Completed homes sold in just 2.7 months after completion — below the 2.7-to-4.0-month range from 2013 to 2020. This means that while new homes may be a good option for buyers frustrated by limited existing-home choices, the new home market may also require patience.</strong></p>",
+        "textZh": "<p>经季节性调整后，<strong>独立屋新屋5月年化销量为76.3万套，高于4月份修正后的68万套，且高于去年同期的63.6万套。</strong>5月份全美地区的新屋销售中，东北部、南部和西部的月度涨幅最大。</p><p>新屋销售主要受到低库存、建筑商激励措施和需求弹性等有利因素的提振，不过根据经济学家分析，在9月份之后，美国房产销售市场进入常规淡季，新房销售的步伐将可能无法持续。</p><p><strong>01&nbsp;新房屋为买家提供一个减压阀</strong></p><p>由于市场房屋库存有限，抵押贷款利率保持高位的情况，市场买家的需求从去年开始一直在抑制，市场长期处于一个观望的态势。不过今年美国房产市场进入旺季以来，加息暂停等政策的影响加持，市场客户开始陆续进入市场。售价较低的房源以及地理位置优越的房屋反到得到市场的争抢。</p><p><strong>02&nbsp;5月新房价中位数下降</strong></p><p>今年5月，初步估计显示，30万美元以下价格层的房屋占销售额的17%，是自2021年12月(18%)以来的最高份额。部分市场客户专享价格更实惠的房屋。也是导致销售价格中位数较上年同期下降7.6%的原因之一。新房价格中值降至416,300美元。</p><p><strong>03&nbsp;销售回升蚕食供应</strong></p><p>在销售飙升的情况下，新房供应指数下滑至6.7个月。这是自2022年2月以来供应量最小的月份，表明需求与供应保持同步。库存的构成也反映了买家的需求。未开工房屋在当前库存中所占的比例(5月份为24%)仍高于2020年之前的水平(通常为15%至20%)。与此同时，完工房屋的待售率(5月份为16%)低于2013年至2020年的平均水平(20%至30%)。典型的完工房屋在完工后仅2.7个月就可以出售，低于2013年至2020年的典型2.7至4.0个月。这意味着，虽然对于许多因现有待售房屋选择有限而感到沮丧的购房者来说，新房可能是一个不错的选择，但在市场上购买新房也可能需要耐心。</p><p><strong>04&nbsp;新房销售持续增长</strong></p><p>5月份的环比增长进一步证明，新建筑市场正受到现有待售房屋库存异常低的提振。抵押贷款利率极低的房主不愿以更高的利率出售和购买另一套房子。过去几个月，现房销售一直在下降，而新房销售一直在上升。</p><p><strong>05&nbsp;尚未开工独立屋占比更大</strong></p><p>与 2020 年之前相比，<strong>5月尚未开工的独立屋在当前库存中占比24%仍旧偏高</strong>。与此同时，已竣工独立屋库存5月份占比16%低于2013年至2020的水平。<strong>已竣工独立屋在竣工后仅2.7个月即可售出，低于2013年至2020年的2.7至4个月水平。</strong>这意味着，对于许多因二手房房屋选择有限而感到沮丧的购房者来说，新屋可能是一个不错的选择，不过新屋市场也可能需要耐心。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786072648526-640.jpg"
   }
 ]
