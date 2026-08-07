@@ -29,10 +29,12 @@
     "预计销售逾 $52M",
     "独栋 + 联排"
   ],
-  "image": "/images/projects/riverside-garden.png",
-  "featured": true,
-  "published": true,
+  "image": "/images/uploads/1786074684868-_____20260624143128_333_176.jpg",
   "images": [
-    "/images/projects/riverside-garden.png"
-  ]
+    "/images/uploads/1786074684868-_____20260624143128_333_176.jpg"
+  ],
+  "link": "",
+  "relatedEntity": "",
+  "featured": true,
+  "published": true
 }

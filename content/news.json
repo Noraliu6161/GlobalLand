@@ -1,5 +1,382 @@
 [
   {
+    "id": "news-1785999412731",
+    "slug": "news-1785999412731",
+    "kind": "news",
+    "date": "2026-08-06",
+    "dateLabelEn": "August 6, 2026",
+    "dateLabelZh": "2026年8月6日",
+    "archiveYear": 2026,
+    "archiveMonth": 8,
+    "titleEn": "The data center demand is driving Microsoft's appetite for real estate.",
+    "titleZh": "数据中心需求推动微软对房地产的渴望",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msh5zpn8-5euj8",
+        "type": "text",
+        "textEn": "<p>When AI becomes the new oil, data centers are the refineries, and land has become the new mineral deposit that tech giants are racing to claim.</p><p>From a defunct Foxconn factory site in Wisconsin, to a quiet town on Finland's west coast, to the headquarters campus in Seattle, Microsoft is on a global \"land grab\" at breakneck speed—snapping up real estate properties worldwide. The tech giant is pivoting capital en masse from software code to steel and concrete—data center construction is rewriting the landscape of the global real estate market.</p><p>Microsoft's capital expenditure for the second quarter of fiscal year 2026 reached $37.5 billion, with roughly two-thirds allocated to short-term assets such as GPUs and CPUs. In the first half of the fiscal year alone, total capital expenditure hit $72.4 billion, and the full-year figure is on track to surpass the $100 billion mark. Behind this staggering number lies an unprecedented wave of global infrastructure buildout on a massive scale.</p><p></p>",
+        "textZh": "<p>当AI成为新石油，数据中心就是炼油厂，而土地则成了科技巨头争抢的新矿藏。</p><p>从威斯康星州废弃的富士康工厂旧址，到芬兰西海岸的宁静小镇，再到西雅图的总部园区，微软正以惊人的速度在全球“扫货”房地产。这家科技巨头正将资本从软件代码大规模转向钢筋水泥——数据中心建设正在改写全球房地产市场的版图。</p><p>微软在2026财年第二季度的资本支出达到<strong>375亿美元</strong>，其中约三分之二投向GPU和CPU等短期资产。仅上半年，其资本支出总额已达724亿美元，全年有望<strong>突破千亿美元大关</strong>。这一数字背后，是一场规模空前的全球基础设施建设浪潮。</p>"
+      },
+      {
+        "id": "b-msh604zk-pbzq8",
+        "type": "image",
+        "src": "/images/uploads/1785999529612-microsoft-ai.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msh60er3-7px18",
+        "type": "text",
+        "textEn": "<p>In Mount Pleasant, Wisconsin, Microsoft has taken over the \"stranded investment site\" left behind by Foxconn and is planning to build 15 large-scale data centers, with a total investment value exceeding $13 billion. This industrial site, once highly anticipated but left idle for years, has finally come to development. The project is expected to span approximately a decade, creating lasting job opportunities for the local community.</p><p>In Cheyenne, Wyoming, Microsoft is applying to expand two data center zones, covering 385 acres and approximately 35 acres respectively. Previously, the company had already announced plans to purchase about 3,200 acres of land in Cheyenne to develop a new data center campus.</p><p>Most strikingly, in Pecos County, West Texas, Microsoft is planning to build a data center campus spanning 7,000 acres, with an estimated capacity of 2,500 to 2,595 megawatts. This land—equivalent to nearly 4,000 standard football fields—will become one of the largest data center projects in tech history.</p><p>At its Seattle headquarters, Microsoft has completed the redevelopment of its East Campus, bringing the total number of buildings to 131. The campus has also relaxed building height restrictions, raising the limit from 6 stories to 10. Meanwhile, the Allen Institute for AI (Ai2)—founded by Microsoft co-founder Paul Allen—has brought in core research talent including former CEO Ali Farhadi, placing them within its frontier \"superintelligence\" division. This move not only strengthens Microsoft's in-house R&amp;D capabilities but also cements Seattle's position as a premier AI talent hub.</p><p>Microsoft's Azure cloud business grew 39% in the quarter, with customer demand continuing to outpace available supply. Capacity constraints are expected to persist at least through the end of fiscal year 2026. CEO Satya Nadella stated bluntly during the earnings call: \"We continue to lead the AI infrastructure wave and have gained market share in every quarter this year.\"</p><p>Microsoft currently operates over 400 data centers across 70 regions—more than any other cloud provider. In the past 12 months alone, the company has added over 20 gigawatts of capacity and continues to expand at a faster rate than any competitor.</p><p>Even more striking is Microsoft's construction of \"AI superfactories\"—using dedicated high-speed networks to connect data centers across different states into a distributed system that works in concert. A next-generation AI data center in Atlanta has already entered operation, linked via 120,000 miles of dedicated fiber-optic cable to the Wisconsin facility, integrating hundreds of thousands of the most advanced GPUs.</p><p>Data center demand is reshaping the fundamental logic of real estate investment. According to CBRE's 2025 Data Center Investor Survey, 95% of major investors said they would increase their data center investments, with 41% planning to commit over $500 million in equity.</p><p>Goldman Sachs projects that global data center electricity demand will grow 50% by 2027 and could surge 165% by 2030. Boston Consulting Group estimates that total data center investment demand from 2024 to 2030 will reach $1.8 trillion.</p><p>In the AI era, data centers are the new \"land.\" Whoever controls the computing infrastructure holds the lifeline of the digital economy. This AI-driven real estate revolution is only just beginning—and how it will reshape the global economic landscape is well worth our continued attention.</p>",
+        "textZh": "<p>在美国威斯康星州蒙特普莱森，微软接手了富士康留下的“失落投资用地”，计划兴建<strong>15座大型数据中心</strong>，总投资价值超过<strong>130亿美元</strong>。这片曾被寄予厚望却闲置多年的工业用地，终于迎来实质发展。预计相关工程将持续约十年，为当地创造持久的就业机会。</p><p>在怀俄明州夏延，微软正申请扩建两个数据中心区域，分别占地385英亩和约35英亩。此前，该公司已宣布计划在夏延购买约<strong>3200英亩土地</strong>开发新的数据中心园区。</p><p>最令人瞩目的是得克萨斯州西部佩科斯县的计划——微软拟建设一座占地<strong>7000英亩</strong>的数据中心园区，预计容量达2500至2595兆瓦。这片相当于近4000个标准足球场的土地，将成为科技史上规模最大的数据中心项目之一。</p><p>在西雅图总部，微软完成对东园区（East Campus）的重建，总建筑达到<strong>131栋</strong>。园区还放宽了建筑限高，从6层提高至10层。同时，由微软联合创始人保罗·艾伦创立的<strong>艾伦人工智能研究院（Ai2）</strong>&nbsp;引进了包括前CEO阿里·法哈迪在内的核心研究团队，并将他们纳入其前沿的“超级智能”部门。此举不仅强化了微软的自研实力，也巩固了西雅图作为AI人才高地的地位。</p><p>微软Azure云业务当季增长<strong>39%</strong>，客户需求持续超过可用供应，容量限制预计至少持续到2026财年末。CEO萨提亚·纳德拉在财报会上直言：“<strong>我们继续引领人工智能基础设施浪潮，并在今年每个季度都扩大了市场份额。</strong>”</p><p>微软目前在<strong>70个地区拥有400多个数据中心</strong>，数量超过其他任何云服务提供商。仅在过去12个月，该公司就新增了<strong>超过20千兆瓦的容量</strong>，并以快于任何竞争对手的速度继续扩容-7。</p><p>更令人震撼的是，微软正在构建“AI超级工厂”——通过专用高速网络，将跨越不同州的数据中心连接成一个协同工作的分布式系统。位于亚特兰大的新一代AI数据中心已投入运营，通过<strong>12万英里的专用光纤电缆</strong>与威斯康星州的设施相连，整合了数十万个最先进的GPU。</p><p>数据中心需求正在重塑房地产投资的底层逻辑。根据CBRE的2025年数据中心投资者调查，<strong>95%的主要投资者表示将加码数据中心投资</strong>，其中41%计划投入逾5亿美元股本。</p><p>高盛预测，全球数据中心电力需求至2027年预计增长<strong>50%</strong>，2030年更可能暴增<strong>165%</strong>。波士顿咨询集团估算，2024至2030年数据中心总投资需求将达<strong>1.8万亿美元</strong>。<strong><br></strong></p><p><strong>在AI时代，数据中心就是新的“土地”，谁掌握了算力基础设施，谁就掌握了数字经济的命脉</strong>。这场由AI驱动的房地产革命才刚刚开始，它将如何重塑全球经济版图，值得我们持续关注。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786025053690-ScreenShot_2026-08-06_145805_835.jpg"
+  },
+  {
+    "id": "news-1785999710360",
+    "slug": "news-1785999710360",
+    "kind": "news",
+    "date": "2026-07-31",
+    "dateLabelEn": "July 31, 2026",
+    "dateLabelZh": "2026年7月31日",
+    "archiveYear": 2026,
+    "archiveMonth": 7,
+    "titleEn": "Seattle-Portland Twin-City Corridor | Value Undervalued Zone | Riverside Garden Villas in a Low-Density Community",
+    "titleZh": "西雅图・波特兰双城走廊价值洼地｜河畔花园别墅低密度社区",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msh66zsl-t480a",
+        "type": "text",
+        "textEn": "<p>With Seattle home prices remaining persistently high, a growing number of homebuyers are turning their attention to a prime node along the I-5 corridor—Centralia, Washington. Offering convenient commuting to both cities, standout price advantages, and sustained industrial growth, this undervalued gem is now home to a premium low-density villa community with front-row river views: Riverside Gardens.</p><p></p><p><strong>Heart of the Twin-City Hub</strong><br><strong>A Rare Real Estate Value Opportunity</strong></p><p></p><p>Centrally located at the very midpoint of the I-5 corridor, Centralia puts Seattle just 1.5 hours to the north and Portland 1.5 hours to the south—placing residents at the heart of a two-city lifestyle circle. Compared to Seattle's steep housing prices, local home values stand at just one-third of Seattle's, making the value proposition unmistakably clear.</p>",
+        "textZh": "<p>当西雅图房价居高不下，越来越多置业者把目光投向 I-5 走廊黄金节点 —— 华盛顿州 Centralia。双城通勤便利、价格优势突出、产业持续发力，这片尚未被充分挖掘的价值洼地，迎来一线河景低密度别墅社区：河畔花园 Riverside Gardens。</p><p></p><p><strong>双城枢纽腹地</strong></p><p><strong>不可多得的房产价值洼地</strong></p><p></p><p>Centralia 坐落于 I-5 走廊正中心，向北 1.5 小时直达西雅图，向南 1.5 小时连通波特兰，坐拥双城生活圈。对比西雅图高昂房价，本地房价仅为西雅图的 1/3，性价比优势一目了然。</p>"
+      },
+      {
+        "id": "b-msh67ekc-nxy3v",
+        "type": "image",
+        "src": "/images/uploads/1785999867362-640__1_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msh67mop-uvptj",
+        "type": "text",
+        "textEn": "<p>Driven by a steady influx of tech professionals, military personnel, and retiring families, housing demand in the region continues to rise steadily. As a major transportation and logistics hub in Washington State, Centralia boasts a mature and well-developed transportation network—with BNSF Railway, I-5 Interstate Highway, and Amtrak intercity rail converging here, while major enterprises such as UNFI and Amazon distribution centers have established their presence. With over 30,000 local residents in the workforce providing sustained support, rental demand remains solid, laying a strong foundation for property value preservation and appreciation.</p>",
+        "textZh": "<p>伴随着科技从业者、军人、退休家庭持续迁入，区域住房需求稳步攀升。作为华州重要交通物流枢纽，Centralia 交通路网成熟完善：BNSF 铁路、I-5 洲际高速、Amtrak 城际铁路交汇，UNFI、亚马逊分拨中心等大型企业落地扎根。超 3 万本地就业人口持续托底，租赁需求稳固，为房产保值增值筑牢基础。</p>"
+      },
+      {
+        "id": "b-msh67peq-uyv7g",
+        "type": "image",
+        "src": "/images/uploads/1785999887050-640__2_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msh682p0-kcbt8",
+        "type": "text",
+        "textEn": "<p>Life in this small city is equally relaxed and livable: low crime rates, quality school districts, and abundant power resources also make it a prime candidate city for data centers. As the dividends of urban development continue to materialize, now is the time to secure your position in the last undervalued price zone along the Seattle–Portland corridor.</p><p><strong>Riverfront Living</strong><br><strong>Exclusive First-Rate River Views</strong></p><p>Riverside Gardens Villa Community is located in downtown Centralia, built along the banks of the Skookumchuck River. Between the residences and the riverway stretches an expansive lawn garden—this rare riverfront landscape resource grows increasingly precious amid ongoing urbanization.</p>",
+        "textZh": "<p>小城生活同样从容宜居：低犯罪率、优质学区、充沛电力资源，也是热门数据中心候选城市。城市发展红利持续兑现，此刻入场，占位西雅图 — 波特兰走廊最后的价格洼地。<br></p><p><strong>滨河而居</strong></p><p><strong>私享一线河景风光</strong><br></p><p>河畔花园别墅社区选址 Centralia 市中心，依 Skookumchuck River 河岸修建。住宅与河道之间，绵延开阔草坪花园，稀缺滨河景观资源，在城市化进程中愈发珍贵。</p><p></p>"
+      },
+      {
+        "id": "b-msh68m9n-1snsk",
+        "type": "image",
+        "src": "/images/uploads/1785999932057-640__3_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msh692uq-n1n62",
+        "type": "text",
+        "textEn": "<p><strong>Surrounded by large parks, complete with comprehensive commercial amenities, and located near Chehalis-Centralia Airport, Riverside Gardens offers the perfect balance of nature and convenience. No need for long-distance travel—a \"micro-vacation\" starts right at your doorstep. Whether strolling through the woods or relaxing by the river, for children who love the outdoors, exploring freely among the trees, rivers, and mountains offers a one-of-a-kind growth experience.</strong></p><p></p><p><strong>Seven Core Demand Drivers Provide Strong Support</strong></p><p></p><p><strong>Military Families | The \"Golden Tenant Group\" in the long-term rental market—steady yields as solid as a rock</strong></p><p></p><p><strong>University-Driven Demand | 4,800+ students and faculty—rental demand outstrips supply</strong></p><p><strong>Outlet Shopping District | Management + staff—a stable tenant base</strong></p><p><strong>Regional Silver Economy | Healthcare + senior care—generating rigid rental demand</strong></p><p><strong>I-5 Logistics Hub | Skilled blue-collar workers + management—premium rental choice</strong></p><p><strong>State Capital Spillover Effect | Preferred by government employees—top-tier tenant credit</strong></p><p><strong>Pillar Industry Support | High-wage blue-collar workers—solidifying the rental fundamentals</strong></p><p></p><p><strong>Project Core Information</strong></p>",
+        "textZh": "<p>大型公园环绕，商业配套齐全，邻近 Chehalis-Centralia 机场，自然与便利兼得。不必长途远行，家门口就能开启 “微度假”。林间漫步、河畔休闲，对于喜爱自然的孩子而言，在草木山河间自由探索，收获独一无二的成长体验。<br></p><p><strong>七大刚需强力托底</strong><br></p><ul><li><p><strong>军人家庭 | 长租市场“黄金客群”收益稳如磐石</strong></p></li><li><p><strong>高校红利 | 4800+师生刚需，租房需求供不应求</strong></p></li><li><p><strong>奥特莱斯商圈 | 管理层+员工，稳定租住群体</strong></p></li><li><p><strong>区域银发经济 | 医疗+养老，催生刚性租住需求</strong></p></li><li><p><strong>I-5物流枢纽 | 高级蓝领+管理层，品质租住首选</strong></p></li><li><p><strong>州府溢出效应 | 公务员优选，租客信用拉满</strong></p></li><li><p><strong>支柱产业加持 | 高薪蓝领，夯实租赁基本面‍</strong></p></li></ul><p></p><p><strong>项目核心信息</strong></p>"
+      },
+      {
+        "id": "b-msh69gai-rkece",
+        "type": "image",
+        "src": "/images/uploads/1785999967301-640__4_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msh69qoc-nwmmi",
+        "type": "text",
+        "textEn": "<ul><li><p><strong>Project Name:</strong> Riverside Gardens</p></li><li><p><strong>City:</strong> Centralia, Washington</p></li><li><p><strong>Land Area:</strong> 16 acres</p></li><li><p><strong>Single-Family / Duplex Villas:</strong> 49 units</p></li><li><p><strong>Townhouses:</strong> 39 units</p></li><li><p><strong>Delivery Timeline:</strong> Phased move-in starting from the end of 2026</p></li><li><p><strong>Low-density planning ensures residential privacy and community comfort.</strong></p></li></ul><p></p><p><strong>Backed by an Experienced Developer</strong><br><strong>Two Decades of Deep Roots in Washington State Real Estate</strong></p><p>This project is developed and managed by New Home Real Estate Development Management Company. Established in 2016, the company's core team brings 20 years of large-scale real estate development and management experience in Washington State.</p>",
+        "textZh": "<ul><li><p>项目名称：河畔花园 Riverside Gardens</p></li><li><p>所在城市：华盛顿州 / Centralia市</p></li><li><p>占地面积：16 英亩</p></li><li><p>独栋 / 双单元别墅：49 户</p></li><li><p>联排别墅：39 户</p></li><li><p>交付时间：2026 年年底起分批入住</p></li><li><p>低密度规划，保障居住私密性与社区舒适度</p></li></ul><h2></h2><p><strong>实力开发商护航</strong></p><p><strong>深耕华州地产二十载</strong><br></p><p>本项目由新居地产开发管理公司打造。企业成立于 2016 年，核心团队拥有20 年华盛顿州大型地产开发管理经验。</p>"
+      },
+      {
+        "id": "b-msh6a3z2-hlluj",
+        "type": "image",
+        "src": "/images/uploads/1786000330185-640__6_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msh6hmsp-d6w0l",
+        "type": "text",
+        "textEn": "<p><strong>The developer's core members collectively hold over 5 million square feet of leased and developable real estate in Washington State, with a solid track record and numerous completed projects to their name. Major communities such as Mira Flat, The Emerald, Forum South Park, Florera, Evergreen Townhomes, and Belleview Park were all developed and managed by the team. With mature development experience and standardized project management, homebuyers can rest assured that their investment is in capable hands.</strong></p><p></p><p><strong>A Dual Opportunity: Homeownership &amp; Investment</strong></p><p></p><p><strong>Ideal for Homeowners:</strong> Quality school districts, a safe and secure community, and a riverfront natural environment make this an excellent choice for families seeking long-term settlement, with convenient commuting to both Seattle and Portland.</p><p><strong>Investment Advantages:</strong> Steady population inflows, a solid employment base, and strong rental demand; the region's value is on an upward trajectory with a lower entry barrier.</p>",
+        "textZh": "<p>开发商核心成员在华盛顿州持有租赁及待开发地产总面积超 500 万平方英尺，履历扎实，落地作品众多：Mira Flat、The Emerald、Forum South Park、Florera、Evergreen Townhomes、Belleview Park 等多个中大型社区均出自团队操盘。成熟开发经验、标准化工程管理，为业主置业保驾护航。<strong><br></strong></p><p><strong>自住 &amp; 投资双重机遇</strong><br></p><p><strong>自住优选：</strong>优质学区、治安良好、滨河自然环境，适合家庭长期定居，兼顾双城通勤</p><p><br></p><p><strong>投资优势：</strong>人口持续流入、就业底盘稳固，租赁需求旺盛；区域价值处于上升通道，入手门槛更低</p><p></p>"
+      },
+      {
+        "id": "b-msh6hytm-scp17",
+        "type": "image",
+        "src": "/images/uploads/1786000954615-640__7_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msh6j6cm-5v9cf",
+        "type": "text",
+        "textEn": "<p>With home prices soaring in both Seattle and Portland, Centralia's Riverside Gardens villas offer an opportunity you won't want to miss—balancing quality of life with affordable homeownership.</p>",
+        "textZh": "<p>西雅图、波特兰房价高企，想要兼顾生活品质与置业成本，Centralia 河畔花园别墅，是不容错过的选择。</p>"
+      }
+    ],
+    "image": "/images/uploads/1785999836748-640.jpg"
+  },
+  {
+    "id": "news-1786062620838",
+    "slug": "news-1786062620838",
+    "kind": "news",
+    "date": "2026-07-31",
+    "dateLabelEn": "July 31, 2026",
+    "dateLabelZh": "2026年7月31日",
+    "archiveYear": 2026,
+    "archiveMonth": 7,
+    "titleEn": "Q2 2026 Rental Market in Seattle and Centralia",
+    "titleZh": "2026年第二季度西雅图及 Centralia 租金市场",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msi8kyyp-uyaqe",
+        "type": "text",
+        "textEn": "<p>In the second quarter of 2026, the Puget Sound rental market exhibited a clear north-south gradient divergence. Rental rates in downtown Seattle held firm at elevated levels with a slight pullback, while further south, Centralia in Lewis County carved out its own independent trajectory driven by a significant rent differential. A substantial number of tenants seeking to reduce housing costs continued to migrate southward.</p><p>In Seattle's core downtown area, the condo rental market emerged from a streak of consecutive declines and entered a phase of modest uptick, though average rental prices dropped sharply by $311 compared to the same period last year, bringing the median rental price to $2,068 per month.</p>",
+        "textZh": "<p>2026年第二季度，普吉特湾租赁市场呈现清晰的南北梯度分化格局。西雅图市区租金高位企稳、小幅回调；继续向南深入刘易斯县的 Centralia，凭借显著租金价差走出独立行情。大量寻求降低居住成本的租客持续向南迁移。</p><p>西雅图主城区Condo租赁市场告别连续下跌进入温和上扬阶段，较去年同期平均租赁价格大幅下降了311美金，租赁价格中位数来到2068美金/月。</p>"
+      },
+      {
+        "id": "b-msi8l0xo-2y7b6",
+        "type": "image",
+        "src": "/images/uploads/1786064336244-640__9_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msi8lfbb-xmbl8",
+        "type": "image",
+        "src": "/images/uploads/1786064347343-640__10_.jpg",
+        "altEn": "",
+        "altZh": "租赁价格范围"
+      },
+      {
+        "id": "b-msi8llek-gtvq1",
+        "type": "text",
+        "textEn": "<p><strong>Unit Type Rental Rates</strong></p><ul><li><p><strong>Studio:</strong> Average price range $1,600–$1,800</p></li><li><p><strong>One-bedroom:</strong> Mainstream range $2,100–$2,500</p></li><li><p><strong>Two-bedroom:</strong> Generally exceeding $2,800</p></li></ul><p>Newly built luxury apartments maintain their asking prices through amenity packages, while older apartments built over 10 years ago offer significant room for negotiation.</p><p>Heading south along I-5, from South Seattle neighborhoods through Renton, Kent, Tacoma, and extending to Olympia, a clear rent gradient corridor emerges — the farther from downtown Seattle, the lower the rent threshold, making this a preferred transitional area for budget-conscious families.</p><p>Centrally located along the I-5 corridor, Centralia is approximately a 25-minute drive south of Olympia and 90 minutes from downtown Seattle under normal traffic conditions. It stands out as a highly representative low-cost city along the southern corridor, with its Q2 2026 rent trends showing a stark contrast to the Seattle metropolitan area.</p><p>According to the latest Zillow data, the city's median rent for July stood at <strong>$1,431/month**, up **$36</strong> year-over-year and up <strong>$36</strong> month-over-month.</p>",
+        "textZh": "<p><strong>&nbsp;户型行情&nbsp;</strong></p><ul><li><p>Studio 均价 $1,600–$1,800</p></li><li><p>一居室主流区间 $2,100–$2,500</p></li><li><p>两居室普遍突破 $2,800</p><p><br></p></li></ul><p>新建精装公寓依靠配套维持报价，建成 10 年以上老式公寓议价空间明显。</p><p>沿着 I-5 向南，从南西雅图社区、Renton、Kent、Tacoma 延伸至 Olympia，形成一条清晰的<strong>租金梯度走廊</strong>，距离西雅图市中心越远，租金门槛持续降低，也是大量预算有限家庭首选的过渡区域。</p><p>Centralia 位于 I-5 干线，奥林匹亚以南约 25 分钟车程，距离西雅图市区正常路况 90 分钟，是南走廊极具代表性的低成本城市，2026 年 Q2 租金走势与西雅图大都会区形成明显反差。</p><p>根据最新zillow数据显示，7月城市租金中位数 $1,431 / 月，<strong>同比</strong>上涨$36,环比上涨$36。</p>"
+      },
+      {
+        "id": "b-msi8m5mg-lb2e1",
+        "type": "image",
+        "src": "/images/uploads/1786064387179-640__11_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msi8mjfv-52yhc",
+        "type": "image",
+        "src": "/images/uploads/1786064399994-640__12_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msi8mtrk-fc7mh",
+        "type": "text",
+        "textEn": "<p><strong>Unit Type Rental Rates</strong></p><ul><li><p><strong>Two-bedroom:</strong> Mainstream range $1,200–$1,630</p></li><li><p><strong>Three-bedroom single-family homes:</strong> $1,700–$3,200</p></li></ul><p>Compared to equivalent unit types in downtown Seattle, rents here are generally 35%–45% lower, making the price differential advantage highly pronounced. Local residents spend only about 27% of their household income on rent, with the housing cost burden far lower than in the northern Puget Sound region.</p><p>The content and views expressed herein are personal. Some images are sourced from the internet; if any infringement is identified, please notify us for removal.</p>",
+        "textZh": "<p><strong>&nbsp;户型行情&nbsp;</strong></p><ul><li><p>两居室主流区间：$1,200–$1,630</p></li><li><p>三居室独栋住宅：$1,700–$3,200</p><p><br></p></li></ul><p>对比西雅图市区同等户型，租金普遍低 35%–45%，价差优势十分突出。当地居民租金支出仅占家庭收入约 27%，居住负担远低于普吉特湾北部。</p><p>文章内容与看法为个人行为，图片部分来源于网络，侵权告知可删</p>"
+      }
+    ],
+    "image": "/images/uploads/1786064305844-640__8_.jpg"
+  },
+  {
+    "id": "news-1786064802480",
+    "slug": "news-1786064802480",
+    "kind": "news",
+    "date": "2026-07-24",
+    "dateLabelEn": "July 24, 2026",
+    "dateLabelZh": "2026年7月24日",
+    "archiveYear": 2026,
+    "archiveMonth": 7,
+    "titleEn": "",
+    "titleZh": "美国门户型市场租赁活动达到多年高点，动能持续增强",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msi8xj1r-1vje4",
+        "type": "text",
+        "textEn": "<p><strong>Q2 2026 marked a pivotal moment for the U.S. office market: leasing volume in gateway markets reached 42.6 million square feet (msf), the most active quarter since 2019. Quarterly demand surpassed the pre-pandemic three-year average, indicating that leasing activity has returned to levels that would have been considered strong even before the pandemic.</strong></p><p><strong>In the first half of 2026, leasing volume in these markets reached 84.2 million square feet, the strongest first-half performance since 2019. The sustained growth in office demand underscores the resilience of U.S. tenants, who continue to make leasing decisions despite ongoing macroeconomic uncertainty.</strong></p><p><strong>Tech Hubs Lead the Recovery</strong></p><p>A closer look at individual markets reveals which regions have seen the most accelerated leasing momentum in recent quarters, with several leading tech hubs driving the growth.</p><p>The Seattle/Puget Sound region saw leasing activity increase by <strong>53.6%</strong> over the past four quarters compared to the prior four-quarter period — the largest increase among all Tier 1 office markets nationwide.</p><p>Silicon Valley (<strong>35.3%</strong>) and San Francisco (<strong>34.6%</strong>) were the only other markets with growth exceeding 30%.</p><p>Notably, all three markets share a tenant base heavily weighted toward tech companies and were among the hardest hit during the 2022–2023 tech leasing downturn, when many tech firms significantly reduced their office footprints. With accelerating AI investment and continued improvements in office utilization rates, leasing demand in these major tech hubs has rebounded sharply.</p><p><strong>Manhattan and Miami Forge Their Own Paths</strong></p><p>Two other markets stood out for leasing demand in the second quarter. Manhattan's leasing activity grew <strong>9.0%</strong> over the past four quarters compared to the prior four-quarter period, with first-half 2026 leasing volume alone reaching 23.2 million square feet — the strongest first-half performance since 2013. Demand in Manhattan was primarily driven by law firms and TAMI (Technology, Advertising, Media &amp; Information) tenants.</p><p>Miami's leasing activity increased <strong>17.4%</strong> over the prior four-quarter period, as tenants continue to gravitate toward premium, lifestyle-oriented office environments. In the second quarter, Manhattan and Miami posted availability rates of <strong>14.3%</strong> and <strong>14.9%</strong>, respectively — the lowest among all Tier 1 markets — underscoring the scarcity of quality supply in both markets.</p><p><strong>Looking Ahead</strong></p><p>The U.S. office market is expected to continue stabilizing through 2026, provided that leasing demand for top-tier office space remains strong and the \"return-to-office\" trend continues to gain traction. The resurgence of tech-sector activity, particularly in AI, is expected to continue driving leasing demand in select gateway markets. The legal and financial services sectors will also remain significant contributors to transaction volume, as both industries continue to favor large-block leases to support in-person operations.</p><p>The overall office leasing environment is expected to remain bifurcated, with tenant demand concentrated on the highest-quality assets. As a result, rent growth at the top end of the market is likely to remain resilient. Limited new supply will also keep availability tight for premium spaces, making timing a critical factor for tenants in their near-term decision-making.</p><p>With constrained new supply and sustained demand for trophy assets, tight conditions at the top of the market may gradually spill over into well-located Class B assets, driving increased demand for these properties.</p>",
+        "textZh": "<p>2026 年第二季度，美国办公市场迎来关键节点：<strong>门户型市场的租赁总量达到 4,260 万平方英尺（msf），为 2019 年以来最活跃的季度</strong>。季度需求超过疫情前三年平均水平，表明租赁活动已回到即使在疫情前也被视为强劲的季度表现。</p><p>2026 年上半年，这些市场的租赁总量达到 8,420 万平方英尺，为 2019 年以来最强劲的上半年表现。办公需求的持续增长凸显了美国租户的韧性，即使在宏观经济不确定性下，他们仍持续做出租赁决策。</p><p><strong>&nbsp;科技中心领跑复苏&nbsp;</strong></p><p>进一步观察各个市场，可以看到哪些区域在最近几个季度中租赁动能加速最明显，其中多个领先的科技中心推动了增长。</p><p><strong>西雅图/普吉特海湾地区在过去四个季度的租赁活动较此前四个季度增长53.6%，为全国所有一级办公市场中增幅最大的区域。</strong></p><p><strong>硅谷（35.3%）和 旧金山（34.6%） 是仅有的另外两个增幅超过 30% 的市场。</strong></p><p>值得注意的是，这三个市场均拥有以科技企业为核心的租户结构，并且在 2022–2023 年科技行业租赁低迷期间受到最严重的冲击，当时许多科技公司大幅缩减办公面积。随着人工智能投资加速，以及办公使用率持续改善，这些主要科技中心的租赁需求已显著反弹。</p><p><strong>&nbsp;曼哈顿与迈阿密走出各自的发展路径&nbsp;</strong></p><p>在第二季度中，还有两个市场在租赁需求方面表现突出。曼哈顿的租赁活动在过去四个季度相比此前四个季度增长 9.0%，仅 2026 年上半年租赁量就达到 2,320 万平方英尺（msf），为 2013 年以来最强劲的上半年表现。曼哈顿的需求主要由律师事务所以及科技、广告、媒体和信息（TAMI）类租户推动。</p><p>迈阿密的租赁活动较此前四个季度增长 17.4%，因为租户持续倾向于选择高端、生活方式导向的办公环境。本季度，曼哈顿和迈阿密的可租率分别为 14.3% 和 14.9%，是所有一级市场中最低的两个，凸显了两地优质供应的紧缺程度。</p><p><strong>&nbsp;展望未来&nbsp;</strong></p><p>预计美国办公市场将在 2026 年持续稳定，前提是顶级办公空间的租赁需求保持强劲，且“重返办公室”的趋势持续推进。科技行业的活动回升，尤其是人工智能领域，预计将继续推动部分门户型市场的租赁需求。法律和金融服务行业也将继续成为交易的重要贡献者，因为这两个行业仍然偏好通过大面积租赁来支持线下办公。</p><p>整体办公租赁环境预计仍将呈现分化趋势，租户需求主要集中在最佳品质的资产上。因此，市场顶端的租金增长可能继续保持韧性。有限的新建供应也将使高端空间的可租性持续紧张，使得租户在短期决策中更需关注时间节点。</p><p>随着新供应受限、对标志性资产的需求保持强劲，市场顶端的紧张状况可能会逐渐向位置优越的次级资产溢出，带动这些资产的需求增长。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786064842201-640__13_.jpg"
+  },
+  {
+    "id": "news-1786065227992",
+    "slug": "news-1786065227992",
+    "kind": "news",
+    "date": "2026-07-16",
+    "dateLabelEn": "July 16, 2026",
+    "dateLabelZh": "2026年7月16日",
+    "archiveYear": 2026,
+    "archiveMonth": 7,
+    "titleEn": "",
+    "titleZh": "重仓西雅图！摩根大通高管官宣：持续加码本地科技团队，打造全球金融 AI 核心枢纽",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msi950k4-7b61b",
+        "type": "text",
+        "textEn": "<p>JPMorgan Chase, with a global market capitalization exceeding $1 trillion and assets over $5 trillion, is making a significant bet on Seattle. Lori Beer, the firm's Global Chief Information Officer, recently visited the Seattle Technology Center and publicly stated that the bank is continuously investing heavily in its local Seattle teams, positioning the city as the core R&amp;D hub for the firm's proprietary AI infrastructure, cloud-native security, and intelligent financial systems. A full-scale talent and capacity expansion spanning AI, cloud computing, and cybersecurity is now underway in Seattle.</p><p>\"Seattle has one of the highest densities of cloud-native, AI, and cybersecurity engineers in the country. The teams here are driving technological innovation on a global scale for JPMorgan Chase, and we will continue to increase our investment across capital, facilities, and talent,\" said Lori Beer, Global CIO of JPMorgan Chase, at a Seattle employee town hall, clearly signaling the firm's intensified commitment.</p><p>This announcement is far from short-term marketing — it represents the continuation of an eight-year strategic buildout by JPMorgan Chase:</p><p>From 0 to 400 — Technology Center Scales Rapidly<br>JPMorgan Chase's Seattle Technology Center officially launched in 2018. In just eight years, the local tech team has grown to 400 employees, with the firm's total workforce across Washington State surpassing 2,000, spanning multiple core business lines including AI R&amp;D, cloud architecture, financial cybersecurity, and digital asset infrastructure development.</p><p>New Headquarters and Expanded R&amp;D Space<br>In early 2026, JPMorgan Chase acquired the landmark building at 1301 Second Ave in downtown Seattle, officially renaming it the JPMorgan Chase Center. The total office space spans 128,000 square feet, with over 40,000 square feet of newly added R&amp;D space, capable of accommodating up to 850 technologists — providing ample room for future large-scale hiring.</p><p>Lori Beer commented on this expansion: \"For financial institutions, client data, risk management frameworks, and business processes are core proprietary assets that cannot be fully outsourced to external tech companies. Seattle brings together the multidisciplinary talent that truly understands cloud architecture and the AI technology stack, making it the optimal choice for building this proprietary technology system.\"</p><p>Talent Density and Supply Efficiency<br>As the headquarters of both Amazon and Microsoft, Seattle has cultivated a deep pool of seasoned engineers specializing in cloud computing, large language models, and distributed systems — eliminating the need to build teams from scratch. JPMorgan Chase has been able to attract senior architects from these two tech giants to quickly fill critical gaps in financial AI and cloud security talent. Compared to traditional financial hubs like New York and Chicago, Seattle offers a distinct advantage in talent supply efficiency.</p><p>Synergy Across Business Lines<br>At the same time, Seattle sits at the heart of the Pacific Northwest innovation corridor, home to a dense concentration of startups, tech founders, and ultra-high-net-worth individuals. Beyond technology R&amp;D, JPMorgan Chase's Private Bank is concurrently expanding its local wealth management team to serve the region's tech entrepreneurs. The Technology Center and the retail/private banking businesses are mutually reinforcing, creating a closed loop from \"tech R&amp;D to local client service.\" JPMorgan Chase currently holds a 14.5% banking market share in Washington State, ranking second in the region.</p><p>From scaling its tech team to hundreds of employees, to launching proprietary AI infrastructure R&amp;D, JPMorgan Chase's sustained and tangible investments underscore Seattle's unique position in the global wave of financial digitalization. Technological independence is the cornerstone of long-term competitiveness for major banks — and Seattle stands as the core battleground powering this financial AI transformation.</p>",
+        "textZh": "<p>全球市值破万亿、资产规模超 5 万亿美元的摩根大通重仓西雅图。集团全球首席信息官 Lori Beer 近期亲临西雅图技术中心并公开表态：银行正持续重金加码西雅图本土团队，将这里定为集团自主 AI 基础设施、云原生安全、智能金融体系的核心研发阵地，一场横跨 AI、云计算、网络安全的人才与产能扩张正在西雅图全面落地。<br></p><p>“西雅图拥有全美密度顶尖的云原生、人工智能、网络安全工程师，这里的团队正在驱动摩根大通全球层面的技术创新，我们会持续加大资金、场地、人才三重投入。” 摩根大通全球 CIO Lori Beer 在西雅图员工沟通会上明确释放加码信号。</p><p>此番表态并非短期营销，而是摩根大通长达 8 年布局的战略延续：</p><p>从 0 到 400 人，技术中心规模快速翻倍，摩根大通西雅图技术中心 2018 年正式落地，仅 8 年时间本地技术团队扩充至 400 人，华盛顿州全域员工规模突破 2000 人，覆盖 AI 研发、云架构、金融网络安全、数字资产底层开发多条核心业务线。<br></p><p>2026 年初摩根大通拿下西雅图市中心 1301 Second Ave 地标楼宇，正式更名为JPMorgan Chase Center，整体办公面积达 12.8 万平方英尺，新增超 4 万平方英尺研发空间，最多可容纳 850 名技术人员，为后续大规模扩招预留充足场地。</p><p>Lori Beer 对此表示：金融机构的客户数据、风控逻辑、业务流程是核心壁垒，不能完全外包给外部科技公司；西雅图汇聚了吃透云架构与 AI 底层的复合型人才，是搭建这套自主技术体系的最优选择。</p><p>西雅图作为亚马逊、微软双巨头总部，沉淀大量深耕云计算、大模型、分布式系统的成熟工程师，无需从零培养团队。摩根大通从两大科技大厂吸纳资深架构师，快速补齐金融 AI、云安全稀缺人才，相比纽约、芝加哥等金融城，人才供给效率优势显著。</p><p>同时，西雅图背靠太平洋西北科创走廊，聚集大量初创企业、科技创始人、超高净值家庭。除技术研发外，摩根大通私人银行同步扩张本地财富管理团队，服务区域科创企业家，技术中心与零售、私行业务双向赋能，打通 “科技研发 - 本地客户服务” 闭环，目前摩根大通在华盛顿州银行业市场份额达 14.5%，位列区域第二。</p><p>从数百人技术团队扩容，到自主 AI 底层研发落地，摩根大通用持续真金白银的投入，印证西雅图在全球金融数字化浪潮中的独特地位。技术自主是大型银行长期竞争力的根基，而西雅图，正是支撑这场金融 AI 变革的核心阵地。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786065295544-640__14_.jpg"
+  },
+  {
+    "id": "news-1786065424997",
+    "slug": "news-1786065424997",
+    "kind": "news",
+    "date": "2026-06-26",
+    "dateLabelEn": "June 26, 2026",
+    "dateLabelZh": "2026年6月26日",
+    "archiveYear": 2026,
+    "archiveMonth": 6,
+    "titleEn": "Databricks Signs Lease at Bellevue's Four106 Building, Expanding Its Seattle-Area Footprint",
+    "titleZh": "Databricks 签约贝尔维尤Four106大楼，加码西雅图布局",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msi98x98-t38qx",
+        "type": "text",
+        "textEn": "<p>According to two people familiar with the matter, San Francisco-based data company Databricks has signed a 160,000-square-foot lease at a newly built tower in downtown Bellevue.</p><p>Databricks has leased space at Four106, located at 380 106th Ave. NE — the company's largest lease transaction in Washington State to date, reflecting its ongoing office expansion in the Seattle and Bellevue area.</p><p>This marks the latest in a series of leasing moves by Bay Area tech companies in the Seattle region, following previous signings by Anthropic, DocuSign, and Uber. Uber leased 170,000 square feet at Four106 in April of this year.</p><p>Since February, Databricks had been in discussions to lease up to 250,000 square feet at Four106.</p><p>Currently, Databricks' total office footprint in the Puget Sound region exceeds 270,000 square feet — a scale that puts it on par with its primary competitor Snowflake, which leases the 330,000-square-foot Block 6 building in the Spring District neighborhood, located just across the interstate from Databricks' new office. Beyond Four106, Databricks has also signed multiple lease agreements at City Center Bellevue and Seattle's West 8th building since 2024.</p>",
+        "textZh": "<p>据两位知情人士透露，总部位于旧金山的数据公司 Databricks 已在贝尔维尤（Bellevue）市中心的一栋新建摩天大楼内签署了一份面积达 16 万平方英尺的租赁协议。</p><p>Databricks 此次租下的是位于东北 106 大道 380 号（380 106th Ave. NE）的 Four106 大楼；这是该公司在华盛顿州迄今为止最大的一笔租赁交易，反映了其在西雅图和贝尔维尤地区不断扩张办公空间的步伐。</p><p><strong>这是湾区科技公司在西雅图地区一系列租赁动作中的最新一例，此前 Anthropic、DocuSign 和 Uber 也已纷纷签约入驻</strong>。Uber 于今年 4 月租下了 Four106 大楼内 17 万平方英尺的办公空间。</p><p>自 2 月以来，Databricks 一直在商谈租用 Four106 大楼内多达 25 万平方英尺的空间。</p><p>目前，<strong>Databricks 在普吉特湾（Puget Sound）地区的办公总面积已超过 27 万平方英尺</strong>，这一规模足以与其主要竞争对手 Snowflake 相媲美。<strong>Snowflake 租用了位于 Spring District 街区的 Block 6 大楼（面积 33 万平方英尺）</strong>，该大楼与 Databricks 的新办公室仅隔着一条州际公路。除 Four106 外，Databricks 自 2024 年以来还在贝尔维尤市中心（City Center Bellevue）和西雅图的 West 8th 大楼签署了多份租赁协议。</p>"
+      },
+      {
+        "id": "b-msi993di-pl7li",
+        "type": "image",
+        "src": "/images/uploads/1786065458341-640__16_.jpg",
+        "altEn": "Block 6 in the Spring District",
+        "altZh": "Spring District 街区的 Block 6"
+      },
+      {
+        "id": "b-msi99n1e-0cvvn",
+        "type": "text",
+        "textEn": "<p>Four106 is located just three blocks from the Bellevue Downtown light rail station, making it a highly sought-after office property in the area. Dune Real Estate Properties and Patrinely Group launched the speculative development of the project (i.e., breaking ground without pre-secured tenants) in 2022, at a time when the local market was still reeling from the pandemic and the subsequent wave of remote work.</p><p>This has made Four106 one of the few prime new office towers in Bellevue in recent years. Most of Bellevue's other newly built office buildings have already been pre-leased by Amazon.</p><p>With the majority of Four106's space now leased, Dune is currently seeking nearly $500 million in refinancing for the building, according to Green Street.</p>",
+        "textZh": "<p>Four106 大楼距离贝尔维尤市中心轻轨站仅三个街区，是当地备受追捧的办公场所。Dune Real Estate Properties 和 Patrinely Group 于 2022 年启动了该项目的投机性开发（即在未预先锁定租户的情况下开工建设），当时当地市场正深受疫情及随之而来的远程办公潮冲击。</p><p>这使得 Four106 成为贝尔维尤近年来为数不多的优质新建写字楼之一。<strong>贝尔维尤的其他新建写字楼大多已被亚马逊（Amazon）预租</strong>。</p><p>据 Green Street 报道，随着 Four106 大楼的大部分空间已租出，Dune 公司目前正寻求为该大楼进行近 5 亿美元的再融资。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786065490185-640__15_.jpg"
+  },
+  {
+    "id": "news-1786065645444",
+    "slug": "news-1786065645444",
+    "kind": "news",
+    "date": "2026-06-26",
+    "dateLabelEn": "June 26, 2026",
+    "dateLabelZh": "2026年6月26日",
+    "archiveYear": 2026,
+    "archiveMonth": 6,
+    "titleEn": "Washington State's 57 Public Companies Surpass $1.5 Trillion in Combined Revenue — Powering the West Coast's Economic Core Engine",
+    "titleZh": "华盛顿州 57 家上市公司总营收超 1.5 万亿美金！撑起西海岸经济核心引擎",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msi9dhyp-ch7oc",
+        "type": "text",
+        "textEn": "<p>The Puget Sound Business Journal recently released its annual ranking of locally headquartered public companies, and a set of striking economic data vividly demonstrates the robust industrial strength of Washington State: the top 57 public companies in the state generated a combined total revenue of over $1.5 trillion in fiscal year 2025, with aggregate net profits reaching an impressive $208 billion — a remarkable performance that cements the state's position as a core pillar of the West Coast economy.</p><p>These 57 leading companies span a diverse and balanced range of industries, including technology, aerospace, retail, and biopharmaceuticals, with their headquarters heavily concentrated in Seattle and the greater Puget Sound region — underscoring Washington State's central role in the West Coast economic landscape.</p><p>Beyond tech and consumer giants such as Microsoft, Amazon, and Starbucks, the list also features heavyweights in advanced manufacturing, aerospace, and biopharmaceuticals:</p><ul><li><p>In the aerospace sector, Boeing takes center stage, complemented by avionics supplier Esterline, regional airline leader Alaska Airlines, and heavy equipment manufacturing powerhouse PACCAR — forming a complete high-end aerospace manufacturing value chain.</p></li><li><p>The biopharmaceutical cluster is deeply rooted in Seattle and Bothell, with locally headquartered public companies including Adaptive Biotechnologies, a leader in immune diagnostics, and gene therapy firm Sana Biotechnology. Seagen, a longtime mainstay on the list and a global benchmark in targeted oncology drug R&amp;D, continues to drive cutting-edge medical innovation, supported by research resources from the University of Washington and the Fred Hutchinson Cancer Center.</p></li></ul><p>Together, these three core sectors — aerospace, heavy precision equipment, and biopharmaceuticals — constitute Washington State's second growth trajectory beyond the tech and consumer economy.</p>",
+        "textZh": "<p>近日，《普吉特湾商业杂志》发布本地头部上市公司年度榜单，一组重磅经济数据直观展现出美国华盛顿州雄厚的产业实力：全州排名前 57 家上市企业，2025 财年合计总营收突破 1.5 万亿美元，整体净利润更是高达 2080 亿美元，亮眼成绩单坐稳西海岸经济核心席位。</p><p>本次上榜的 57 家龙头企业，产业布局多元均衡，涵盖科技、航空、零售、生物医药等领域，核心总部高度聚集在西雅图及普吉特湾核心片区，充分体现了华盛顿州在美国西海岸经济版图中的核心地位。</p><p>除微软、亚马逊、星巴克等科技消费巨头外。</p><p>榜单内硬核高端制造、航空航天与生物医药企业同样实力雄厚：航空领域以波音为核心，搭配航电配套厂商 Esterline、区域航空龙头阿拉斯加航空、重型装备制造巨头帕卡（PACCAR），形成完整航空高端制造产业链。</p><p>生物医药集群扎根西雅图与 Bothell，本土上市企业包含免疫诊疗龙头 Adaptive Biotechnologies、基因治疗企业 Sana Biotechnology，曾长期位列榜单的肿瘤药企 Seagen 更是全球靶向抗癌药研发标杆，依托华盛顿大学、福瑞德哈金森癌症中心科研资源，持续输出前沿医疗创新成果。</p><p>航空工业、重型精密装备、生物制药三大硬核赛道共同构成华盛顿州产业第二增长曲线。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786065659338-640__17_.jpg"
+  },
+  {
+    "id": "news-1786065825060",
+    "slug": "news-1786065825060",
+    "kind": "news",
+    "date": "2026-06-17",
+    "dateLabelEn": "June 17, 2026",
+    "dateLabelZh": "2026年6月17日",
+    "archiveYear": 2026,
+    "archiveMonth": 6,
+    "titleEn": "What is driving the new wave of office leasing in the Seattle area?",
+    "titleZh": "是什么推动了西雅图地区办公租赁的新浪潮？",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msi9hjzf-u04jd",
+        "type": "text",
+        "textEn": "<p>The latest CBRE Q1 2026 Office Report shows that the Seattle office market has recorded two consecutive quarters of positive net absorption. In the first quarter alone, net absorption reached 356,000 square feet, soaring 1,595% quarter-over-quarter. The region's overall vacancy rate declined from 28.6% to 28.3%, while vacancy for Class A office space dropped significantly by 70 basis points. Total leasing volume in the first quarter exceeded 2.1 million square feet, with East Bellevue and Redmond's tech corridors emerging as some of the hottest office leasing submarkets in the nation.</p><p>Just as recently as early 2025, Seattle — like many other U.S. cities — was grappling with tech giant lease terminations, tepid demand for subpar office space, and a glut of sublease listings. In just one year, the market has completely turned around, with a leasing frenzy sweeping across the region.</p><p>Many are left wondering: What exactly is driving Seattle's uniquely robust office leasing wave?</p><p>By examining the latest industry data, transportation infrastructure developments, and corporate return-to-office policy shifts, we break down the four underlying drivers behind this resurgence — and offer a glimpse into the next commercial real estate investment opportunity in North America.</p><p><strong>01 / The AI Industry Moves West</strong></p><p>Seattle Emerges as North America's Second-Largest AI Office Hub, with Outside Firms Expanding Aggressively</p><p>The primary engine powering this office leasing surge in Seattle is the large-scale buildout of the artificial intelligence industry.</p>",
+        "textZh": "<p>最新CBRE 2026年第一季度商办报告显示：西雅图办公市场连续两个季度实现<strong>净吸纳量转正</strong>，一季度单季净吸纳面积达到35.6万平方英尺，环比暴涨1595%；区域整体空置率从28.6%回落至28.3%，优质甲级写字楼空置率大幅下降70个基点；一季度整体租赁成交面积突破210万平方英尺，东贝尔维尤、雷德蒙德科创片区成为全美办公租赁最火热的片区之一。</p><p>要知道，就在2025年初，西雅图还和全美其他城市一样，面临科技大厂退租、次级写字楼无人问津、转租房源泛滥的困境。短短一年时间，市场彻底反转，租赁热潮席卷全城。</p><p>很多人疑惑：究竟是什么，托起了西雅图这波独树一帜的办公租赁浪潮？</p><p>我们结合最新产业数据、交通基建动态、企业用工政策变化，拆解这场回暖背后的四大底层逻辑，看懂北美下一轮商办投资风口。</p><p><strong>01 / AI产业西进</strong></p><p><strong>西雅图成为北美第二大AI办公聚集地，外来企业疯狂扩租</strong></p><p>本轮西雅图办公租赁热潮，<strong>第一核心引擎就是人工智能产业的大规模落地</strong>。</p>"
+      },
+      {
+        "id": "b-msi9i0b7-oc6ww",
+        "type": "image",
+        "src": "/images/uploads/1786065870474-640__19_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msi9ib8l-k22f3",
+        "type": "text",
+        "textEn": "<p>In the past, AI companies globally were heavily concentrated in Silicon Valley. But today, with Silicon Valley's exorbitant rents, intensifying talent competition, and continuously rising cost of living, a growing number of AI startups and leading tech firms are beginning to migrate westward — and Seattle has emerged as the optimal destination.</p><p></p><p><strong>The data tells the most compelling story:</strong></p><ul><li><p>CBRE Talent Report: Seattle ranks as the second-largest tech talent market in North America, trailing only the San Francisco Bay Area, with an abundant pool of highly skilled, cost-effective software engineers and algorithm specialists — ample talent reserves at significantly lower labor costs than Silicon Valley.</p></li><li><p>JLL Industry Statistics: Since 2022, 75% of AI office leasing demand in the Puget Sound region has come from out-of-town companies based outside of Seattle.</p></li><li><p>In the first half of 2026, notable AI and tech firms including Anthropic and Snap have signed large office leases in the Seattle area. Snap alone secured 40,000 square feet of office space in Bellevue, as AI giants continue to expand their presence.</p></li></ul><p></p><p>Unlike traditional internet companies, AI firms have a strong imperative for in-person collaboration: model training, algorithm debugging, and closed-loop team R&amp;D cannot be accomplished remotely — they require physical office space to function effectively.</p><p>At the same time, the home-turf advantages of Microsoft and Amazon have further come into play. These two tech titans, with decades of deep roots in Seattle, have cultivated a complete industrial ecosystem spanning cloud computing, big data, and AI — with a dense cluster of upstream and downstream partners, creating a powerful agglomeration effect for AI office space.</p><p>Compared to Silicon Valley's premium office costs, Seattle's Class A office space averages just $51.31 per square foot per year — delivering exceptional value for money and directly fueling a cross-regional wave of AI office relocations and expansions.</p><p></p><p><strong>02 / Corporate Return-to-Office Policies Tighten</strong></p><p></p><p>The Hybrid Work Retreat Drives Re-occupancy of Existing Space</p><p>The retreat from remote work represents the core internal driver of Seattle's office demand recovery.</p><p>In the aftermath of the pandemic, Seattle tech companies widely embraced permanent remote work — in 2023, only 54% of local employers required employees to be in the office on any given week. But three years later, the corporate calculus has been completely rewritten.</p><p>According to the Seattle Metropolitan Chamber of Commerce's 2025 Workplace Survey, 72% of Seattle employers now require employees to be in the office at least three days per week, with mandatory in-office policies now fully implemented.</p><p>Notably, companies today are no longer pursuing large, full-floor office spaces. Instead, they are gravitating toward smaller, high-quality, fully amenitized Class A office buildings.</p><p>This has created a starkly bifurcated market: Seattle's Class A office space recorded net absorption of 547,000 square feet in the first quarter alone, while Class B and C aging office buildings continue to face vacancy pressure. The commercial office market has officially entered an era where quality reigns supreme.</p><p></p><p><strong>03 / Major Transit Milestone</strong></p><p></p><p>Light Rail Line 2 Fully Opens, Reshaping Office Location Decisions</p><p>If industry dynamics and corporate policies are the internal drivers, then the official opening of Seattle's Light Rail Line 2 in March 2026 served as the external catalyst that ignited the leasing surge.</p>",
+        "textZh": "<p>过去全球AI企业扎堆硅谷，但如今硅谷租金居高不下、人才竞争白热化、生活成本持续走高，大量AI初创公司、头部科技企业开始向西迁移，西雅图成为最优解。</p><p><strong>数据最有说服力：</strong></p><ul><li><p><strong>CBRE人才报告：</strong>西雅图位列<strong>北美第二大科技人才市场</strong>，仅次于旧金山湾区，拥有海量低成本高精尖程序员、算法工程师，人才储备充足且用工成本远低于硅谷；</p></li><li><p><strong>JLL行业统计：</strong>2022年至今，普吉特海湾地区<strong>75%的AI办公租赁需求，均来自西雅图以外的外来企业</strong>；</p></li><li><p>2026年上半年，<strong>Anthropic、Snap等知名AI及科技企业接连签下西雅图大面积办公租约</strong>，其中Snap在贝尔维尤拿下4万平方英尺办公空间，AI巨头持续加码布局。</p></li></ul><p><br></p><p>区别于传统互联网企业，AI公司具备极强的<strong>线下协作刚需</strong>：模型训练、算法调试、团队闭环研发无法依靠远程办公完成，必须依托实体办公室开展工作。</p><p>与此同时，微软、亚马逊本土大本营优势进一步凸显：两大科技巨头深耕西雅图多年，完整的云计算、大数据、人工智能产业链闭环成型，上下游配套企业扎堆入驻，形成了<strong>AI产业办公集群效应</strong>。</p><p>相较于硅谷寸土寸金的办公成本，西雅图甲级写字楼均价51.31美元/平方英尺/年，性价比优势拉满，直接引爆了跨区域的AI办公搬迁与扩租浪潮。</p><p><strong>02 / 大厂办公政策收紧</strong></p><p><strong>混合办公退潮，强制线下办公带动存量空间回租</strong></p><p>远程办公退潮，是西雅图办公需求回暖的<strong>内生核心动力</strong>。</p><p>疫情之后，西雅图科技企业一度全面推行永久远程办公，<strong>2023年仅有54%的本地企业要求员工每周到岗办公；但时隔三年，企业用工逻辑彻底改写</strong>。</p><p>西雅图大都会商会2025年职场调研数据显示：<strong>目前72%的西雅图雇主，要求员工每周至少到岗3天</strong>，强制线下办公政策全面落地。</p><p>值得注意的是，当下企业不再追求大面积整层办公空间，转而偏好<strong>小面积、高品质、配套完善的甲级写字楼</strong>。</p><p>这也让市场分化极度明显：<strong>西雅图甲级写字楼一季度净吸纳量高达54.7万平方英尺，而乙级、丙级老旧写字楼依旧面临空置压力</strong>，商办市场正式进入<strong>品质为王</strong>的时代。</p><p><strong>03 /&nbsp;轨道交通重磅通车</strong></p><p><strong>2号线全线贯通，交通重构改写办公选址逻辑</strong></p><p>如果说产业和用工政策是内在动力，那么<strong>2026年3月西雅图轻轨2号线正式通车</strong>，就是点燃租赁热潮的外部导火索。</p>"
+      },
+      {
+        "id": "b-msi9ihik-kbvfz",
+        "type": "image",
+        "src": "/images/uploads/1786065893927-640__20_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msi9iq0x-e36wk",
+        "type": "text",
+        "textEn": "<p>This light rail line, spanning across Lake Washington, has fully connected Seattle's four core tech hubs — Downtown Seattle, Mercer Island, Bellevue, and Redmond — fundamentally solving the transportation bottleneck that has long plagued Seattle's office commuters.</p><p>In the past, commuting between the east and west sides of the lake relied on the congested I-90 freeway, with rush-hour commutes often exceeding one hour. Today, the light rail provides direct, seamless access, cutting cross-lake travel time to under 20 minutes, with reliable and consistent commute times throughout the day.</p><p>With the light rail network now fully upgraded, Seattle's office location logic has been completely reversed: previously, companies chose a building first and then endured the commute; now, they choose a light rail station first, and then select an office building nearby.</p><p>Leasing rates for office properties adjacent to light rail stations have climbed rapidly, while properties further from transit continue to rely on significant rent concessions to attract tenants.</p><p></p><p><strong>04 / New Supply Near Zero</strong></p><p></p><p>Supply-Demand Imbalance Forces Tenants to Compete for Premium Space</p><p>As demand continues to surge, Seattle is experiencing its lowest level of new office supply in five years, with the supply-demand imbalance further fueling leasing activity.</p><p>CBRE data clearly indicates that in Q1 2026, there were no new office deliveries and no office projects under construction anywhere in the Seattle region.</p><p>During the industry downturn of the past few years, developers had completely halted new office construction plans. Now, with demand rebounding, a supply gap has emerged. Tenants seeking to expand or relocate have no choice but to compete for existing premium Class A office buildings.</p><p></p><p><strong>How Long Will Seattle's Office Market Momentum Last?</strong></p><p></p><p>Seattle's office market is poised for continued strength, with the Eastside — Bellevue and Redmond — remaining at the epicenter of activity. The AI industry expansion cycle is far from over, with out-of-town companies continuing their westward migration into the region. Coupled with the ongoing extension of the light rail network, Class A office rents and occupancy rates along core transit corridors still have room to climb.</p><p>The era of Silicon Valley dominance is drawing to a close. Seattle is rapidly emerging as North America's next hub for artificial intelligence and tech innovation.</p><p></p><p><em>Data sources for this article: CBRE, Savills, Seattle Metropolitan Chamber of Commerce Q1 2026 Official Reports</em></p>",
+        "textZh": "<p>这条横跨华盛顿湖的轻轨线路，彻底打通了西雅图市中心、默瑟岛、贝尔维尤、雷德蒙德四大核心科创片区，彻底解决了长期困扰西雅图办公人群的交通痛点。</p><p><strong>以往东西两岸通勤需要依靠拥堵的I-90高速，早晚高峰通勤时长动辄1小时以上；如今轻轨直达，两岸通勤时间压缩至20分钟以内</strong>，全天候通勤时长稳定可控。</p><p>轻轨网络全面升级后，西雅图办公选址逻辑彻底反转：<strong>从前先选大楼，再忍受通勤；如今先选地铁站，再选办公楼</strong>。</p><p>紧邻轻轨站点的写字楼出租率快速攀升，而远离轨道交通的物业，依旧只能依靠高额租金优惠吸引租客。</p><p><strong>04 / 新增供应近乎归零</strong></p><p><strong>市场供需失衡，租客被迫抢租优质房源</strong></p><p>需求持续爆发的同时，西雅图迎来了<strong>近五年最低的写字楼新增供应量</strong>，供需失衡进一步推高租赁热度。</p><p>CBRE数据明确指出：2026年第一季度，西雅图全域<strong>无任何新建写字楼交付，无任何在建办公项目</strong>。</p><p>前几年行业下行期，开发商全面暂停办公物业新建计划，如今需求回暖，但新房源出现空窗期。租客想要扩租、搬迁，只能争夺现有的存量优质甲级楼宇。</p><p><strong>西雅图办公市场行情能持续多久？</strong></p><p>西雅图办公市场未来热度持续走高，东区贝尔维尤、雷德蒙德依旧是核心风口，AI产业扩张周期尚未结束，外来企业西进布局还在持续，叠加轻轨网络继续延伸，核心轨交沿线甲级写字楼租金、出租率还有上行空间。</p><p>硅谷独大的时代落幕，西雅图，正在成为北美下一个人工智能与科创办公新中心。</p><p>本文数据来源：CBRE、Savills、西雅图大都会商会2026年一季度官方报告</p>"
+      }
+    ],
+    "image": "/images/uploads/1786065874817-640__18_.jpg"
+  },
+  {
+    "id": "news-1786068353514",
+    "slug": "news-1786068353514",
+    "kind": "news",
+    "date": "2026-03-30",
+    "dateLabelEn": "March 30, 2026",
+    "dateLabelZh": "2026年3月30日",
+    "archiveYear": 2026,
+    "archiveMonth": 3,
+    "titleEn": "Surge of International Buyers in U.S. Housing Market as Urban Populations Continue to Exit",
+    "titleZh": "美国房产市场国际买家涌入，城区人口外流",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msiazvx6-8emlb",
+        "type": "text",
+        "textEn": "<p><strong>In 2026, Seattle's real estate market continues to see a concentrated influx of international buyers. Global capital keeps pouring into the U.S. West Coast, and Seattle — with its tech industry, educational resources, and geographic advantages — has become a premier destination for overseas asset allocation.</strong></p><p><strong>However, international buyers are no longer clustering in the core urban areas. Soaring home prices, population outflows, and high costs of living are steering property and investment interest toward more affordable suburban growth areas with strong potential. Centralia, strategically located along the Seattle-Portland golden corridor, has emerged as a must-consider investment destination for international buyers this year, thanks to its quiet and livable environment, solid and attractive investment returns, and sustained population growth.</strong></p><hr><p><strong>01 International Buyers Flock to the Greater Seattle Area</strong></p><p><strong>The Greater Seattle area has seen both volume and value growth among overseas buyers:</strong></p><ul><li><p><strong>Total transaction value by overseas buyers: $56 billion</strong>, up 33.2% year-over-year</p></li><li><p><strong>Total transaction volume: 78,100 units</strong>, up 44% year-over-year</p></li></ul><p><strong>Seattle has become one of the most favored tech cities for international capital in the U.S.</strong></p><p><strong>However, home prices in the core urban areas remain prohibitively high — the median single-family home price has surpassed $800,000, with prime locations exceeding $1.5 million — creating high investment barriers and severely compressed returns.</strong></p><p><strong>At the same time, international buyers are no longer blindly chasing downtown properties. Instead, they are shifting toward suburban markets offering better value, stronger cash flow, and growing populations.</strong></p><hr><p><strong>02 Seattle's Urban Core Cools: Population Continues to Drain While Suburbs Grow</strong></p><p><strong>Authoritative demographic data shows that downtown Seattle is facing net population outflow, with large numbers of residents moving out due to high home prices, high living costs, and urban congestion. Meanwhile, suburban populations are not only holding steady but are growing steadily.</strong></p><p><strong>2025–2026 data shows that Seattle's urban core has experienced a net outflow of over 19,000 residents. Many are choosing to relocate to suburban areas with lower home prices and more comfortable living environments due to cost of living, population density, and public safety concerns. Nearby suburbs and satellite cities continue to see net population inflows, with residential demand spillover trends clearly emerging.</strong></p><p><strong>The Centralia region benefits from stable population growth, well-established infrastructure, and inelastic housing demand, providing solid support for both home prices and rental rates.</strong></p><hr><p><strong>03 Centralia: A Benchmark for Comfortable Living, Top Choice for International Buyers' Primary Residences</strong></p><p><strong>With its peaceful and friendly atmosphere, low density, abundant greenery, and slower pace of life, Centralia has become a model of livability in the Greater Seattle area — perfectly matching the needs of international families seeking primary residences and long-term ownership.</strong></p><ul><li><p><strong>Peaceful and Quiet Environment:</strong> With a modest population of approximately 18,000, safe neighborhoods, tree-lined streets, and 15 parks spanning 240 acres of green space, Centralia offers a relaxed lifestyle far from urban congestion and noise. The area enjoys moderate rainfall and mild climate year-round. With single-family homes as the predominant housing type and low-density planning, it perfectly fulfills the \"ideal home\" vision for families and overseas relocations.</p></li><li><p><strong>Affordable Cost of Living:</strong> Centralia's median home price is approximately $338,000 — just one-third to one-half of Seattle's core area. Average monthly rent is around $886, over 40% lower than Seattle. The overall cost of living is below the national average and nearly 40% lower than the Washington State average, with more affordable taxes, utilities, and daily expenses.</p></li><li><p><strong>Efficient and Convenient Location:</strong> Situated at a key node along the I-5 corridor, Centralia is approximately 1 hour from downtown Seattle and 1.5 hours from Portland, with a 20-minute drive to Joint Base Lewis-McChord. The city boasts a community college, a large outlet mall, and comprehensive healthcare and commercial systems — making it both an educational and commercial hub for South Washington State, while offering the unbeatable value of \"small-town costs with big-city amenities.\"</p></li><li><p><strong>Mature and Complete Infrastructure:</strong> With full-service education, healthcare, retail, and recreational amenities, Centralia offers maximum convenience for daily living.</p></li></ul><hr><p><strong>04 Investment Returns Lead the Pack, International Capital Competing for Position</strong></p><p><strong>For international buyers seeking steady cash flow and long-term appreciation, Centralia offers irreplaceable investment advantages:</strong></p><ul><li><p><strong>Higher Rental Yields:</strong> Low home prices combined with stable demand deliver annualized returns far exceeding those of Seattle's core areas, with low vacancy rates and reliable tenants.</p></li><li><p><strong>Strong Appreciation Potential:</strong> Continued population inflows, absorption of urban spillover demand, and ongoing regional development create clear long-term upside.</p></li><li><p><strong>International Buyer Friendly:</strong> Washington State has transparent and well-regulated foreign property investment policies. Centralia's lower price point makes it highly accessible for global asset allocation.</p></li></ul><hr><p><strong>International buyers are pouring into Seattle's real estate market in record numbers — but the real opportunity is not in the crowded, high-priced downtown, but in Centralia, where population is growing, the environment is livable, and returns are higher.</strong></p><ul><li><p><strong>For primary residences:</strong> Enjoy a more comfortable American lifestyle at a fraction of the cost.</p></li><li><p><strong>For investment:</strong> Capture the spillover opportunity and lock in steady cash flow and long-term appreciation.</p></li></ul><p><strong>As global capital focuses on Seattle, Centralia is emerging as a true value destination where livability and investment returns go hand in hand — an opportunity not to be missed! Seize the window for international property investment, make your move to Centralia, and enjoy double the value at half the cost!</strong></p>",
+        "textZh": "<p>2026年，西雅图房产市场继续迎来国际买家集中进场。全球资本持续涌入美国西海岸，西雅图凭借科技产业、教育资源与区位优势，成为海外资产配置的核心目的地。</p><p>然而国际买家却不再扎堆核心城区 —— 高昂房价、人口外流、生活成本高企，正将置业与投资目光引向更具性价比的近郊潜力区域。位于西雅图 - 波特兰黄金走廊的Centralia 市，凭借静谧宜居的生活环境、稳健可观的投资回报、持续增长的人口红利，成为今年国际买家不容错过的投资地。</p><p></p><p><strong>01 国际买家进驻大西雅图区</strong><br></p><p>大西雅图区海外买家量价齐涨，海外买家总交易额：560 亿美元，同比增长33.2%，总成交量：78,100 套，同比增长44%，西雅图成为全美国际资本最青睐的科技城市之一。</p><p>核心城区房价居高不下，独栋中位价突破80 万美元，热门地段超150 万，投资门槛高、回报率被严重压缩。</p><p>同时，国际买家不再盲目追高核心区，转向高性价比、高现金流、人口增长的近郊板块。<br></p><p><strong>02 西雅图城区遇冷：人口持续流失，郊区逆势增长</strong></p><p>权威人口数据显示，西雅图市中心正面临人口净流出，大量居民因高房价、高生活成本、拥挤喧嚣外迁，而郊区人口不仅没有流失，反而稳步增长。</p><p>2025-2026 年数据显示，西雅图城区净流出超1.9 万人，大量居民因生活成本、居住密度、治安等问题，选择迁往房价更低、环境更舒适的郊区。近郊与卫星城市人口持续净流入，居住需求外溢趋势明确；</p><p></p><p>Centralia 所在区域人口稳增、配套完善、需求刚性，为房价与租金提供坚实支撑。</p><p></p><p><strong>03 Centralia：舒适宜居标杆，国际买家自住首选</strong></p><p></p><p>Centralia 以宁静友好、低密度、高绿化、慢节奏，成为大西雅图地区宜居生活范本，完美契合国际家庭自住与长期持有需求。</p><ul><li><p>&nbsp;环境舒适静谧&nbsp;&nbsp; &nbsp;</p></li><li><p>人口规模适中、社区安全、街道整洁，公园绿地环绕，远离都市拥堵与喧嚣，全市仅约1.8 万人口，街道绿树成荫、社区安全友好，15 座公园、240 英亩绿地环绕，生活节奏舒缓，远离拥挤与嘈杂。年均降雨适中、气候温和，独栋住宅为主、低密度规划，完美契合家庭自住、海外移居的 “理想家园” 需求。</p></li></ul><ul><li><p>生活成本友好&nbsp;&nbsp;&nbsp;</p></li></ul><ul><li><p>Centralia中位房价约 33.8 万美元，仅为西雅图核心区的1/3-1/2；</p></li></ul><ul><li><p>租金：月均租金约 886 美元，比西雅图低40% 以上；</p></li></ul><p>生活成本：整体低于全美平均、比华盛顿州均值低近 40%，税负、水电、日常消费均更亲民。</p><ul><li><p>&nbsp;区位高效便利&nbsp;&nbsp; &nbsp;</p></li><li><p>地处I-5 高速核心节点，距西雅图市区约 1 小时、波特兰 1.5 小时，20 分钟可达刘易斯 - 麦克乔德联合基地，通勤、出行高效。城内拥有社区大学、大型奥特莱斯、完善医疗与商业体系，既是南华盛顿州的教育与商业枢纽，又能享受 “小城成本、大城配套” 的超高性价比。</p></li></ul><ul><li><p>配套成熟齐全&nbsp;</p></li></ul><ul><li><p>教育、医疗、商业、休闲完备，自住生活便利度拉满。<br></p></li></ul><p><strong>04投资回报率领跑，国际资本争相布局</strong><br></p><p>对追求稳健现金流 + 长期增值的国际买家而言，Centralia 具备难以替代的投资优势。</p><p>&nbsp;租金回报率更高&nbsp;&nbsp; &nbsp;低房价 + 稳需求，年化回报远超西雅图核心区，空置率低、租客稳定；</p><ul><li><p>&nbsp;增值确定性强 &nbsp;&nbsp; &nbsp;人口持续流入、城区外溢需求承接、区域开发推进，长期升值空间清晰</p></li></ul><p>；</p><ul><li><p>&nbsp;国际买家友好 &nbsp;&nbsp; &nbsp;华盛顿州外资购房政策透明、交易规范，Centralia总价低、门槛友好</p></li></ul><p>，适合全球资产配置。<br></p><p>国际买家大量进驻西雅图房产市场，但真正的机会不在拥挤高价的市中心，而在人口增长、环境宜居、回报更高的 Centralia。</p><p>自住：用更低成本，享受更舒适的美式生活；投资：把握外溢风口，锁定稳健现金流与长期增值。</p><p>当全球资本聚焦西雅图，Centralia 正成为宜居与投资双赢的价值高地，不容错过！把握国际置业窗口期，入主 Centralia，用一半成本，享双倍价值！</p>"
+      }
+    ],
+    "image": "/images/uploads/1786068508419-640__21_.jpg"
+  },
+  {
     "id": "fincen-rre-2026",
     "slug": "fincen-rre-reporting-rules-2026",
     "kind": "event",
@@ -8,7 +385,7 @@
     "dateLabelZh": "2026年3月20日",
     "titleEn": "Event Preview | Deep Dive: FinCEN RRE Reporting Rules & Family Asset Protection",
     "titleZh": "活动预告 | 深度解析 FinCEN RRE 申报规则与华人家庭资产保护",
-    "summaryEn": "A practical briefing on the 2026 U.S. real estate transparency rules—how to stay compliant while protecting family privacy and succession planning.",
+    "summaryEn": "A practical briefing on the 2026 U.S. real estate transparency rules—how to stay compliant while protecting family privacy and succession planning. TEST",
     "summaryZh": "聚焦 2026 美国房产透明化新规：如何合规申报，并守护家庭资产隐私与传承。",
     "eventDetailsEn": "<p>Time: Thursday, March 26, 2:40 PM – 4:40 PM (Pacific Time)</p><p>Venue: Lake Hills Library, 15590 Lake Hills Blvd, Bellevue, WA 98007</p><p>Organizer: Chinese Chamber of Commerce in Washington State (CCCWA)</p><p>Co-Organizer: Seattle Real Estate Investment Club</p>",
     "eventDetailsZh": "<p>时间：3月26日（周四）下午 2:40 – 4:40（太平洋时间）</p><p>地点：Lake Hills Library，15590 Lake Hills Blvd, Bellevue, WA 98007</p><p>主办：华盛顿州华人商会（CCCWA）</p><p>协办：西雅图房地产投资俱乐部</p>",
@@ -48,6 +425,81 @@
     "registerUrl": ""
   },
   {
+    "id": "news-1786068764732",
+    "slug": "news-1786068764732",
+    "kind": "news",
+    "date": "2026-03-16",
+    "dateLabelEn": "March 16, 2026",
+    "dateLabelZh": "2026年3月16日",
+    "archiveYear": 2026,
+    "archiveMonth": 3,
+    "titleEn": "",
+    "titleZh": "Global Land收购Studio 7500商业地产",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msibcerv-doiie",
+        "type": "text",
+        "textEn": "<p><strong>Global Land Real Estate Management Company today announced that it, together with its partner Huachen Investment LLC, successfully completed the acquisition of the Studio 7500 property in downtown Redmond on March 4, 2026.</strong></p>",
+        "textZh": "<p><strong>Global Land&nbsp;地产管理公司今日宣布与合作方Huachen Investment LLC&nbsp;已于2026年3&nbsp;月&nbsp;4&nbsp;日成功完成对位于&nbsp; Redmond&nbsp;市中心的Studio 7500物业的收购。</strong></p>"
+      },
+      {
+        "id": "b-msibcjyn-sl5sr",
+        "type": "image",
+        "src": "/images/uploads/1786068972130-640__1_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msibcozo-7kre2",
+        "type": "text",
+        "textEn": "<p>Studio 7500 is located in the heart of Redmond Town Center, directly across the street from the downtown light rail station, adjacent to multiple Microsoft office buildings within the campus, and surrounded by extensive retail and commercial amenities — offering a highly prominent location advantage. The property is a two-story, approximately 34,900-square-foot standalone building situated on roughly 2 acres of land. The acquisition price was $23 million.</p><p>The building was previously held and occupied by REI for an extended period, followed by Volkswagen. In July 2025, CrowdStrike Holdings Inc., a cybersecurity firm headquartered in Austin, Texas, began leasing the space.</p><p>The seller in this transaction was Nicola Wealth Real Estate, a Canadian investment firm that had acquired the property for $32.5 million in 2020 and emphasized its strategic location near the light rail station throughout its holding period. Studio 7500 sits directly across from the Redmond downtown light rail station, which officially opened in May 2025, further enhancing the area's transportation accessibility and long-term value. Additionally, with the opening of the light rail, surrounding land use zoning has been upgraded to support more favorable development conditions — the site is now eligible for redevelopment into a 6-to-12-story mixed-use residential or commercial building of over 436,000 square feet.</p>",
+        "textZh": "<p><strong>Studio 7500&nbsp;坐落于&nbsp;Redmond Town Center&nbsp;核心区</strong>，在市中心轻轨站对街，<strong>毗邻微软在该园区的多栋办公楼，周边大型商业环绕，区位优势显著</strong>。该物业为一栋两层、约<strong>34,900&nbsp;平方英尺</strong>的独立建筑，占地约<strong>2&nbsp;英亩</strong>。此次收购价格为2300万美元。</p><p>该建筑曾由 REI 长期持有并使用，随后大众汽车入驻。<strong>2025&nbsp;年&nbsp;7&nbsp;月，总部位于德克萨斯州奥斯汀的网络安全公司&nbsp;CrowdStrike Holdings Inc.&nbsp;开始租赁该空间</strong>。</p><p>本次交易的卖方为加拿大投资机构<strong>Nicola Wealth Real Estate</strong>，该机构于&nbsp;2020&nbsp;年以<strong>&nbsp;3,250&nbsp;万美元</strong>购入该地产，并在持有期间强调其靠近轻轨站的战略位置。<strong>Studio 7500&nbsp;位于&nbsp;Redmond&nbsp;市中心轻轨站对街，该站已于&nbsp;2025&nbsp;年&nbsp;5&nbsp;月正式开通，进一步提升了该区域的交通可达性与长期价值。</strong>同时，随着轻轨开通，周边的土地规划指标已提升至具备更良好的开发条件，该地块可重新开发6-12层超过43.6万平方英尺的混合用途住宅或商业建筑。</p>"
+      },
+      {
+        "id": "b-msibcuut-8dolx",
+        "type": "image",
+        "src": "/images/uploads/1786068992816-640__1_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msibddlw-y0jyy",
+        "type": "text",
+        "textEn": "<p>Ms. Lili Lyu, President of Global Land, stated: \"This acquisition represents an important step in Global Land's continued strategic expansion in the Eastside. We chose to enter Redmond at this time not only because of its prime central location, but also because of our strong confidence in the long-term fundamentals of the Eastside office market.\"</p>",
+        "textZh": "<p>Global Land总裁吕莉莉女士说：“<strong>此次收购是&nbsp;Global Land&nbsp;在东区持续深耕布局的重要一步。我们选择在这个时间点进入&nbsp;Redmond，不仅因为其核心区位优势，更因为我们对&nbsp;Eastside 办公市场的长期基本面充满信心</strong>。</p>"
+      },
+      {
+        "id": "b-msibdlji-pxtfn",
+        "type": "image",
+        "src": "/images/uploads/1786069028018-640__3_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msibdygk-bgmsm",
+        "type": "text",
+        "textEn": "<p>Over the past few years, the commercial office market has undergone a cyclical adjustment, but we are seeing a very clear trend: new development has slowed significantly, and future supply remains constrained. At the same time, the Eastside stood out in 2025 with strong performance in large-block lease transactions, reflecting sustained corporate preference for Bellevue and Redmond. We are also seeing that industries such as AI, advanced technology, and life sciences are emerging as new demand drivers — these high-growth companies are fueling a structural recovery in regional office demand.</p>",
+        "textZh": "<p>过去几年，商业办公市场经历了周期性调整，但我们看到一个非常明确的趋势：新开发项目显著放缓，未来供应有限。与此同时，东区（Eastside&nbsp;）在&nbsp;2025&nbsp;年的大面积租赁成交中表现突出，显示出企业对&nbsp;Bellevue&nbsp;与&nbsp;Redmond&nbsp;的持续偏好。我们也看到，AI、先进技术、生命科学等行业正在成为新的需求引擎，这些高增长企业正在推动区域办公需求的结构性回升。</p>"
+      },
+      {
+        "id": "b-msibe317-u5sjs",
+        "type": "image",
+        "src": "/images/uploads/1786069054450-640.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msibeifv-9zuxd",
+        "type": "text",
+        "textEn": "<p>Moreover, the \"Flight to Quality\" trend is becoming increasingly pronounced. Class A office buildings in Bellevue and Redmond remain the most sought-after asset type in the Puget Sound region. Even as some large tech companies have reduced their office footprints, demand from emerging industries — including AI, semiconductors, and cloud security — is rapidly filling the gap.</p><p>It is precisely on the back of these trends that we believe Studio 7500 will demonstrate strong stability and growth potential in the years ahead.</p><p>Global Land will continue to pursue quality assets across the Greater Seattle area, upholding a long-term approach to deliver steady and lasting value for our investors.</p>",
+        "textZh": "<p>此外，向优质迁移（Flight to Quality&nbsp;）的趋势愈发明显。Bellevue&nbsp;与&nbsp;Redmond&nbsp;的&nbsp;A级办公楼仍然是 Puget Sound 最受青睐的资产类型。即使部分大型科技企业缩减了办公面积，AI、芯片、云安全等新兴行业的需求正在迅速填补空缺。</p><p>正是基于这些趋势，我们相信&nbsp;Studio 7500&nbsp;将在未来几年展现出强劲的稳定性与增长潜力。</p><p>Global Land&nbsp;将继续在大西雅图地区寻找优质资产，秉持长期主义，为投资人创造稳健而持久的价值。“</p>"
+      }
+    ],
+    "image": "/images/uploads/1786068956906-640.jpg"
+  },
+  {
     "id": "redmond-office-2026",
     "slug": "downtown-redmond-office-acquisition",
     "kind": "news",
@@ -76,59 +528,405 @@
     "registerUrl": ""
   },
   {
-    "id": "spring-district-2025",
-    "slug": "spring-district-leasing-update",
+    "id": "news-1786070020265",
+    "slug": "news-1786070020265",
     "kind": "news",
-    "date": "2025-11-12",
-    "dateLabelEn": "November 12, 2025",
-    "dateLabelZh": "2025年11月12日",
-    "titleEn": "Spring District leasing update",
-    "titleZh": "Spring District 租赁进展",
-    "summaryEn": "Long-term tenants continue to anchor Class A office in Bellevue’s Spring District.",
-    "summaryZh": "贝尔维尤 Spring District 甲级写字楼由长期租户持续支撑。",
-    "bodyEn": "<p>The Spring District Class A office, acquired in February 2024 for $16.28 million, remains leased to premier tenants across from Meta’s campus.</p>",
-    "bodyZh": "<p>2024 年 2 月以 1628 万美元收购的 Spring District 甲级写字楼，正对 Meta 园区，持续由优质租户承租。</p>",
-    "archiveYear": 2025,
-    "archiveMonth": 11,
-    "eventDetailsEn": "",
-    "eventDetailsZh": "",
-    "image": "",
+    "date": "2026-02-20",
+    "dateLabelEn": "February 20, 2026",
+    "dateLabelZh": "2026年2月20日",
+    "archiveYear": 2026,
+    "archiveMonth": 2,
+    "titleEn": "Meta Advances Its 210,000-Square-Foot Office Project in Bellevue",
+    "titleZh": "Meta 推进未完工的贝尔维尤21万平方英尺办公楼项目",
+    "summaryEn": "",
+    "summaryZh": "",
     "blocks": [
       {
-        "id": "b-msb9vnuy-n0a2c",
+        "id": "b-msic5763-2xlmh",
         "type": "text",
-        "textEn": "The Spring District Class A office, acquired in February 2024 for $16.28 million, remains leased to premier tenants across from Meta’s campus.",
-        "textZh": "2024 年 2 月以 1628 万美元收购的 Spring District 甲级写字楼，正对 Meta 园区，持续由优质租户承租。"
+        "textEn": "<p>Meta Platforms Inc. (Nasdaq: META) is resuming construction on an office building in Bellevue's Spring District that had sat vacant for two years.</p>",
+        "textZh": "<p>Meta Platforms Inc.（纳斯达克代码：META）正在恢复位于贝尔维尤春天社区（Spring District&nbsp;）的一栋办公楼的施工，该建筑此前已空置两年。</p>"
+      },
+      {
+        "id": "b-msic5ekg-ox5n5",
+        "type": "image",
+        "src": "/images/uploads/1786070319083-640__6_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msic5ooa-txxnb",
+        "type": "text",
+        "textEn": "<p>According to permit documents filed with the city in mid-January, the Menlo Park-based tech giant plans to complete all nine stories of the 212,000-square-foot Block 13 building at 1385 123rd Ave. NE, in order to accelerate its artificial intelligence technology development.</p><p>Meta signed a 15-year lease with the building's owner, Wright Runstad &amp; Co., in October 2021, with three renewal options — including one 7-year term and two 5-year terms, according to county records. The company holds a total of 1.8 million square feet of space across the 36-acre mixed-use development. However, Meta's space requirements have diminished due to large-scale layoffs in recent years. As one of the region's largest tech employers, Meta had approximately 8,000 local employees in 2024. The company had aggressively expanded hiring during the pandemic, while the rise of generative AI has since prompted a reassessment of its capital allocation priorities.</p>",
+        "textZh": "<p>根据&nbsp;Meta&nbsp;在&nbsp;1&nbsp;月中旬向市政府提交的许可文件，<strong>这家总部位于门洛帕克的科技巨头计划完成位于&nbsp;1385 123rd Ave. NE、面积&nbsp;212,000&nbsp;平方英尺的&nbsp;Block 13&nbsp;大楼的全部九层建设</strong>，以加速其人工智能技术的开发。</p><p>根据县级记录，<strong>Meta&nbsp;于&nbsp;2021&nbsp;年&nbsp;10&nbsp;月与该建筑的所有者&nbsp;Wright Runstad &amp; Co.&nbsp;签订了一份&nbsp;15&nbsp;年租约，并拥有三次续租选择权，包括一次&nbsp;7&nbsp;年期和两次&nbsp;5&nbsp;年期</strong>。该公司在这片&nbsp;36&nbsp;英亩的综合开发区内总共拥有&nbsp;180&nbsp;万平方英尺的空间。但由于近年来的大规模裁员，Meta&nbsp;的空间需求已经减少。作为该地区最大的科技雇主之一，Meta&nbsp;在&nbsp;2024&nbsp;年拥有约&nbsp;8,000&nbsp;名本地员工。公司在疫情期间曾大量扩张招聘，而生成式&nbsp;AI&nbsp;的兴起又促使其重新审视资本投入方向。</p>"
+      },
+      {
+        "id": "b-msic5uyo-as2wm",
+        "type": "image",
+        "src": "/images/uploads/1786070354546-640__1_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msic6eae-24acl",
+        "type": "text",
+        "textEn": "<p>In 2023, Meta listed its Block 6 office space in the Spring District for sublease, signaling that its footprint in the area had exceeded its actual needs. Last October, Meta also relinquished its rights to five development parcels in the Spring District, effectively ending any possibility of further expansion within the campus. When Wright Runstad sold Block 13 to Drawbridge Realty last year at an undisclosed price, the building remained vacant — and some in the real estate industry expected it would stay that way.</p>",
+        "textZh": "<p>2023&nbsp;年，Meta&nbsp;将&nbsp;春天社区（Spring District） 的&nbsp;Block 6&nbsp;办公空间挂牌转租，表明其在该区域的空间已超过实际需求。去年&nbsp;10&nbsp;月，Meta&nbsp;还放弃了在&nbsp;春天社区五个开发地块上的权益，使其在该园区进一步扩张的可能性基本终结。当&nbsp;Wright Runstad&nbsp;去年将&nbsp;Block 13&nbsp;以未公开的价格出售给&nbsp;Drawbridge Realty&nbsp;时，这栋大楼仍处于空置状态——一些房地产行业人士当时预计它会继续保持空置。</p>"
+      },
+      {
+        "id": "b-msic6k8a-o00p8",
+        "type": "image",
+        "src": "/images/uploads/1786070379200-640__7_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msic6vw0-sjrqf",
+        "type": "text",
+        "textEn": "<p>However, by moving forward with Block 13, Meta appears to be re-committing to the Spring District, even as the company laid off more than 430 local employees in January and December. On Tuesday, Meta posted over 170 open positions in Bellevue, many of them related to AI.</p><p>Recent job postings and public filings indicate that the company's current local focus is heavily concentrated in AI. However, according to a person familiar with the matter, historically, Meta employees working out of its Spring District offices have primarily been involved in its family of applications — including Facebook, Instagram, and WhatsApp.</p><p>Meta's push to complete Block 13 comes as other AI companies are also expanding in Bellevue, seeking office space and talent with convenient access to public transit and commuter-friendly locations. OpenAI, the developer of ChatGPT, currently occupies nearly 300,000 square feet of office space in downtown Bellevue, while Elon Musk's xAI leased 24,000 square feet at Lincoln Square South late last year.</p>",
+        "textZh": "<p><strong>然而，通过推进&nbsp;Block 13&nbsp;的建设，Meta&nbsp;似乎重新投入了对&nbsp;春天社区（Spring District）的布局，</strong>即使公司在&nbsp;1&nbsp;月和&nbsp;12&nbsp;月已在当地裁员超过&nbsp;430&nbsp;人。周二，Meta&nbsp;在贝尔维尤发布了&nbsp;170&nbsp;多个开放职位，其中许多与人工智能相关。</p><p>近期的招聘信息和公开文件显示，公司目前在当地的重点岗位主要集中在&nbsp;AI&nbsp;领域。不过，据一位知情人士透露，历史上&nbsp;Meta&nbsp;在&nbsp;Spring District&nbsp;办公室的员工主要从事其应用家族的相关工作，包括&nbsp;Facebook、Instagram&nbsp;和&nbsp;WhatsApp。</p><p><strong>Meta&nbsp;推进&nbsp;Block 13&nbsp;的建设之际，其他AI&nbsp;公司也正在贝尔维尤扩张，寻找靠近公共交通、便于通勤的人才和办公空间。ChatGPT&nbsp;的开发者&nbsp;OpenAI&nbsp;目前在贝尔维尤市中心占据近&nbsp;30&nbsp;万平方英尺的办公面积，而埃隆·马斯克旗下的&nbsp;XAI&nbsp;去年年底在&nbsp;Lincoln Square South&nbsp;租下了&nbsp;24,000&nbsp;平方英尺的空间。</strong></p>"
       }
     ],
-    "registerUrl": ""
+    "image": "/images/uploads/1786070298772-640__5_.jpg"
   },
   {
-    "id": "residential-2025",
-    "slug": "community-focused-residential-progress",
+    "id": "news-1786070661484",
+    "slug": "news-1786070661484",
     "kind": "news",
-    "date": "2025-06-18",
-    "dateLabelEn": "June 18, 2025",
-    "dateLabelZh": "2025年6月18日",
-    "titleEn": "Community-focused residential progress",
-    "titleZh": "社区导向住宅项目进展",
-    "summaryEn": "Low-density communities across the Pacific Northwest continue to take shape.",
-    "summaryZh": "太平洋西北低密度社区项目持续推进。",
-    "bodyEn": "<p>Riverside Garden in Centralia and Sammamish SFH neighborhoods remain key residential initiatives under Global Land’s long-term development approach.</p>",
-    "bodyZh": "<p>森特勒利亚 Riverside Garden 与萨马米什独栋社区，持续体现 Global Land 的长期住宅开发路径。</p>",
+    "date": "2025-12-03",
+    "dateLabelEn": "December 3, 2025",
+    "dateLabelZh": "2025年12月3日",
     "archiveYear": 2025,
-    "archiveMonth": 6,
-    "eventDetailsEn": "",
-    "eventDetailsZh": "",
-    "image": "",
+    "archiveMonth": 12,
+    "titleEn": "",
+    "titleZh": "外国买家重返美国楼市：中国买家交易额137亿美元居首",
+    "summaryEn": "",
+    "summaryZh": "",
     "blocks": [
       {
-        "id": "b-msb9vnuy-5l8nk",
+        "id": "b-msicdc62-6mhic",
         "type": "text",
-        "textEn": "Riverside Garden in Centralia and Sammamish SFH neighborhoods remain key residential initiatives under Global Land’s long-term development approach.",
-        "textZh": "森特勒利亚 Riverside Garden 与萨马米什独栋社区，持续体现 Global Land 的长期住宅开发路径。"
+        "textEn": "<p>As the world's largest economy, the United States has long been a top destination for international individuals seeking to live, work, and study — and its real estate market has consequently attracted significant attention from overseas investors. The latest data shows that foreign buyers are making a strong return to the U.S. residential real estate market, with transaction volumes posting substantial gains.</p><p>According to the latest statistics from the National Association of Realtors (NAR), during the 12-month period from April 2024 to March 2025, foreign buyers purchased a total of $56 billion in residential real estate, accounting for 2.5% of the total U.S. residential real estate transaction volume over the same period. This represents a year-over-year increase of 33.2%, signaling a notable rebound in overseas investor confidence in the U.S. housing market.</p><p>Since 2009, NAR has conducted an annual survey of its members to assess foreign buyer activity in the residential real estate market, tracking data on country of origin, purchase preferences, and other information to provide insights for real estate professionals serving international clients.</p><p>It is important to note that NAR's definition of \"foreign buyers\" is broad, encompassing both non-U.S. citizens with green cards and foreign nationals holding non-immigrant visas who have resided in the U.S. for more than six months for professional, educational, or other reasons but have been in the country for less than two years at the time of transaction.</p><p>According to the previous year's data, Chinese buyers ranked first among foreign buyer groups. By share of buyers, Chinese buyers accounted for 15% of all foreign buyers; by transaction volume, Chinese buyers spent a cumulative total of $13.7 billion, far exceeding buyers from other countries.</p><p>Following China, Canadian buyers ranked second, accounting for 14% of foreign buyers with a transaction volume of $6.2 billion. Mexican buyers ranked third, representing 8% of buyers with $4.4 billion in transactions. Indian and British buyers ranked fourth and fifth, respectively, accounting for 6% and 4% of foreign buyers, with transaction volumes of $2.2 billion and $2.0 billion.</p><p>Compared to domestic U.S. buyers, foreign buyers exhibit some notable characteristics in their home purchases. First, in terms of purchase price, the median price paid by foreign buyers was $494,400, while the national median home price stood at $408,500 — meaning foreign buyers paid roughly 20% more than the national median.</p><p>Second, foreign buyers show a stronger preference for all-cash payments. Data shows that 47% of foreign buyers paid in all cash, compared to just 28% of all U.S. buyers. Additionally, in terms of buyer profile, recent immigrants (those who have lived in the U.S. for less than two years) and non-immigrant buyers together accounted for 56% of foreign buyers.</p>",
+        "textZh": "<p>美国作为全球最大经济体，一直以来都是国际人士生活、工作和学习的热门选择，其房地产市场也因此备受海外投资者关注。<strong>最新数据显示，外国买家正强势重返美国住宅房地产市场，交易规模实现大幅增长。</strong></p><p>据全美房地产经纪人协会（NAR）的最新统计，在2024年4月至2025年3月的12个月期间，外国买家共购买了<strong>560亿美元</strong>的住宅房地产，占同期美国住宅房地产市场交易量的2.5%。这一数据较前一年大增<strong>33.2%</strong>，展现出海外投资者对美国楼市的信心显著回升。</p><p>全美房地产经纪人协会自2009年起，每年都会对会员进行调查，以评估外国买家在住宅房地产市场的交易情况，并统计其来源国、购买偏好等信息，为房地产经纪人服务外国客户提供依据。</p><p>需要注意的是，该协会统计口径下的“外国买家”范围较广，既包括拥有绿卡的非美国公民，也涵盖持有非移民签证、因职业、教育或其他原因在美国居住超过6个月但交易时未满两年的外国人。</p><p>上一年度的统计数据显示，<strong>中国买家在外国买家群体中占据首位</strong>。从人数占比来看，中国买家占外国买家总数的15%；从交易额来看，中国买家累计花费137亿美元，远超其他国家买家。</p><p><strong>紧随中国之后的是加拿大买家，其人数占比为14%，交易额达62亿美元；排名第3的是墨西哥买家，占比8%，交易额44亿美元；印度和英国买家分别位列第4和第5，人数占比依次为6%和4%，交易额则为22亿美元和20亿美元。</strong></p><p>与美国本土买家相比，外国买家在购房方面呈现出一些显著特点。首先是购房价格，外国买家购买住宅的价格中位数为<strong>494400美元</strong>，而全美住宅价格中位数为408500美元，外国买家的购房中位数价格比全美水平高出约两成。</p><p>其次是支付方式，外国买家更倾向于全现金支付。数据显示，47%的外国买家以全现金支付交易额，而这一比例在全美买家中仅为28%。此外，从买家身份来看，外国买家中新移民（移居美国不到2年）以及非移民买家占比达到了56%。</p>"
       }
     ],
-    "registerUrl": ""
+    "image": "/images/uploads/1786070680492-640__8_.jpg"
+  },
+  {
+    "id": "news-1786070797530",
+    "slug": "news-1786070797530",
+    "kind": "news",
+    "date": "2025-06-21",
+    "dateLabelEn": "June 21, 2025",
+    "dateLabelZh": "2025年6月21日",
+    "archiveYear": 2025,
+    "archiveMonth": 6,
+    "titleEn": "",
+    "titleZh": "Blackstone及KKR收购春天社区（Spring District ）3栋办公楼",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msicg92u-ddl4g",
+        "type": "text",
+        "textEn": "<p>Shorenstein Investment Advisors announced two transactions on the 18th involving Parcels 5, 6, and 13 in the Spring District.</p><p>A fund affiliated with Blackstone Real Estate acquired a \"controlling joint interest\" in Parcels 5 and 6 from Shorenstein.</p><p>David Levine, Co-Head of Blackstone's Americas Acquisitions division, stated that the firm is \"very excited to partner with Shorenstein on this investment in these 100% leased, Class A+ office assets.\"</p><p>Parcel 13, meanwhile, was acquired from Shorenstein and Wright Runstad by Drawbridge Realty, a subsidiary of KKR.</p><p>Terms of the transactions were not disclosed, and sales declarations have not yet been recorded in King County.</p><p>This marks another milestone for the 36-acre Spring District mixed-use development.</p><p>Parcel 13 is a nine-story building totaling 200,000 square feet. Parcels 5 and 6 consist of two 11-story office towers with a combined area of 670,000 square feet. Although both buildings are under long-term lease to Meta, Parcel 6 has been fully subleased to data and AI company Snowflake, which has already officially moved in.</p><p>Additionally, in 2020 and 2021, Brookfield acquired three office buildings in the Spring District from Shorenstein and Wright Runstad, totaling 650,000 square feet, including:</p><ul><li><p>Parcel 16, for $365 million</p></li><li><p>Parcel 24, for $200 million</p></li></ul><p>The Spring District BrewPub complex — invested in by Global Land Investment Management and co-managed in partnership with Xinju Real Estate Development Management — is also located within this campus.</p>",
+        "textZh": "<p>Shorenstein Investment Advisors&nbsp;于18日宣布涉及&nbsp;<strong>春天社区（</strong>Spring District&nbsp;）第&nbsp;5、6&nbsp;和&nbsp;13&nbsp;地块的两项交易。</p><p><strong>Blackstone Real Estate&nbsp;相关联的基金从&nbsp;Shorenstein&nbsp;手中收购了第&nbsp;5&nbsp;和第&nbsp;6&nbsp;地块的“联合控制权益”。</strong></p><p>Blackstone&nbsp;美洲区收购部门联席主管&nbsp;David Levine&nbsp;表示，公司“非常高兴能够与&nbsp;Shorenstein&nbsp;合作投资这些&nbsp;100%&nbsp;出租的&nbsp;A+&nbsp;级写字楼资产”。</p><p><strong>第&nbsp;13&nbsp;地块则由&nbsp;KKR&nbsp;旗下的&nbsp;Drawbridge Realty&nbsp;从&nbsp;Shorenstein&nbsp;和&nbsp;Wright Runstad&nbsp;手中购得。</strong></p><p>交易条款未予披露，销售声明尚未在金县（King County）登记。</p><p>这标志着占地&nbsp;36&nbsp;英亩的&nbsp;Spring District&nbsp;综合开发项目达成又一个里程碑。</p><p><strong>第&nbsp;13&nbsp;地块为&nbsp;9&nbsp;层楼，总面积&nbsp;20&nbsp;万平方英尺。第&nbsp;5&nbsp;和第&nbsp;6&nbsp;地块由两幢&nbsp;11&nbsp;层写字楼组成，总面积为&nbsp;67&nbsp;万平方英尺。尽管两栋楼都由&nbsp;Meta&nbsp;长期租赁，但第&nbsp;6&nbsp;地块已整体转租给数据与人工智能公司&nbsp;Snowflake，后者已经正式入驻。</strong></p><p>此外，在&nbsp;2020&nbsp;和&nbsp;2021&nbsp;年，Brookfield&nbsp;从&nbsp;Shorenstein&nbsp;和&nbsp;Wright Runstad&nbsp;手中收购了&nbsp;Spring District&nbsp;内的三栋办公楼，总面积达&nbsp;65&nbsp;万平方英尺，其中包括：</p><ul><li><p>第&nbsp;16&nbsp;地块，交易金额&nbsp;3.65&nbsp;亿美元</p></li></ul><p>第&nbsp;24&nbsp;地块，交易金额&nbsp;2&nbsp;亿美元</p><p>由Global Land&nbsp;投资管理公司投资，新居地产开发管理公司合作管理的春天社区BrewPub&nbsp;综合楼也在这个园区。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786070830219-640__9_.jpg"
+  },
+  {
+    "id": "news-1786070916173",
+    "slug": "news-1786070916173",
+    "kind": "news",
+    "date": "2025-06-21",
+    "dateLabelEn": "June 21, 2025",
+    "dateLabelZh": "2025年6月21日",
+    "archiveYear": 2025,
+    "archiveMonth": 6,
+    "titleEn": "",
+    "titleZh": "云计算巨头Snowflake启用春天社区（Spring District）新办公楼",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msiciy05-s3q8z",
+        "type": "text",
+        "textEn": "<p>Cloud computing giant Snowflake officially opened its new office building in the Spring District this week.</p><p>More than 700 of Snowflake's Bellevue-based employees had already moved from their former downtown office space to the Spring District a month ago, beginning their occupancy of the entire Block 6 building subleased from Meta (formerly Facebook). Snowflake has now completed approximately 150,000 square feet of fit-out across five floors, with a sixth floor currently under construction. The entire office space follows a \"from ocean to mountain\" design aesthetic, featuring ice, snow, ski, and Arctic-themed décor throughout — creating an atmosphere that feels like a ski chalet.</p><p>Warick Taylor, Vice President and Head of Real Estate at Snowflake, said: \"The momentum of our product is very strong, which has driven the company's global expansion.\" The company now has a total workforce of 8,000 employees and is headquartered in Bozeman, Montana. Since establishing its first office in the Seattle area in 2017, Snowflake has grown rapidly and went public in 2020, setting a record for the largest software IPO at the time. In the first quarter of this fiscal year, the company's revenue surpassed $1 billion for the first time, representing a 26% year-over-year increase.</p><p>Beyond the functional office design, the new building also reflects post-pandemic workplace culture shifts. Employees are required to be in the office three days a week but can choose which three days. The company has also created extensive collaboration and social spaces, including a large kitchen, dining area, fitness center, and yoga studio — encouraging employees to \"come in to connect.\"</p><p>Bellevue Mayor Lynn Robinson attended the opening ceremony and welcomed Snowflake's arrival, saying: \"We know you could have chosen other cities, but we're so glad you chose us.\" She noted that this is the culmination of Bellevue's 15-year effort to build a thriving innovation ecosystem.</p><p>The Spring District BrewPub complex — invested in by Global Land Investment Management and co-managed in partnership with Xinju Real Estate Development Management — is also located within this campus.</p>",
+        "textZh": "<p>云端计算巨头Snowflake（雪花公司）本周正式启用了其位于春天社区（Spring District&nbsp;）的新办公大楼。</p><p>Snowflake在贝尔维尤的700多名员工早在一个月前就从原本位于市中心的办公空间迁至春天社区（Spring District），并开始进驻由Meta（前Facebook）转租的整栋Block6办公楼。目前，Snowflake已完成5层、约15万平方英尺的装修，第6层的装修也正在进行中。整个办公空间遵循“从海洋到山峰”的设计美学，处处可见冰雪、滑雪和北极主题的装饰，让人仿佛置身滑雪小屋。</p><p>Snowflake副总裁兼房地产负责人沃里克·泰勒表示：“我们产品的发展势头非常强劲，这推动了公司在全球的扩张。”目前，公司员工总数已达8,000人，总部设于蒙大拿州的博兹曼市。自2017年在西雅图地区设立首个办公室以来，Snowflake迅速成长，并于2020年上市，创下当时最大的软件IPO记录。今年第一财季，公司营收首次突破10亿美元，同比增长26%。</p><p>除了实用性的办公室设计，新大楼也反映出疫情后办公文化的转变。员工每周需进办公室三天，但可自行选择哪三天，公司也特地打造了丰富的协作与社交空间，包括大型厨房、餐厅、健身房与瑜伽教室等，鼓励员工“为了交流而来”。</p><p>贝尔维尤市长林恩·鲁滨逊（Lynn Robinson）出席了落成仪式，并对Snowflake的进驻表达欢迎：“我们知道你本可以选择其他城市，但我们很高兴你选择了我们。”她表示，这正是贝尔维尤15年来持续打造创新生态系统的成果。</p><p>由Global Land&nbsp;投资管理公司投资，新居地产开发管理公司合作管理的春天社区BrewPub&nbsp;综合楼也在这个园区。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786070936159-640__10_.jpg"
+  },
+  {
+    "id": "news-1786071050218",
+    "slug": "news-1786071050218",
+    "kind": "news",
+    "date": "2025-03-01",
+    "dateLabelEn": "March 1, 2025",
+    "dateLabelZh": "2025年3月1日",
+    "archiveYear": 2025,
+    "archiveMonth": 3,
+    "titleEn": "Global Land Acquires Spring District BrewPub Complex",
+    "titleZh": "Global Land 收购春天社区Brewpub 综合楼",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msicm49d-ik206",
+        "type": "text",
+        "textEn": "<p>Global Land Investment Management acquired the Spring District BrewPub Complex in Bellevue, Washington, for $16.28 million on February 28, 2025.</p><p>The Spring District is a 36-acre transit-oriented urban community and one of Bellevue's most significant mixed-use developments. It encompasses 4 million square feet of mixed-use space, featuring architecturally distinctive creative office buildings, retail, urban-style apartments, a school, and a diverse range of other offerings. The campus is owned by institutional heavyweight developers and owners, including Shorenstein Properties, Wright Runstad, Brookfield, and Meta.</p>",
+        "textZh": "<p><strong>Global Land 投资管理公司于2025年2月28日1628万美元收购美国华盛顿州贝尔维尤市春天社区（ Spring District ）Brewpub 综合楼</strong>。</p><p>春天社区（ Spring District ）占地36英亩，是贝尔维尤最重要的交通导向型城市社区，包括400万平方英尺的混合用途开发，已建成具有建筑意义的创意办公楼、零售 &nbsp;&nbsp;城市风格的公寓、学校等多样化产品。<strong>该园区由机构重量级开发商和所有者拥有，包括Shorenstein Properties、Wright Runstad、Brookfield和Meta</strong>。</p>"
+      },
+      {
+        "id": "b-msicmeg9-d30ou",
+        "type": "image",
+        "src": "/images/uploads/1786071118968-640__1_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msicmqxd-ak6qw",
+        "type": "text",
+        "textEn": "<p>Meta (formerly Facebook, Inc.) has over 7,000 employees and approximately 3.3 million square feet of office space across five office buildings in the Spring District. Meta's Bellevue campus serves as a major engineering hub for the company in the Seattle area and is one of its largest engineering centers outside of its Silicon Valley headquarters.</p>",
+        "textZh": "<p>Meta公司（原名Facebook, Inc.）在 Spring District 拥有超过 7,000 名员工和五座办公楼约 330 万平方英尺的办公空间。<strong>Meta 在 Bellevue 的办公地点是该公司在西雅图地区的一个重要工程中心，也是其在硅谷总部以外的最大工程中心之一 </strong>。</p>"
+      },
+      {
+        "id": "b-msicn4rs-6boc9",
+        "type": "image",
+        "src": "/images/uploads/1786071146398-640__2_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msicncbw-qwmx4",
+        "type": "image",
+        "src": "/images/uploads/1786071156058-640__3_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msicni6p-88j5s",
+        "type": "image",
+        "src": "/images/uploads/1786071162826-640__4_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msicnz0z-w3kw0",
+        "type": "text",
+        "textEn": "<p><strong>The Global Innovation Exchange — a partnership between the University of Washington, China's Tsinghua University, and Microsoft — is also located in the Spring District.</strong></p>",
+        "textZh": "<p><strong>全球创新交流中心（Global Innovation Exchange）——华盛顿大学、中国清华大学和微软的合作项目也位于春天社区中</strong>。</p>"
+      },
+      {
+        "id": "b-msico0kk-vfeya",
+        "type": "image",
+        "src": "/images/uploads/1786071192964-640__5_.jpg",
+        "altEn": "Spring District BrewPub Complex",
+        "altZh": "春天社区（ Spring District ）Brew Pub综合楼"
+      },
+      {
+        "id": "b-msicogpb-uz8e7",
+        "type": "text",
+        "textEn": "<p>The BrewPub Complex is located in the heart of the Spring District, offering direct access to light rail and regional transportation options. It also features a sun-drenched outdoor garden with western exposure and an elegant, vibrant environment full of lively neighborhood character.</p>",
+        "textZh": "<p>Brewpub综合楼位于春天社区（ Spring District ）的心脏地带，拥有直接通往轻轨和区域交通选择的便利条件。同时提供了一个面向西面的阳光充足的户外花园景观以及非常有生活气息的优雅环境。</p>"
+      },
+      {
+        "id": "b-msicor34-t212w",
+        "type": "image",
+        "src": "/images/uploads/1786071221200-640__6_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msicoxxv-58ml8",
+        "type": "image",
+        "src": "/images/uploads/1786071229189-640__7_.jpg",
+        "altEn": "Spring District Light Rail Station",
+        "altZh": "春天社区（ Spring District ）轻轨站"
+      },
+      {
+        "id": "b-msicp647-9eyn7",
+        "type": "image",
+        "src": "/images/uploads/1786071245523-640__8_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msicpgd8-52ebv",
+        "type": "text",
+        "textEn": "<p>The BrewPub Complex is a three-story building totaling nearly 30,000 square feet. The office space has been fully leased by two premier office tenants — Deloitte, the accounting firm, and Catalyst Workplace, a high-end furniture company. The ground-floor retail space and outdoor areas have been fully leased by Bellevue Brewing Company. All interior and exterior spaces have been finished to high standards, creating a modern, smart, and lifestyle-oriented premium office and retail environment.</p>",
+        "textZh": "<p>Brewpub综合楼共三层、接近3万平方英尺，其中办公物业已被两家顶级办公租户德勤（ Deloitte ）会计师事务所和高端家具公司Catalyst Workplace 完全租赁，一楼零售空间和户外区域则被贝尔维尤啤酒公司完全租赁。所有的室内外面积都经过高标准的装修，创造了现代、智能化、生活化的高端办公和零售空间。</p>"
+      },
+      {
+        "id": "b-msicplns-mlmmu",
+        "type": "image",
+        "src": "/images/uploads/1786071260969-640__9_.jpg",
+        "altEn": "Bellevue Brewing Company",
+        "altZh": "贝尔维尤啤酒公司"
+      },
+      {
+        "id": "b-msicpuax-yef6f",
+        "type": "text",
+        "textEn": "<p>The property is 100% leased with nearly 10 years remaining on the lease term, providing investors with stable, high-quality cash returns. Compared to the construction cost of up to $1,000 per square foot in the area, the project's acquisition price is also highly competitive.</p>",
+        "textZh": "<p><strong>该物业已100%出租，租约期限剩余近10年，为投资者提供了稳定的、高质量的现金回报。</strong>与该地区每平方英尺高达1000美元的建造成本相比，项目的收购价格也非常有竞争力。</p>"
+      },
+      {
+        "id": "b-msicpy1g-yjkpz",
+        "type": "image",
+        "src": "/images/uploads/1786071293010-640__10_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msicqg38-di9mi",
+        "type": "image",
+        "src": "/images/uploads/1786071300235-640__11_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msicqn8k-78ezl",
+        "type": "image",
+        "src": "/images/uploads/1786071311834-640__12_.jpg",
+        "altEn": "Interior of the Spring District BrewPub Complex",
+        "altZh": "春天社区（ Spring District ）Brew Pub综合楼内部"
+      },
+      {
+        "id": "b-msicy8t3-pd1gl",
+        "type": "text",
+        "textEn": "<p>Ms. Lili Lyu, President of Global Land Investment Management, believes that although the office market is still in a downturn due to high interest rates and remote work, the Eastside office market continues to thrive with growing demand from new and expanding tenants, demonstrating the strength and appeal of the location. \"We saw that in 2024, leasing activity in the Greater Seattle area was primarily concentrated in Bellevue, which is the preferred location for tech companies. The rapid development of the Spring District also reflects Bellevue's importance as a technology hub,\" she said. \"At the same time, we are seeing a bifurcation in the office market. Older office buildings are experiencing rent reductions and widespread vacancies, while new office spaces that integrate smart technologies and modern lifestyle elements are achieving record-high rents. We are very pleased to have the opportunity to acquire this boutique building and are confident that this project will deliver satisfactory returns for our investors in the future.\"</p><p>Global Land Investment Management has invested in multiple real estate projects across Washington State, five of which are villa community projects co-managed in partnership with Xinju Real Estate Development Management.</p>",
+        "textZh": "<p>Global Land 投资管理公司总裁吕莉莉女士认为，虽然由于高利率和远程办公等原因导致目前办公楼市场仍处于低谷期，但东部办公市场在持续蓬勃发展，新租户和扩张租户的需求不断增长，证明了该地理位置的实力和吸引力。我们看到2024年大西雅图地区的租赁量主要集中在贝尔维尤，这是技术公司的首选地点。Spring District 的快速发展也反映了Bellevue作为技术中心的重要性。同时，我们看到办公楼市场已开始出现分化，老旧的办公楼出现租金降价和大规模的空置，但智能化的、与现代生活元素结合的新办公场所租金价格却再创新高。我们非常高兴有机会收购这样一栋精品建筑，相信该项目未来会为投资人创造满意的回报。</p><p>Global Land 投资管理公司在华盛顿州投资多个房地产项目，其中有五个别墅社区项目是与新居地产开发管理公司合作管理的。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786071089012-640.jpg"
+  },
+  {
+    "id": "news-1786072124496",
+    "slug": "news-1786072124496",
+    "kind": "news",
+    "date": "2025-01-15",
+    "dateLabelEn": "January 15, 2025",
+    "dateLabelZh": "2025年1月15日",
+    "archiveYear": 2025,
+    "archiveMonth": 1,
+    "titleEn": "5 Trends in the U.S. Real Estate Market for 2025",
+    "titleZh": "2025年美国房地产市场5个趋势",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msid8x4r-w7p80",
+        "type": "text",
+        "textEn": "<p><strong>2024 brought mostly cautious changes for property owners, operators, developers, and users — particularly toward the end of the year, when the Federal Reserve began cutting interest rates. These moves were eagerly anticipated by commercial and residential real estate industry groups, as high debt costs had frozen a significant volume of transaction activity throughout 2023 and 2024.</strong></p><p><strong>It is widely expected that 2025 will bring a thaw, with sidelined capital ready to be deployed to buy, sell, and build real estate. However, the extent of the thaw remains difficult to predict. Numerous variables will influence how real estate decision-makers assess their investments and risk appetite.</strong></p><p></p><p><strong>Forecast 1</strong></p><p></p><p><strong>Trump's policies could have a significant impact on commercial real estate (CRE) decisions, but whether the overall effect of policy changes will be positive or negative remains unclear.</strong></p><p><strong>Tax policy and deregulation are viewed as positive signs from a Trump White House, but the threat of high tariffs on goods imported from China, Mexico, and Canada could trigger inflation in the U.S. economy. Following the post-pandemic period of high inflation, inflation declined in 2023 and 2024, leading the Fed to cut rates three times late last year. But whether this trend will continue remains a major question.</strong></p><p><strong>Immigration policy could also negatively impact both residential and commercial real estate, as the construction industry's workforce is largely composed of immigrant labor. If mass deportations — as promised by Trump during his campaign — were to occur, labor shortages in the construction sector would intensify.</strong></p><p><strong>Most economists say the impact of Trump's second term on real estate is uncertain. When Trump returns to the White House, the U.S. economy will look very different from the one he faced during his first term.</strong></p><p></p><p><strong>Forecast 2</strong></p><p></p><p><strong>The office market will show some positive signs, but will not overcome the major challenges currently facing it.</strong></p><p><strong>Late in 2024, real estate brokers expressed more optimism than usual about the types of office space in demand — a level of activity not seen since before the pandemic.</strong></p><p><strong>Executives at major companies, including Amazon, issued stricter return-to-office mandates this year. Logically, this could mean these companies will need more office space.</strong></p><p><strong>But even with increased return-to-office rates, stabilizing vacancy rates, stronger leasing activity, and positive net absorption in more cities, the office market still faces numerous challenges. Older buildings that lack the amenities modern companies demand or that have not been invested in will continue to see tenant departures and value erosion. Even office properties with decent quality, location, and amenities may struggle — though with limited new construction in the near term and scarce top-tier office space, secondary assets could benefit from spillover.</strong></p><p><strong>Office debt also remains substantial, with a growing volume considered at risk. In December 2024, the delinquency rate for office loans in commercial mortgage-backed securities (CMBS) rose to 11.01% — the highest level on record for Trepp and the highest among major property types.</strong></p><p></p><p><strong>Forecast 3</strong></p><p></p><p><strong>The housing market will continue to face the challenges that have persisted since the pandemic.</strong></p><p><strong>Housing affordability has become a prominent issue across the United States. It is no longer a challenge exclusive to large coastal cities like New York and San Francisco. Even once-affordable Sun Belt and Midwest markets have seen home prices surge.</strong></p><p><strong>It is true that home price growth has slowed, and in some places prices have even declined. But the impact of 50% price growth over five years is undeniable. On top of that, mortgage rates that hovered at 2% and 3% in the early pandemic years surged above 7% in 2024, putting homeownership out of reach for many.</strong></p><p><strong>In the first week of last year, the 30-year fixed mortgage rate stood at 6.62%, then gradually climbed to a peak of 7.22% in May 2024. Rates then fell to 6.08% by late September before rising again, reaching 6.85% in the final week of the year.</strong></p><p><strong>Housing economists predict more inventory will hit the market in the new year — as builders accelerate construction to meet demand — but affordability will still make it difficult for households to transition from renting to buying.</strong></p><p></p><p><strong>Forecast 4</strong></p><p></p><p><strong>Data centers will continue to be a source of growth and controversy.</strong></p><p><strong>In 2024, data centers continued to dominate the market amid growing demand for digital infrastructure, particularly with the rise of artificial intelligence. Data center development has appeared in an increasing number of locations — moving beyond the core markets of Northern Virginia and Silicon Valley that dominated in prior years.</strong></p><p><strong>According to CBRE Group Inc. (NYSE: CBRE), the average vacancy rate across major U.S. data center markets hit a record low of just 2.8% in 2024. The firm forecasts that average pre-leasing rates for data centers will rise to 90% or higher in 2025, with rental rates challenging historical highs set in 2011 and 2012.</strong></p><p><strong>This boom and demand make data centers one of the top property types to watch in 2025.</strong></p><p><strong>However, data centers may generate more demand, challenges, and controversy than other types of real estate development. While they are major investments and taxpayers, they typically do not create a significant number of permanent jobs. They also have enormous electricity and water requirements, drawing the ire of environmental advocates and communities seeing an influx of data center development.</strong></p><p><strong>The proliferation of data centers has spurred innovation, including more sustainable ways to power these facilities. But growth in this sector is expected to remain a source of tension for the foreseeable future.</strong></p><p></p><p><strong>Forecast 5</strong></p><p></p><p><strong>This is a period of repositioning and rebalancing across many commercial real estate sectors.</strong></p><p><strong>Multifamily housing and industrial properties, in particular, experienced record demand and pricing during the early pandemic. That demand began to wane in the second half of 2022 and into 2023, creating an oversupply by 2024.</strong></p><p><strong>This overhang will continue to affect rental housing and warehouses in 2025, but with fewer new projects started in both sectors last year, supply and demand will begin to rebalance.</strong></p><p><strong>Meanwhile, retail real estate saw a decline in new construction in the years before the pandemic. This has led to tight vacancy rates for quality space in many markets.</strong></p><p><strong>According to RealPage Inc., 60% more apartments were under construction last year than in a typical 2010s year, although last year also saw the fewest construction starts since early 2013. With a substantial number of units still under construction, 2025 is expected to be a favorable year for multifamily tenants as the market continues to absorb the large volume of new units. However, the periods of high concessions and rent reductions observed in 2024 may begin to subside in some locations.</strong></p><p><strong>At the same time, lending is expected to become more accessible than before, which will help unlock transaction activity — particularly in the most stable real estate sectors, such as apartments and warehouses.</strong></p>",
+        "textZh": "<p>2024年为房地产的所有者、经营者、开发商和用户带来了大部分谨慎的变化，特别是在年底，美联储开始降低利率。这些举措得到了商业和住宅房地产行业团体的期待，高额债务成本在 2023年和2024年冻结了大量的交易活动。</p><p>人们普遍预计，2025年将出现解冻，闲置的资金准备部署资本购买、出售和建造房地产。然而，解冻程度难以预测。许多变量将影响房地产决策者如何评估其投资和风险偏好。</p><p><strong>预测<em>1</em></strong></p><p><strong>特朗普的政策可能会对商业地产（CRE）决策产生重大影响，但政策变化的整体影响是正面的还是负面的，尚不清楚。</strong></p><p><strong>税收政策和放松管制被认为是特朗普白宫的积极迹象，但特朗普对从中国、墨西哥和加拿大进口的商品征收高额关税的威胁可能会导致美国经济通胀。</strong>随着疫情后经济经历了高通胀，2023年和2024年的通胀有所下降，导致美联储去年晚些时候三次降息。但是这种情况是否会持续是一个大问题。</p><p><strong>移民政策也可能对住宅和商业地产产生负面影响</strong>，因为建筑业的劳动力大部分由移民工人组成。如果发生大规模驱逐，特朗普在竞选期间承诺的那样，建筑行业的劳动力短缺将加剧。</p><p>大多数经济学家表示，不确定特朗普第二个任期对房地产的影响。特朗普重返白宫时，美国经济与他第一次任期面临的经济大不相同。</p><p><strong>预测<em>2</em></strong></p><p><strong>办公楼市场将出现一些积极迹象，但无法消除当前面临的主要挑战。</strong></p><p><strong>2024年末，房地产中介对办公楼需求的类型表示比平时更乐观，这种活跃度自疫情以来就没有出现过。</strong></p><p>包括亚马逊在内的一些大公司高管今年发布了更严格的返岗令。这在逻辑上可能意味着这些公司需要更多的办公空间。</p><p>但即使返岗率有所增加，空置率稳定，租赁更加强劲，净吸收转为正，在更多城市实现，这一办公楼市场仍然面临着诸多挑战。那些没有提供现代公司所需的设施或没有投入的老建筑将继续见证公司的撤离和它们的价值的侵蚀。即使是质量、位置和设施一般的办公楼也可能会挣扎，尽管由于近期没有新建；顶级办公空间稀缺，这可能会让次顶级办公楼受益。</p><p>办公楼债务也很多，越来越多的债务被视为处于危险之中。2024年12月，商业抵押贷款支持证券债务中的办公楼贷款逾期率上升到11.01%，这是Trepp有记录以来最高的水平，也是主要物业类型中最高的水平。</p><p><strong>预测<em>3</em></strong></p><p><strong>住房市场将继续面临疫情以来一直存在的挑战</strong></p><p><strong>住房负担能力已成为美国各地的一个突出问题。这不再是大型沿海城市如纽约和旧金山所独有的挑战。即使是曾经负担得起的太阳带和中西部市场也出现了房价飙升的情况。</strong></p><p>确实，房价的增长速度已经放缓，甚至在一些地方有所下降。但是，五年内房价增长50%的影响是不可否认的。除此之外，疫情初期2%和3%的抵押贷款利率跃升至2024年的7%以上，使得许多人无法负担购房。</p><p>去年第一周，30年固定抵押贷款利率为6.62%，然后逐渐攀升至2024年5月的峰值7.22%。利率随后下降至9月底的6.08%，然后再次上涨，年底最后一周达到6.85%。</p><p>住房经济学家预测，新的一年将有更多的房源上市——随着建造者加快建造速度以满足需求——但负担能力仍将使家庭难以从租房转为购房。</p><p><strong>预测<em>4</em></strong></p><p><strong>数据中心将继续成为增长和争议的来源</strong></p><p>2024年，<strong>数据中心在数字基础设施需求日益增长的背景下继续主导市场，尤其是随着人工智能的出现。越来越多的地方出现了数据中心开发——过去几年，仅限于北弗吉尼亚和硅谷等核心市场。</strong></p><p>根据CBRE Group Inc.（纽约证券交易所代码：CBRE）的数据，2024年美国主要数据中心市场的平均空置率创历史新低，仅为2.8%。该公司预测，2025年数据中心的平均预租率将上升至 90% 或以上，租金将挑战2011年和2012年创下的历史最高水平。</p><p><strong>这种繁荣和需求使得数据中心成为 2025 年值得关注的顶级物业类型之一。</strong></p><p>但是，数据中心与其他类型的房地产开发相比，可能带来更多需求、挑战和争议。虽然它们是大型投资和纳税人，但通常不包括大量永久性工作机会。它们还有着巨大的电力和水资源需求，这引起了环境倡导者和社区的愤怒，因为他们看到数据中心开发的涌入。</p><p>数据中心的普及带来了创新，包括更可持续地为这些设施提供动力的方法。但是，这一行业的增长可能会成为未来可预见的时间内的紧张源。</p><p><strong>预测<em>5</em></strong></p><p><strong>这是许多商业地产领域重新定位和重新平衡的时期</strong></p><p><strong>尤其是多户型住宅和工业地产在疫情早期经历了创纪录的需求和定价。这种需求从 2022年下半年和2023年开始减弱，并在2024年造成了库存过剩。</strong></p><p><strong>这种过剩现象将在 2025 年继续影响租赁住房和仓库，但由于去年这两个领域的新项目较少，供应和需求将开始重新平衡。</strong></p><p>与此同时，零售地产在疫情前几年就已经见证了新建筑的减少。这导致了许多市场中优质空间的空置率紧张。</p><p>根据 RealPage Inc. 的数据，去年比典型的 2010 年代多了 60% 的公寓正在建设中，尽管去年也是自 2013 年初以来开始建设的数量最少的一年。由于在建项目数量充足，预计 2025 年将是多户型住宅租户的有利之年，因为市场继续吸收大量的新单位。但是，2024 年观察到的高额让步和租金削减的时期可能会在某些地方开始消退。</p><p>同时，贷款将比以前更容易获得，这将有助于解锁交易活动——尤其是在最稳定的房地产领域，如公寓和仓库。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786072149227-640__13_.jpg"
+  },
+  {
+    "id": "news-1786072434674",
+    "slug": "news-1786072434674",
+    "kind": "news",
+    "date": "2024-01-27",
+    "dateLabelEn": "January 27, 2024",
+    "dateLabelZh": "2024年1月27日",
+    "archiveYear": 2024,
+    "archiveMonth": 1,
+    "titleEn": "",
+    "titleZh": "随着大型科技公司腾出贝尔维尤办公楼，小型公司正在搬入",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msidfgtj-x57jw",
+        "type": "text",
+        "textEn": "<p>Recent moves by Amazon (Nasdaq: AMZN) and Microsoft (Nasdaq: MSFT) to vacate or move out of office space in downtown Bellevue have opened up opportunities for smaller companies to secure some prime real estate.</p><p>The Broderick Group, in its latest Eastside office market report, highlighted several new leases in downtown Bellevue, indicating that some of the space vacated by Microsoft at towers such as Lincoln Square North will not remain empty for long. Telecommunications company Lumen reportedly secured a new lease for 12,373 square feet within the tower.</p><p>Due to lease expirations between 2023 and 2025, Microsoft had been phasing out its space at Lincoln Square North and has now placed all of its space on the market, totaling over 440,000 square feet. Some of this space may be taken by ByteDance-owned TikTok, which is reportedly seeking to occupy the top six floors.</p><p>\"About 20 tenants are touring or negotiating for full floors or larger blocks in downtown Bellevue,\" the Broderick Group report stated. \"Sublease activity for furnished, move-in-ready spaces has been active.\"</p><p>New sublease space has also appeared in downtown as a result of Amazon's office adjustments. Amazon moved out of its temporary office at Bellevue's Skyline Tower in late 2022, and logistics startup Flexport moved in suddenly last year, occupying 55,000 square feet.</p><p>Flexport, which is relocating, left approximately 10,000 square feet of space at One Twelfth at Twelfth, which appears to have been taken by new tenants.</p><p>According to the Broderick Group report, SeekOut and GE HealthCare have both subleased space at One Twelfth at Twelfth, with SeekOut taking space similar in size to what Flexport vacated (10,072 square feet). GE HealthCare's lease is for 15,313 square feet.</p><p>Tech companies' office relocations on the Eastside are driving both supply and vacancy rates in the market. Since hitting a low of 5.9% in 2019, the Eastside's vacancy rate has surged to 17.1%, the report said. In downtown Bellevue, the vacancy rate is lower but follows the same trend.</p><p>Microsoft's office space began hitting the market in 2023, adding 8.4 percentage points to the Eastside's vacancy rate last year.</p><p>By the end of the year, nearly one-third of downtown Bellevue's office space was available for lease.</p><p>The hope is that subleasing by major tenants will decline — which is precisely what the report predicts.</p><p>\"The sublease rate has retreated from its high of 7.0% and stabilized at 6.6% this quarter,\" the report stated. \"We do not anticipate any additional significant sublease space coming to the market in the near future.\"</p>",
+        "textZh": "<p><strong>亚马逊公司（纳斯达克股票代码：AMZN）和微软公司（纳斯达克股票代码：MSFT）最近腾出办公空间或搬出贝尔维尤市中心的举措为小公司提供了入驻一些优质房地产的机会。</strong></p><p>布罗德里克集团（Broderick Group）在其最新的东区办公市场报告中列出了市中心的几项新租约，<strong>表明随着微软搬出林肯广场北等塔楼，其中一些空间不会长期空置。据报道，电信公司Lumen获得了一份新租约，该公司在塔内占地12,373平方英尺。</strong></p><p>由于部分租约将于2023年至2025年间到期，微软原定分阶段放弃林肯广场北的空间，目前已将所有空间投放市场，总面积超过440,000平方英尺。<strong>其中一些可能会被字节跳动旗下的 TikTok 占据</strong>，TikTok 正寻求占据顶层六层。</p><p>Broderick Group 的报告称：“<strong>大约有20名租户正在参观或洽谈贝尔维尤市中心的整层楼或更大楼层。</strong>” “提供家具齐全、可立即入住的空间的转租活动很活跃。”</p><p>由于亚马逊对办公室的调整，市中心出现了一些新的转租空间。亚马逊于 2022 年底搬出了位于贝尔维尤Skyline Tower的临时办公室，<strong>物流初创公司 Flexport 去年突然进驻，占用了55,000平方英尺的空间</strong>。</p><p>正在搬迁的Flexport在 One Twelfth at Twelfth 留下了约10,000平方英尺的空间，似乎已被新租户占用。</p><p>Broderick Group 的报告称，<strong>SeekOut和GE HealthCare两家公司在第十二号转租了One Twelfth的空间</strong>，其中SeekOut占用的空间与Flexport腾出的空间类似（10,072平方英尺）。GE HealthCare 的租赁面积为15,313平方英尺。</p><p><strong>科技公司在东区的办公室搬迁正在推动市场的供应和空置率</strong>。报告称，<strong>自2019年触及5.9%的低点以来，东区的空置率已飙升至17.1%。</strong> 在贝尔维尤市中心，空置率较低，但趋势相同。</p><p>微软的办公空间于2023年开始上市，去年东区空置率增加了 8.4 个百分点。</p><p>到年底，贝尔维尤市中心近三分之一的办公空间已上市出租。</p><p>希望主要租户的转租减少，这正是报告所预测的。</p><p>报告称：“转租率已从7.0%的高位回落，并在本季度稳定在 6.6%。” “我们预计在不久的将来不会有任何额外的重大转租进入市场。”</p>"
+      }
+    ],
+    "image": "/images/uploads/1786072468870-640__14_.jpg"
+  },
+  {
+    "id": "news-1786072609668",
+    "slug": "news-1786072609668",
+    "kind": "news",
+    "date": "2023-07-03",
+    "dateLabelEn": "July 3, 2023",
+    "dateLabelZh": "2023年7月3日",
+    "archiveYear": 2023,
+    "archiveMonth": 7,
+    "titleEn": "U.S. New Single-Family Home Sales Post Highest Gain in Recent Years in May",
+    "titleZh": "全美独立屋新屋5月迎来近年最高涨幅",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msidjio9-vsg4n",
+        "type": "text",
+        "textEn": "",
+        "textZh": "<p>美国当地时间6月27日，美国住房与城市发展部及美国人口普查局联合发布的最新报告显示，<strong>5月份全美独立屋新屋销量环比增长12.2%，同比增长20%，为2022年2月以来的最高涨幅。</strong></p>"
+      },
+      {
+        "id": "b-msidjoom-y4k90",
+        "type": "image",
+        "src": "/images/uploads/1786072667014-640__1_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msidkqbo-k0rtz",
+        "type": "text",
+        "textEn": "<p><strong>On a seasonally adjusted basis, new single-family home sales reached an annualized rate of 763,000 units in May, up from a revised 680,000 units in April and above the 636,000 units recorded in the same period last year. Among all U.S. regions, the Northeast, South, and West posted the largest month-over-month gains in new home sales for May.</strong></p><p><strong>New home sales were primarily boosted by favorable factors including low inventory, builder incentives, and resilient demand. However, according to economists' analysis, after September, the U.S. home sales market will enter its traditional off-season, and the pace of new home sales may not be sustainable.</strong></p><hr><p><strong>01 New Homes Provide a Pressure Relief Valve for Buyers</strong></p><p><strong>With limited housing inventory and mortgage rates remaining elevated, buyer demand has been suppressed since last year, with the market in a prolonged wait-and-see mode. However, since the U.S. housing market entered its peak season this year, policy impacts such as the pause in rate hikes have encouraged buyers to gradually re-enter the market. Lower-priced homes and properties in prime locations have become hotly contested.</strong></p><hr><p><strong>02 Median New Home Price Declines in May</strong></p><p><strong>In May, preliminary estimates show that homes priced below $300,000 accounted for 17% of all sales — the highest share since December 2021 (18%). Some market buyers are gravitating toward more affordable homes, which is one of the factors contributing to a 7.6% year-over-year decline in the median sales price. The median new home price fell to $416,300.</strong></p><hr><p><strong>03 Sales Rebound Erodes Supply</strong></p><p><strong>Amid the surge in sales, the new home supply index dropped to 6.7 months — the lowest level of supply since February 2022, indicating that demand is keeping pace with supply. The composition of inventory also reflects buyer demand. The share of not-yet-started homes in current inventory (24% in May) remains above pre-2020 levels (typically 15%–20%). Meanwhile, the share of completed homes for sale (16% in May) is below the 2013–2020 average (20%–30%). Completed homes sold in just 2.7 months on average after completion — below the typical 2.7-to-4.0-month range from 2013 to 2020. This suggests that while new homes may be a good option for buyers frustrated by limited existing-home choices, purchasing in the new home market may also require patience.</strong></p><hr><p><strong>04 New Home Sales Continue to Grow</strong></p><p><strong>May's month-over-month growth provides further evidence that the new construction market is being bolstered by unusually low existing-home inventory. Homeowners with ultra-low mortgage rates remain reluctant to sell and buy another home at higher rates. Over the past few months, existing-home sales have been declining while new home sales have been on the rise.</strong></p><hr><p><strong>05 Not-Yet-Started Homes Account for a Larger Share</strong></p><p><strong>Compared to pre-2020 levels, the share of not-yet-started single-family homes in current inventory remained elevated at 24% in May. Meanwhile, the share of completed single-family home inventory stood at 16% in May, below the 2013–2020 average. Completed homes sold in just 2.7 months after completion — below the 2.7-to-4.0-month range from 2013 to 2020. This means that while new homes may be a good option for buyers frustrated by limited existing-home choices, the new home market may also require patience.</strong></p>",
+        "textZh": "<p>经季节性调整后，<strong>独立屋新屋5月年化销量为76.3万套，高于4月份修正后的68万套，且高于去年同期的63.6万套。</strong>5月份全美地区的新屋销售中，东北部、南部和西部的月度涨幅最大。</p><p>新屋销售主要受到低库存、建筑商激励措施和需求弹性等有利因素的提振，不过根据经济学家分析，在9月份之后，美国房产销售市场进入常规淡季，新房销售的步伐将可能无法持续。</p><p><strong>01&nbsp;新房屋为买家提供一个减压阀</strong></p><p>由于市场房屋库存有限，抵押贷款利率保持高位的情况，市场买家的需求从去年开始一直在抑制，市场长期处于一个观望的态势。不过今年美国房产市场进入旺季以来，加息暂停等政策的影响加持，市场客户开始陆续进入市场。售价较低的房源以及地理位置优越的房屋反到得到市场的争抢。</p><p><strong>02&nbsp;5月新房价中位数下降</strong></p><p>今年5月，初步估计显示，30万美元以下价格层的房屋占销售额的17%，是自2021年12月(18%)以来的最高份额。部分市场客户专享价格更实惠的房屋。也是导致销售价格中位数较上年同期下降7.6%的原因之一。新房价格中值降至416,300美元。</p><p><strong>03&nbsp;销售回升蚕食供应</strong></p><p>在销售飙升的情况下，新房供应指数下滑至6.7个月。这是自2022年2月以来供应量最小的月份，表明需求与供应保持同步。库存的构成也反映了买家的需求。未开工房屋在当前库存中所占的比例(5月份为24%)仍高于2020年之前的水平(通常为15%至20%)。与此同时，完工房屋的待售率(5月份为16%)低于2013年至2020年的平均水平(20%至30%)。典型的完工房屋在完工后仅2.7个月就可以出售，低于2013年至2020年的典型2.7至4.0个月。这意味着，虽然对于许多因现有待售房屋选择有限而感到沮丧的购房者来说，新房可能是一个不错的选择，但在市场上购买新房也可能需要耐心。</p><p><strong>04&nbsp;新房销售持续增长</strong></p><p>5月份的环比增长进一步证明，新建筑市场正受到现有待售房屋库存异常低的提振。抵押贷款利率极低的房主不愿以更高的利率出售和购买另一套房子。过去几个月，现房销售一直在下降，而新房销售一直在上升。</p><p><strong>05&nbsp;尚未开工独立屋占比更大</strong></p><p>与 2020 年之前相比，<strong>5月尚未开工的独立屋在当前库存中占比24%仍旧偏高</strong>。与此同时，已竣工独立屋库存5月份占比16%低于2013年至2020的水平。<strong>已竣工独立屋在竣工后仅2.7个月即可售出，低于2013年至2020年的2.7至4个月水平。</strong>这意味着，对于许多因二手房房屋选择有限而感到沮丧的购房者来说，新屋可能是一个不错的选择，不过新屋市场也可能需要耐心。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786072648526-640.jpg"
+  },
+  {
+    "id": "news-1786072774800",
+    "slug": "news-1786072774800",
+    "kind": "news",
+    "date": "2023-04-19",
+    "dateLabelEn": "April 19, 2023",
+    "dateLabelZh": "2023年4月19日",
+    "archiveYear": 2023,
+    "archiveMonth": 4,
+    "titleEn": "13% of Global High-Net-Worth Individuals Plan to Obtain Overseas Residency, with Real Estate Surpassing Gold as the Top Safe-Haven Investment",
+    "titleZh": "全球13%高净值人士计划配置海外身份，房产超越黄金成为保障投资首选",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msidryz1-2ccos",
+        "type": "text",
+        "textEn": "<p>Knight Frank recently released its 2023 Wealth Report, a comprehensive analysis of investment, spending, and consumption trends among global ultra-high-net-worth individuals (UHNWIs), examining key factors shaping global wealth dynamics and real estate markets from an international perspective.</p><p></p><p>2023: Significant Growth in Demand for Wealth and Talent Mobility</p><p>13% of UHNWIs Plan to Secure Overseas Residency</p><p></p><p>One of the major lasting impacts of the pandemic has been a surge in demand for mobility. The report shows that 13% of UHNWIs are planning to obtain a second passport or citizenship — and this is only the tip of the iceberg. The so-called digital nomad trend is just beginning to flourish and is expected to disrupt exit countries, destination markets, tax systems, residential rental demand, and office demand.</p><p></p><p>2023: Shift in HNWI Investment Strategies</p><p>31% of Investors Target Capital Growth</p><p></p><p>The survey reveals that, among wealth-building approaches, 31% of investors aim for capital growth, 26% seek capital preservation, and 23% expect to generate income.</p><p>Overall investment allocation is set to increase, with nearly one-third of investors looking to real estate to hedge against inflation and diversify risk. Meanwhile, 29% of investors will adopt a cautious approach by reducing debt levels.</p><p>Expectations vary across regions: HNWIs in Asia-Pacific are seeking growth, while preservation remains the primary goal for investors in Europe and the Americas.</p><p></p><p>The Knight Frank Wealth Report found that in 2023 — a year of global geopolitical and economic uncertainty — HNWIs are actively adjusting their investment and lifestyle strategies. Compared to what was seen in December 2022, 2023 has already shown more optimistic sentiment and a more positive start.</p><p></p><p>2023: Key Trends in Real Estate Investment</p><p></p><p>In the coming year, 19% of UHNWIs plan to invest directly in income-generating real estate, while 13% intend to take an indirect approach. By sector, healthcare leads in demand, followed by logistics, office, and residential.</p><p></p><p>The report forecasts that in 2023, U.S. investors will back nearly 50% of cross-border transactions, with particularly active deal flow expected in Singapore, the UK, Canada, the UAE, and Switzerland.</p><p></p><p>Residential Real Estate Still Viewed as Safer Asset</p><p></p><p>According to the HNWI Investment Intentions Survey, global HNWIs now view residential property as a safer asset class — a position previously held by gold. Both stock markets and cryptocurrencies proved highly volatile in 2022, falling to fifth and sixth place respectively.</p><p></p><p>When it comes to motivations for their next purchase, HNWIs are more focused on investment — especially those in the Asia-Pacific region (62%). However, for European HNWIs, lifestyle improvement (23%) and safe-haven buying (19%) rank above the global average.</p><p></p><p>Cash Buyers on the Rise</p><p>Multiple Cities to See Home Price Increases</p><p></p><p>Pandemic-related market constraints are expected to ease as UHNWIs rationalize their investment portfolios (which currently average 3.7 homes per individual). The Wealth Report's International Residential Index (PIRI 100) confirms that average luxury home price growth slowed to 5.2% last year. Some 17% of global UHNWIs purchased property in 2022 — the second-strongest performance on record. The high proportion of cash purchases (49%) will help cushion the impact of rising interest rates and support home prices.</p>",
+        "textZh": "<p>近日，莱坊国际(Knight Frank)发布了2023年全球超高净值人士投资理财消费的综合《财富报告》，从全球角度分析影响全球财富动态和房地产市场的主要趋势。</p><p><strong>2023财富和人才流动需求大幅增长</strong></p><p><strong>13%超高净值人士计划配置海外身份</strong></p><p></p><p>新冠留下的其中一个较大影响是对流动性的渴望大幅增长。报告显示，13%的超高净值人士正在计划获得第二本护照或公民身份，这仅仅也只是冰山一角。所谓的数字游牧民才刚刚开始繁荣，有望颠覆出境国家、目的地市场、税收体系、住宅租赁需求和办公需求。</p><p><strong>2023高净值人士投资策略改变</strong></p><p><strong>31%的投资者的目标是实现资本增长</strong></p><p>调查显示，在追求实现财富增长的方式中，31%的投资者的目标是实现资本增长、26%希望可以实现资本保值，而有23%的投资者期望可以创造收入。</p><p></p><p></p><p>整体投资的配置将有所增加，其中近1/3的投资者希望通过房地产投资来对冲通胀风险和分散投资。29%的投资者将采取减少债务规模这种谨慎的做法。</p><p>全球范围内的投资者的期待值有细微差别，亚太地区的高净值人士寻求增长，而保值则是欧洲和美洲地区投资者的首要目标。<br></p><p></p><p>莱坊《财富报告》发现，在全球局势和经济形势动荡的2023年，高净值人士的投资和生活方式等方面都在积极应对调整。与2022年12月看到的情况相比，2023年已经显示了更乐观的情绪和更积极的开端。</p><p></p><p><strong>2023房地产市场投资的主要趋势</strong></p><p>在未来一年，19%的超高净值人士打算直接投资地产创收，13%的人打算采取间接途径。就需求行业而言，医疗保健行业领先，其次是物流、办公和住宅。</p><p></p><p>报告预测显示，2023年，美国投资者将为近50%的跨境交易提供有力的支持，预计新加坡、英国、加拿大、阿联酋和瑞士的交易活动将非常活跃。</p><p><strong>住宅仍被认为是更安全资产</strong></p><p>据《高净值人士投资意向调查》显示：全球高净值人士认为住宅物业是更安全的资产类别，此前黄金通常是更安全的选择。股票市场和加密货币在2022年的表现都很不稳定，分别降至第五和第六位。</p><p></p><p>当谈到下一次购买的动机时，高净值人士更关注的是投资，尤其是那些位于亚太地区的人(62%)。然而，对于欧洲地区的高净值人士而言，改善生活方式(23%)和避险购买(19%)的排名高于全球平均水平。</p><p></p><p><strong>现金买家增加&nbsp;</strong></p><p><strong>多城市房价将上涨</strong></p><p>疫情对市场的限制将随着超高净值人士合理化投资组合(目前平均3.7套住房)而缓解。《财富报告》中的国际住宅指数(PIRI 100)证实，去年，全球豪宅的平均价格增长放缓至5.2%。有17%的全球超高净值人士在2022年购买了房产，是有记录以来表现第二强劲的。现金购买的高比例(49%)将缓冲利率上升的影响，并支撑房价。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786073062559-640__15_.jpg"
+  },
+  {
+    "id": "news-1786074218040",
+    "slug": "news-1786074218040",
+    "kind": "news",
+    "date": "2023-04-14",
+    "dateLabelEn": "April 14, 2023",
+    "dateLabelZh": "2023年4月14日",
+    "archiveYear": 2023,
+    "archiveMonth": 4,
+    "titleEn": "U.S. Housing Market Springs Back as Single-Family Home Supply Shortage Intensifies",
+    "titleZh": "美国房市春季回暖，独立屋住房供应短缺加剧",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msiehnat-xmckk",
+        "type": "text",
+        "textEn": "<p><strong>U.S. Housing Market Springs Back to Life</strong></p><p><strong>According to the latest data from Redfin, the U.S. housing market is entering its peak season this spring, with recent figures clearly showing signs of warming. Mortgage rates have fallen for four consecutive weeks to 6.28%, boosting homebuyer demand.</strong></p><p></p><p><strong>Single-Family Home Supply Faces Further Shortage, Vacancy Rates Decline</strong></p><p></p><p><strong>According to the latest data from </strong><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://Realtor.com\"><strong>Realtor.com</strong></a><strong>, as of September 2022, there were 2.06 million new households formed across the U.S. in 2022. This pace of household formation has exacerbated housing supply shortages, with the gap between total single-family housing starts and new household formations widening from 3.5 million units in 2019 to 6.5 million by the end of 2022.</strong></p><p><strong>Meanwhile, millennials face enormous housing demand, and the slowdown in construction activity caused by rising mortgage rates means this generation will confront a housing shortage. The severe supply shortfall in new homes has impacted vacancy rates. The homeowner vacancy rate fell from 2% in 2012 to 0.8% by the end of 2022. Similarly, the rental vacancy rate also dropped significantly, falling to a low of 5.6% in Q4 2021 and Q2 2022, before edging up slightly to 5.8% in Q4 2022.</strong></p><p></p><p><strong>Q1 2023 Home Sales See Notable Growth</strong></p><p></p><p><strong>According to data released by the National Association of Realtors on March 29, signed contracts for existing home purchases increased in February — marking the third consecutive month of growth.</strong></p><p><strong>Contract signings rose in all regions except the West. Pending home sales in the Northeast jumped 6.5% month-over-month, the Midwest rose 0.4%, and the South increased 0.7%. \"The Midwest and South are leading the housing market recovery,\" the report noted. Approximately 57% of homes sold in February were on the market for less than one month.</strong></p>",
+        "textZh": "<p>美国房地产市场春季回暖</p><p>根据redfin最新数据显示，美国房地产市场春季开始进入旺季，最近数据可以很明显的看到有升温迹象。抵押贷款利率连续降低四周降低至6.28%，增加了购房人的购买欲望。</p><p></p><p>独立屋供给进一步短缺，空置率下降</p><p></p><p>根据Realtor.com最新数据显示，截止至2022年9月份，2022年全美新组建家庭206万户，这种家庭组建速度导致住房供应短缺加剧，独立屋新屋开工总量与新组建家庭之间的差距从2019年的350万套扩大到2022年底的650万。</p><p></p><p>同时千禧一代对于购房需求巨大，之前贷款利率减缓了建筑活动，千禧一代将面临住房短缺的情况。新房严重供给不足的趋势影响了房屋空置率，自住房屋空置率从 2012年的2%下降到2022年底的0.8%。同样，出租房屋空置率也大幅下降，在&nbsp;2021年第四季度和2022年第二季度降至5.6%的低位，然后在2022年第四季度小幅上涨至5.8%。&nbsp;</p><p></p><p>2023第一季度房屋销量显著增长‍</p><p></p><p>根据全国房地产经纪人协会3月29日公布的数据，美国2月份已签署的购买现有房屋的合同有所增加，这是连续第三个月的增长。</p><p></p><p>除西部地区外，全国所有地区的合同签署量都有所增加。东北地区的待售房屋销售比上月跃升6.5%，中西部地区增长0.4%，南部地区增长0.7%，\"美国中西部和南部正在引领房市复苏。”2月份售出的房屋中，约有57%在市场上的销售时间不到一个月。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786074252067-640__16_.jpg"
   }
 ]
