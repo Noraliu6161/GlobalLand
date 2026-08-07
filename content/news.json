@@ -223,6 +223,29 @@
     "image": "/images/uploads/1786064842201-640__13_.jpg"
   },
   {
+    "id": "news-1786065227992",
+    "slug": "news-1786065227992",
+    "kind": "news",
+    "date": "2026-07-16",
+    "dateLabelEn": "July 16, 2026",
+    "dateLabelZh": "2026年7月16日",
+    "archiveYear": 2026,
+    "archiveMonth": 7,
+    "titleEn": "",
+    "titleZh": "重仓西雅图！摩根大通高管官宣：持续加码本地科技团队，打造全球金融 AI 核心枢纽",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msi950k4-7b61b",
+        "type": "text",
+        "textEn": "<p>JPMorgan Chase, with a global market capitalization exceeding $1 trillion and assets over $5 trillion, is making a significant bet on Seattle. Lori Beer, the firm's Global Chief Information Officer, recently visited the Seattle Technology Center and publicly stated that the bank is continuously investing heavily in its local Seattle teams, positioning the city as the core R&amp;D hub for the firm's proprietary AI infrastructure, cloud-native security, and intelligent financial systems. A full-scale talent and capacity expansion spanning AI, cloud computing, and cybersecurity is now underway in Seattle.</p><p>\"Seattle has one of the highest densities of cloud-native, AI, and cybersecurity engineers in the country. The teams here are driving technological innovation on a global scale for JPMorgan Chase, and we will continue to increase our investment across capital, facilities, and talent,\" said Lori Beer, Global CIO of JPMorgan Chase, at a Seattle employee town hall, clearly signaling the firm's intensified commitment.</p><p>This announcement is far from short-term marketing — it represents the continuation of an eight-year strategic buildout by JPMorgan Chase:</p><p>From 0 to 400 — Technology Center Scales Rapidly<br>JPMorgan Chase's Seattle Technology Center officially launched in 2018. In just eight years, the local tech team has grown to 400 employees, with the firm's total workforce across Washington State surpassing 2,000, spanning multiple core business lines including AI R&amp;D, cloud architecture, financial cybersecurity, and digital asset infrastructure development.</p><p>New Headquarters and Expanded R&amp;D Space<br>In early 2026, JPMorgan Chase acquired the landmark building at 1301 Second Ave in downtown Seattle, officially renaming it the JPMorgan Chase Center. The total office space spans 128,000 square feet, with over 40,000 square feet of newly added R&amp;D space, capable of accommodating up to 850 technologists — providing ample room for future large-scale hiring.</p><p>Lori Beer commented on this expansion: \"For financial institutions, client data, risk management frameworks, and business processes are core proprietary assets that cannot be fully outsourced to external tech companies. Seattle brings together the multidisciplinary talent that truly understands cloud architecture and the AI technology stack, making it the optimal choice for building this proprietary technology system.\"</p><p>Talent Density and Supply Efficiency<br>As the headquarters of both Amazon and Microsoft, Seattle has cultivated a deep pool of seasoned engineers specializing in cloud computing, large language models, and distributed systems — eliminating the need to build teams from scratch. JPMorgan Chase has been able to attract senior architects from these two tech giants to quickly fill critical gaps in financial AI and cloud security talent. Compared to traditional financial hubs like New York and Chicago, Seattle offers a distinct advantage in talent supply efficiency.</p><p>Synergy Across Business Lines<br>At the same time, Seattle sits at the heart of the Pacific Northwest innovation corridor, home to a dense concentration of startups, tech founders, and ultra-high-net-worth individuals. Beyond technology R&amp;D, JPMorgan Chase's Private Bank is concurrently expanding its local wealth management team to serve the region's tech entrepreneurs. The Technology Center and the retail/private banking businesses are mutually reinforcing, creating a closed loop from \"tech R&amp;D to local client service.\" JPMorgan Chase currently holds a 14.5% banking market share in Washington State, ranking second in the region.</p><p>From scaling its tech team to hundreds of employees, to launching proprietary AI infrastructure R&amp;D, JPMorgan Chase's sustained and tangible investments underscore Seattle's unique position in the global wave of financial digitalization. Technological independence is the cornerstone of long-term competitiveness for major banks — and Seattle stands as the core battleground powering this financial AI transformation.</p>",
+        "textZh": "<p>全球市值破万亿、资产规模超 5 万亿美元的摩根大通重仓西雅图。集团全球首席信息官 Lori Beer 近期亲临西雅图技术中心并公开表态：银行正持续重金加码西雅图本土团队，将这里定为集团自主 AI 基础设施、云原生安全、智能金融体系的核心研发阵地，一场横跨 AI、云计算、网络安全的人才与产能扩张正在西雅图全面落地。<br></p><p>“西雅图拥有全美密度顶尖的云原生、人工智能、网络安全工程师，这里的团队正在驱动摩根大通全球层面的技术创新，我们会持续加大资金、场地、人才三重投入。” 摩根大通全球 CIO Lori Beer 在西雅图员工沟通会上明确释放加码信号。</p><p>此番表态并非短期营销，而是摩根大通长达 8 年布局的战略延续：</p><p>从 0 到 400 人，技术中心规模快速翻倍，摩根大通西雅图技术中心 2018 年正式落地，仅 8 年时间本地技术团队扩充至 400 人，华盛顿州全域员工规模突破 2000 人，覆盖 AI 研发、云架构、金融网络安全、数字资产底层开发多条核心业务线。<br></p><p>2026 年初摩根大通拿下西雅图市中心 1301 Second Ave 地标楼宇，正式更名为JPMorgan Chase Center，整体办公面积达 12.8 万平方英尺，新增超 4 万平方英尺研发空间，最多可容纳 850 名技术人员，为后续大规模扩招预留充足场地。</p><p>Lori Beer 对此表示：金融机构的客户数据、风控逻辑、业务流程是核心壁垒，不能完全外包给外部科技公司；西雅图汇聚了吃透云架构与 AI 底层的复合型人才，是搭建这套自主技术体系的最优选择。</p><p>西雅图作为亚马逊、微软双巨头总部，沉淀大量深耕云计算、大模型、分布式系统的成熟工程师，无需从零培养团队。摩根大通从两大科技大厂吸纳资深架构师，快速补齐金融 AI、云安全稀缺人才，相比纽约、芝加哥等金融城，人才供给效率优势显著。</p><p>同时，西雅图背靠太平洋西北科创走廊，聚集大量初创企业、科技创始人、超高净值家庭。除技术研发外，摩根大通私人银行同步扩张本地财富管理团队，服务区域科创企业家，技术中心与零售、私行业务双向赋能，打通 “科技研发 - 本地客户服务” 闭环，目前摩根大通在华盛顿州银行业市场份额达 14.5%，位列区域第二。</p><p>从数百人技术团队扩容，到自主 AI 底层研发落地，摩根大通用持续真金白银的投入，印证西雅图在全球金融数字化浪潮中的独特地位。技术自主是大型银行长期竞争力的根基，而西雅图，正是支撑这场金融 AI 变革的核心阵地。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786065295544-640__14_.jpg"
+  },
+  {
     "id": "fincen-rre-2026",
     "slug": "fincen-rre-reporting-rules-2026",
     "kind": "event",
