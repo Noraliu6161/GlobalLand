@@ -634,5 +634,28 @@
       }
     ],
     "image": "/images/uploads/1786070830219-640__9_.jpg"
+  },
+  {
+    "id": "news-1786070916173",
+    "slug": "news-1786070916173",
+    "kind": "news",
+    "date": "2025-06-21",
+    "dateLabelEn": "June 21, 2025",
+    "dateLabelZh": "2025年6月21日",
+    "archiveYear": 2025,
+    "archiveMonth": 6,
+    "titleEn": "",
+    "titleZh": "云计算巨头Snowflake启用春天社区（Spring District）新办公楼",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msiciy05-s3q8z",
+        "type": "text",
+        "textEn": "<p>Cloud computing giant Snowflake officially opened its new office building in the Spring District this week.</p><p>More than 700 of Snowflake's Bellevue-based employees had already moved from their former downtown office space to the Spring District a month ago, beginning their occupancy of the entire Block 6 building subleased from Meta (formerly Facebook). Snowflake has now completed approximately 150,000 square feet of fit-out across five floors, with a sixth floor currently under construction. The entire office space follows a \"from ocean to mountain\" design aesthetic, featuring ice, snow, ski, and Arctic-themed décor throughout — creating an atmosphere that feels like a ski chalet.</p><p>Warick Taylor, Vice President and Head of Real Estate at Snowflake, said: \"The momentum of our product is very strong, which has driven the company's global expansion.\" The company now has a total workforce of 8,000 employees and is headquartered in Bozeman, Montana. Since establishing its first office in the Seattle area in 2017, Snowflake has grown rapidly and went public in 2020, setting a record for the largest software IPO at the time. In the first quarter of this fiscal year, the company's revenue surpassed $1 billion for the first time, representing a 26% year-over-year increase.</p><p>Beyond the functional office design, the new building also reflects post-pandemic workplace culture shifts. Employees are required to be in the office three days a week but can choose which three days. The company has also created extensive collaboration and social spaces, including a large kitchen, dining area, fitness center, and yoga studio — encouraging employees to \"come in to connect.\"</p><p>Bellevue Mayor Lynn Robinson attended the opening ceremony and welcomed Snowflake's arrival, saying: \"We know you could have chosen other cities, but we're so glad you chose us.\" She noted that this is the culmination of Bellevue's 15-year effort to build a thriving innovation ecosystem.</p><p>The Spring District BrewPub complex — invested in by Global Land Investment Management and co-managed in partnership with Xinju Real Estate Development Management — is also located within this campus.</p>",
+        "textZh": "<p>云端计算巨头Snowflake（雪花公司）本周正式启用了其位于春天社区（Spring District&nbsp;）的新办公大楼。</p><p>Snowflake在贝尔维尤的700多名员工早在一个月前就从原本位于市中心的办公空间迁至春天社区（Spring District），并开始进驻由Meta（前Facebook）转租的整栋Block6办公楼。目前，Snowflake已完成5层、约15万平方英尺的装修，第6层的装修也正在进行中。整个办公空间遵循“从海洋到山峰”的设计美学，处处可见冰雪、滑雪和北极主题的装饰，让人仿佛置身滑雪小屋。</p><p>Snowflake副总裁兼房地产负责人沃里克·泰勒表示：“我们产品的发展势头非常强劲，这推动了公司在全球的扩张。”目前，公司员工总数已达8,000人，总部设于蒙大拿州的博兹曼市。自2017年在西雅图地区设立首个办公室以来，Snowflake迅速成长，并于2020年上市，创下当时最大的软件IPO记录。今年第一财季，公司营收首次突破10亿美元，同比增长26%。</p><p>除了实用性的办公室设计，新大楼也反映出疫情后办公文化的转变。员工每周需进办公室三天，但可自行选择哪三天，公司也特地打造了丰富的协作与社交空间，包括大型厨房、餐厅、健身房与瑜伽教室等，鼓励员工“为了交流而来”。</p><p>贝尔维尤市长林恩·鲁滨逊（Lynn Robinson）出席了落成仪式，并对Snowflake的进驻表达欢迎：“我们知道你本可以选择其他城市，但我们很高兴你选择了我们。”她表示，这正是贝尔维尤15年来持续打造创新生态系统的成果。</p><p>由Global Land&nbsp;投资管理公司投资，新居地产开发管理公司合作管理的春天社区BrewPub&nbsp;综合楼也在这个园区。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786070936159-640__10_.jpg"
   }
 ]
