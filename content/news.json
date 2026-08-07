@@ -588,33 +588,5 @@
       }
     ],
     "image": "/images/uploads/1786070298772-640__5_.jpg"
-  },
-  {
-    "id": "residential-2025",
-    "slug": "community-focused-residential-progress",
-    "kind": "news",
-    "date": "2025-06-18",
-    "dateLabelEn": "June 18, 2025",
-    "dateLabelZh": "2025年6月18日",
-    "titleEn": "Community-focused residential progress",
-    "titleZh": "社区导向住宅项目进展",
-    "summaryEn": "Low-density communities across the Pacific Northwest continue to take shape.",
-    "summaryZh": "太平洋西北低密度社区项目持续推进。",
-    "bodyEn": "<p>Riverside Garden in Centralia and Sammamish SFH neighborhoods remain key residential initiatives under Global Land’s long-term development approach.</p>",
-    "bodyZh": "<p>森特勒利亚 Riverside Garden 与萨马米什独栋社区，持续体现 Global Land 的长期住宅开发路径。</p>",
-    "archiveYear": 2025,
-    "archiveMonth": 6,
-    "eventDetailsEn": "",
-    "eventDetailsZh": "",
-    "image": "",
-    "blocks": [
-      {
-        "id": "b-msb9vnuy-5l8nk",
-        "type": "text",
-        "textEn": "Riverside Garden in Centralia and Sammamish SFH neighborhoods remain key residential initiatives under Global Land’s long-term development approach.",
-        "textZh": "森特勒利亚 Riverside Garden 与萨马米什独栋社区，持续体现 Global Land 的长期住宅开发路径。"
-      }
-    ],
-    "registerUrl": ""
   }
 ]
