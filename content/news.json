@@ -1,68 +1,5 @@
 [
   {
-    "id": "news-1786062620838",
-    "slug": "news-1786062620838",
-    "kind": "news",
-    "date": "2026-08-07",
-    "dateLabelEn": "August 7, 2026",
-    "dateLabelZh": "2026年8月7日",
-    "archiveYear": 2026,
-    "archiveMonth": 8,
-    "titleEn": "Q2 2026 Rental Market in Seattle and Centralia",
-    "titleZh": "2026年第二季度西雅图及 Centralia 租金市场",
-    "summaryEn": "",
-    "summaryZh": "",
-    "blocks": [
-      {
-        "id": "b-msi8kyyp-uyaqe",
-        "type": "text",
-        "textEn": "<p>In the second quarter of 2026, the Puget Sound rental market exhibited a clear north-south gradient divergence. Rental rates in downtown Seattle held firm at elevated levels with a slight pullback, while further south, Centralia in Lewis County carved out its own independent trajectory driven by a significant rent differential. A substantial number of tenants seeking to reduce housing costs continued to migrate southward.</p><p>In Seattle's core downtown area, the condo rental market emerged from a streak of consecutive declines and entered a phase of modest uptick, though average rental prices dropped sharply by $311 compared to the same period last year, bringing the median rental price to $2,068 per month.</p>",
-        "textZh": "<p>2026年第二季度，普吉特湾租赁市场呈现清晰的南北梯度分化格局。西雅图市区租金高位企稳、小幅回调；继续向南深入刘易斯县的 Centralia，凭借显著租金价差走出独立行情。大量寻求降低居住成本的租客持续向南迁移。</p><p>西雅图主城区Condo租赁市场告别连续下跌进入温和上扬阶段，较去年同期平均租赁价格大幅下降了311美金，租赁价格中位数来到2068美金/月。</p>"
-      },
-      {
-        "id": "b-msi8l0xo-2y7b6",
-        "type": "image",
-        "src": "/images/uploads/1786064336244-640__9_.jpg",
-        "altEn": "",
-        "altZh": ""
-      },
-      {
-        "id": "b-msi8lfbb-xmbl8",
-        "type": "image",
-        "src": "/images/uploads/1786064347343-640__10_.jpg",
-        "altEn": "",
-        "altZh": "租赁价格范围"
-      },
-      {
-        "id": "b-msi8llek-gtvq1",
-        "type": "text",
-        "textEn": "<p><strong>Unit Type Rental Rates</strong></p><ul><li><p><strong>Studio:</strong> Average price range $1,600–$1,800</p></li><li><p><strong>One-bedroom:</strong> Mainstream range $2,100–$2,500</p></li><li><p><strong>Two-bedroom:</strong> Generally exceeding $2,800</p></li></ul><p>Newly built luxury apartments maintain their asking prices through amenity packages, while older apartments built over 10 years ago offer significant room for negotiation.</p><p>Heading south along I-5, from South Seattle neighborhoods through Renton, Kent, Tacoma, and extending to Olympia, a clear rent gradient corridor emerges — the farther from downtown Seattle, the lower the rent threshold, making this a preferred transitional area for budget-conscious families.</p><p>Centrally located along the I-5 corridor, Centralia is approximately a 25-minute drive south of Olympia and 90 minutes from downtown Seattle under normal traffic conditions. It stands out as a highly representative low-cost city along the southern corridor, with its Q2 2026 rent trends showing a stark contrast to the Seattle metropolitan area.</p><p>According to the latest Zillow data, the city's median rent for July stood at <strong>$1,431/month**, up **$36</strong> year-over-year and up <strong>$36</strong> month-over-month.</p>",
-        "textZh": "<p><strong>&nbsp;户型行情&nbsp;</strong></p><ul><li><p>Studio 均价 $1,600–$1,800</p></li><li><p>一居室主流区间 $2,100–$2,500</p></li><li><p>两居室普遍突破 $2,800</p><p><br></p></li></ul><p>新建精装公寓依靠配套维持报价，建成 10 年以上老式公寓议价空间明显。</p><p>沿着 I-5 向南，从南西雅图社区、Renton、Kent、Tacoma 延伸至 Olympia，形成一条清晰的<strong>租金梯度走廊</strong>，距离西雅图市中心越远，租金门槛持续降低，也是大量预算有限家庭首选的过渡区域。</p><p>Centralia 位于 I-5 干线，奥林匹亚以南约 25 分钟车程，距离西雅图市区正常路况 90 分钟，是南走廊极具代表性的低成本城市，2026 年 Q2 租金走势与西雅图大都会区形成明显反差。</p><p>根据最新zillow数据显示，7月城市租金中位数 $1,431 / 月，<strong>同比</strong>上涨$36,环比上涨$36。</p>"
-      },
-      {
-        "id": "b-msi8m5mg-lb2e1",
-        "type": "image",
-        "src": "/images/uploads/1786064387179-640__11_.jpg",
-        "altEn": "",
-        "altZh": ""
-      },
-      {
-        "id": "b-msi8mjfv-52yhc",
-        "type": "image",
-        "src": "/images/uploads/1786064399994-640__12_.jpg",
-        "altEn": "",
-        "altZh": ""
-      },
-      {
-        "id": "b-msi8mtrk-fc7mh",
-        "type": "text",
-        "textEn": "<p><strong>Unit Type Rental Rates</strong></p><ul><li><p><strong>Two-bedroom:</strong> Mainstream range $1,200–$1,630</p></li><li><p><strong>Three-bedroom single-family homes:</strong> $1,700–$3,200</p></li></ul><p>Compared to equivalent unit types in downtown Seattle, rents here are generally 35%–45% lower, making the price differential advantage highly pronounced. Local residents spend only about 27% of their household income on rent, with the housing cost burden far lower than in the northern Puget Sound region.</p><p>The content and views expressed herein are personal. Some images are sourced from the internet; if any infringement is identified, please notify us for removal.</p>",
-        "textZh": "<p><strong>&nbsp;户型行情&nbsp;</strong></p><ul><li><p>两居室主流区间：$1,200–$1,630</p></li><li><p>三居室独栋住宅：$1,700–$3,200</p><p><br></p></li></ul><p>对比西雅图市区同等户型，租金普遍低 35%–45%，价差优势十分突出。当地居民租金支出仅占家庭收入约 27%，居住负担远低于普吉特湾北部。</p><p>文章内容与看法为个人行为，图片部分来源于网络，侵权告知可删</p>"
-      }
-    ],
-    "image": "/images/uploads/1786064305844-640__8_.jpg"
-  },
-  {
     "id": "news-1785999412731",
     "slug": "news-1785999412731",
     "kind": "news",
@@ -198,6 +135,69 @@
       }
     ],
     "image": "/images/uploads/1785999836748-640.jpg"
+  },
+  {
+    "id": "news-1786062620838",
+    "slug": "news-1786062620838",
+    "kind": "news",
+    "date": "2026-07-31",
+    "dateLabelEn": "July 31, 2026",
+    "dateLabelZh": "2026年7月31日",
+    "archiveYear": 2026,
+    "archiveMonth": 7,
+    "titleEn": "Q2 2026 Rental Market in Seattle and Centralia",
+    "titleZh": "2026年第二季度西雅图及 Centralia 租金市场",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msi8kyyp-uyaqe",
+        "type": "text",
+        "textEn": "<p>In the second quarter of 2026, the Puget Sound rental market exhibited a clear north-south gradient divergence. Rental rates in downtown Seattle held firm at elevated levels with a slight pullback, while further south, Centralia in Lewis County carved out its own independent trajectory driven by a significant rent differential. A substantial number of tenants seeking to reduce housing costs continued to migrate southward.</p><p>In Seattle's core downtown area, the condo rental market emerged from a streak of consecutive declines and entered a phase of modest uptick, though average rental prices dropped sharply by $311 compared to the same period last year, bringing the median rental price to $2,068 per month.</p>",
+        "textZh": "<p>2026年第二季度，普吉特湾租赁市场呈现清晰的南北梯度分化格局。西雅图市区租金高位企稳、小幅回调；继续向南深入刘易斯县的 Centralia，凭借显著租金价差走出独立行情。大量寻求降低居住成本的租客持续向南迁移。</p><p>西雅图主城区Condo租赁市场告别连续下跌进入温和上扬阶段，较去年同期平均租赁价格大幅下降了311美金，租赁价格中位数来到2068美金/月。</p>"
+      },
+      {
+        "id": "b-msi8l0xo-2y7b6",
+        "type": "image",
+        "src": "/images/uploads/1786064336244-640__9_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msi8lfbb-xmbl8",
+        "type": "image",
+        "src": "/images/uploads/1786064347343-640__10_.jpg",
+        "altEn": "",
+        "altZh": "租赁价格范围"
+      },
+      {
+        "id": "b-msi8llek-gtvq1",
+        "type": "text",
+        "textEn": "<p><strong>Unit Type Rental Rates</strong></p><ul><li><p><strong>Studio:</strong> Average price range $1,600–$1,800</p></li><li><p><strong>One-bedroom:</strong> Mainstream range $2,100–$2,500</p></li><li><p><strong>Two-bedroom:</strong> Generally exceeding $2,800</p></li></ul><p>Newly built luxury apartments maintain their asking prices through amenity packages, while older apartments built over 10 years ago offer significant room for negotiation.</p><p>Heading south along I-5, from South Seattle neighborhoods through Renton, Kent, Tacoma, and extending to Olympia, a clear rent gradient corridor emerges — the farther from downtown Seattle, the lower the rent threshold, making this a preferred transitional area for budget-conscious families.</p><p>Centrally located along the I-5 corridor, Centralia is approximately a 25-minute drive south of Olympia and 90 minutes from downtown Seattle under normal traffic conditions. It stands out as a highly representative low-cost city along the southern corridor, with its Q2 2026 rent trends showing a stark contrast to the Seattle metropolitan area.</p><p>According to the latest Zillow data, the city's median rent for July stood at <strong>$1,431/month**, up **$36</strong> year-over-year and up <strong>$36</strong> month-over-month.</p>",
+        "textZh": "<p><strong>&nbsp;户型行情&nbsp;</strong></p><ul><li><p>Studio 均价 $1,600–$1,800</p></li><li><p>一居室主流区间 $2,100–$2,500</p></li><li><p>两居室普遍突破 $2,800</p><p><br></p></li></ul><p>新建精装公寓依靠配套维持报价，建成 10 年以上老式公寓议价空间明显。</p><p>沿着 I-5 向南，从南西雅图社区、Renton、Kent、Tacoma 延伸至 Olympia，形成一条清晰的<strong>租金梯度走廊</strong>，距离西雅图市中心越远，租金门槛持续降低，也是大量预算有限家庭首选的过渡区域。</p><p>Centralia 位于 I-5 干线，奥林匹亚以南约 25 分钟车程，距离西雅图市区正常路况 90 分钟，是南走廊极具代表性的低成本城市，2026 年 Q2 租金走势与西雅图大都会区形成明显反差。</p><p>根据最新zillow数据显示，7月城市租金中位数 $1,431 / 月，<strong>同比</strong>上涨$36,环比上涨$36。</p>"
+      },
+      {
+        "id": "b-msi8m5mg-lb2e1",
+        "type": "image",
+        "src": "/images/uploads/1786064387179-640__11_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msi8mjfv-52yhc",
+        "type": "image",
+        "src": "/images/uploads/1786064399994-640__12_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msi8mtrk-fc7mh",
+        "type": "text",
+        "textEn": "<p><strong>Unit Type Rental Rates</strong></p><ul><li><p><strong>Two-bedroom:</strong> Mainstream range $1,200–$1,630</p></li><li><p><strong>Three-bedroom single-family homes:</strong> $1,700–$3,200</p></li></ul><p>Compared to equivalent unit types in downtown Seattle, rents here are generally 35%–45% lower, making the price differential advantage highly pronounced. Local residents spend only about 27% of their household income on rent, with the housing cost burden far lower than in the northern Puget Sound region.</p><p>The content and views expressed herein are personal. Some images are sourced from the internet; if any infringement is identified, please notify us for removal.</p>",
+        "textZh": "<p><strong>&nbsp;户型行情&nbsp;</strong></p><ul><li><p>两居室主流区间：$1,200–$1,630</p></li><li><p>三居室独栋住宅：$1,700–$3,200</p><p><br></p></li></ul><p>对比西雅图市区同等户型，租金普遍低 35%–45%，价差优势十分突出。当地居民租金支出仅占家庭收入约 27%，居住负担远低于普吉特湾北部。</p><p>文章内容与看法为个人行为，图片部分来源于网络，侵权告知可删</p>"
+      }
+    ],
+    "image": "/images/uploads/1786064305844-640__8_.jpg"
   },
   {
     "id": "fincen-rre-2026",
