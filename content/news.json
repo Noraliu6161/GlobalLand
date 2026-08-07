@@ -590,34 +590,6 @@
     "image": "/images/uploads/1786070298772-640__5_.jpg"
   },
   {
-    "id": "spring-district-2025",
-    "slug": "spring-district-leasing-update",
-    "kind": "news",
-    "date": "2025-11-12",
-    "dateLabelEn": "November 12, 2025",
-    "dateLabelZh": "2025年11月12日",
-    "titleEn": "Spring District leasing update",
-    "titleZh": "Spring District 租赁进展",
-    "summaryEn": "Long-term tenants continue to anchor Class A office in Bellevue’s Spring District.",
-    "summaryZh": "贝尔维尤 Spring District 甲级写字楼由长期租户持续支撑。",
-    "bodyEn": "<p>The Spring District Class A office, acquired in February 2024 for $16.28 million, remains leased to premier tenants across from Meta’s campus.</p>",
-    "bodyZh": "<p>2024 年 2 月以 1628 万美元收购的 Spring District 甲级写字楼，正对 Meta 园区，持续由优质租户承租。</p>",
-    "archiveYear": 2025,
-    "archiveMonth": 11,
-    "eventDetailsEn": "",
-    "eventDetailsZh": "",
-    "image": "",
-    "blocks": [
-      {
-        "id": "b-msb9vnuy-n0a2c",
-        "type": "text",
-        "textEn": "The Spring District Class A office, acquired in February 2024 for $16.28 million, remains leased to premier tenants across from Meta’s campus.",
-        "textZh": "2024 年 2 月以 1628 万美元收购的 Spring District 甲级写字楼，正对 Meta 园区，持续由优质租户承租。"
-      }
-    ],
-    "registerUrl": ""
-  },
-  {
     "id": "residential-2025",
     "slug": "community-focused-residential-progress",
     "kind": "news",
