@@ -905,5 +905,28 @@
       }
     ],
     "image": "/images/uploads/1786073062559-640__15_.jpg"
+  },
+  {
+    "id": "news-1786074218040",
+    "slug": "news-1786074218040",
+    "kind": "news",
+    "date": "2023-04-14",
+    "dateLabelEn": "April 14, 2023",
+    "dateLabelZh": "2023年4月14日",
+    "archiveYear": 2023,
+    "archiveMonth": 4,
+    "titleEn": "U.S. Housing Market Springs Back as Single-Family Home Supply Shortage Intensifies",
+    "titleZh": "美国房市春季回暖，独立屋住房供应短缺加剧",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msiehnat-xmckk",
+        "type": "text",
+        "textEn": "<p><strong>U.S. Housing Market Springs Back to Life</strong></p><p><strong>According to the latest data from Redfin, the U.S. housing market is entering its peak season this spring, with recent figures clearly showing signs of warming. Mortgage rates have fallen for four consecutive weeks to 6.28%, boosting homebuyer demand.</strong></p><p></p><p><strong>Single-Family Home Supply Faces Further Shortage, Vacancy Rates Decline</strong></p><p></p><p><strong>According to the latest data from </strong><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://Realtor.com\"><strong>Realtor.com</strong></a><strong>, as of September 2022, there were 2.06 million new households formed across the U.S. in 2022. This pace of household formation has exacerbated housing supply shortages, with the gap between total single-family housing starts and new household formations widening from 3.5 million units in 2019 to 6.5 million by the end of 2022.</strong></p><p><strong>Meanwhile, millennials face enormous housing demand, and the slowdown in construction activity caused by rising mortgage rates means this generation will confront a housing shortage. The severe supply shortfall in new homes has impacted vacancy rates. The homeowner vacancy rate fell from 2% in 2012 to 0.8% by the end of 2022. Similarly, the rental vacancy rate also dropped significantly, falling to a low of 5.6% in Q4 2021 and Q2 2022, before edging up slightly to 5.8% in Q4 2022.</strong></p><p></p><p><strong>Q1 2023 Home Sales See Notable Growth</strong></p><p></p><p><strong>According to data released by the National Association of Realtors on March 29, signed contracts for existing home purchases increased in February — marking the third consecutive month of growth.</strong></p><p><strong>Contract signings rose in all regions except the West. Pending home sales in the Northeast jumped 6.5% month-over-month, the Midwest rose 0.4%, and the South increased 0.7%. \"The Midwest and South are leading the housing market recovery,\" the report noted. Approximately 57% of homes sold in February were on the market for less than one month.</strong></p>",
+        "textZh": "<p>美国房地产市场春季回暖</p><p>根据redfin最新数据显示，美国房地产市场春季开始进入旺季，最近数据可以很明显的看到有升温迹象。抵押贷款利率连续降低四周降低至6.28%，增加了购房人的购买欲望。</p><p></p><p>独立屋供给进一步短缺，空置率下降</p><p></p><p>根据Realtor.com最新数据显示，截止至2022年9月份，2022年全美新组建家庭206万户，这种家庭组建速度导致住房供应短缺加剧，独立屋新屋开工总量与新组建家庭之间的差距从2019年的350万套扩大到2022年底的650万。</p><p></p><p>同时千禧一代对于购房需求巨大，之前贷款利率减缓了建筑活动，千禧一代将面临住房短缺的情况。新房严重供给不足的趋势影响了房屋空置率，自住房屋空置率从 2012年的2%下降到2022年底的0.8%。同样，出租房屋空置率也大幅下降，在&nbsp;2021年第四季度和2022年第二季度降至5.6%的低位，然后在2022年第四季度小幅上涨至5.8%。&nbsp;</p><p></p><p>2023第一季度房屋销量显著增长‍</p><p></p><p>根据全国房地产经纪人协会3月29日公布的数据，美国2月份已签署的购买现有房屋的合同有所增加，这是连续第三个月的增长。</p><p></p><p>除西部地区外，全国所有地区的合同签署量都有所增加。东北地区的待售房屋销售比上月跃升6.5%，中西部地区增长0.4%，南部地区增长0.7%，\"美国中西部和南部正在引领房市复苏。”2月份售出的房屋中，约有57%在市场上的销售时间不到一个月。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786074252067-640__16_.jpg"
   }
 ]
