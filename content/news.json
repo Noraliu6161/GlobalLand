@@ -425,6 +425,81 @@
     "registerUrl": ""
   },
   {
+    "id": "news-1786068764732",
+    "slug": "news-1786068764732",
+    "kind": "news",
+    "date": "2026-03-16",
+    "dateLabelEn": "March 16, 2026",
+    "dateLabelZh": "2026年3月16日",
+    "archiveYear": 2026,
+    "archiveMonth": 3,
+    "titleEn": "",
+    "titleZh": "Global Land收购Studio 7500商业地产",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msibcerv-doiie",
+        "type": "text",
+        "textEn": "<p><strong>Global Land Real Estate Management Company today announced that it, together with its partner Huachen Investment LLC, successfully completed the acquisition of the Studio 7500 property in downtown Redmond on March 4, 2026.</strong></p>",
+        "textZh": "<p><strong>Global Land&nbsp;地产管理公司今日宣布与合作方Huachen Investment LLC&nbsp;已于2026年3&nbsp;月&nbsp;4&nbsp;日成功完成对位于&nbsp; Redmond&nbsp;市中心的Studio 7500物业的收购。</strong></p>"
+      },
+      {
+        "id": "b-msibcjyn-sl5sr",
+        "type": "image",
+        "src": "/images/uploads/1786068972130-640__1_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msibcozo-7kre2",
+        "type": "text",
+        "textEn": "<p>Studio 7500 is located in the heart of Redmond Town Center, directly across the street from the downtown light rail station, adjacent to multiple Microsoft office buildings within the campus, and surrounded by extensive retail and commercial amenities — offering a highly prominent location advantage. The property is a two-story, approximately 34,900-square-foot standalone building situated on roughly 2 acres of land. The acquisition price was $23 million.</p><p>The building was previously held and occupied by REI for an extended period, followed by Volkswagen. In July 2025, CrowdStrike Holdings Inc., a cybersecurity firm headquartered in Austin, Texas, began leasing the space.</p><p>The seller in this transaction was Nicola Wealth Real Estate, a Canadian investment firm that had acquired the property for $32.5 million in 2020 and emphasized its strategic location near the light rail station throughout its holding period. Studio 7500 sits directly across from the Redmond downtown light rail station, which officially opened in May 2025, further enhancing the area's transportation accessibility and long-term value. Additionally, with the opening of the light rail, surrounding land use zoning has been upgraded to support more favorable development conditions — the site is now eligible for redevelopment into a 6-to-12-story mixed-use residential or commercial building of over 436,000 square feet.</p>",
+        "textZh": "<p><strong>Studio 7500&nbsp;坐落于&nbsp;Redmond Town Center&nbsp;核心区</strong>，在市中心轻轨站对街，<strong>毗邻微软在该园区的多栋办公楼，周边大型商业环绕，区位优势显著</strong>。该物业为一栋两层、约<strong>34,900&nbsp;平方英尺</strong>的独立建筑，占地约<strong>2&nbsp;英亩</strong>。此次收购价格为2300万美元。</p><p>该建筑曾由 REI 长期持有并使用，随后大众汽车入驻。<strong>2025&nbsp;年&nbsp;7&nbsp;月，总部位于德克萨斯州奥斯汀的网络安全公司&nbsp;CrowdStrike Holdings Inc.&nbsp;开始租赁该空间</strong>。</p><p>本次交易的卖方为加拿大投资机构<strong>Nicola Wealth Real Estate</strong>，该机构于&nbsp;2020&nbsp;年以<strong>&nbsp;3,250&nbsp;万美元</strong>购入该地产，并在持有期间强调其靠近轻轨站的战略位置。<strong>Studio 7500&nbsp;位于&nbsp;Redmond&nbsp;市中心轻轨站对街，该站已于&nbsp;2025&nbsp;年&nbsp;5&nbsp;月正式开通，进一步提升了该区域的交通可达性与长期价值。</strong>同时，随着轻轨开通，周边的土地规划指标已提升至具备更良好的开发条件，该地块可重新开发6-12层超过43.6万平方英尺的混合用途住宅或商业建筑。</p>"
+      },
+      {
+        "id": "b-msibcuut-8dolx",
+        "type": "image",
+        "src": "/images/uploads/1786068992816-640__1_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msibddlw-y0jyy",
+        "type": "text",
+        "textEn": "<p>Ms. Lili Lyu, President of Global Land, stated: \"This acquisition represents an important step in Global Land's continued strategic expansion in the Eastside. We chose to enter Redmond at this time not only because of its prime central location, but also because of our strong confidence in the long-term fundamentals of the Eastside office market.\"</p>",
+        "textZh": "<p>Global Land总裁吕莉莉女士说：“<strong>此次收购是&nbsp;Global Land&nbsp;在东区持续深耕布局的重要一步。我们选择在这个时间点进入&nbsp;Redmond，不仅因为其核心区位优势，更因为我们对&nbsp;Eastside 办公市场的长期基本面充满信心</strong>。</p>"
+      },
+      {
+        "id": "b-msibdlji-pxtfn",
+        "type": "image",
+        "src": "/images/uploads/1786069028018-640__3_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msibdygk-bgmsm",
+        "type": "text",
+        "textEn": "<p>Over the past few years, the commercial office market has undergone a cyclical adjustment, but we are seeing a very clear trend: new development has slowed significantly, and future supply remains constrained. At the same time, the Eastside stood out in 2025 with strong performance in large-block lease transactions, reflecting sustained corporate preference for Bellevue and Redmond. We are also seeing that industries such as AI, advanced technology, and life sciences are emerging as new demand drivers — these high-growth companies are fueling a structural recovery in regional office demand.</p>",
+        "textZh": "<p>过去几年，商业办公市场经历了周期性调整，但我们看到一个非常明确的趋势：新开发项目显著放缓，未来供应有限。与此同时，东区（Eastside&nbsp;）在&nbsp;2025&nbsp;年的大面积租赁成交中表现突出，显示出企业对&nbsp;Bellevue&nbsp;与&nbsp;Redmond&nbsp;的持续偏好。我们也看到，AI、先进技术、生命科学等行业正在成为新的需求引擎，这些高增长企业正在推动区域办公需求的结构性回升。</p>"
+      },
+      {
+        "id": "b-msibe317-u5sjs",
+        "type": "image",
+        "src": "/images/uploads/1786069054450-640.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msibeifv-9zuxd",
+        "type": "text",
+        "textEn": "<p>Moreover, the \"Flight to Quality\" trend is becoming increasingly pronounced. Class A office buildings in Bellevue and Redmond remain the most sought-after asset type in the Puget Sound region. Even as some large tech companies have reduced their office footprints, demand from emerging industries — including AI, semiconductors, and cloud security — is rapidly filling the gap.</p><p>It is precisely on the back of these trends that we believe Studio 7500 will demonstrate strong stability and growth potential in the years ahead.</p><p>Global Land will continue to pursue quality assets across the Greater Seattle area, upholding a long-term approach to deliver steady and lasting value for our investors.</p>",
+        "textZh": "<p>此外，向优质迁移（Flight to Quality&nbsp;）的趋势愈发明显。Bellevue&nbsp;与&nbsp;Redmond&nbsp;的&nbsp;A级办公楼仍然是 Puget Sound 最受青睐的资产类型。即使部分大型科技企业缩减了办公面积，AI、芯片、云安全等新兴行业的需求正在迅速填补空缺。</p><p>正是基于这些趋势，我们相信&nbsp;Studio 7500&nbsp;将在未来几年展现出强劲的稳定性与增长潜力。</p><p>Global Land&nbsp;将继续在大西雅图地区寻找优质资产，秉持长期主义，为投资人创造稳健而持久的价值。“</p>"
+      }
+    ],
+    "image": "/images/uploads/1786068956906-640.jpg"
+  },
+  {
     "id": "redmond-office-2026",
     "slug": "downtown-redmond-office-acquisition",
     "kind": "news",
