@@ -2,7 +2,7 @@
   "id": "spring-district-office",
   "slug": "spring-district-office",
   "nameEn": "Class A Office Building in Spring District",
-  "nameZh": "春区甲级写字楼",
+  "nameZh": "春天社区甲级写字楼",
   "cityEn": "Bellevue",
   "cityZh": "贝尔维尤春区",
   "type": "office",
@@ -30,9 +30,11 @@
     "邻近 Meta 与轻轨"
   ],
   "image": "/images/projects/spring-district.png",
-  "featured": true,
-  "published": true,
   "images": [
     "/images/projects/spring-district.png"
-  ]
+  ],
+  "link": "",
+  "relatedEntity": "",
+  "featured": true,
+  "published": true
 }

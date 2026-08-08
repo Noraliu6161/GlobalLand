@@ -1,0 +1,56 @@
+{
+  "kind": "news",
+  "id": "fincen-rre-2026",
+  "trashedAt": "2026-08-08T04:30:51.935Z",
+  "titleEn": "Event Preview | Deep Dive: FinCEN RRE Reporting Rules & Family Asset Protection",
+  "titleZh": "活动预告 | 深度解析 FinCEN RRE 申报规则与华人家庭资产保护",
+  "originalPath": "content/news.json",
+  "payload": {
+    "id": "fincen-rre-2026",
+    "slug": "fincen-rre-reporting-rules-2026",
+    "kind": "event",
+    "date": "2026-03-20",
+    "dateLabelEn": "March 20, 2026",
+    "dateLabelZh": "2026年3月20日",
+    "titleEn": "Event Preview | Deep Dive: FinCEN RRE Reporting Rules & Family Asset Protection",
+    "titleZh": "活动预告 | 深度解析 FinCEN RRE 申报规则与华人家庭资产保护",
+    "summaryEn": "A practical briefing on the 2026 U.S. real estate transparency rules—how to stay compliant while protecting family privacy and succession planning. TEST",
+    "summaryZh": "聚焦 2026 美国房产透明化新规：如何合规申报，并守护家庭资产隐私与传承。",
+    "eventDetailsEn": "<p>Time: Thursday, March 26, 2:40 PM – 4:40 PM (Pacific Time)</p><p>Venue: Lake Hills Library, 15590 Lake Hills Blvd, Bellevue, WA 98007</p><p>Organizer: Chinese Chamber of Commerce in Washington State (CCCWA)</p><p>Co-Organizer: Seattle Real Estate Investment Club</p>",
+    "eventDetailsZh": "<p>时间：3月26日（周四）下午 2:40 – 4:40（太平洋时间）</p><p>地点：Lake Hills Library，15590 Lake Hills Blvd, Bellevue, WA 98007</p><p>主办：华盛顿州华人商会（CCCWA）</p><p>协办：西雅图房地产投资俱乐部</p>",
+    "bannerTitleZh": "深度解析 FINCEN RRE 申报规则与华人家庭资产保护",
+    "bannerSubZh": "2026 美国房产透明化新规：如何合规并守护资产隐私与传承？",
+    "archiveYear": 2026,
+    "archiveMonth": 3,
+    "image": "",
+    "blocks": [
+      {
+        "id": "b-msb9vnuy-vspvc",
+        "type": "text",
+        "textEn": "The Chinese Chamber of Commerce in Washington State (CCCWA), together with the Seattle Real Estate Investment Club, will host a focused briefing on FinCEN’s Residential Real Estate (RRE) reporting framework.\nThe session covers Mere Change in Form scenarios, practical compliance steps for Chinese families holding U.S. property, and how to balance disclosure requirements with privacy and long-term succession goals.",
+        "textZh": "华盛顿州华人商会（CCCWA）联合西雅图房地产投资俱乐部，将举办 FinCEN 住宅房地产（RRE）申报规则专题解读。\n活动将围绕 Mere Change in Form（形式变更）、华人家庭持有美国房产的合规实务，以及如何在披露要求与隐私、资产传承之间取得平衡展开讨论。"
+      },
+      {
+        "id": "b-msb9vnuy-1pteo",
+        "type": "image",
+        "src": "/images/uploads/1785642584732-IMG_7983.jpeg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msb9wp2w-m5vvp",
+        "type": "text",
+        "textEn": "TEST",
+        "textZh": ""
+      },
+      {
+        "id": "b-msb9x7go-7kdxw",
+        "type": "image",
+        "src": "/images/uploads/1785643318419-IMG_3774.jpeg",
+        "altEn": "",
+        "altZh": ""
+      }
+    ],
+    "registerUrl": ""
+  }
+}

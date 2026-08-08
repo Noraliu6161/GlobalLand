@@ -1,5 +1,129 @@
 [
   {
+    "id": "news-1786178319493",
+    "slug": "news-1786178319493",
+    "kind": "news",
+    "date": "2026-08-08",
+    "dateLabelEn": "August 8, 2026",
+    "dateLabelZh": "2026年8月8日",
+    "archiveYear": 2026,
+    "archiveMonth": 8,
+    "titleEn": "",
+    "titleZh": "华州当地媒体报道河畔花园别墅社区开工典礼",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msk4gq2r-auv01",
+        "type": "text",
+        "textEn": "<p>Posted Friday, June 27, 2025 4:59 pm</p><p>By Owen Sexton &nbsp;/</p>",
+        "textZh": "<p>发布于2025年6月27日（星期五）下午4:59</p><p>作者：Owen Sexton</p>"
+      },
+      {
+        "id": "b-msk4h9bo-mqojw",
+        "type": "image",
+        "src": "/images/uploads/1786178441024-640__11_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4j2vv-m0ru5",
+        "type": "text",
+        "textEn": "<p>Construction is set to begin soon on the new Riverside Garden housing development, as around 80 people, including the developers, architects and Centralia city councilors and staff, attended the groundbreaking ceremony for the development on Thursday, June 26.</p><p>Riverside Garden is a mixed housing development from the Sunrise Fortune Investment Group of Bellevue. It will be located at the end of East Roanoke Street not far from the banks of the Skookumchuck River on the Waunch Prairie in Centralia.</p>",
+        "textZh": "<p>河畔花园别墅社区开发项目即将开工，6 月 26 日星期四，包括开发商、建筑师、森特勒利亚市议员和工作人员在内的约 80 人参加了该项目的奠基仪式。</p><p><br>河畔花园别墅社区是由贝尔维尤日出财富投资集团 (Sunrise Fortune Investment Group)&nbsp;投资开发的混合住宅开发项目。该项目位于东罗阿诺克街 (East Roanoke Street) 尽头，距离森特勒利亚 (Centralia) 沃奇草原 (Waunch Prairie) 的斯库库姆查克河 (Skookumchuck River) 河岸不远。</p>"
+      },
+      {
+        "id": "b-msk4jt9w-ni8u8",
+        "type": "image",
+        "src": "/images/uploads/1786178486986-640__12_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4k0bb-672qy",
+        "type": "image",
+        "src": "/images/uploads/1786178495879-640__13_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4k7o6-v82ah",
+        "type": "image",
+        "src": "/images/uploads/1786178504749-640__14_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4kfys-gkw9k",
+        "type": "text",
+        "textEn": "<p>“Today marks a new beginning. We are breaking ground. We are building a brighter future,” Sunrise Fortune CEO Lili Lu said. “This project is more than just new homes; it’s a gateway to brighter opportunities, jobs and a stronger, more united community.”</p><p>She added her team is dedicated to building something they can all be proud of.</p>",
+        "textZh": "<p>“今天标志着一个新的开始。我们正在破土动工，我们正在建设一个更加美好的未来，”日出财富首席执行官吕莉莉说道。“这个项目不仅仅是新建房屋；它更是通往更光明机遇、更多就业岗位以及更强大、更团结的社区的大门。”</p><p>译：她补充说，她的团队致力于打造让他们都感到自豪的东西。</p>"
+      },
+      {
+        "id": "b-msk4kwsl-3zkis",
+        "type": "image",
+        "src": "/images/uploads/1786178538206-640__15_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4l42s-kr0aw",
+        "type": "text",
+        "textEn": "<p>Centralia’s Community Development Director Emil Pearson also spoke.</p><p>“In the 30 years I’ve been doing planning, you usually don’t sit down with a developer and go through all the issues. It just doesn’t usually happen,” Pearson said. “In this case, meeting with George (Ren), and Lili and Xiaoguang (Zhang), they sat down (saying), ‘Let’s meet together to solve the problems.’ And we were able to do that, making an absolutely fantastic project that has only gotten better every time we sit down.”</p>",
+        "textZh": "<p>森特勒利亚社区发展总监埃米尔·皮尔森也发表了讲话。</p><p>“我从事规划工作30年，通常不会和开发商坐下来讨论所有问题。这种情况很少发生，”皮尔森说。“这次，我和乔治（任）、莉莉和张晓光见面时，他们坐下来（说），‘我们一起开会解决这些问题吧。’我们做到了，打造了一个绝对出色的项目，而且每次我们坐下来讨论，都会取得进步。”</p>"
+      },
+      {
+        "id": "b-msk4lsgi-3z70e",
+        "type": "image",
+        "src": "/images/uploads/1786178579797-640__16_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4m212-d1z05",
+        "type": "text",
+        "textEn": "<p>Zhang is the owner of ZO Architecture LLC of Bellevue, which partnered with Sunrise Fortune to help design Riverside Garden.</p><p>When completed, Riverside Garden will have a total of 89 units of both single-family homes and townhouses, along with amenities including access to local trails, a picnic area, kids playground, natural open space and pickleball courts.</p>",
+        "textZh": "<p>张先生是贝尔维尤 ZO Architecture LLC 的老板，该公司与 Sunrise Fortune 合作设计河畔花园别墅社区。<br><br>建成后，河畔花园别墅社区将共有 89 套独栋住宅和联排别墅，并提供当地步道、野餐区、儿童游乐场、自然开放空间和匹克球场等便利设施。<br><br></p>"
+      },
+      {
+        "id": "b-msk4mtzn-boikb",
+        "type": "image",
+        "src": "/images/uploads/1786178629505-640__17_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4n1iz-x2ogb",
+        "type": "image",
+        "src": "/images/uploads/1786178636971-640__18_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4n6p0-i26s8",
+        "type": "image",
+        "src": "/images/uploads/1786178643364-640__19_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4nbih-pcpmi",
+        "type": "image",
+        "src": "/images/uploads/1786178649464-640__20_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4ngiw-alr5b",
+        "type": "image",
+        "src": "/images/uploads/1786178656549-640__21_.jpg",
+        "altEn": "",
+        "altZh": ""
+      }
+    ],
+    "image": "/images/uploads/1786178332584-640__10_.jpg"
+  },
+  {
     "id": "news-1785999412731",
     "slug": "news-1785999412731",
     "kind": "news",
@@ -377,54 +501,6 @@
     "image": "/images/uploads/1786068508419-640__21_.jpg"
   },
   {
-    "id": "fincen-rre-2026",
-    "slug": "fincen-rre-reporting-rules-2026",
-    "kind": "event",
-    "date": "2026-03-20",
-    "dateLabelEn": "March 20, 2026",
-    "dateLabelZh": "2026年3月20日",
-    "titleEn": "Event Preview | Deep Dive: FinCEN RRE Reporting Rules & Family Asset Protection",
-    "titleZh": "活动预告 | 深度解析 FinCEN RRE 申报规则与华人家庭资产保护",
-    "summaryEn": "A practical briefing on the 2026 U.S. real estate transparency rules—how to stay compliant while protecting family privacy and succession planning. TEST",
-    "summaryZh": "聚焦 2026 美国房产透明化新规：如何合规申报，并守护家庭资产隐私与传承。",
-    "eventDetailsEn": "<p>Time: Thursday, March 26, 2:40 PM – 4:40 PM (Pacific Time)</p><p>Venue: Lake Hills Library, 15590 Lake Hills Blvd, Bellevue, WA 98007</p><p>Organizer: Chinese Chamber of Commerce in Washington State (CCCWA)</p><p>Co-Organizer: Seattle Real Estate Investment Club</p>",
-    "eventDetailsZh": "<p>时间：3月26日（周四）下午 2:40 – 4:40（太平洋时间）</p><p>地点：Lake Hills Library，15590 Lake Hills Blvd, Bellevue, WA 98007</p><p>主办：华盛顿州华人商会（CCCWA）</p><p>协办：西雅图房地产投资俱乐部</p>",
-    "bannerTitleZh": "深度解析 FINCEN RRE 申报规则与华人家庭资产保护",
-    "bannerSubZh": "2026 美国房产透明化新规：如何合规并守护资产隐私与传承？",
-    "archiveYear": 2026,
-    "archiveMonth": 3,
-    "image": "",
-    "blocks": [
-      {
-        "id": "b-msb9vnuy-vspvc",
-        "type": "text",
-        "textEn": "The Chinese Chamber of Commerce in Washington State (CCCWA), together with the Seattle Real Estate Investment Club, will host a focused briefing on FinCEN’s Residential Real Estate (RRE) reporting framework.\nThe session covers Mere Change in Form scenarios, practical compliance steps for Chinese families holding U.S. property, and how to balance disclosure requirements with privacy and long-term succession goals.",
-        "textZh": "华盛顿州华人商会（CCCWA）联合西雅图房地产投资俱乐部，将举办 FinCEN 住宅房地产（RRE）申报规则专题解读。\n活动将围绕 Mere Change in Form（形式变更）、华人家庭持有美国房产的合规实务，以及如何在披露要求与隐私、资产传承之间取得平衡展开讨论。"
-      },
-      {
-        "id": "b-msb9vnuy-1pteo",
-        "type": "image",
-        "src": "/images/uploads/1785642584732-IMG_7983.jpeg",
-        "altEn": "",
-        "altZh": ""
-      },
-      {
-        "id": "b-msb9wp2w-m5vvp",
-        "type": "text",
-        "textEn": "TEST",
-        "textZh": ""
-      },
-      {
-        "id": "b-msb9x7go-7kdxw",
-        "type": "image",
-        "src": "/images/uploads/1785643318419-IMG_3774.jpeg",
-        "altEn": "",
-        "altZh": ""
-      }
-    ],
-    "registerUrl": ""
-  },
-  {
     "id": "news-1786068764732",
     "slug": "news-1786068764732",
     "kind": "news",
@@ -611,6 +687,166 @@
       }
     ],
     "image": "/images/uploads/1786070680492-640__8_.jpg"
+  },
+  {
+    "id": "news-1786177716543",
+    "slug": "news-1786177716543",
+    "kind": "news",
+    "date": "2025-06-29",
+    "dateLabelEn": "June 29, 2025",
+    "dateLabelZh": "2025年6月29日",
+    "archiveYear": 2025,
+    "archiveMonth": 6,
+    "titleEn": "Riverside Garden Villa Community Embarks on a New Journey | Groundbreaking Ceremony Successfully Held",
+    "titleZh": "河畔花园别墅社区华启新程 | 开工典礼圆满举行",
+    "summaryEn": "At 10:30 AM on June 27, 2025, on a day full of hope and vitality, the groundbreaking ceremony for the Riverside Garden Villa Community project was grandly held in the city of Centralia. With red flags fluttering and a spirited atmosphere, over a hundred guests from the local area as well as from Bellevue, Seattle, Tacoma, and Lacey gathered together to witness this important moment.",
+    "summaryZh": "2025年6月27日上午10:30，在充满希望与活力的日子里，河畔花园别墅社区项目开工典礼在Centralia市隆重举行。现场红旗招展、气氛热烈，来自本地及贝尔维尤、西雅图、塔科马和莱西等地的上百位嘉宾齐聚一堂，共同见证这一重要时刻。",
+    "blocks": [
+      {
+        "id": "b-msk44xjt-l0fv5",
+        "type": "image",
+        "src": "/images/uploads/1786177791997-640.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk456b8-rm5jt",
+        "type": "text",
+        "textEn": "<p>The City of Centralia placed great importance on and provided strong support for this event. Half of the city council members attended the ceremony in person, and multiple municipal department staff members were also present to show their support.</p>",
+        "textZh": "<p>Centralia市政府对此次活动给予了高度重视与大力支持。半数市议会议员亲临现场，多位市政部门工作人员也到场助阵。</p>"
+      },
+      {
+        "id": "b-msk45cel-at2sx",
+        "type": "image",
+        "src": "/images/uploads/1786177811121-640.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk45ny2-tr7u9",
+        "type": "text",
+        "textEn": "<p>In his address, Mr. Emil Pierson, the Community Development Director of the City of Centralia, extended a warm welcome to the investors for choosing Centralia as the location for the project. He highly praised the New Home Realty team for their professionalism and outstanding execution demonstrated during the project's preliminary planning and preparation. He particularly appreciated the design philosophy conveyed by the project and its pursuit of a high-quality lifestyle, and expressed his best wishes for the project's successful completion and its positive impact on the community.</p>",
+        "textZh": "<p>Centrlia市社区发展主管Emil Pierson先生在致辞中，对投资方将项目落户&nbsp;Centralia&nbsp;表示热烈欢迎，并高度评价了新居地产团队在项目前期筹备过程中展现出的专业精神和卓越执行力。他特别赞赏项目所传递的设计理念和对高品质生活方式的追求，预祝项目顺利建成、惠及社区。</p>"
+      },
+      {
+        "id": "b-msk45qlv-bsyjy",
+        "type": "image",
+        "src": "/images/uploads/1786177833242-640__1_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk462is-ivq2r",
+        "type": "text",
+        "textEn": "<p>▲ Ms. MacKenzie McGee</p><p>Ms. MacKenzie McGee, Executive Director of the Centralia Downtown Chamber of Commerce, also delivered a speech, affirming the project's positive significance to the city's future development and expressing her heartfelt congratulations on the commencement of construction.</p>",
+        "textZh": "<p>▲MacKenzie McGee&nbsp;女士</p><p>Centralia市中心商会执行会长MacKenzie McGee&nbsp;女士亦发表讲话，肯定了该项目对城市未来发展的积极意义，并表达了对开工的衷心祝贺。</p>"
+      },
+      {
+        "id": "b-msk46b3x-67e9g",
+        "type": "image",
+        "src": "/images/uploads/1786177856079-640__2_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk46g6m-nbehk",
+        "type": "text",
+        "textEn": "<p>▲ Mr. Jay Bennett</p><p>As a key partner of the project, Mr. Jay Bennett, Vice President of Kidder Mathews, shared his 11-year collaboration with Holly Yang's team and the project's General Manager, Ms. Lili Lü. He also reminisced about the precious memories of attending multiple groundbreaking ceremonies for projects that Ms. Lü had developed and managed over the years.</p>",
+        "textZh": "<p>▲Jay&nbsp;Bennett先生</p><p>作为项目的重要合作伙伴，Kidder Mathews&nbsp;商业地产经纪公司副总裁&nbsp;Jay&nbsp;Bennett先生分享了他和Holly Yang团队与项目总经理吕莉莉女士长达11年的合作经历，并回顾了曾参与过的吕莉莉开发管理的多个项目开工典礼的宝贵记忆。</p>"
+      },
+      {
+        "id": "b-msk46q6u-vuvky",
+        "type": "image",
+        "src": "/images/uploads/1786177885899-640__3_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk474io-1a0vo",
+        "type": "text",
+        "textEn": "<p>▲ Ms. Whitney Holm</p><p>Ms. Whitney Holm, representative of SCJ Civil Engineering, introduced the contributions of the Riverside Garden Villa Community to environmental sustainability and urban infrastructure development.</p>",
+        "textZh": "<p>▲Whitney Holm女士</p><p>SCJ土木工程公司代表&nbsp;Whitney Holm女士，介绍了河畔花园别墅社区在环保理念与城市基础建设方面的贡献。</p>"
+      },
+      {
+        "id": "b-msk47bow-dar0m",
+        "type": "image",
+        "src": "/images/uploads/1786177904268-640__4_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk47k0y-vdpbq",
+        "type": "text",
+        "textEn": "<p>▲ Mr. Zhang Xiaoguang</p><p>Mr. Zhang Xiaoguang, the lead architect of the Riverside Garden Villa Community, elaborated on the project's overall master plan: The community is built along the river, surrounded by green spaces and parks, with comprehensive supporting amenities including tree-lined pathways, a pickleball court, a children's play area, and an outdoor barbecue pavilion—presenting a living environment that harmoniously integrates nature and ecology. The residential floor plans also fully take into account scenic views and natural integration, creating the beautiful ambience of \"living in a park.\"</p>",
+        "textZh": "<p>▲张晓光先生</p><p>河畔花园别墅社区主创建筑设计师张晓光先生详细阐述了项目的总体规划：<strong>社区依河而建，绿地与公园环绕其间，配套设施完善，包括林荫小径、匹克球球场、儿童游乐区及户外烧烤凉亭，整体呈现一个融合自然、生态宜人的生活环境</strong>。住宅户型亦充分考虑景观视野与自然融合，营造出“生活在公园里”的美好意境。</p>"
+      },
+      {
+        "id": "b-msk47zy2-fqfst",
+        "type": "image",
+        "src": "/images/uploads/1786177940700-640__5_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk48cl3-ryrns",
+        "type": "text",
+        "textEn": "<p>▲ Ms. Lili Lü</p><p>In her address, Ms. Lili Lü, the Project General Manager, stated: \"We are not merely breaking ground; we are laying the foundation for a better future. The Riverside Garden Villa Community is not only the starting point for building new homes, but also a solid platform for creating new opportunities, generating jobs, and uniting the community. Our goal is to build a safe, sustainable, and welcoming ideal community that everyone can be proud of.\" She concluded by emphasizing that the project team, together with all partners, will go all out to turn this vision into reality.</p><p>Following the speeches, Mr. Emil Pierson, along with three city council members—Mr. Norm Chapman, Mr. Max Vogt, and Mr. Mark Westley—jointly performed the groundbreaking ceremony for the project. Together with Ms. Lili Lü, they turned the first shovels of soil, officially marking the commencement of the Riverside Garden Villa Community project.</p>",
+        "textZh": "<p>▲吕莉莉女士</p><p>项目总经理吕莉莉女士在致辞中表示：“<strong>我们不仅仅是在破土动工，更是在为构建更加美好的未来奠基。河畔花园别墅社区不仅是打造新家的起点，更是开启新机遇、创造就业、凝聚社区的坚实平台。我们的目标——是建设一个安全、环保、宜人的理想社区，让所有人都引以为傲。</strong>”她最后强调，项目团队将携手所有合作伙伴，全力以赴，将这一愿景转化为现实。</p><p>在致辞环节结束后，Emil Pierson先生与三位市议员Norm Chapman先生、Max Vogt&nbsp;先生以及&nbsp;Mark Westley&nbsp;先生共同为项目奠基，并与吕莉莉女士一同挥锹培土，标志着河畔花园别墅社区项目正式启动。</p>"
+      },
+      {
+        "id": "b-msk48jdm-bf8or",
+        "type": "image",
+        "src": "/images/uploads/1786177962933-640__6_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk48sch-avd1s",
+        "type": "text",
+        "textEn": "<p>▲ From left to right: Councilmember Norm Chapman, Director Emil Pierson, Ms. Lili Lü, Councilmember Max Vogt, Councilmember Mark Westley</p><p>Subsequently, the New Home Realty team took a group photo with the attending staff from various city government departments, jointly commemorating this milestone moment.</p>",
+        "textZh": "<p>▲左起：Norm Chapman&nbsp;议员、Emil Pierson主管、吕莉莉女士、Max Vogt&nbsp;议员、&nbsp;Mark Westley&nbsp;议员</p><p>随后，新居地产团队成员与到场的市政府各部门工作人员合影留念，共同记录这一具有里程碑意义的时刻。</p>"
+      },
+      {
+        "id": "b-msk491nt-nsdee",
+        "type": "image",
+        "src": "/images/uploads/1786177993015-640__7_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk49g3m-hyudd",
+        "type": "text",
+        "textEn": "<p>Following the on-site ceremony, guests moved to the office of Windermere Centralia, the project's sales agency, for a lunch reception and a special seminar on the latest trends in the U.S. real estate market. Several researchers and senior real estate agents delivered insightful presentations on current market changes and engaged in lively discussions with the attendees, fostering an atmosphere of deep and meaningful exchange. The sales team of more than a dozen agents for the Riverside Garden Villa Community also made a collective appearance.</p>",
+        "textZh": "<p>现场活动结束后，嘉宾们移步至项目销售代理公司<strong>Windermere Centralia</strong>办公室共进午餐，并出席了一场关于<strong>美国房地产市场最新趋势</strong>的专题讲座。多位研究员及资深地产经纪人就当前市场变化进行了精彩分享，并与来宾积极互动，现场氛围热烈、交流深入。河畔花园别墅社区的销售团队十几名经纪人也集体亮相。</p>"
+      },
+      {
+        "id": "b-msk49mxt-ro45t",
+        "type": "image",
+        "src": "/images/uploads/1786178010837-640__8_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk49vgq-q2wpp",
+        "type": "text",
+        "textEn": "<p>Afterward, the guests visited the picturesque campus of Centralia College. This historic institution of higher education had just celebrated its centennial anniversary. With tree-lined grounds and well-equipped facilities, the college currently enrolls over 4,000 students and stands as an important landmark of education and culture in the local community.<br></p>",
+        "textZh": "<p>随后，嘉宾们参观了风景如画的<strong>Centralia College</strong>。这所历史悠久的高等学府刚刚庆祝建校百年华诞，校园内绿树成荫、设施完善，目前在校学生人数超过四千人，是本地教育与文化的重要地标。</p>"
+      },
+      {
+        "id": "b-msk4a066-34mos",
+        "type": "image",
+        "src": "/images/uploads/1786178029015-640__9_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4aa22-1fber",
+        "type": "text",
+        "textEn": "<p>Finally, the guests also took a brief tour of the outlet mall, gaining further insight into the local character and community resources of Centralia.</p><p>Beyond education and commerce, Centralia also boasts well-rounded living amenities in sports, industry, culture, and tourism. The Northwest Sports Complex is an impressive facility with state-of-the-art athletic amenities and comprehensive support services. The TransAlta Industrial Park is set to become Centralia's future hub for energy-sector. The Great Wolf Lodge water park holds a prominent place among Washington State's water parks with its diverse and abundant water-based attractions.</p><p>With that, the groundbreaking ceremony for the Riverside Garden Villa Community came to a successful conclusion. The guests departed with rich rewards and high expectations for both the project and the future development of the city. With its  riverfront ecological resources, high-end and elegant architectural design, and comprehensive community amenities, the Riverside Garden Villa Community will undoubtedly become a benchmark for quality residential properties in the region. The high-quality lifestyle it champions will inject new vitality into the local real estate market.</p>",
+        "textZh": "<p>最后，嘉宾们还简要参观了奥特莱斯商场、进一步了解了Centralia的本地风貌与社区资源。</p><p>不仅仅是教育和商业，<strong>Centralia在体育、工业、文旅等领域也拥有完善的生活配套，</strong>西北体育中心气势恢宏，先进的体育设施、完善的配套服务；TransAlta 工业园区将会成为Centralia市未来的能源产业聚集地；大狼屋水上世界凭借其丰富多样的水上娱乐项目在华州水上乐园占据一席之地。</p><p>至此，河畔花园别墅社区的开工典礼圆满举行，嘉宾们满载而归，对项目及城市未来的发展充满期待。河畔花园别墅社区凭借临河而建的稀缺生态资源、高端精致的建筑设计，以及完备的社区配套设施，无疑将成为区域内品质住宅的标杆之作。所倡导的高品质生活方式，将为当地房地产市场注入新的活力。</p>"
+      }
+    ],
+    "image": "/images/uploads/1786178047626-640__7_.jpg"
   },
   {
     "id": "news-1786070797530",
