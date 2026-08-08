@@ -1,0 +1,32 @@
+{
+  "id": "bellevue",
+  "slug": "bellevue",
+  "nameEn": "Mira Flats",
+  "nameZh": "美丽都一期",
+  "cityEn": "",
+  "cityZh": "",
+  "type": "condo",
+  "status": "in-progress",
+  "units": 162,
+  "buildings": null,
+  "saleValueM": null,
+  "acquisitionPriceM": null,
+  "year": 2015,
+  "lat": 0,
+  "lng": 0,
+  "summaryEn": "",
+  "summaryZh": "",
+  "bodyEn": "",
+  "bodyZh": "",
+  "bodyFont": "body",
+  "highlightsEn": [],
+  "highlightsZh": [],
+  "image": "/images/uploads/1786175326526-ScreenShot_2026-08-08_154754_121.jpg",
+  "images": [
+    "/images/uploads/1786175326526-ScreenShot_2026-08-08_154754_121.jpg"
+  ],
+  "link": "",
+  "relatedEntity": "",
+  "featured": false,
+  "published": true
+}
