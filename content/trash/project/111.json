@@ -1,0 +1,40 @@
+{
+  "kind": "project",
+  "id": "111",
+  "trashedAt": "2026-08-08T07:51:29.288Z",
+  "titleEn": "MARI",
+  "titleZh": "美丽都二期",
+  "originalPath": "content/projects/111.json",
+  "payload": {
+    "id": "111",
+    "slug": "111",
+    "nameEn": "MARI",
+    "nameZh": "美丽都二期",
+    "cityEn": "",
+    "cityZh": "",
+    "type": "condo",
+    "status": "in-progress",
+    "units": 165,
+    "buildings": null,
+    "saleValueM": null,
+    "acquisitionPriceM": null,
+    "year": 2020,
+    "lat": 0,
+    "lng": 0,
+    "summaryEn": "",
+    "summaryZh": "",
+    "bodyEn": "",
+    "bodyZh": "",
+    "bodyFont": "body",
+    "highlightsEn": [],
+    "highlightsZh": [],
+    "image": "/images/uploads/1786174786727-ScreenShot_2026-08-08_153920_350.jpg",
+    "images": [
+      "/images/uploads/1786174786727-ScreenShot_2026-08-08_153920_350.jpg"
+    ],
+    "link": "",
+    "relatedEntity": "",
+    "featured": false,
+    "published": true
+  }
+}
