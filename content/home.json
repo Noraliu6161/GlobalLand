@@ -17,11 +17,6 @@
   "heroCtaAboutHref": "/about",
   "heroSlides": [
     {
-      "src": "/images/hero/seattle-night.png",
-      "altEn": "The Emerald Condo and Seattle waterfront at dusk",
-      "altZh": "The Emerald 公寓与西雅图滨水夜景"
-    },
-    {
       "src": "/images/projects/emerald-building.png",
       "altEn": "The Emerald Condo exterior in Seattle",
       "altZh": "西雅图 The Emerald 公寓外观"
@@ -45,11 +40,6 @@
       "src": "/images/projects/redmond-office.png",
       "altEn": "Downtown Redmond office building",
       "altZh": "雷德蒙德市中心办公楼"
-    },
-    {
-      "src": "/images/projects/florera.png",
-      "altEn": "Florera Condo in Seattle",
-      "altZh": "西雅图 Florera 公寓"
     },
     {
       "src": "/images/projects/sammamish.png",
