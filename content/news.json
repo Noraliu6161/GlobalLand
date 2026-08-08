@@ -1,5 +1,129 @@
 [
   {
+    "id": "news-1786178319493",
+    "slug": "news-1786178319493",
+    "kind": "news",
+    "date": "2026-08-08",
+    "dateLabelEn": "August 8, 2026",
+    "dateLabelZh": "2026年8月8日",
+    "archiveYear": 2026,
+    "archiveMonth": 8,
+    "titleEn": "",
+    "titleZh": "华州当地媒体报道河畔花园别墅社区开工典礼",
+    "summaryEn": "",
+    "summaryZh": "",
+    "blocks": [
+      {
+        "id": "b-msk4gq2r-auv01",
+        "type": "text",
+        "textEn": "<p>Posted Friday, June 27, 2025 4:59 pm</p><p>By Owen Sexton &nbsp;/</p>",
+        "textZh": "<p>发布于2025年6月27日（星期五）下午4:59</p><p>作者：Owen Sexton</p>"
+      },
+      {
+        "id": "b-msk4h9bo-mqojw",
+        "type": "image",
+        "src": "/images/uploads/1786178441024-640__11_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4j2vv-m0ru5",
+        "type": "text",
+        "textEn": "<p>Construction is set to begin soon on the new Riverside Garden housing development, as around 80 people, including the developers, architects and Centralia city councilors and staff, attended the groundbreaking ceremony for the development on Thursday, June 26.</p><p>Riverside Garden is a mixed housing development from the Sunrise Fortune Investment Group of Bellevue. It will be located at the end of East Roanoke Street not far from the banks of the Skookumchuck River on the Waunch Prairie in Centralia.</p>",
+        "textZh": "<p>河畔花园别墅社区开发项目即将开工，6 月 26 日星期四，包括开发商、建筑师、森特勒利亚市议员和工作人员在内的约 80 人参加了该项目的奠基仪式。</p><p><br>河畔花园别墅社区是由贝尔维尤日出财富投资集团 (Sunrise Fortune Investment Group)&nbsp;投资开发的混合住宅开发项目。该项目位于东罗阿诺克街 (East Roanoke Street) 尽头，距离森特勒利亚 (Centralia) 沃奇草原 (Waunch Prairie) 的斯库库姆查克河 (Skookumchuck River) 河岸不远。</p>"
+      },
+      {
+        "id": "b-msk4jt9w-ni8u8",
+        "type": "image",
+        "src": "/images/uploads/1786178486986-640__12_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4k0bb-672qy",
+        "type": "image",
+        "src": "/images/uploads/1786178495879-640__13_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4k7o6-v82ah",
+        "type": "image",
+        "src": "/images/uploads/1786178504749-640__14_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4kfys-gkw9k",
+        "type": "text",
+        "textEn": "<p>“Today marks a new beginning. We are breaking ground. We are building a brighter future,” Sunrise Fortune CEO Lili Lu said. “This project is more than just new homes; it’s a gateway to brighter opportunities, jobs and a stronger, more united community.”</p><p>She added her team is dedicated to building something they can all be proud of.</p>",
+        "textZh": "<p>“今天标志着一个新的开始。我们正在破土动工，我们正在建设一个更加美好的未来，”日出财富首席执行官吕莉莉说道。“这个项目不仅仅是新建房屋；它更是通往更光明机遇、更多就业岗位以及更强大、更团结的社区的大门。”</p><p>译：她补充说，她的团队致力于打造让他们都感到自豪的东西。</p>"
+      },
+      {
+        "id": "b-msk4kwsl-3zkis",
+        "type": "image",
+        "src": "/images/uploads/1786178538206-640__15_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4l42s-kr0aw",
+        "type": "text",
+        "textEn": "<p>Centralia’s Community Development Director Emil Pearson also spoke.</p><p>“In the 30 years I’ve been doing planning, you usually don’t sit down with a developer and go through all the issues. It just doesn’t usually happen,” Pearson said. “In this case, meeting with George (Ren), and Lili and Xiaoguang (Zhang), they sat down (saying), ‘Let’s meet together to solve the problems.’ And we were able to do that, making an absolutely fantastic project that has only gotten better every time we sit down.”</p>",
+        "textZh": "<p>森特勒利亚社区发展总监埃米尔·皮尔森也发表了讲话。</p><p>“我从事规划工作30年，通常不会和开发商坐下来讨论所有问题。这种情况很少发生，”皮尔森说。“这次，我和乔治（任）、莉莉和张晓光见面时，他们坐下来（说），‘我们一起开会解决这些问题吧。’我们做到了，打造了一个绝对出色的项目，而且每次我们坐下来讨论，都会取得进步。”</p>"
+      },
+      {
+        "id": "b-msk4lsgi-3z70e",
+        "type": "image",
+        "src": "/images/uploads/1786178579797-640__16_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4m212-d1z05",
+        "type": "text",
+        "textEn": "<p>Zhang is the owner of ZO Architecture LLC of Bellevue, which partnered with Sunrise Fortune to help design Riverside Garden.</p><p>When completed, Riverside Garden will have a total of 89 units of both single-family homes and townhouses, along with amenities including access to local trails, a picnic area, kids playground, natural open space and pickleball courts.</p>",
+        "textZh": "<p>张先生是贝尔维尤 ZO Architecture LLC 的老板，该公司与 Sunrise Fortune 合作设计河畔花园别墅社区。<br><br>建成后，河畔花园别墅社区将共有 89 套独栋住宅和联排别墅，并提供当地步道、野餐区、儿童游乐场、自然开放空间和匹克球场等便利设施。<br><br></p>"
+      },
+      {
+        "id": "b-msk4mtzn-boikb",
+        "type": "image",
+        "src": "/images/uploads/1786178629505-640__17_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4n1iz-x2ogb",
+        "type": "image",
+        "src": "/images/uploads/1786178636971-640__18_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4n6p0-i26s8",
+        "type": "image",
+        "src": "/images/uploads/1786178643364-640__19_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4nbih-pcpmi",
+        "type": "image",
+        "src": "/images/uploads/1786178649464-640__20_.jpg",
+        "altEn": "",
+        "altZh": ""
+      },
+      {
+        "id": "b-msk4ngiw-alr5b",
+        "type": "image",
+        "src": "/images/uploads/1786178656549-640__21_.jpg",
+        "altEn": "",
+        "altZh": ""
+      }
+    ],
+    "image": "/images/uploads/1786178332584-640__10_.jpg"
+  },
+  {
     "id": "news-1785999412731",
     "slug": "news-1785999412731",
     "kind": "news",
