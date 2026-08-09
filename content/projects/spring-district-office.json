@@ -12,13 +12,21 @@
   "saleValueM": null,
   "acquisitionPriceM": 16.28,
   "year": 2024,
-  "lat": 47.6445,
-  "lng": -122.1762,
+  "lat": 47.621466,
+  "lng": -122.177769,
   "summaryEn": "Class A office building in the heart of Bellevue’s Spring District, acquired February 2024 for $16.28 million—directly across from Meta’s campus and steps from light rail.",
   "summaryZh": "贝尔维尤 Spring District 甲级办公楼，2024 年 2 月以 1628 万美元收购，正对 Meta 园区，临近轻轨。",
-  "bodyEn": "Class A office building in the heart of Bellevue’s Spring District, acquired February 2024 for **$16.28 million**—directly across from Meta’s campus and steps from light rail.",
-  "bodyZh": "贝尔维尤 Spring District 甲级办公楼，2024 年 2 月以 **1628 万美元**收购，正对 Meta 园区，临近轻轨。",
+  "bodyEn": "",
+  "bodyZh": "",
   "bodyFont": "body",
+  "blocks": [
+    {
+      "id": "b-mslbb4ln-o5bf4",
+      "type": "text",
+      "textEn": "<p>Class A office building in the heart of Bellevue’s Spring District, acquired February 2024 for <strong>$16.28 million</strong>—directly across from Meta’s campus and steps from light rail.</p>",
+      "textZh": "<p>贝尔维尤 Spring District 甲级办公楼，2024 年 2 月以 <strong>1628 万美元</strong>收购，正对 Meta 园区，临近轻轨。</p>"
+    }
+  ],
   "highlightsEn": [
     "$16.28M",
     "Class A office",
