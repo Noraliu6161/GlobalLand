@@ -12,13 +12,21 @@
   "saleValueM": null,
   "acquisitionPriceM": null,
   "year": 2023,
-  "lat": 47.6105,
-  "lng": -122.2008,
+  "lat": 47.607758,
+  "lng": -122.183547,
   "summaryEn": "Office asset in Bellevue held within the Global Land commercial portfolio.",
   "summaryZh": "Global Land 商业组合中的贝尔维尤办公资产。",
-  "bodyEn": "Office asset in Bellevue held within the Global Land commercial portfolio.",
-  "bodyZh": "Global Land 商业组合中的贝尔维尤办公资产。",
+  "bodyEn": "",
+  "bodyZh": "",
   "bodyFont": "body",
+  "blocks": [
+    {
+      "id": "b-mslavuzq-ik9t7",
+      "type": "text",
+      "textEn": "<p>Office asset in Bellevue held within the Global Land commercial portfolio.</p>",
+      "textZh": "<p>Global Land 商业组合中的贝尔维尤办公资产。</p>"
+    }
+  ],
   "highlightsEn": [
     "Bellevue office",
     "Commercial"
