@@ -12,13 +12,21 @@
   "saleValueM": null,
   "acquisitionPriceM": null,
   "year": 2023,
-  "lat": 47.5788,
-  "lng": -122.1695,
+  "lat": 47.607758,
+  "lng": -122.183547,
   "summaryEn": "Commercial office asset invested in and managed within the Greater Seattle Eastside portfolio.",
   "summaryZh": "大西雅图东区投资并管理的商业办公资产。",
-  "bodyEn": "Commercial office asset invested in and managed within the Greater Seattle Eastside portfolio.",
-  "bodyZh": "大西雅图东区投资并管理的商业办公资产。",
+  "bodyEn": "",
+  "bodyZh": "",
   "bodyFont": "body",
+  "blocks": [
+    {
+      "id": "b-mslats0d-om3m4",
+      "type": "text",
+      "textEn": "<p>Commercial office asset invested in and managed within the Greater Seattle Eastside portfolio.</p>",
+      "textZh": "<p>大西雅图东区投资并管理的商业办公资产。</p>"
+    }
+  ],
   "highlightsEn": [
     "Office investment",
     "Eastside"
@@ -28,9 +36,11 @@
     "东区"
   ],
   "image": "/images/projects/forum-south.png",
-  "featured": true,
-  "published": true,
   "images": [
     "/images/projects/forum-south.png"
-  ]
+  ],
+  "link": "",
+  "relatedEntity": "",
+  "featured": true,
+  "published": true
 }
