@@ -16,9 +16,33 @@
   "lng": -122.1219,
   "summaryEn": "Office building in downtown Redmond acquired March 2026 for $23 million—adjacent to the Microsoft campus and next to light rail.",
   "summaryZh": "雷德蒙德市中心办公楼，2026 年 3 月以 2300 万美元收购，毗邻微软园区与轻轨。",
-  "bodyEn": "Office building in downtown Redmond acquired March 2026 for **$23 million**—adjacent to the Microsoft campus and next to light rail.",
-  "bodyZh": "雷德蒙德市中心办公楼，2026 年 3 月以 **2300 万美元**收购，毗邻微软园区与轻轨。",
+  "bodyEn": "",
+  "bodyZh": "",
   "bodyFont": "body",
+  "blocks": [
+    {
+      "id": "b-mslb1twn-fv4d5",
+      "type": "text",
+      "textEn": "<p>Office building in downtown Redmond acquired March 2026 for <strong>$23 million</strong>—adjacent to the Microsoft campus and next to light rail.</p>",
+      "textZh": "<p>雷德蒙德市中心办公楼，2026 年 3 月以 <strong>2300 万美元</strong>收购，毗邻微软园区与轻轨。</p>"
+    },
+    {
+      "id": "b-mslb1vru-6btkx",
+      "type": "gallery",
+      "images": [
+        {
+          "src": "/images/uploads/1786249881386-IMG_3775.jpg",
+          "altEn": "",
+          "altZh": ""
+        },
+        {
+          "src": "/images/uploads/1786249900547-IMG_3774.jpg",
+          "altEn": "",
+          "altZh": ""
+        }
+      ]
+    }
+  ],
   "highlightsEn": [
     "$23M",
     "Near Microsoft",
@@ -30,9 +54,11 @@
     "轻轨旁"
   ],
   "image": "/images/projects/redmond-office.png",
-  "featured": true,
-  "published": true,
   "images": [
     "/images/projects/redmond-office.png"
-  ]
+  ],
+  "link": "",
+  "relatedEntity": "",
+  "featured": true,
+  "published": true
 }
