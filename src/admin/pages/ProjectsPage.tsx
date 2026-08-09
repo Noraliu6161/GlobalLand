@@ -4,8 +4,16 @@ import { PageHeader } from '../AdminApp'
 import { getCopy, type AdminLang } from '../lib/i18n'
 import { moveToTrash, saveContentFile } from '../lib/contentApi'
 import { Field, ImageField, LinesField, SelectField } from '../components/Fields'
+import { ContentBlocksEditor } from '../components/ContentBlocksEditor'
 import { AdminMediaImage } from '../components/AdminMediaImage'
-import { emptyProject, loadProjectsForAdmin, loadProjectsFromModules, normalizeProjectImages, type ProjectRecord } from '../lib/projectTypes'
+import {
+  emptyProject,
+  loadProjectsForAdmin,
+  loadProjectsFromModules,
+  normalizeProjectImages,
+  withProjectBlocks,
+  type ProjectRecord,
+} from '../lib/projectTypes'
 import { labelStatus, labelType, statusOptions, statusTone, typeOptions } from '../lib/projectLabels'
 import { makeProjectTrashItem } from '../lib/trash'
 
@@ -123,6 +131,27 @@ export function ProjectsPage({ lang }: { lang: AdminLang }) {
     )
   }
 
+  const moveBy = async (slug: string, dir: -1 | 1) => {
+    const list = projectsRef.current
+    const from = list.findIndex((p) => p.slug === slug)
+    const to = from + dir
+    if (from < 0 || to < 0 || to >= list.length) return
+    const next = [...list]
+    const [item] = next.splice(from, 1)
+    next.splice(to, 0, item)
+    setProjects(next)
+    projectsRef.current = next
+    setOrderStatus(lang === 'zh' ? '正在保存排序…' : 'Saving order…')
+    const err = await persistProjectOrder(next.map((p) => p.slug))
+    setOrderStatus(
+      err
+        ? err
+        : lang === 'zh'
+          ? '排序已保存（网站列表将按此顺序显示）。'
+          : 'Order saved. Site lists will follow this order.',
+    )
+  }
+
   const zh = lang === 'zh'
 
   return (
@@ -138,8 +167,8 @@ export function ProjectsPage({ lang }: { lang: AdminLang }) {
       {migrateNote && <p className="admin-status is-ok">{migrateNote}</p>}
       <p className="admin-hint">
         {zh
-          ? '默认按创立年份从新到旧。拖拽左侧 ⋮⋮ 可自定义顺序。'
-          : 'Default order is newest creation year first. Drag ⋮⋮ to customize.'}
+          ? '默认按创立年份从新到旧。可拖拽左侧 ⋮⋮，或用右侧 ↑↓ 调整顺序。'
+          : 'Default order is newest creation year first. Drag ⋮⋮ or use ↑↓ on the right to reorder.'}
       </p>
       {orderStatus && (
         <p className={`admin-status ${orderStatus.includes('…') || orderStatus.includes('Saving') ? '' : orderStatus.includes('失败') || /error|fail|Could/i.test(orderStatus) ? 'is-err' : 'is-ok'}`}>
@@ -159,7 +188,7 @@ export function ProjectsPage({ lang }: { lang: AdminLang }) {
             </tr>
           </thead>
           <tbody>
-            {projects.map((p) => (
+            {projects.map((p, index) => (
               <tr
                 key={p.slug}
                 className={draggingSlug === p.slug ? 'is-dragging' : ''}
@@ -188,8 +217,36 @@ export function ProjectsPage({ lang }: { lang: AdminLang }) {
                   <span className={`admin-tag ${statusTone(p.status)}`}>{labelStatus(p.status, lang)}</span>
                   <span className="admin-tag admin-tag--type">{labelType(p.type, lang)}</span>
                 </td>
-                <td>
+                <td onMouseDown={(e) => e.stopPropagation()}>
                   <div className="admin-row-actions">
+                    <div className="admin-order-btns">
+                      <button
+                        type="button"
+                        className="admin-btn admin-btn-icon"
+                        disabled={index === 0}
+                        title={zh ? '上移' : 'Move up'}
+                        aria-label={zh ? '上移' : 'Move up'}
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          void moveBy(p.slug, -1)
+                        }}
+                      >
+                        ↑
+                      </button>
+                      <button
+                        type="button"
+                        className="admin-btn admin-btn-icon"
+                        disabled={index === projects.length - 1}
+                        title={zh ? '下移' : 'Move down'}
+                        aria-label={zh ? '下移' : 'Move down'}
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          void moveBy(p.slug, 1)
+                        }}
+                      >
+                        ↓
+                      </button>
+                    </div>
                     <Link className="admin-btn" to={`/projects/${p.slug}`}>
                       {zh ? '编辑' : 'Edit'}
                     </Link>
@@ -219,7 +276,8 @@ export function ProjectEditorPage({ lang }: { lang: AdminLang }) {
   const isNew = slug === 'new'
   const [data, setData] = useState<ProjectRecord>(() => {
     if (isNew) return emptyProject()
-    return loadProjectsFromModules().find((p) => p.slug === slug) || emptyProject()
+    const found = loadProjectsFromModules().find((p) => p.slug === slug)
+    return found ? withProjectBlocks(structuredClone(found)) : emptyProject()
   })
   const [status, setStatus] = useState('')
   const [busy, setBusy] = useState(false)
@@ -234,7 +292,7 @@ export function ProjectEditorPage({ lang }: { lang: AdminLang }) {
       const all = await loadProjectsForAdmin()
       if (cancelled) return
       const found = all.find((p) => p.slug === slug)
-      setData(found ? structuredClone(found) : emptyProject())
+      setData(found ? withProjectBlocks(structuredClone(found)) : emptyProject())
     })()
     return () => {
       cancelled = true
@@ -256,7 +314,19 @@ export function ProjectEditorPage({ lang }: { lang: AdminLang }) {
       setStatus(lang === 'zh' ? '封面图 #1 必须上传图片后才能保存。' : 'Cover #1 image is required before saving.')
       return
     }
-    const payload = { ...data, slug: s, id: data.id.trim() || s, published: true, image, images }
+    const withBlocks = withProjectBlocks({ ...data, image, images })
+    const payload = {
+      ...withBlocks,
+      slug: s,
+      id: data.id.trim() || s,
+      published: true,
+      image,
+      images,
+      blocks: withBlocks.blocks || [],
+      // Prefer modular blocks on the public site
+      bodyEn: '',
+      bodyZh: '',
+    }
     setBusy(true)
     setStatus('')
     const res = await saveContentFile(`content/projects/${s}.json`, payload)
@@ -452,20 +522,6 @@ export function ProjectEditorPage({ lang }: { lang: AdminLang }) {
         <div className="admin-grid-2">
           <Field label={zh ? '摘要（英文）' : 'Summary (EN)'} value={data.summaryEn} onChange={(v) => set('summaryEn', v)} multiline />
           <Field label={zh ? '摘要（中文）' : '摘要（中文）'} value={data.summaryZh} onChange={(v) => set('summaryZh', v)} multiline />
-          <Field label={zh ? '正文（英文）' : 'Body (EN)'} value={data.bodyEn} onChange={(v) => set('bodyEn', v)} multiline />
-          <Field label={zh ? '正文（中文）' : '正文（中文）'} value={data.bodyZh} onChange={(v) => set('bodyZh', v)} multiline />
-          <SelectField
-            label={zh ? '正文字体' : 'Body font'}
-            value={data.bodyFont}
-            onChange={(v) => set('bodyFont', v)}
-            options={[
-              { value: 'body', label: 'Body · Figtree' },
-              { value: 'display', label: 'Display · Syne' },
-              { value: 'serif', label: 'Serif · Cormorant' },
-              { value: 'sans-sc', label: 'Noto Sans SC' },
-              { value: 'serif-sc', label: 'Noto Serif SC' },
-            ]}
-          />
           <LinesField
             label={zh ? '亮点（英文，每行一条）' : 'Highlights EN (one per line)'}
             value={data.highlightsEn}
@@ -477,6 +533,20 @@ export function ProjectEditorPage({ lang }: { lang: AdminLang }) {
             onChange={(v) => set('highlightsZh', v)}
           />
         </div>
+      </section>
+
+      <section className="admin-card">
+        <ContentBlocksEditor
+          lang={lang}
+          title={zh ? '项目内容块' : 'Project content blocks'}
+          blocks={data.blocks || []}
+          onChange={(blocks) => set('blocks', blocks)}
+        />
+        <p className="admin-hint" style={{ marginTop: '0.75rem' }}>
+          {zh
+            ? '与新闻相同：可用「+ 文本块」「+ 图片块」「+ 图集」组合正文，图文分开互不覆盖。'
+            : 'Same as News: build the body with text, image, and gallery blocks so media never overwrites copy.'}
+        </p>
       </section>
 
       <section className="admin-card">

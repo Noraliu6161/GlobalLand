@@ -6,32 +6,18 @@ import { Field, ImageField } from '../components/Fields'
 import aboutRaw from '../../../content/about.json'
 import type { AboutContent, AboutPhoto } from '../../lib/loadAbout'
 
-const COMMUNITY_PHOTO_COUNT = 4
-
-function blankPhoto(): AboutPhoto {
-  return { src: '', altEn: '', altZh: '' }
-}
-
-function withCommunitySlots(raw: AboutContent): AboutContent {
-  const clone = structuredClone(raw)
-  const list = [...(clone.communityPhotos || [])]
-  while (list.length < COMMUNITY_PHOTO_COUNT) list.push(blankPhoto())
-  clone.communityPhotos = list.slice(0, COMMUNITY_PHOTO_COUNT)
-  return clone
-}
-
 export function AboutPageEditor({ lang }: { lang: AdminLang }) {
   const t = getCopy(lang)
   const zh = lang === 'zh'
   const lb = (en: string, cn: string) => (zh ? cn : en)
-  const [data, setData] = useState<AboutContent>(() => withCommunitySlots(aboutRaw as AboutContent))
+  const [data, setData] = useState<AboutContent>(() => structuredClone(aboutRaw as AboutContent))
   const [status, setStatus] = useState('')
   const [busy, setBusy] = useState(false)
 
   useEffect(() => {
     let cancelled = false
     void loadContentJson('content/about.json', aboutRaw as AboutContent).then((remote) => {
-      if (!cancelled) setData(withCommunitySlots(remote))
+      if (!cancelled) setData(structuredClone(remote))
     })
     return () => {
       cancelled = true
@@ -42,28 +28,17 @@ export function AboutPageEditor({ lang }: { lang: AdminLang }) {
     setData((d) => ({ ...d, [key]: value }))
   }
 
-  const setPhoto = (list: 'teamPhotos' | 'communityPhotos', index: number, patch: Partial<AboutPhoto>) => {
+  const setPhoto = (index: number, patch: Partial<AboutPhoto>) => {
     setData((d) => ({
       ...d,
-      [list]: d[list].map((p, i) => (i === index ? { ...p, ...patch } : p)),
+      teamPhotos: d.teamPhotos.map((p, i) => (i === index ? { ...p, ...patch } : p)),
     }))
   }
 
   const save = async () => {
-    const filled = data.communityPhotos.filter((p) => (p.src || '').trim()).length
-    if (filled < COMMUNITY_PHOTO_COUNT) {
-      setStatus(
-        zh
-          ? `社区图片必须上传 ${COMMUNITY_PHOTO_COUNT} 张（当前 ${filled} 张），请补全后再保存。`
-          : `Community photos require ${COMMUNITY_PHOTO_COUNT} images (currently ${filled}). Add all before saving.`,
-      )
-      return
-    }
-
     setBusy(true)
     setStatus('')
-    const payload = withCommunitySlots(data)
-    const res = await saveContentFile('content/about.json', payload)
+    const res = await saveContentFile('content/about.json', data)
     setBusy(false)
     setStatus(res.ok ? t.saved : res.error)
   }
@@ -130,115 +105,19 @@ export function AboutPageEditor({ lang }: { lang: AdminLang }) {
             <ImageField
               label={lb('Image', '图片')}
               value={p.src}
-              onChange={(v) => setPhoto('teamPhotos', i, { src: v })}
+              onChange={(v) => setPhoto(i, { src: v })}
               lang={lang}
             />
             <div className="admin-grid-2">
               <Field
                 label={lb('Alt (EN)', '图片说明（英文）')}
                 value={p.altEn}
-                onChange={(v) => setPhoto('teamPhotos', i, { altEn: v })}
+                onChange={(v) => setPhoto(i, { altEn: v })}
               />
               <Field
                 label={lb('Alt (ZH)', '图片说明（中文）')}
                 value={p.altZh}
-                onChange={(v) => setPhoto('teamPhotos', i, { altZh: v })}
-              />
-            </div>
-          </div>
-        ))}
-      </section>
-
-      <section className="admin-card">
-        <h2>{lb('Community', '社区板块')}</h2>
-        <div className="admin-grid-2">
-          <Field
-            label={lb('Eyebrow (EN)', '眉标（英文）')}
-            value={data.communityEyebrowEn}
-            onChange={(v) => set('communityEyebrowEn', v)}
-          />
-          <Field
-            label={lb('Eyebrow (ZH)', '眉标（中文）')}
-            value={data.communityEyebrowZh}
-            onChange={(v) => set('communityEyebrowZh', v)}
-          />
-          <Field
-            label={lb('Title (EN)', '标题（英文）')}
-            value={data.communityTitleEn}
-            onChange={(v) => set('communityTitleEn', v)}
-          />
-          <Field
-            label={lb('Title (ZH)', '标题（中文）')}
-            value={data.communityTitleZh}
-            onChange={(v) => set('communityTitleZh', v)}
-          />
-          <Field
-            label={lb('Community (EN)', '社区正文（英文）')}
-            value={data.communityEn}
-            onChange={(v) => set('communityEn', v)}
-            multiline
-          />
-          <Field
-            label={lb('Community (ZH)', '社区正文（中文）')}
-            value={data.communityZh}
-            onChange={(v) => set('communityZh', v)}
-            multiline
-          />
-          <Field
-            label={lb('Returns (EN)', '回报说明（英文）')}
-            value={data.returnsEn}
-            onChange={(v) => set('returnsEn', v)}
-            multiline
-          />
-          <Field
-            label={lb('Returns (ZH)', '回报说明（中文）')}
-            value={data.returnsZh}
-            onChange={(v) => set('returnsZh', v)}
-            multiline
-          />
-        </div>
-        <ImageField
-          label={lb('CCCWA logo', 'CCCWA 标志')}
-          value={data.cccwaLogo}
-          onChange={(v) => set('cccwaLogo', v)}
-          lang={lang}
-        />
-      </section>
-
-      <section className="admin-card">
-        <div className="admin-card-head">
-          <h2>
-            {lb('Community photos (4 required)', '社区图片（必须 4 张）')} <span className="req">*</span>
-          </h2>
-        </div>
-        <p className="admin-hint" style={{ marginTop: 0 }}>
-          {zh
-            ? '四张社区图片均为必填，缺一张都无法保存。'
-            : 'All four community photos are required. Saving is blocked until each slot has an image.'}
-        </p>
-        {data.communityPhotos.map((p, i) => (
-          <div key={i} className="admin-subcard">
-            <div className="admin-card-head">
-              <h3>
-                {zh ? '社区图片' : 'Community photo'} {i + 1} <span className="req">*</span>
-              </h3>
-            </div>
-            <ImageField
-              label={lb('Image (required)', '图片（必填）')}
-              value={p.src}
-              onChange={(v) => setPhoto('communityPhotos', i, { src: v })}
-              lang={lang}
-            />
-            <div className="admin-grid-2">
-              <Field
-                label={lb('Alt (EN)', '图片说明（英文）')}
-                value={p.altEn}
-                onChange={(v) => setPhoto('communityPhotos', i, { altEn: v })}
-              />
-              <Field
-                label={lb('Alt (ZH)', '图片说明（中文）')}
-                value={p.altZh}
-                onChange={(v) => setPhoto('communityPhotos', i, { altZh: v })}
+                onChange={(v) => setPhoto(i, { altZh: v })}
               />
             </div>
           </div>

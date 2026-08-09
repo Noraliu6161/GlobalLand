@@ -71,18 +71,23 @@ function legacyToBlocks(en: unknown, zh: unknown): ContentBlock[] {
   return blocks
 }
 
+/** Prefer existing blocks; otherwise migrate from legacy EN/ZH body fields. */
+export function ensureBlocks(
+  blocks: ContentBlock[] | undefined,
+  bodyEn?: unknown,
+  bodyZh?: unknown,
+): ContentBlock[] {
+  if (Array.isArray(blocks) && blocks.length > 0) {
+    return blocks.map((b) => ({ ...b, id: b.id || uid() }))
+  }
+  return legacyToBlocks(bodyEn, bodyZh)
+}
+
 /** Ensure article has `blocks`; migrate from legacy body fields if needed. */
 export function ensureArticleBlocks(article: NewsArticle): NewsArticle {
-  if (Array.isArray(article.blocks) && article.blocks.length > 0) {
-    return {
-      ...article,
-      blocks: article.blocks.map((b) => ({ ...b, id: b.id || uid() })),
-    }
-  }
-  const migrated = legacyToBlocks(article.bodyEn, article.bodyZh)
   return {
     ...article,
-    blocks: migrated.length ? migrated : [],
+    blocks: ensureBlocks(article.blocks, article.bodyEn, article.bodyZh),
   }
 }
 

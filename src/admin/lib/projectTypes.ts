@@ -1,4 +1,6 @@
 import { sortProjectsByOrder } from '../../lib/projectOrder'
+import { ensureBlocks } from '../../lib/newsBlocks'
+import type { ContentBlock } from '../../data/newsTypes'
 import projectOrderBundled from '../../../content/project-order.json'
 
 export type ProjectRecord = {
@@ -19,9 +21,12 @@ export type ProjectRecord = {
   lng: number
   summaryEn: string
   summaryZh: string
+  /** @deprecated Migrated into blocks */
   bodyEn: string
+  /** @deprecated Migrated into blocks */
   bodyZh: string
   bodyFont: string
+  blocks: ContentBlock[]
   highlightsEn: string[]
   highlightsZh: string[]
   /** Cover — synced to images[0] on save */
@@ -33,6 +38,13 @@ export type ProjectRecord = {
   relatedEntity?: string
   featured: boolean
   published: boolean
+}
+
+export function withProjectBlocks(record: ProjectRecord): ProjectRecord {
+  return {
+    ...record,
+    blocks: ensureBlocks(record.blocks, record.bodyEn, record.bodyZh),
+  }
 }
 
 function bundledOrder(): string[] {
@@ -78,6 +90,7 @@ export function emptyProject(): ProjectRecord {
     bodyEn: '',
     bodyZh: '',
     bodyFont: 'body',
+    blocks: [],
     highlightsEn: [],
     highlightsZh: [],
     image: '',
@@ -97,7 +110,7 @@ export function loadProjectsFromModules(): ProjectRecord[] {
   const list = Object.values(modules).map((m) => {
     const merged = { ...emptyProject(), ...m.default }
     const { image, images } = normalizeProjectImages(merged)
-    return { ...merged, image, images }
+    return withProjectBlocks({ ...merged, image, images })
   })
   return sortProjectsByOrder(list, bundledOrder())
 }
@@ -117,7 +130,7 @@ export async function loadProjectsForAdmin(): Promise<ProjectRecord[]> {
   const list = remote.map(({ data }) => {
     const merged = { ...emptyProject(), ...data }
     const { image, images } = normalizeProjectImages(merged)
-    return { ...merged, image, images }
+    return withProjectBlocks({ ...merged, image, images })
   })
   return sortProjectsByOrder(list, order)
 }

@@ -73,7 +73,7 @@ const en: Dict = {
   'news.eventDetails': 'Event Details',
 
   'projects.eyebrow': 'Portfolio',
-  'projects.title': 'Projects across the Pacific Northwest',
+  'projects.title': 'Projects across Washington State',
   'projects.lead':
     '* Browse by city or property type, then select a project to see it on the map.',
   'projects.allCities': 'All cities',
@@ -154,7 +154,7 @@ const en: Dict = {
   'contact.error': 'Something went wrong. Please try again or email us directly.',
 
   'footer.blurb':
-    'Low-density residential development and high-quality commercial real estate investment across Seattle and the Pacific Northwest.',
+    'Low-density residential development and high-quality commercial real estate investment across Seattle and Washington State.',
   'footer.explore': 'Explore',
   'footer.company': 'Company',
   'footer.portfolio': 'Project portfolio',
@@ -238,7 +238,7 @@ const zh: Dict = {
   'news.eventDetails': '活动详情',
 
   'projects.eyebrow': '项目',
-  'projects.title': '遍布太平洋西北的项目版图',
+  'projects.title': '遍布华盛顿州的项目版图',
   'projects.lead': '* 可按城市或物业类型浏览，点选项目即可在地图上查看位置。',
   'projects.allCities': '全部城市',
   'projects.allTypes': '全部类型',
@@ -317,7 +317,7 @@ const zh: Dict = {
   'contact.error': '发送失败，请稍后再试，或直接发邮件联系我们。',
 
   'footer.blurb':
-    '在西雅图与太平洋西北地区，专注低密度住宅开发与高品质商业地产投资。',
+    '在西雅图与华盛顿州地区，专注低密度住宅开发与高品质商业地产投资。',
   'footer.explore': '探索',
   'footer.company': '公司',
   'footer.portfolio': '项目组合',

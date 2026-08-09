@@ -28,7 +28,7 @@ export function OverviewPage({ lang }: { lang: AdminLang }) {
           { title: 'Projects', desc: `Live portfolio · ${published}`, edit: '/projects', live: '/projects' },
           { title: 'Company', desc: 'Company page (copy in i18n for now)', edit: '/about', live: '/company' },
           { title: 'News', desc: 'Live news and events', edit: '/news', live: '/news' },
-          { title: 'About', desc: 'Story, collage images, community copy', edit: '/about', live: '/about' },
+          { title: 'About', desc: 'Story and team collage images', edit: '/about', live: '/about' },
           { title: 'Trash', desc: 'Deleted items — not on the website', edit: '/trash', live: '' },
           { title: 'Contact', desc: 'Office and inquiry form', edit: '', live: '/contact' },
         ]

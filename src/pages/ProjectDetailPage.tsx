@@ -1,4 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
+import { ContentBlocks } from '../components/ContentBlocks'
 import { ProjectBody } from '../components/ProjectBody'
 import { ProjectImageCarousel } from '../components/ProjectImageCarousel'
 import { pickList, pickText } from '../lib/localized'
@@ -100,7 +101,11 @@ export function ProjectDetailPage() {
             </dl>
           ) : null}
 
-          <ProjectBody body={body} fallback={summary} bodyFont={project.bodyFont} />
+          {project.blocks && project.blocks.length > 0 ? (
+            <ContentBlocks blocks={project.blocks} lang={lang} className="project-detail-body news-article-body news-blocks" />
+          ) : (
+            <ProjectBody body={body} fallback={summary} bodyFont={project.bodyFont} />
+          )}
 
           {highlights.length > 0 ? (
             <>

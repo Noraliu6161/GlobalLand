@@ -1,5 +1,7 @@
 import type { Project, ProjectType, ProjectStatus } from '../data/projects'
+import type { ContentBlock } from '../data/newsTypes'
 import { coerceLocalized, type LocalizedList, type LocalizedString } from './localized'
+import { ensureBlocks } from './newsBlocks'
 import { sortProjectsByOrder } from './projectOrder'
 
 type ContentProject = {
@@ -14,6 +16,7 @@ type ContentProject = {
   summaryZh?: string
   bodyEn?: string
   bodyZh?: string
+  blocks?: ContentBlock[]
   highlightsEn?: string[]
   highlightsZh?: string[]
   // Legacy nested / broken Map-string forms
@@ -127,6 +130,7 @@ function normalize(doc: ContentProject): Project {
     summary: fromFlatOrLegacy(doc.summaryEn, doc.summaryZh, doc.summary),
     body: fromFlatOrLegacy(doc.bodyEn, doc.bodyZh, doc.body),
     bodyFont: doc.bodyFont || 'body',
+    blocks: ensureBlocks(doc.blocks, doc.bodyEn, doc.bodyZh),
     highlights: listFromFlatOrLegacy(doc.highlightsEn, doc.highlightsZh, doc.highlights),
     image,
     images,

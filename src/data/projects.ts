@@ -1,4 +1,5 @@
 import type { LocalizedList, LocalizedString } from '../lib/localized'
+import type { ContentBlock } from './newsTypes'
 
 export type ProjectType = 'condo' | 'sfh' | 'townhouse' | 'office' | 'mixed'
 export type ProjectStatus = 'completed' | 'in-progress' | 'acquired' | 'sold'
@@ -18,8 +19,11 @@ export interface Project {
   lat: number
   lng: number
   summary: LocalizedString
+  /** @deprecated Prefer blocks; kept for legacy Markdown fallback */
   body?: LocalizedString
   bodyFont?: 'body' | 'display' | 'serif' | 'sans-sc' | 'serif-sc'
+  /** Modular body like news: text / image / gallery */
+  blocks?: ContentBlock[]
   highlights: LocalizedList
   /** Cover image — always images[0] */
   image: string

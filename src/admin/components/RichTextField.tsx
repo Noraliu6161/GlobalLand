@@ -3,8 +3,18 @@ import { EditorContent, useEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 import Link from '@tiptap/extension-link'
 import Underline from '@tiptap/extension-underline'
+import { TextStyle } from '@tiptap/extension-text-style'
+import { Color } from '@tiptap/extension-color'
 import type { AdminLang } from '../lib/i18n'
 import { toHtml } from '../../lib/newsHtml'
+
+const PRESET_COLORS = [
+  { value: '#1a3a32', label: 'Ink' },
+  { value: '#2f8f86', label: 'Teal' },
+  { value: '#b45309', label: 'Amber' },
+  { value: '#b91c1c', label: 'Red' },
+  { value: '#1d4ed8', label: 'Blue' },
+]
 
 export function RichTextField({
   label,
@@ -32,6 +42,8 @@ export function RichTextField({
         heading: { levels: [2, 3] },
       }),
       Underline,
+      TextStyle,
+      Color,
       Link.configure({
         openOnClick: false,
         HTMLAttributes: { rel: 'noopener noreferrer', target: '_blank' },
@@ -56,6 +68,7 @@ export function RichTextField({
   if (!editor) return null
 
   const empty = editor.isEmpty
+  const currentColor = (editor.getAttributes('textStyle').color as string | undefined) || '#1a3a32'
 
   const setLink = () => {
     const prev = editor.getAttributes('link').href as string | undefined
@@ -87,6 +100,33 @@ export function RichTextField({
               () => editor.chain().focus().toggleUnderline().run(),
               <span style={{ textDecoration: 'underline' }}>U</span>,
               'Underline',
+            )}
+          </div>
+          <span className="admin-rte-sep" aria-hidden />
+          <div className="admin-rte-group admin-rte-colors" title={zh ? '文字颜色' : 'Text color'}>
+            {PRESET_COLORS.map((c) => (
+              <button
+                key={c.value}
+                type="button"
+                className={currentColor.toLowerCase() === c.value.toLowerCase() ? 'is-on' : undefined}
+                title={c.label}
+                style={{ background: c.value }}
+                aria-label={c.label}
+                onClick={() => editor.chain().focus().setColor(c.value).run()}
+              />
+            ))}
+            <label className="admin-rte-color-pick" title={zh ? '自定义颜色' : 'Custom color'}>
+              <input
+                type="color"
+                value={/^#[0-9a-fA-F]{6}$/.test(currentColor) ? currentColor : '#1a3a32'}
+                onChange={(e) => editor.chain().focus().setColor(e.target.value).run()}
+              />
+            </label>
+            {btn(
+              false,
+              () => editor.chain().focus().unsetColor().run(),
+              zh ? '默认色' : 'Reset',
+              zh ? '清除文字颜色' : 'Clear text color',
             )}
           </div>
           <span className="admin-rte-sep" aria-hidden />

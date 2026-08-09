@@ -30,38 +30,6 @@ export function AboutConceptShell({
         </div>
         {teamVisual}
       </div>
-
-      <section className="section" style={{ paddingBottom: 0 }}>
-        <p className="eyebrow">{aboutText(a.communityEyebrowEn, a.communityEyebrowZh, lang)}</p>
-        <h2 className="section-title">{aboutText(a.communityTitleEn, a.communityTitleZh, lang)}</h2>
-        <div className="split-media split-media--community">
-          <div className="about-mosaic about-mosaic--community" aria-label="Community engagement">
-            <div className="about-mosaic-row about-mosaic-row--2">
-              {a.communityPhotos.slice(0, 2).map((p, i) => (
-                <figure key={`${p.src}-${i}`} className={`about-mosaic-cell ${i === 1 ? 'is-portrait' : ''}`}>
-                  <img src={p.src} alt={lang === 'zh' ? p.altZh || p.altEn : p.altEn} loading="lazy" />
-                </figure>
-              ))}
-            </div>
-            <div className="about-mosaic-row about-mosaic-row--community-bottom">
-              {a.communityPhotos.slice(2, 4).map((p, i) => (
-                <figure key={`${p.src}-${i}`} className={`about-mosaic-cell ${i === 0 ? 'is-narrow' : ''}`}>
-                  <img src={p.src} alt={lang === 'zh' ? p.altZh || p.altEn : p.altEn} loading="lazy" />
-                </figure>
-              ))}
-            </div>
-          </div>
-          <div>
-            <p className="prose">{aboutText(a.communityEn, a.communityZh, lang)}</p>
-            <p className="prose">{aboutText(a.returnsEn, a.returnsZh, lang)}</p>
-            <img
-              className="about-cccwa-logo"
-              src={a.cccwaLogo}
-              alt="Chinese Chamber of Commerce in Washington State"
-            />
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

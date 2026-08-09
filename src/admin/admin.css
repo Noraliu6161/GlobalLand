@@ -473,6 +473,21 @@ a {
   flex-wrap: wrap;
   gap: 0.4rem;
   justify-content: flex-end;
+  align-items: center;
+}
+
+.admin-order-btns {
+  display: inline-flex;
+  gap: 0.2rem;
+  margin-right: 0.15rem;
+}
+
+.admin-btn-icon {
+  min-width: 2rem;
+  padding-left: 0.45rem;
+  padding-right: 0.45rem;
+  font-size: 0.95rem;
+  line-height: 1;
 }
 
 .admin-quick {
@@ -1013,6 +1028,35 @@ a {
   background: rgba(47, 143, 134, 0.14);
   border-color: rgba(47, 143, 134, 0.4);
   color: var(--gl-teal-deep);
+}
+
+.admin-rte-colors button[style] {
+  width: 1.35rem;
+  height: 1.35rem;
+  padding: 0;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.admin-rte-colors button[style].is-on {
+  outline: 2px solid var(--teal, #2f8f86);
+  outline-offset: 1px;
+}
+
+.admin-rte-color-pick {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+}
+
+.admin-rte-color-pick input[type='color'] {
+  width: 1.55rem;
+  height: 1.55rem;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
 }
 
 .admin-rte-toolbar button:disabled {

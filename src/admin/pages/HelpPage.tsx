@@ -19,9 +19,9 @@ export function HelpPage({ lang }: { lang: AdminLang }) {
             body: [
               '左侧菜单里「首页 / 项目 / 新闻 / 关于」编辑的就是网站将要展示的内容。点「保存更改」后写入仓库，但正式站要等「发布」后才会更新。',
               '首页：改主视觉文案、项目导览、数据与页脚等模块；英中字段成对填写。',
-              '项目：列表里新建或打开项目。填写名称、城市、状态、封面图、正文要点等。公开页上的外链填在项目的链接字段。不想展示的项目请删除进废纸篓，不要只改成草稿。',
+              '项目：列表里新建或打开项目。填写名称、城市、状态、封面图、摘要等。正文用「项目内容块」（与新闻相同）：「+ 文本块」「+ 图片块」「+ 图集」可混排。公开页外链填在链接字段。不想展示的请删除进废纸篓。',
               '新闻：列表里新建或打开文章。先填基础信息（类型 News/Event、日期、标题、摘要、封面）。正文用「文章内容块」：用「+ 文本块」写富文本（加粗、标题、列表、链接），用「+ 图片块」或「+ 图集」加图——图与文字分开，互不覆盖。活动类可再填活动详情、报名链接。',
-              '关于：改公司介绍、时间线等英中文案与配图。',
+              '关于：改公司介绍与团队拼贴图等英中文案与配图。',
               '图片：在图片字段用 Upload 上传，或 Library 从图库选用；保存后路径会写入内容文件。',
               '改完可先到「发布」页点「预览网站」检查，确认无误再发布正式站。',
             ],
@@ -69,9 +69,9 @@ export function HelpPage({ lang }: { lang: AdminLang }) {
             body: [
               'Homepage / Projects / News / About are the content that should match the website. Save writes to the repo; the live site updates only after you Publish.',
               'Homepage: edit hero copy, project rail, stats, footer, and related modules. Fill EN and ZH fields as pairs.',
-              'Projects: create or open a project. Set name, city, status, cover image, body highlights, and the public link field if needed. Remove items you do not want shown by deleting them to Trash (do not leave unwanted items in the live list).',
+              'Projects: create or open a project. Set name, city, status, cover, summary. Build the body with Project content blocks (same as News: text / image / gallery). Use the link field for public URLs. Remove unwanted items via Trash.',
               'News: create or open an article. Fill basics first (News/Event, date, title, summary, cover). Build the body with Article content blocks: + Text block for rich text (bold, headings, lists, links); + Image block or + Image gallery for photos—text and images stay separate so uploads do not overwrite each other. For Events, also fill Event details and optional Register URL.',
-              'About: edit company story, timeline, and bilingual copy/images.',
+              'About: edit company story and team collage images.',
               'Images: use Upload or Library on image fields; the path is saved with the content.',
               'After editing, use Preview site on the Publish page, then Publish when everything looks right.',
             ],

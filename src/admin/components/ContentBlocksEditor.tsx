@@ -8,10 +8,13 @@ export function ContentBlocksEditor({
   lang,
   blocks,
   onChange,
+  title,
 }: {
   lang: AdminLang
   blocks: ContentBlock[]
   onChange: (blocks: ContentBlock[]) => void
+  /** Override default “Article content blocks” heading */
+  title?: string
 }) {
   const zh = lang === 'zh'
 
@@ -35,7 +38,7 @@ export function ContentBlocksEditor({
 
   return (
     <div className="admin-blocks">
-      <h2 className="admin-blocks-title">{zh ? '文章内容块' : 'Article content blocks'}</h2>
+      <h2 className="admin-blocks-title">{title || (zh ? '文章内容块' : 'Article content blocks')}</h2>
 
       <div className="admin-blocks-list">
         {blocks.length === 0 ? (

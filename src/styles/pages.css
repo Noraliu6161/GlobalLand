@@ -950,6 +950,10 @@
   flex-wrap: wrap;
 }
 
+.project-detail-body {
+  margin: 1.25rem 0 0;
+}
+
 .project-name-link {
   display: inline-flex;
   align-items: center;
@@ -2546,6 +2550,11 @@
   color: var(--teal);
 }
 
+.news-rich strong {
+  font-weight: 700;
+  color: var(--teal-deep, #1a3a32);
+}
+
 .news-blocks {
   display: grid;
   gap: 1.25rem;
@@ -2564,6 +2573,12 @@
   border-radius: 12px;
   overflow: hidden;
   background: var(--paper-2, #ebe7e0);
+}
+
+/* Single image: original layout, slightly smaller than full width */
+.news-block--image {
+  width: 88%;
+  max-width: 100%;
 }
 
 .news-block--image img,

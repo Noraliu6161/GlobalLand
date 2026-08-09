@@ -8,22 +8,27 @@ function escapeHtml(s: string) {
     .replaceAll('"', '&quot;')
 }
 
+/** Convert leftover Markdown **bold** (often pasted into HTML) into real <strong>. */
+function markdownBoldToHtml(s: string) {
+  return s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+}
+
 export function toHtml(value: string | string[] | undefined | null): string {
   if (value == null || value === '') return ''
   if (Array.isArray(value)) {
     return value
       .filter((line) => String(line).trim())
-      .map((line) => `<p>${escapeHtml(String(line))}</p>`)
+      .map((line) => `<p>${markdownBoldToHtml(escapeHtml(String(line)))}</p>`)
       .join('')
   }
   const s = String(value)
-  // Already HTML
-  if (/<[a-z][\s\S]*>/i.test(s)) return s
+  // Already HTML (may still contain raw **…** from Markdown)
+  if (/<[a-z][\s\S]*>/i.test(s)) return markdownBoldToHtml(s)
   // Plain text → paragraphs
   return s
     .split(/\n+/)
     .filter((line) => line.trim())
-    .map((line) => `<p>${escapeHtml(line)}</p>`)
+    .map((line) => `<p>${markdownBoldToHtml(escapeHtml(line))}</p>`)
     .join('')
 }
 
