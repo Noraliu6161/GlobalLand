@@ -19,7 +19,141 @@
   "bodyEn": "",
   "bodyZh": "",
   "bodyFont": "body",
-  "blocks": [],
+  "blocks": [
+    {
+      "id": "b-msmnlymm-gzp18",
+      "type": "text",
+      "textEn": "<p><strong>Located in the heart of the Twin-City hub, this is a rare real estate value opportunity.</strong></p><p>Centrally situated along the I-5 corridor, Centralia offers direct access to both Seattle and Portland—just 1.5 hours north to Seattle and 1.5 hours south to Portland, placing you right in the middle of a vibrant two-city lifestyle. Compared to Seattle's soaring home prices, local properties here are priced at only one-third of Seattle's average, making the value advantage unmistakably clear.</p>",
+      "textZh": "<h3><strong>双城枢纽腹地</strong></h3><h3><strong>不可多得的房产价值洼地</strong></h3><p></p><p>Centralia 坐落于 I-5 走廊正中心，向北 1.5 小时直达西雅图，向南 1.5 小时连通波特兰，坐拥双城生活圈。对比西雅图高昂房价，本地房价仅为西雅图的 1/3，性价比优势一目了然。</p>"
+    },
+    {
+      "id": "b-msmo1sn6-7j2b8",
+      "type": "image",
+      "src": "/images/uploads/1786332185366-640.jpg",
+      "altEn": "",
+      "altZh": ""
+    },
+    {
+      "id": "b-msmo7tul-12lel",
+      "type": "text",
+      "textEn": "<p>With a steady influx of tech professionals, military personnel, and retiring families, regional housing demand continues to rise steadily. As a key transportation and logistics hub in Washington State, Centralia boasts a well-established transportation network, anchored by the BNSF railway, I-5 interstate highway, and Amtrak intercity rail. Major enterprises such as UNFI and Amazon distribution centers have established their presence here. With a local workforce of over 30,000 providing consistent economic support, rental demand remains robust, laying a solid foundation for long-term property value appreciation and stability.</p>",
+      "textZh": "<p>伴随着科技从业者、军人、退休家庭持续迁入，区域住房需求稳步攀升。作为华州重要交通物流枢纽，Centralia 交通路网成熟完善：BNSF 铁路、I-5 洲际高速、Amtrak 城际铁路交汇，UNFI、亚马逊分拨中心等大型企业落地扎根。超 3 万本地就业人口持续托底，租赁需求稳固，为房产保值增值筑牢基础。</p>"
+    },
+    {
+      "id": "b-msmo83ek-hdgzw",
+      "type": "image",
+      "src": "/images/uploads/1786332463831-640__1_.jpg",
+      "altEn": "",
+      "altZh": ""
+    },
+    {
+      "id": "b-msmo8t5x-0y2sd",
+      "type": "text",
+      "textEn": "<p>Life in this small city is equally serene and livable—with a low crime rate, quality school districts, and abundant power resources, it is also a prime candidate city for data centers. As the city's growth dividends continue to materialize, now is the time to secure your position in the last value pocket along the Seattle–Portland corridor.</p><p></p><p><strong>Riverfront Living — Private First-Class Waterfront Views</strong></p><p></p><p>Nestled in downtown Centralia along the banks of the Skookumchuck River, the Riverfront Garden Villa Community is built to embrace the water. Between the residences and the river stretch expansive lawn gardens—a rare riverfront landscape asset that grows increasingly precious amid ongoing urbanization.</p>",
+      "textZh": "<p>小城生活同样从容宜居：低犯罪率、优质学区、充沛电力资源，也是热门数据中心候选城市。城市发展红利持续兑现，此刻入场，占位西雅图 — 波特兰走廊最后的价格洼地。</p><p></p><h3><strong>滨河而居</strong></h3><h3><strong>私享一线河景风光</strong></h3><p></p><p>河畔花园别墅社区选址 Centralia 市中心，依 Skookumchuck River 河岸修建。住宅与河道之间，绵延开阔草坪花园，稀缺滨河景观资源，在城市化进程中愈发珍贵。</p>"
+    },
+    {
+      "id": "b-msmo9q0k-a2k4f",
+      "type": "image",
+      "src": "/images/uploads/1786332539722-640__2_.jpg",
+      "altEn": "",
+      "altZh": ""
+    },
+    {
+      "id": "b-msmo9y1h-y76hz",
+      "type": "text",
+      "textEn": "<p>Surrounded by expansive parks and equipped with complete commercial amenities, and situated near the Chehalis-Centralia Airport, this community offers the perfect balance of nature and convenience. No need to travel far—a \"micro-vacation\" starts right at your doorstep. Stroll through the woods or relax by the river. For children who love nature, exploring freely among the trees, waters, and hills offers a one-of-a-kind growth experience.</p><p></p><p><strong>Seven Key Demand Drivers Providing Strong Market Support</strong></p><p></p><p>Military Families | The \"golden tenant base\" in the long-term rental market, delivering steady returns</p><p>University Dividend | Over 4,800 students and faculty members fueling overwhelming rental demand</p><p>Outlet Business District | Management and staff—a stable rental community</p><p>Regional Silver Economy | Healthcare and senior care driving essential rental demand</p><p>I-5 Logistics Hub | Skilled blue-collar workers and management seeking quality rental options</p><p>State Capitol Spillover Effect | Government employees as preferred tenants with top-tier credit profiles</p><p>Anchor Industry Support | High-wage blue-collar workers strengthening the rental market fundamentals</p><p></p><p><strong>Project Core Information</strong></p>",
+      "textZh": "<p>大型公园环绕，商业配套齐全，邻近 Chehalis-Centralia 机场，自然与便利兼得。不必长途远行，家门口就能开启 “微度假”。林间漫步、河畔休闲，对于喜爱自然的孩子而言，在草木山河间自由探索，收获独一无二的成长体验。</p><p></p><h3>七大刚需强力托底</h3><p></p><ul><li><p><strong>军人家庭 | 长租市场“黄金客群”收益稳如磐石</strong></p></li><li><p><strong>高校红利 | 4800+师生刚需，租房需求供不应求</strong></p></li><li><p><strong>奥特莱斯商圈 | 管理层+员工，稳定租住群体</strong></p></li><li><p><strong>区域银发经济 | 医疗+养老，催生刚性租住需求</strong></p></li><li><p><strong>I-5物流枢纽 | 高级蓝领+管理层，品质租住首选</strong></p></li><li><p><strong>州府溢出效应 | 公务员优选，租客信用拉满</strong></p></li><li><p><strong>支柱产业加持 | 高薪蓝领，夯实租赁基本面‍</strong></p></li></ul><p></p><h3><strong>项目核心信息</strong></h3><p></p>"
+    },
+    {
+      "id": "b-msmqzv58-t4zge",
+      "type": "image",
+      "src": "/images/uploads/1786337121532-640__3_.jpg",
+      "altEn": "",
+      "altZh": ""
+    },
+    {
+      "id": "b-msmr0434-722ci",
+      "type": "text",
+      "textEn": "<ul><li><p><strong>Project Name:</strong> Riverside Gardens</p></li><li><p><strong>Location:</strong> Centralia, Washington</p></li><li><p><strong>Site Area:</strong> 16 acres</p></li><li><p><strong>Single-Family &amp; Duplex Villas:</strong> 49 units</p></li><li><p><strong>Townhouses:</strong> 39 units</p></li><li><p><strong>Delivery:</strong> Phased occupancy starting from late 2026</p></li><li><p><strong>Low-density planning ensures residential privacy and community comfort.</strong></p></li></ul><p></p><p><strong>Backed by an Experienced Developer — Two Decades of Deep Roots in Washington State Real Estate</strong></p><p></p><p>This project is developed and managed by New Home Real Estate Development &amp; Management Co. Founded in 2016, the company's core team brings over 20 years of expertise in large-scale real estate development and management across Washington State.</p>",
+      "textZh": "<ul><li><p><span>项目名称：河畔花园 Riverside Gardens</span></p></li><li><p><span>所在城市：华盛顿州 / Centralia市</span></p></li><li><p><span>占地面积：16 英亩</span></p></li><li><p><span>独栋 / 双单元别墅：49 户</span></p></li><li><p><span>联排别墅：39 户</span></p></li><li><p><span>交付时间：2026 年年底起分批入住</span></p></li><li><p><span>低密度规划，保障居住私密性与社区舒适度</span><br></p></li></ul><h3><strong>实力开发商护航</strong></h3><h3><strong>深耕华州地产二十载</strong></h3><h3></h3><p><span>本项目由新居地产开发管理公司打造。企业成立于 2016 年，核心团队拥有20 年华盛顿州大型地产开发管理经验。</span></p>"
+    },
+    {
+      "id": "b-msmr0k6a-d78cb",
+      "type": "image",
+      "src": "/images/uploads/1786337153162-640__4_.jpg",
+      "altEn": "",
+      "altZh": ""
+    },
+    {
+      "id": "b-msmr0ude-kvspe",
+      "type": "text",
+      "textEn": "<p><strong>The developer's core members collectively own over 5 million square feet of leased and developable real estate across Washington State, backed by a solid track record and numerous delivered projects. Notable communities developed by the team include Mira Flat, The Emerald, Forum South Park, Florera, Evergreen Townhomes, Belleview Park, and many other mid-to-large-scale residential communities. With mature development expertise and standardized project management, the team provides homeowners with reliable assurance throughout the ownership journey.</strong></p><p></p><p><strong>Dual Opportunity — Ideal for Both Homeowners and Investors</strong></p><p></p><ul><li><p><strong>For Homeowners:</strong> Quality school districts, a safe and secure community, and a picturesque riverfront natural environment make this an ideal place for families to settle long-term, with the added benefit of convenient commuting between two major cities.</p></li><li><p><strong>For Investors:</strong> Sustained population inflow, a solid employment base, and strong rental demand—combined with a regional market on the rise and a lower entry point—make this a compelling investment opportunity.</p></li></ul><p></p>",
+      "textZh": "<p><span>开发商核心成员在华盛顿州持有租赁及待开发地产总面积超 500 万平方英尺，履历扎实，落地作品众多：Mira Flat、The Emerald、Forum South Park、Florera、Evergreen Townhomes、Belleview Park 等多个中大型社区均出自团队操盘。成熟开发经验、标准化工程管理，为业主置业保驾护航。</span><strong><br></strong></p><p><strong>自住 &amp; 投资双重机遇</strong><br></p><ul><li><p><span><strong>自住优选：</strong>优质学区、治安良好、滨河自然环境，适合家庭长期定居，兼顾双城通勤</span></p></li><li><p><span><strong>投资优势：</strong>人口持续流入、就业底盘稳固，租赁需求旺盛；区域价值处于上升通道，入手门槛更低</span></p></li></ul><p></p>"
+    },
+    {
+      "id": "b-msmr57bm-hcp7c",
+      "type": "image",
+      "src": "/images/uploads/1786337371317-ScreenShot_2026-08-10_124725_248.jpg",
+      "altEn": "",
+      "altZh": ""
+    },
+    {
+      "id": "b-msmr5h84-e3itk",
+      "type": "image",
+      "src": "/images/uploads/1786337500057-ScreenShot_2026-08-10_125126_671.jpg",
+      "altEn": "",
+      "altZh": ""
+    },
+    {
+      "id": "b-msmr88mt-ofrvb",
+      "type": "image",
+      "src": "/images/uploads/1786337511511-ScreenShot_2026-08-10_124751_883.jpg",
+      "altEn": "",
+      "altZh": ""
+    },
+    {
+      "id": "b-msmr8fwd-n1ad2",
+      "type": "image",
+      "src": "/images/uploads/1786337660719-ScreenShot_2026-08-10_125408_570.jpg",
+      "altEn": "",
+      "altZh": ""
+    },
+    {
+      "id": "b-msmrbnct-cqgme",
+      "type": "image",
+      "src": "/images/uploads/1786337671358-ScreenShot_2026-08-10_124819_563.jpg",
+      "altEn": "",
+      "altZh": ""
+    },
+    {
+      "id": "b-msmrciis-8m62q",
+      "type": "image",
+      "src": "/images/uploads/1786337709901-ScreenShot_2026-08-10_125456_747.jpg",
+      "altEn": "",
+      "altZh": ""
+    },
+    {
+      "id": "b-msmrcpa5-w0yzy",
+      "type": "image",
+      "src": "/images/uploads/1786337719703-ScreenShot_2026-08-10_124905_980.jpg",
+      "altEn": "",
+      "altZh": ""
+    },
+    {
+      "id": "b-msmrcwbr-xbrnd",
+      "type": "image",
+      "src": "/images/uploads/1786337729682-ScreenShot_2026-08-10_124915_535.jpg",
+      "altEn": "",
+      "altZh": ""
+    },
+    {
+      "id": "b-msmrd61m-18sqo",
+      "type": "text",
+      "textEn": "<p>With home prices in Seattle and Portland soaring to new heights, Centralia's Riverside Gardens offers an opportunity you won't want to miss—where quality living meets affordable homeownership.</p>",
+      "textZh": "<p>西雅图、波特兰房价高企，想要兼顾生活品质与置业成本，Centralia 河畔花园别墅，是不容错过的选择。</p>"
+    }
+  ],
   "highlightsEn": [],
   "highlightsZh": [],
   "image": "/images/uploads/1786074684868-_____20260624143128_333_176.jpg",
