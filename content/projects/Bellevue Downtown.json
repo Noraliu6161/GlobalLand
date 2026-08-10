@@ -1,0 +1,33 @@
+{
+  "id": "Bellevue Downtown",
+  "slug": "Bellevue Downtown",
+  "nameEn": "MARI",
+  "nameZh": "美丽都二期",
+  "cityEn": "Bellevue",
+  "cityZh": "贝尔维尤",
+  "type": "condo",
+  "status": "acquired",
+  "units": 138,
+  "buildings": null,
+  "saleValueM": null,
+  "acquisitionPriceM": null,
+  "year": 2021,
+  "lat": 47.61996951771888,
+  "lng": 122.20327066252628,
+  "summaryEn": "1085 103rd Ave NE, Bellevue, WA 98004",
+  "summaryZh": "1085 103rd Ave NE, Bellevue, WA 98004",
+  "bodyEn": "",
+  "bodyZh": "",
+  "bodyFont": "body",
+  "blocks": [],
+  "highlightsEn": [],
+  "highlightsZh": [],
+  "image": "/images/uploads/1786338416654-ScreenShot_2026-08-10_130646_978.jpg",
+  "images": [
+    "/images/uploads/1786338416654-ScreenShot_2026-08-10_130646_978.jpg"
+  ],
+  "link": "",
+  "relatedEntity": "",
+  "featured": false,
+  "published": true
+}
