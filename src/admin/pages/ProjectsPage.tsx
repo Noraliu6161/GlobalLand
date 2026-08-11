@@ -29,14 +29,16 @@ function liveProjects() {
 
 async function persistProjectOrder(slugs: string[]): Promise<string | null> {
   const res = await saveContentFile('content/project-order.json', slugs)
-  if (!res.ok) return res.error
+  return res.ok ? null : res.error
+}
 
-  // Push the same order to main so the public site rebuilds to match admin.
-  if (!import.meta.env.DEV) {
-    const sync = await callCmsFunction('sync-project-order', { order: slugs })
-    if (!sync.ok) {
-      return String(sync.data.error || 'Order saved to drafts, but live site sync failed. Use Publish.')
-    }
+async function syncOrderToLive(slugs: string[]): Promise<string | null> {
+  if (import.meta.env.DEV) {
+    return 'Live sync only works on the deployed admin (/admin).'
+  }
+  const sync = await callCmsFunction('sync-project-order', { order: slugs })
+  if (!sync.ok) {
+    return String(sync.data.error || 'Could not sync order to the live site.')
   }
   return null
 }
@@ -135,8 +137,8 @@ export function ProjectsPage({ lang }: { lang: AdminLang }) {
       err
         ? err
         : lang === 'zh'
-          ? '排序已保存，并已同步正式站（约 1–3 分钟后刷新网站可见）。'
-          : 'Order saved and synced to the live site. Refresh the site in 1–3 minutes.',
+          ? '排序已保存。点「同步到网站」后正式站才会更新（每次同步会消耗部署积分）。'
+          : 'Order saved. Click “Sync to site” to update production (each sync uses deploy credits).',
     )
   }
 
@@ -156,8 +158,30 @@ export function ProjectsPage({ lang }: { lang: AdminLang }) {
       err
         ? err
         : lang === 'zh'
-          ? '排序已保存，并已同步正式站（约 1–3 分钟后刷新网站可见）。'
-          : 'Order saved and synced to the live site. Refresh the site in 1–3 minutes.',
+          ? '排序已保存。点「同步到网站」后正式站才会更新（每次同步会消耗部署积分）。'
+          : 'Order saved. Click “Sync to site” to update production (each sync uses deploy credits).',
+    )
+  }
+
+  const [syncBusy, setSyncBusy] = useState(false)
+  const pushOrderLive = async () => {
+    setSyncBusy(true)
+    setOrderStatus(lang === 'zh' ? '正在同步到正式站…' : 'Syncing to live site…')
+    const slugs = projectsRef.current.map((p) => p.slug)
+    const saveErr = await persistProjectOrder(slugs)
+    if (saveErr) {
+      setSyncBusy(false)
+      setOrderStatus(saveErr)
+      return
+    }
+    const syncErr = await syncOrderToLive(slugs)
+    setSyncBusy(false)
+    setOrderStatus(
+      syncErr
+        ? syncErr
+        : lang === 'zh'
+          ? '已提交正式站部署，约 1–3 分钟后刷新网站查看。'
+          : 'Production deploy started. Refresh the site in 1–3 minutes.',
     )
   }
 
@@ -168,16 +192,26 @@ export function ProjectsPage({ lang }: { lang: AdminLang }) {
       <PageHeader
         title={t.projects}
         action={
-          <Link className="admin-btn admin-btn-primary" to="/projects/new">
-            {zh ? '+ 新建项目' : '+ New project'}
-          </Link>
+          <div className="admin-row-actions">
+            <button
+              type="button"
+              className="admin-btn admin-btn-primary"
+              disabled={syncBusy || !!busySlug}
+              onClick={() => void pushOrderLive()}
+            >
+              {syncBusy ? (zh ? '同步中…' : 'Syncing…') : zh ? '同步排序到网站' : 'Sync order to site'}
+            </button>
+            <Link className="admin-btn" to="/projects/new">
+              {zh ? '+ 新建项目' : '+ New project'}
+            </Link>
+          </div>
         }
       />
       {migrateNote && <p className="admin-status is-ok">{migrateNote}</p>}
       <p className="admin-hint">
         {zh
-          ? '默认按创立年份从新到旧。可拖拽左侧 ⋮⋮，或用右侧 ↑↓ 调整顺序；保存后会同步到正式站（需短暂重新部署）。'
-          : 'Default order is newest creation year first. Drag ⋮⋮ or use ↑↓ to reorder; saving syncs to the live site (short redeploy).'}
+          ? '用左侧 ⋮⋮ 或右侧 ↑↓ 调整顺序会先保存草稿。排好后点一次「同步排序到网站」即可（不要连点，每次同步都会触发正式站部署并消耗积分）。'
+          : 'Drag ⋮⋮ or use ↑↓ to save draft order. When finished, click “Sync order to site” once (each sync triggers a production deploy and uses credits).'}
       </p>
       {orderStatus && (
         <p className={`admin-status ${orderStatus.includes('…') || orderStatus.includes('Saving') ? '' : orderStatus.includes('失败') || /error|fail|Could/i.test(orderStatus) ? 'is-err' : 'is-ok'}`}>
