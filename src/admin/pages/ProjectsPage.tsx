@@ -33,7 +33,7 @@ async function persistProjectOrder(slugs: string[]): Promise<string | null> {
 
   // Push the same order to main so the public site rebuilds to match admin.
   if (!import.meta.env.DEV) {
-    const sync = await callCmsFunction('sync-project-order')
+    const sync = await callCmsFunction('sync-project-order', { order: slugs })
     if (!sync.ok) {
       return String(sync.data.error || 'Order saved to drafts, but live site sync failed. Use Publish.')
     }
@@ -135,8 +135,8 @@ export function ProjectsPage({ lang }: { lang: AdminLang }) {
       err
         ? err
         : lang === 'zh'
-          ? '排序已保存（网站列表将按此顺序显示）。'
-          : 'Order saved. Site lists will follow this order.',
+          ? '排序已保存，并已同步正式站（约 1–3 分钟后刷新网站可见）。'
+          : 'Order saved and synced to the live site. Refresh the site in 1–3 minutes.',
     )
   }
 
@@ -156,8 +156,8 @@ export function ProjectsPage({ lang }: { lang: AdminLang }) {
       err
         ? err
         : lang === 'zh'
-          ? '排序已保存（网站列表将按此顺序显示）。'
-          : 'Order saved. Site lists will follow this order.',
+          ? '排序已保存，并已同步正式站（约 1–3 分钟后刷新网站可见）。'
+          : 'Order saved and synced to the live site. Refresh the site in 1–3 minutes.',
     )
   }
 

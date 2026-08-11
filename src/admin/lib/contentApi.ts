@@ -384,6 +384,7 @@ export async function listMedia(): Promise<string[]> {
 
 export async function callCmsFunction(
   name: 'preview-cms' | 'publish-cms' | 'sync-project-order',
+  body: Record<string, unknown> = {},
 ): Promise<{ ok: boolean; data: Record<string, unknown> }> {
   const identity = window.netlifyIdentity
   const user = identity?.currentUser?.()
@@ -395,7 +396,7 @@ export async function callCmsFunction(
       Authorization: `Bearer ${token}`,
       'Content-Type': 'application/json',
     },
-    body: '{}',
+    body: JSON.stringify(body),
   })
   const data = (await res.json().catch(() => ({}))) as Record<string, unknown>
   return { ok: res.ok, data }

@@ -68,23 +68,34 @@ export async function handler(event, context) {
     return json(500, { error: 'Missing CMS_GITHUB_TOKEN in Netlify env' })
   }
 
-  const fromCms = await gh(`/repos/${repo}/contents/${path}?ref=${encodeURIComponent(head)}`, token)
-  if (!fromCms.res.ok || !fromCms.data?.content) {
-    return json(fromCms.res.status || 500, {
-      error: 'Could not read project-order.json from cms',
-      details: fromCms.data,
-    })
+  const fromBody = (() => {
+    try {
+      const raw = event.body ? JSON.parse(event.body) : null
+      if (Array.isArray(raw?.order)) return raw.order.map(String)
+    } catch {
+      /* ignore */
+    }
+    return null
+  })()
+
+  let parsed = fromBody
+  if (!parsed) {
+    const fromCms = await gh(`/repos/${repo}/contents/${path}?ref=${encodeURIComponent(head)}`, token)
+    if (!fromCms.res.ok || !fromCms.data?.content) {
+      return json(fromCms.res.status || 500, {
+        error: 'Could not read project-order.json from cms',
+        details: fromCms.data,
+      })
+    }
+    try {
+      parsed = JSON.parse(b64DecodeUnicode(fromCms.data.content))
+    } catch {
+      return json(500, { error: 'cms project-order.json is not valid JSON' })
+    }
   }
 
-  const bodyText = b64DecodeUnicode(fromCms.data.content)
-  let parsed
-  try {
-    parsed = JSON.parse(bodyText)
-  } catch {
-    return json(500, { error: 'cms project-order.json is not valid JSON' })
-  }
   if (!Array.isArray(parsed)) {
-    return json(500, { error: 'cms project-order.json must be a JSON array of slugs' })
+    return json(500, { error: 'project-order must be a JSON array of slugs' })
   }
 
   const onMain = await gh(`/repos/${repo}/contents/${path}?ref=${encodeURIComponent(base)}`, token)
