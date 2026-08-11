@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, type DragEvent } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { PageHeader } from '../AdminApp'
 import { getCopy, type AdminLang } from '../lib/i18n'
-import { moveToTrash, saveContentFile } from '../lib/contentApi'
+import { moveToTrash, saveContentFile, callCmsFunction } from '../lib/contentApi'
 import { Field, ImageField, LinesField, SelectField } from '../components/Fields'
 import { ContentBlocksEditor } from '../components/ContentBlocksEditor'
 import { AdminMediaImage } from '../components/AdminMediaImage'
@@ -29,7 +29,16 @@ function liveProjects() {
 
 async function persistProjectOrder(slugs: string[]): Promise<string | null> {
   const res = await saveContentFile('content/project-order.json', slugs)
-  return res.ok ? null : res.error
+  if (!res.ok) return res.error
+
+  // Push the same order to main so the public site rebuilds to match admin.
+  if (!import.meta.env.DEV) {
+    const sync = await callCmsFunction('sync-project-order')
+    if (!sync.ok) {
+      return String(sync.data.error || 'Order saved to drafts, but live site sync failed. Use Publish.')
+    }
+  }
+  return null
 }
 
 export function ProjectsPage({ lang }: { lang: AdminLang }) {
@@ -167,8 +176,8 @@ export function ProjectsPage({ lang }: { lang: AdminLang }) {
       {migrateNote && <p className="admin-status is-ok">{migrateNote}</p>}
       <p className="admin-hint">
         {zh
-          ? '默认按创立年份从新到旧。可拖拽左侧 ⋮⋮，或用右侧 ↑↓ 调整顺序。'
-          : 'Default order is newest creation year first. Drag ⋮⋮ or use ↑↓ on the right to reorder.'}
+          ? '默认按创立年份从新到旧。可拖拽左侧 ⋮⋮，或用右侧 ↑↓ 调整顺序；保存后会同步到正式站（需短暂重新部署）。'
+          : 'Default order is newest creation year first. Drag ⋮⋮ or use ↑↓ to reorder; saving syncs to the live site (short redeploy).'}
       </p>
       {orderStatus && (
         <p className={`admin-status ${orderStatus.includes('…') || orderStatus.includes('Saving') ? '' : orderStatus.includes('失败') || /error|fail|Could/i.test(orderStatus) ? 'is-err' : 'is-ok'}`}>

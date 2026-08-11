@@ -19,16 +19,16 @@ export function compareByCreatedYear(a: OrderableProject, b: OrderableProject) {
 
 /**
  * Apply saved slug order when present. Unknown slugs fall to the end,
- * sorted by creation year.
+ * sorted by creation year. Matching is case-insensitive.
  */
 export function sortProjectsByOrder<T extends OrderableProject>(projects: T[], order: string[] | null | undefined): T[] {
   if (!order?.length) {
     return [...projects].sort(compareByCreatedYear)
   }
-  const rank = new Map(order.map((slug, i) => [slug, i]))
+  const rank = new Map(order.map((slug, i) => [slug.toLowerCase(), i]))
   return [...projects].sort((a, b) => {
-    const ia = rank.has(a.slug) ? rank.get(a.slug)! : Number.POSITIVE_INFINITY
-    const ib = rank.has(b.slug) ? rank.get(b.slug)! : Number.POSITIVE_INFINITY
+    const ia = rank.has(a.slug.toLowerCase()) ? rank.get(a.slug.toLowerCase())! : Number.POSITIVE_INFINITY
+    const ib = rank.has(b.slug.toLowerCase()) ? rank.get(b.slug.toLowerCase())! : Number.POSITIVE_INFINITY
     if (ia !== ib) return ia - ib
     return compareByCreatedYear(a, b)
   })
