@@ -58,7 +58,6 @@
   flex-shrink: 0;
   background: transparent !important;
   mix-blend-mode: normal;
-  /* kill any residual light plate behind the mark */
   -webkit-mask-image: none;
 }
 

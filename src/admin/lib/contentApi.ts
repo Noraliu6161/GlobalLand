@@ -383,7 +383,7 @@ export async function listMedia(): Promise<string[]> {
 }
 
 export async function callCmsFunction(
-  name: 'preview-cms' | 'publish-cms' | 'sync-project-order',
+  name: 'preview-cms' | 'publish-cms',
   body: Record<string, unknown> = {},
 ): Promise<{ ok: boolean; data: Record<string, unknown> }> {
   const identity = window.netlifyIdentity

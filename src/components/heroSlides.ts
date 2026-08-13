@@ -5,7 +5,7 @@ export type HeroSlide = {
   alt: string
 }
 
-const INTERVAL_MS = 5500
+const INTERVAL_MS = 2000
 
 export function useHeroCarousel(slideCount: number, enabled = true) {
   const [index, setIndex] = useState(0)
